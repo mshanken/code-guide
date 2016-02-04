@@ -1,0 +1,5 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */#main article{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width:992px){#main article{float:left;width:66.66666667%}}#main aside{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width:992px){#main aside{float:left;width:33.33333333%}}
