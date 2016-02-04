@@ -1,0 +1,14 @@
+{
+	"index": {
+		"title": "Your website title 2"
+	},
+	"about": {
+		"title": ""
+	},
+	"style-guide": {
+		"title": ""
+	},
+	"sitemap": {
+		"layout": false
+	}
+}

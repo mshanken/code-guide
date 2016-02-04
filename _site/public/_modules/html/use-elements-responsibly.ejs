@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="">
+  </head>
+  <body>
+    <header class="contanier" id="header" role="banner">
+      <h1><!-- Logo/Header(text or img) --></h1>
+      <h2><!-- Slug --></h2>
+      ...
+      <aside role="search"><!-- Site: Promo --></aside>
+    </header><!-- /header -->
+    <nav>
+      <ul role="menubar">
+        <li role="listitem"><!-- Main Menu/Sub Menu use list to define menu items --></li>
+        <li role="listitem"><!-- It can also be inserted in the header --></li>
+      </ul>
+    </nav><!-- /nav -->
+    <main role="main">
+      <div>
+        <article role="article">
+          <header>
+            <h1>title</h1>
+            <h2>subtitle</h2>
+            <h3>author(s)<br />post date <time datetime="2045-12-25T19:00">12/25/2045</time></h3>
+            ...
+          </header>
+          <p>Content...</p>
+          <footer role="conteninfo">
+            <nav>pagination</nav>
+            <address>Author info</address>
+          </footer>
+          <aside role="complementary">
+            <h1>Sidebar (Also, Related, Most recent)</h1>
+            <p>Can also be inside article above</p>
+          </aside><!-- /aside (sidebar) -->
+          <section>
+            <h1>Comments</h1>
+            <article>
+              <h1>User Name</h1>
+              <h2>user profile</h2>
+              <p>Comment...</p>
+              <article>
+                <h1>User reply</h1>
+                <h2>user profile</h2>
+                <p>Reply comment...</p>
+              </article><!-- /article (comment reply) -->
+            </article><!-- /article (comment) -->
+          </section><!-- /section (.user-comments) -->
+          <section>
+            <h1>Promo</h1>
+            <article>
+              ...
+            </article><!-- /article (comment) -->
+          </section><!-- /section (.user-comments) -->
+        <article><!-- /article -->
+        <aside>
+          ...
+        </aside><!-- /aside (.sub-content) -->
+      </div><!-- /.row/.wrapper -->
+    </main><!-- /main -->
+    <footer role="conteninfo">
+      ...
+    </footer><!-- /footer -->
+  </body>
+</html>

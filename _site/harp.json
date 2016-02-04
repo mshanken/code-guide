@@ -1,0 +1,18 @@
+{
+  "globals": {
+    "title": "Your website title 1",
+    "site_tagline":"Your site tagline 1",
+    "url": "www.yoursite.com",
+    "description": "Standards for developing flexible, durable, and sustainable HTML and CSS.",
+    "keywords": "your, tags",
+    "copyright": "M. Shanken Communications, Inc.",
+    "name": "Code Guide",
+    "email": "dev@mshanken.com",
+    "analytics": "you-UA-code-here",
+    "typekit": false,
+    "disqus": false,
+    "markdown": "rdiscount",
+    "permalink": "pretty",
+    "pygments": true
+  }
+}
