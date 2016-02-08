@@ -3,11 +3,7 @@
 		"title": "Code Guide - Patterns",
 		"name": "Start"
 	},
-	"behaviors": {
-		"title": "Your website title 3",
-		"name": "Style Guide Patterns"
-	},
-	"collections": {
+	"globals": {
 		"title": "Your website title 3",
 		"name": "Style Guide Patterns"
 	},
@@ -15,7 +11,7 @@
 		"title": "Your website title 3",
 		"name": "Style Guide Patterns"
 	},
-	"globals": {
+	"collections": {
 		"title": "Your website title 3",
 		"name": "Style Guide Patterns"
 	},
@@ -24,6 +20,10 @@
 		"name": "Style Guide Patterns"
 	},
 	"views": {
+		"title": "Your website title 3",
+		"name": "Style Guide Patterns"
+	},
+	"behaviors": {
 		"title": "Your website title 3",
 		"name": "Style Guide Patterns"
 	}

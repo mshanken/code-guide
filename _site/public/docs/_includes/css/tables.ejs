@@ -1,0 +1,467 @@
+<div class="bs-docs-section">
+  <h1 id="tables" class="page-header">Tables</h1>
+
+  <h2 id="tables-example">Basic example</h2>
+  <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles.</p>
+  <div class="bs-example" data-example-id="simple-table">
+    <table class="table">
+      <caption>Optional table caption.</caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+<pre><code class="html">
+&lt;table class=&quot;table&quot;&gt;
+  ...
+&lt;&#x2F;table&gt;
+</code></pre>
+
+
+  &lt;h2 id=&quot;tables-striped&quot;&gt;Striped rows&lt;&#x2F;h2&gt;
+  &lt;p&gt;Use &lt;code&gt;.table-striped&lt;&#x2F;code&gt; to add zebra-striping to any table row within the &lt;code&gt;&amp;lt;tbody&amp;gt;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-callout bs-callout-danger&quot; id=&quot;callout-tables-striped-ie8&quot;&gt;
+    &lt;h4&gt;Cross-browser compatibility&lt;&#x2F;h4&gt;
+    &lt;p&gt;Striped tables are styled via the &lt;code&gt;:nth-child&lt;&#x2F;code&gt; CSS selector, which is not available in Internet Explorer 8.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;striped-table&quot;&gt;
+    &lt;table class=&quot;table table-striped&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;&#x2F;th&gt;
+          &lt;th&gt;First Name&lt;&#x2F;th&gt;
+          &lt;th&gt;Last Name&lt;&#x2F;th&gt;
+          &lt;th&gt;Username&lt;&#x2F;th&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;1&lt;&#x2F;th&gt;
+          &lt;td&gt;Mark&lt;&#x2F;td&gt;
+          &lt;td&gt;Otto&lt;&#x2F;td&gt;
+          &lt;td&gt;@mdo&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;2&lt;&#x2F;th&gt;
+          &lt;td&gt;Jacob&lt;&#x2F;td&gt;
+          &lt;td&gt;Thornton&lt;&#x2F;td&gt;
+          &lt;td&gt;@fat&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;3&lt;&#x2F;th&gt;
+          &lt;td&gt;Larry&lt;&#x2F;td&gt;
+          &lt;td&gt;the Bird&lt;&#x2F;td&gt;
+          &lt;td&gt;@twitter&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;example --&gt;
+<pre><code class="html">
+&lt;table class=&quot;table table-striped&quot;&gt;
+  ...
+&lt;&#x2F;table&gt;
+</code></pre>
+
+
+  &lt;h2 id=&quot;tables-bordered&quot;&gt;Bordered table&lt;&#x2F;h2&gt;
+  &lt;p&gt;Add &lt;code&gt;.table-bordered&lt;&#x2F;code&gt; for borders on all sides of the table and cells.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;bordered-table&quot;&gt;
+    &lt;table class=&quot;table table-bordered&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;&#x2F;th&gt;
+          &lt;th&gt;First Name&lt;&#x2F;th&gt;
+          &lt;th&gt;Last Name&lt;&#x2F;th&gt;
+          &lt;th&gt;Username&lt;&#x2F;th&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;1&lt;&#x2F;th&gt;
+          &lt;td&gt;Mark&lt;&#x2F;td&gt;
+          &lt;td&gt;Otto&lt;&#x2F;td&gt;
+          &lt;td&gt;@mdo&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;2&lt;&#x2F;th&gt;
+          &lt;td&gt;Jacob&lt;&#x2F;td&gt;
+          &lt;td&gt;Thornton&lt;&#x2F;td&gt;
+          &lt;td&gt;@fat&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;3&lt;&#x2F;th&gt;
+          &lt;td&gt;Larry&lt;&#x2F;td&gt;
+          &lt;td&gt;the Bird&lt;&#x2F;td&gt;
+          &lt;td&gt;@twitter&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;example --&gt;
+<pre><code class="html">
+&lt;table class=&quot;table table-bordered&quot;&gt;
+  ...
+&lt;&#x2F;table&gt;
+</code></pre>
+
+
+  &lt;h2 id=&quot;tables-hover-rows&quot;&gt;Hover rows&lt;&#x2F;h2&gt;
+  &lt;p&gt;Add &lt;code&gt;.table-hover&lt;&#x2F;code&gt; to enable a hover state on table rows within a &lt;code&gt;&amp;lt;tbody&amp;gt;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;hoverable-table&quot;&gt;
+    &lt;table class=&quot;table table-hover&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;&#x2F;th&gt;
+          &lt;th&gt;First Name&lt;&#x2F;th&gt;
+          &lt;th&gt;Last Name&lt;&#x2F;th&gt;
+          &lt;th&gt;Username&lt;&#x2F;th&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;1&lt;&#x2F;th&gt;
+          &lt;td&gt;Mark&lt;&#x2F;td&gt;
+          &lt;td&gt;Otto&lt;&#x2F;td&gt;
+          &lt;td&gt;@mdo&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;2&lt;&#x2F;th&gt;
+          &lt;td&gt;Jacob&lt;&#x2F;td&gt;
+          &lt;td&gt;Thornton&lt;&#x2F;td&gt;
+          &lt;td&gt;@fat&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;3&lt;&#x2F;th&gt;
+          &lt;td&gt;Larry&lt;&#x2F;td&gt;
+          &lt;td&gt;the Bird&lt;&#x2F;td&gt;
+          &lt;td&gt;@twitter&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;example --&gt;
+<pre><code class="html">
+&lt;table class=&quot;table table-hover&quot;&gt;
+  ...
+&lt;&#x2F;table&gt;
+</code></pre>
+
+
+  &lt;h2 id=&quot;tables-condensed&quot;&gt;Condensed table&lt;&#x2F;h2&gt;
+  &lt;p&gt;Add &lt;code&gt;.table-condensed&lt;&#x2F;code&gt; to make tables more compact by cutting cell padding in half.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;condensed-table&quot;&gt;
+    &lt;table class=&quot;table table-condensed&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;&#x2F;th&gt;
+          &lt;th&gt;First Name&lt;&#x2F;th&gt;
+          &lt;th&gt;Last Name&lt;&#x2F;th&gt;
+          &lt;th&gt;Username&lt;&#x2F;th&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;1&lt;&#x2F;th&gt;
+          &lt;td&gt;Mark&lt;&#x2F;td&gt;
+          &lt;td&gt;Otto&lt;&#x2F;td&gt;
+          &lt;td&gt;@mdo&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;2&lt;&#x2F;th&gt;
+          &lt;td&gt;Jacob&lt;&#x2F;td&gt;
+          &lt;td&gt;Thornton&lt;&#x2F;td&gt;
+          &lt;td&gt;@fat&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;3&lt;&#x2F;th&gt;
+          &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;&#x2F;td&gt;
+          &lt;td&gt;@twitter&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;example --&gt;
+<pre><code class="html">
+&lt;table class=&quot;table table-condensed&quot;&gt;
+  ...
+&lt;&#x2F;table&gt;
+</code></pre>
+
+
+  &lt;h2 id=&quot;tables-contextual-classes&quot;&gt;Contextual classes&lt;&#x2F;h2&gt;
+  &lt;p&gt;Use contextual classes to color table rows or individual cells.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-bordered table-striped&quot;&gt;
+      &lt;colgroup&gt;
+        &lt;col class=&quot;col-xs-1&quot;&gt;
+        &lt;col class=&quot;col-xs-7&quot;&gt;
+      &lt;&#x2F;colgroup&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Class&lt;&#x2F;th&gt;
+          &lt;th&gt;Description&lt;&#x2F;th&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;
+            &lt;code&gt;.active&lt;&#x2F;code&gt;
+          &lt;&#x2F;th&gt;
+          &lt;td&gt;Applies the hover color to a particular row or cell&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;
+            &lt;code&gt;.success&lt;&#x2F;code&gt;
+          &lt;&#x2F;th&gt;
+          &lt;td&gt;Indicates a successful or positive action&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;
+            &lt;code&gt;.info&lt;&#x2F;code&gt;
+          &lt;&#x2F;th&gt;
+          &lt;td&gt;Indicates a neutral informative change or action&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;
+            &lt;code&gt;.warning&lt;&#x2F;code&gt;
+          &lt;&#x2F;th&gt;
+          &lt;td&gt;Indicates a warning that might need attention&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;
+            &lt;code&gt;.danger&lt;&#x2F;code&gt;
+          &lt;&#x2F;th&gt;
+          &lt;td&gt;Indicates a dangerous or potentially negative action&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;contextual-table&quot;&gt;
+    &lt;table class=&quot;table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;&#x2F;th&gt;
+          &lt;th&gt;Column heading&lt;&#x2F;th&gt;
+          &lt;th&gt;Column heading&lt;&#x2F;th&gt;
+          &lt;th&gt;Column heading&lt;&#x2F;th&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+        &lt;tr class=&quot;active&quot;&gt;
+          &lt;th scope=&quot;row&quot;&gt;1&lt;&#x2F;th&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;2&lt;&#x2F;th&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr class=&quot;success&quot;&gt;
+          &lt;th scope=&quot;row&quot;&gt;3&lt;&#x2F;th&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;4&lt;&#x2F;th&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr class=&quot;info&quot;&gt;
+          &lt;th scope=&quot;row&quot;&gt;5&lt;&#x2F;th&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;6&lt;&#x2F;th&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr class=&quot;warning&quot;&gt;
+          &lt;th scope=&quot;row&quot;&gt;7&lt;&#x2F;th&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;8&lt;&#x2F;th&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr class=&quot;danger&quot;&gt;
+          &lt;th scope=&quot;row&quot;&gt;9&lt;&#x2F;th&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+          &lt;td&gt;Column content&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;example --&gt;
+<pre><code class="html">
+&lt;!-- On rows --&gt;
+&lt;tr class=&quot;active&quot;&gt;...&lt;&#x2F;tr&gt;
+&lt;tr class=&quot;success&quot;&gt;...&lt;&#x2F;tr&gt;
+&lt;tr class=&quot;warning&quot;&gt;...&lt;&#x2F;tr&gt;
+&lt;tr class=&quot;danger&quot;&gt;...&lt;&#x2F;tr&gt;
+&lt;tr class=&quot;info&quot;&gt;...&lt;&#x2F;tr&gt;
+
+&lt;!-- On cells (`td` or `th`) --&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;active&quot;&gt;...&lt;&#x2F;td&gt;
+  &lt;td class=&quot;success&quot;&gt;...&lt;&#x2F;td&gt;
+  &lt;td class=&quot;warning&quot;&gt;...&lt;&#x2F;td&gt;
+  &lt;td class=&quot;danger&quot;&gt;...&lt;&#x2F;td&gt;
+  &lt;td class=&quot;info&quot;&gt;...&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+</code></pre>
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-tables-context-accessibility&quot;&gt;
+    &lt;h4&gt;Conveying meaning to assistive technologies&lt;&#x2F;h4&gt;
+    &lt;p&gt;Using color to add meaning to a table row or individual cell only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text in the relevant table row&#x2F;cell), or is included through alternative means, such as additional text hidden with the &lt;code&gt;.sr-only&lt;&#x2F;code&gt; class.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;h2 id=&quot;tables-responsive&quot;&gt;Responsive tables&lt;&#x2F;h2&gt;
+  &lt;p&gt;Create responsive tables by wrapping any &lt;code&gt;.table&lt;&#x2F;code&gt; in &lt;code&gt;.table-responsive&lt;&#x2F;code&gt; to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.&lt;&#x2F;p&gt;
+
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-tables-responsive-overflow&quot;&gt;
+    &lt;h4&gt;Vertical clipping&#x2F;truncation&lt;&#x2F;h4&gt;
+    &lt;p&gt;Responsive tables make use of &lt;code&gt;overflow-y: hidden&lt;&#x2F;code&gt;, which clips off any content that goes beyond the bottom or top edges of the table. In particular, this can clip off dropdown menus and other third-party widgets.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-tables-responsive-ff-fieldset&quot;&gt;
+    &lt;h4&gt;Firefox and fieldsets&lt;&#x2F;h4&gt;
+    &lt;p&gt;Firefox has some awkward fieldset styling involving &lt;code&gt;width&lt;&#x2F;code&gt; that interferes with the responsive table. This cannot be overriden without a Firefox-specific hack that we &lt;strong&gt;don&#39;t&lt;&#x2F;strong&gt; provide in Bootstrap:&lt;&#x2F;p&gt;
+{% highlight css %}
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+</code></pre>
+    &lt;p&gt;For more information, read &lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;17408815&#x2F;fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content&#x2F;17863685#17863685&quot;&gt;this Stack Overflow answer&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-responsive-table&quot;&gt;
+    &lt;div class=&quot;table-responsive&quot;&gt;
+      &lt;table class=&quot;table&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;&#x2F;th&gt;
+            &lt;th&gt;Table heading&lt;&#x2F;th&gt;
+            &lt;th&gt;Table heading&lt;&#x2F;th&gt;
+            &lt;th&gt;Table heading&lt;&#x2F;th&gt;
+            &lt;th&gt;Table heading&lt;&#x2F;th&gt;
+            &lt;th&gt;Table heading&lt;&#x2F;th&gt;
+            &lt;th&gt;Table heading&lt;&#x2F;th&gt;
+          &lt;&#x2F;tr&gt;
+        &lt;&#x2F;thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;1&lt;&#x2F;th&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+          &lt;&#x2F;tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;2&lt;&#x2F;th&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+          &lt;&#x2F;tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;3&lt;&#x2F;th&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+          &lt;&#x2F;tr&gt;
+        &lt;&#x2F;tbody&gt;
+      &lt;&#x2F;table&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.table-responsive --&gt;
+
+    &lt;div class=&quot;table-responsive&quot;&gt;
+      &lt;table class=&quot;table table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;&#x2F;th&gt;
+            &lt;th&gt;Table heading&lt;&#x2F;th&gt;
+            &lt;th&gt;Table heading&lt;&#x2F;th&gt;
+            &lt;th&gt;Table heading&lt;&#x2F;th&gt;
+            &lt;th&gt;Table heading&lt;&#x2F;th&gt;
+            &lt;th&gt;Table heading&lt;&#x2F;th&gt;
+            &lt;th&gt;Table heading&lt;&#x2F;th&gt;
+          &lt;&#x2F;tr&gt;
+        &lt;&#x2F;thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;1&lt;&#x2F;th&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+          &lt;&#x2F;tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;2&lt;&#x2F;th&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+          &lt;&#x2F;tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;3&lt;&#x2F;th&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+            &lt;td&gt;Table cell&lt;&#x2F;td&gt;
+          &lt;&#x2F;tr&gt;
+        &lt;&#x2F;tbody&gt;
+      &lt;&#x2F;table&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.table-responsive --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;example --&gt;
+<pre><code class="html">
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    ...
+  &lt;&#x2F;table&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+</div>

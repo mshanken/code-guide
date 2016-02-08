@@ -1,0 +1,188 @@
+<div class="bs-docs-section">
+  <h1 id="list-group" class="page-header">List group</h1>
+
+  <p class="lead">List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.</p>
+
+  <h2 id="list-group-basic">Basic example</h2>
+  <p>The most basic list group is simply an unordered list with list items, and the proper classes. Build upon it with the options that follow, or your own CSS as needed.</p>
+  <div class="bs-example" data-example-id="simple-list-group">
+    <ul class="list-group">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Morbi leo risus</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+  </div>
+<pre><code class="html">
+&lt;ul class=&quot;list-group&quot;&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;&#x2F;li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;&#x2F;li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;&#x2F;li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;list-group-badges&quot;&gt;Badges&lt;&#x2F;h2&gt;
+  &lt;p&gt;Add the badges component to any list group item and it will automatically be positioned on the right.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;list-group-badges&quot;&gt;
+    &lt;ul class=&quot;list-group&quot;&gt;
+      &lt;li class=&quot;list-group-item&quot;&gt;
+        &lt;span class=&quot;badge&quot;&gt;14&lt;&#x2F;span&gt;
+        Cras justo odio
+      &lt;&#x2F;li&gt;
+      &lt;li class=&quot;list-group-item&quot;&gt;
+        &lt;span class=&quot;badge&quot;&gt;2&lt;&#x2F;span&gt;
+        Dapibus ac facilisis in
+      &lt;&#x2F;li&gt;
+      &lt;li class=&quot;list-group-item&quot;&gt;
+        &lt;span class=&quot;badge&quot;&gt;1&lt;&#x2F;span&gt;
+        Morbi leo risus
+      &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;ul class=&quot;list-group&quot;&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;
+    &lt;span class=&quot;badge&quot;&gt;14&lt;&#x2F;span&gt;
+    Cras justo odio
+  &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;list-group-linked&quot;&gt;Linked items&lt;&#x2F;h2&gt;
+  &lt;p&gt;Linkify list group items by using anchor tags instead of list items (that also means a parent &lt;code&gt;&amp;lt;div&amp;gt;&lt;&#x2F;code&gt; instead of an &lt;code&gt;&amp;lt;ul&amp;gt;&lt;&#x2F;code&gt;). No need for individual parents around each element.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;list-group-anchors&quot;&gt;
+    &lt;div class=&quot;list-group&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;
+        Cras justo odio
+      &lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;&#x2F;a&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;list-group&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;
+    Cras justo odio
+  &lt;&#x2F;a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;&#x2F;a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;&#x2F;a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;list-group-buttons&quot;&gt;Button items&lt;&#x2F;h2&gt;
+  &lt;p&gt;List group items may be buttons instead of list items (that also means a parent &lt;code&gt;&amp;lt;div&amp;gt;&lt;&#x2F;code&gt; instead of an &lt;code&gt;&amp;lt;ul&amp;gt;&lt;&#x2F;code&gt;). No need for individual parents around each element. &lt;strong class=&quot;text-danger&quot;&gt;Don&#39;t use the standard &lt;code&gt;.btn&lt;&#x2F;code&gt; classes here.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;list-group-btns&quot;&gt;
+    &lt;div class=&quot;list-group&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;&#x2F;button&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;list-group&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;&#x2F;button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;&#x2F;button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;&#x2F;button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;&#x2F;button&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;list-group-disabled&quot;&gt;Disabled items&lt;&#x2F;h2&gt;
+  &lt;p&gt;Add &lt;code&gt;.disabled&lt;&#x2F;code&gt; to a &lt;code&gt;.list-group-item&lt;&#x2F;code&gt; to gray it out to appear disabled.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;list-group-disabled&quot;&gt;
+    &lt;div class=&quot;list-group&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item disabled&quot;&gt;
+        Cras justo odio
+      &lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;&#x2F;a&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;list-group&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item disabled&quot;&gt;
+    Cras justo odio
+  &lt;&#x2F;a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;&#x2F;a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;&#x2F;a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;list-group-contextual-classes&quot;&gt;Contextual classes&lt;&#x2F;h2&gt;
+  &lt;p&gt;Use contextual classes to style list items, default or linked. Also includes &lt;code&gt;.active&lt;&#x2F;code&gt; state.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;list-group-variants&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-6&quot;&gt;
+        &lt;ul class=&quot;list-group&quot;&gt;
+          &lt;li class=&quot;list-group-item list-group-item-success&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;li&gt;
+          &lt;li class=&quot;list-group-item list-group-item-info&quot;&gt;Cras sit amet nibh libero&lt;&#x2F;li&gt;
+          &lt;li class=&quot;list-group-item list-group-item-warning&quot;&gt;Porta ac consectetur ac&lt;&#x2F;li&gt;
+          &lt;li class=&quot;list-group-item list-group-item-danger&quot;&gt;Vestibulum at eros&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;col-sm-6&quot;&gt;
+        &lt;div class=&quot;list-group&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-success&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;a&gt;
+          &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-info&quot;&gt;Cras sit amet nibh libero&lt;&#x2F;a&gt;
+          &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-warning&quot;&gt;Porta ac consectetur ac&lt;&#x2F;a&gt;
+          &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-danger&quot;&gt;Vestibulum at eros&lt;&#x2F;a&gt;
+        &lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;ul class=&quot;list-group&quot;&gt;
+  &lt;li class=&quot;list-group-item list-group-item-success&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;li&gt;
+  &lt;li class=&quot;list-group-item list-group-item-info&quot;&gt;Cras sit amet nibh libero&lt;&#x2F;li&gt;
+  &lt;li class=&quot;list-group-item list-group-item-warning&quot;&gt;Porta ac consectetur ac&lt;&#x2F;li&gt;
+  &lt;li class=&quot;list-group-item list-group-item-danger&quot;&gt;Vestibulum at eros&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;div class=&quot;list-group&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-success&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-info&quot;&gt;Cras sit amet nibh libero&lt;&#x2F;a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-warning&quot;&gt;Porta ac consectetur ac&lt;&#x2F;a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-danger&quot;&gt;Vestibulum at eros&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;list-group-custom-content&quot;&gt;Custom content&lt;&#x2F;h2&gt;
+  &lt;p&gt;Add nearly any HTML within, even for linked list groups like the one below.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;list-group-custom-content&quot;&gt;
+    &lt;div class=&quot;list-group&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;
+        &lt;h4 class=&quot;list-group-item-heading&quot;&gt;List group item heading&lt;&#x2F;h4&gt;
+        &lt;p class=&quot;list-group-item-text&quot;&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;&#x2F;p&gt;
+      &lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;
+        &lt;h4 class=&quot;list-group-item-heading&quot;&gt;List group item heading&lt;&#x2F;h4&gt;
+        &lt;p class=&quot;list-group-item-text&quot;&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;&#x2F;p&gt;
+      &lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;
+        &lt;h4 class=&quot;list-group-item-heading&quot;&gt;List group item heading&lt;&#x2F;h4&gt;
+        &lt;p class=&quot;list-group-item-text&quot;&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;&#x2F;p&gt;
+      &lt;&#x2F;a&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;list-group&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;
+    &lt;h4 class=&quot;list-group-item-heading&quot;&gt;List group item heading&lt;&#x2F;h4&gt;
+    &lt;p class=&quot;list-group-item-text&quot;&gt;...&lt;&#x2F;p&gt;
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+</div>

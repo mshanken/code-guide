@@ -1,0 +1,309 @@
+<div class="bs-docs-section">
+  <h1 id="popovers" class="page-header">Popovers <small>popover.js</small></h1>
+
+  <p>Add small overlays of content, like those on the iPad, to any element for housing secondary information.</p>
+  <p>Popovers whose both title and content are zero-length are never displayed.</p>
+
+  <div class="bs-callout bs-callout-danger" id="callout-popover-needs-tooltip">
+    <h4>Plugin dependency</h4>
+    <p>Popovers require the <a href="#tooltips">tooltip plugin</a> to be included in your version of Bootstrap.</p>
+  </div>
+  <div class="bs-callout bs-callout-danger" id="callout-popover-opt-in">
+    <h4>Opt-in functionality</h4>
+    <p>For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning <strong>you must initialize them yourself</strong>.</p>
+    <p>One way to initialize all popovers on a page would be to select them by their <code>data-toggle</code> attribute:</p>
+{% highlight js %}
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</code></pre>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-popover-groups">
+    <h4>Popovers in button groups, input groups, and tables require special setting</h4>
+    <p>When using popovers on elements within a <code>.btn-group</code> or an <code>.input-group</code>, or on table-related elements (<code>&lt;td&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>), you'll have to specify the option <code>container: 'body'</code> (documented below) to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the popover is triggered).</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-popover-hidden">
+    <h4>Don't try to show popovers on hidden elements</h4>
+    <p>Invoking <code>$(...).popover('show')</code> when the target element is <code>display: none;</code> will cause the popover to be incorrectly positioned.</p>
+  </div>
+  <div class="bs-callout bs-callout-info" id="callout-popover-disabled">
+    <h4>Popovers on disabled elements require wrapper elements</h4>
+    <p>To add a popover to a <code>disabled</code> or <code>.disabled</code> element, put the element inside of a <code>&lt;div&gt;</code> and apply the popover to that <code>&lt;div&gt;</code> instead.</p>
+  </div>
+  <div class="bs-callout bs-callout-info" id="callout-popover-multiline">
+    <h4>Multiple-line links</h4>
+    <p>Sometimes you want to add a popover to a hyperlink that wraps multiple lines. The default behavior of the popover plugin is to center it horizontally and vertically. Add <code>white-space: nowrap;</code> to your anchors to avoid this.</p>
+  </div>
+
+  <h2 id="popovers-examples">Examples</h2>
+  <h3>Static popover</h3>
+  <p>Four options are available: top, right, bottom, and left aligned.</p>
+  <div class="bs-example bs-example-popover" data-example-id="static-popovers">
+    <div class="popover top">
+      <div class="arrow"></div>
+      <h3 class="popover-title">Popover top</h3>
+      <div class="popover-content">
+        <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      </div>
+    </div>
+
+    <div class="popover right">
+      <div class="arrow"></div>
+      <h3 class="popover-title">Popover right</h3>
+      <div class="popover-content">
+        <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      </div>
+    </div>
+
+    <div class="popover bottom">
+      <div class="arrow"></div>
+      <h3 class="popover-title">Popover bottom</h3>
+
+      <div class="popover-content">
+        <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      </div>
+    </div>
+
+    <div class="popover left">
+      <div class="arrow"></div>
+      <h3 class="popover-title">Popover left</h3>
+      <div class="popover-content">
+        <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+  </div>
+
+  <h3>Live demo</h3>
+  <div class="bs-example bs-example-padded-bottom">
+    <button type="button" class="btn btn-lg btn-danger bs-docs-popover" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+  </div>
+<pre><code class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-lg btn-danger&quot; data-toggle=&quot;popover&quot; title=&quot;Popover title&quot; data-content=&quot;And here&#39;s some amazing content. It&#39;s very engaging. Right?&quot;&gt;Click to toggle popover&lt;&#x2F;button&gt;
+</code></pre>
+
+  &lt;h4&gt;Four directions&lt;&#x2F;h4&gt;
+  &lt;div class=&quot;bs-example popover-demo&quot;&gt;
+    &lt;div class=&quot;bs-example-popovers&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+        Popover on right
+      &lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+        Popover on top
+      &lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+        Popover on bottom
+      &lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+        Popover on left
+      &lt;&#x2F;button&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;example --&gt;
+<pre><code class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on left
+&lt;&#x2F;button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on top
+&lt;&#x2F;button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on bottom
+&lt;&#x2F;button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on right
+&lt;&#x2F;button&gt;
+</code></pre>
+
+  &lt;h4&gt;Dismiss on next click&lt;&#x2F;h4&gt;
+  &lt;p&gt;Use the &lt;code&gt;focus&lt;&#x2F;code&gt; trigger to dismiss popovers on the next click that the user makes.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-callout bs-callout-danger&quot; id=&quot;callout-popover-dismiss-click&quot;&gt;
+    &lt;h4&gt;Specific markup required for dismiss-on-next-click&lt;&#x2F;h4&gt;
+    &lt;p&gt;For proper cross-browser and cross-platform behavior, you must use the &lt;code&gt;&amp;lt;a&amp;gt;&lt;&#x2F;code&gt; tag, &lt;i&gt;not&lt;&#x2F;i&gt; the &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt; tag, and you also must include the &lt;code&gt;role=&quot;button&quot;&lt;&#x2F;code&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;HTML&#x2F;Global_attributes#tabindex&quot;&gt;&lt;code&gt;tabindex&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; attributes.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-example bs-example-padded-bottom&quot;&gt;
+    &lt;a tabindex=&quot;0&quot; class=&quot;btn btn-lg btn-danger bs-docs-popover&quot; role=&quot;button&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;focus&quot; title=&quot;Dismissible popover&quot; data-content=&quot;And here&#39;s some amazing content. It&#39;s very engaging. Right?&quot;&gt;Dismissible popover&lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;a tabindex=&quot;0&quot; class=&quot;btn btn-lg btn-danger&quot; role=&quot;button&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;focus&quot; title=&quot;Dismissible popover&quot; data-content=&quot;And here&#39;s some amazing content. It&#39;s very engaging. Right?&quot;&gt;Dismissible popover&lt;&#x2F;a&gt;
+</code></pre>
+
+
+  &lt;h2 id=&quot;popovers-usage&quot;&gt;Usage&lt;&#x2F;h2&gt;
+  &lt;p&gt;Enable popovers via JavaScript:&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#example&#39;).popover(options)</code></pre>
+
+  &lt;h3 id=&quot;popovers-options&quot;&gt;Options&lt;&#x2F;h3&gt;
+  &lt;p&gt;Options can be passed via data attributes or JavaScript. For data attributes, append the option name to &lt;code&gt;data-&lt;&#x2F;code&gt;, as in &lt;code&gt;data-animation=&quot;&quot;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-bordered table-striped js-options-table js-options-table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Name&lt;&#x2F;th&gt;
+          &lt;th&gt;Type&lt;&#x2F;th&gt;
+          &lt;th&gt;Default&lt;&#x2F;th&gt;
+          &lt;th&gt;Description&lt;&#x2F;th&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;animation&lt;&#x2F;td&gt;
+          &lt;td&gt;boolean&lt;&#x2F;td&gt;
+          &lt;td&gt;true&lt;&#x2F;td&gt;
+          &lt;td&gt;Apply a CSS fade transition to the popover&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;container&lt;&#x2F;td&gt;
+          &lt;td&gt;string | false&lt;&#x2F;td&gt;
+          &lt;td&gt;false&lt;&#x2F;td&gt;
+          &lt;td&gt;
+            &lt;p&gt;Appends the popover to a specific element. Example: &lt;code&gt;container: &#39;body&#39;&lt;&#x2F;code&gt;. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element - which will prevent the popover from floating away from the triggering element during a window resize.&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;content&lt;&#x2F;td&gt;
+          &lt;td&gt;string | function&lt;&#x2F;td&gt;
+          &lt;td&gt;&#39;&#39;&lt;&#x2F;td&gt;
+          &lt;td&gt;
+            &lt;p&gt;Default content value if &lt;code&gt;data-content&lt;&#x2F;code&gt; attribute isn&#39;t present.&lt;&#x2F;p&gt;
+            &lt;p&gt;If a function is given, it will be called with its &lt;code&gt;this&lt;&#x2F;code&gt; reference set to the element that the popover is attached to.&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;delay&lt;&#x2F;td&gt;
+          &lt;td&gt;number | object&lt;&#x2F;td&gt;
+          &lt;td&gt;0&lt;&#x2F;td&gt;
+          &lt;td&gt;
+           &lt;p&gt;Delay showing and hiding the popover (ms) - does not apply to manual trigger type&lt;&#x2F;p&gt;
+           &lt;p&gt;If a number is supplied, delay is applied to both hide&#x2F;show&lt;&#x2F;p&gt;
+           &lt;p&gt;Object structure is: &lt;code&gt;delay: { &quot;show&quot;: 500, &quot;hide&quot;: 100 }&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;html&lt;&#x2F;td&gt;
+          &lt;td&gt;boolean&lt;&#x2F;td&gt;
+          &lt;td&gt;false&lt;&#x2F;td&gt;
+          &lt;td&gt;Insert HTML into the popover. If false, jQuery&#39;s &lt;code&gt;text&lt;&#x2F;code&gt; method will be used to insert content into the DOM. Use text if you&#39;re worried about XSS attacks.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;placement&lt;&#x2F;td&gt;
+          &lt;td&gt;string | function&lt;&#x2F;td&gt;
+          &lt;td&gt;&#39;right&#39;&lt;&#x2F;td&gt;
+          &lt;td&gt;
+            &lt;p&gt;How to position the popover - top | bottom | left | right | auto.&lt;br&gt;When &quot;auto&quot; is specified, it will dynamically reorient the popover. For example, if placement is &quot;auto left&quot;, the popover will display to the left when possible, otherwise it will display right.&lt;&#x2F;p&gt;
+            &lt;p&gt;When a function is used to determine the placement, it is called with the popover DOM node as its first argument and the triggering element DOM node as its second. The &lt;code&gt;this&lt;&#x2F;code&gt; context is set to the popover instance.&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;selector&lt;&#x2F;td&gt;
+          &lt;td&gt;string&lt;&#x2F;td&gt;
+          &lt;td&gt;false&lt;&#x2F;td&gt;
+          &lt;td&gt;If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;twbs&#x2F;bootstrap&#x2F;issues&#x2F;4215&quot;&gt;this&lt;&#x2F;a&gt; and &lt;a href=&quot;http:&#x2F;&#x2F;jsbin.com&#x2F;zopod&#x2F;1&#x2F;edit&quot;&gt;an informative example&lt;&#x2F;a&gt;.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;template&lt;&#x2F;td&gt;
+          &lt;td&gt;string&lt;&#x2F;td&gt;
+          &lt;td&gt;&lt;code&gt;&#39;&amp;lt;div class=&quot;popover&quot; role=&quot;tooltip&quot;&amp;gt;&amp;lt;div class=&quot;arrow&quot;&amp;gt;&amp;lt;&#x2F;div&amp;gt;&amp;lt;h3 class=&quot;popover-title&quot;&amp;gt;&amp;lt;&#x2F;h3&amp;gt;&amp;lt;div class=&quot;popover-content&quot;&amp;gt;&amp;lt;&#x2F;div&amp;gt;&amp;lt;&#x2F;div&amp;gt;&#39;&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;
+          &lt;td&gt;
+            &lt;p&gt;Base HTML to use when creating the popover.&lt;&#x2F;p&gt;
+            &lt;p&gt;The popover&#39;s &lt;code&gt;title&lt;&#x2F;code&gt; will be injected into the &lt;code&gt;.popover-title&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+            &lt;p&gt;The popover&#39;s &lt;code&gt;content&lt;&#x2F;code&gt; will be injected into the &lt;code&gt;.popover-content&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+            &lt;p&gt;&lt;code&gt;.arrow&lt;&#x2F;code&gt; will become the popover&#39;s arrow.&lt;&#x2F;p&gt;
+            &lt;p&gt;The outermost wrapper element should have the &lt;code&gt;.popover&lt;&#x2F;code&gt; class.&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;title&lt;&#x2F;td&gt;
+          &lt;td&gt;string | function&lt;&#x2F;td&gt;
+          &lt;td&gt;&#39;&#39;&lt;&#x2F;td&gt;
+          &lt;td&gt;
+            &lt;p&gt;Default title value if &lt;code&gt;title&lt;&#x2F;code&gt; attribute isn&#39;t present.&lt;&#x2F;p&gt;
+            &lt;p&gt;If a function is given, it will be called with its &lt;code&gt;this&lt;&#x2F;code&gt; reference set to the element that the popover is attached to.&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;trigger&lt;&#x2F;td&gt;
+          &lt;td&gt;string&lt;&#x2F;td&gt;
+          &lt;td&gt;&#39;click&#39;&lt;&#x2F;td&gt;
+          &lt;td&gt;How popover is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space. &lt;code&gt;manual&lt;&#x2F;code&gt; cannot be combined with any other trigger.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;viewport&lt;&#x2F;td&gt;
+          &lt;td&gt;string | object | function&lt;&#x2F;td&gt;
+          &lt;td&gt;{ selector: &#39;body&#39;, padding: 0 }&lt;&#x2F;td&gt;
+          &lt;td&gt;
+            &lt;p&gt;Keeps the popover within the bounds of this element. Example: &lt;code&gt;viewport: &#39;#viewport&#39;&lt;&#x2F;code&gt; or &lt;code&gt;{ &quot;selector&quot;: &quot;#viewport&quot;, &quot;padding&quot;: 0 }&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+            &lt;p&gt;If a function is given, it is called with the triggering element DOM node as its only argument. The &lt;code&gt;this&lt;&#x2F;code&gt; context is set to the popover instance.&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.table-responsive --&gt;
+  &lt;div class=&quot;bs-callout bs-callout-info&quot; id=&quot;callout-popover-data&quot;&gt;
+    &lt;h4&gt;Data attributes for individual popovers&lt;&#x2F;h4&gt;
+    &lt;p&gt;Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;h3 id=&quot;popovers-methods&quot;&gt;Methods&lt;&#x2F;h3&gt;
+  &lt;h4&gt;&lt;code&gt;$().popover(options)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Initializes popovers for an element collection.&lt;&#x2F;p&gt;
+
+  &lt;h4&gt;&lt;code&gt;.popover(&#39;show&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Reveals an element&#39;s popover. &lt;strong&gt;Returns to the caller before the popover has actually been shown&lt;&#x2F;strong&gt; (i.e. before the &lt;code&gt;shown.bs.popover&lt;&#x2F;code&gt; event occurs). This is considered a &quot;manual&quot; triggering of the popover. Popovers whose both title and content are zero-length are never displayed.&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#element&#39;).popover(&#39;show&#39;)</code></pre>
+
+  &lt;h4&gt;&lt;code&gt;.popover(&#39;hide&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Hides an element&#39;s popover. &lt;strong&gt;Returns to the caller before the popover has actually been hidden&lt;&#x2F;strong&gt; (i.e. before the &lt;code&gt;hidden.bs.popover&lt;&#x2F;code&gt; event occurs). This is considered a &quot;manual&quot; triggering of the popover.&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#element&#39;).popover(&#39;hide&#39;)</code></pre>
+
+  &lt;h4&gt;&lt;code&gt;.popover(&#39;toggle&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Toggles an element&#39;s popover. &lt;strong&gt;Returns to the caller before the popover has actually been shown or hidden&lt;&#x2F;strong&gt; (i.e. before the &lt;code&gt;shown.bs.popover&lt;&#x2F;code&gt; or &lt;code&gt;hidden.bs.popover&lt;&#x2F;code&gt; event occurs). This is considered a &quot;manual&quot; triggering of the popover.&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#element&#39;).popover(&#39;toggle&#39;)</code></pre>
+
+  &lt;h4&gt;&lt;code&gt;.popover(&#39;destroy&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Hides and destroys an element&#39;s popover. Popovers that use delegation (which are created using &lt;a href=&quot;#popovers-options&quot;&gt;the &lt;code&gt;selector&lt;&#x2F;code&gt; option&lt;&#x2F;a&gt;) cannot be individually destroyed on descendant trigger elements.&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#element&#39;).popover(&#39;destroy&#39;)</code></pre>
+
+  &lt;h3 id=&quot;popovers-events&quot;&gt;Events&lt;&#x2F;h3&gt;
+  &lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-bordered table-striped bs-events-table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Event Type&lt;&#x2F;th&gt;
+          &lt;th&gt;Description&lt;&#x2F;th&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;show.bs.popover&lt;&#x2F;td&gt;
+          &lt;td&gt;This event fires immediately when the &lt;code&gt;show&lt;&#x2F;code&gt; instance method is called.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;shown.bs.popover&lt;&#x2F;td&gt;
+          &lt;td&gt;This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete).&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;hide.bs.popover&lt;&#x2F;td&gt;
+          &lt;td&gt;This event is fired immediately when the &lt;code&gt;hide&lt;&#x2F;code&gt; instance method has been called.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;hidden.bs.popover&lt;&#x2F;td&gt;
+          &lt;td&gt;This event is fired when the popover has finished being hidden from the user (will wait for CSS transitions to complete).&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;inserted.bs.popover&lt;&#x2F;td&gt;
+          &lt;td&gt;This event is fired after the &lt;code&gt;show.bs.popover&lt;&#x2F;code&gt; event when the popover template has been added to the DOM.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.table-responsive --&gt;
+{% highlight js %}
+$(&#39;#myPopover&#39;).on(&#39;hidden.bs.popover&#39;, function () {
+  &#x2F;&#x2F; do something…
+})
+</code></pre>
+</div>

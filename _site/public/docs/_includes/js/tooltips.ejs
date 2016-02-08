@@ -1,0 +1,276 @@
+<div class="bs-docs-section">
+  <h1 id="tooltips" class="page-header">Tooltips <small>tooltip.js</small></h1>
+  <p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don't rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+  <p>Tooltips with zero-length titles are never displayed.</p>
+
+  <h2 id="tooltips-examples">Examples</h2>
+  <p>Hover over the links below to see tooltips:</p>
+  <div class="bs-example tooltip-demo">
+    <p>Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.</p>
+  </div><!-- /example -->
+
+  <h3>Static tooltip</h3>
+  <p>Four options are available: top, right, bottom, and left aligned.</p>
+  <div class="bs-example bs-example-tooltip" data-example-id="static-tooltips">
+    <div class="tooltip left" role="tooltip">
+      <div class="tooltip-arrow"></div>
+      <div class="tooltip-inner">
+        Tooltip on the left
+      </div>
+    </div>
+    <div class="tooltip top" role="tooltip">
+      <div class="tooltip-arrow"></div>
+      <div class="tooltip-inner">
+        Tooltip on the top
+      </div>
+    </div>
+    <div class="tooltip bottom" role="tooltip">
+      <div class="tooltip-arrow"></div>
+      <div class="tooltip-inner">
+        Tooltip on the bottom
+      </div>
+    </div>
+    <div class="tooltip right" role="tooltip">
+      <div class="tooltip-arrow"></div>
+      <div class="tooltip-inner">
+        Tooltip on the right
+      </div>
+    </div>
+  </div>
+
+  <h3>Four directions</h3>
+  <div class="bs-example tooltip-demo">
+    <div class="bs-example-tooltips">
+      <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+      <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+      <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+      <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+    </div>
+  </div><!-- /example -->
+<pre><code class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Tooltip on left&quot;&gt;Tooltip on left&lt;&#x2F;button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;&gt;Tooltip on top&lt;&#x2F;button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;&gt;Tooltip on bottom&lt;&#x2F;button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Tooltip on right&quot;&gt;Tooltip on right&lt;&#x2F;button&gt;
+</code></pre>
+
+  &lt;div class=&quot;bs-callout bs-callout-danger&quot; id=&quot;callout-tooltip-opt-in&quot;&gt;
+    &lt;h4&gt;Opt-in functionality&lt;&#x2F;h4&gt;
+    &lt;p&gt;For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning &lt;strong&gt;you must initialize them yourself&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+    &lt;p&gt;One way to initialize all tooltips on a page would be to select them by their &lt;code&gt;data-toggle&lt;&#x2F;code&gt; attribute:&lt;&#x2F;p&gt;
+{% highlight js %}
+$(function () {
+  $(&#39;[data-toggle=&quot;tooltip&quot;]&#39;).tooltip()
+})
+</code></pre>
+
+  &lt;&#x2F;div&gt;
+
+  &lt;h2 id=&quot;tooltips-usage&quot;&gt;Usage&lt;&#x2F;h2&gt;
+  &lt;p&gt;The tooltip plugin generates content and markup on demand, and by default places tooltips after their trigger element.&lt;&#x2F;p&gt;
+  &lt;p&gt;Trigger the tooltip via JavaScript:&lt;&#x2F;p&gt;
+{% highlight js %}
+$(&#39;#example&#39;).tooltip(options)
+</code></pre>
+
+  &lt;h3&gt;Markup&lt;&#x2F;h3&gt;
+  &lt;p&gt;The required markup for a tooltip is only a &lt;code&gt;data&lt;&#x2F;code&gt; attribute and &lt;code&gt;title&lt;&#x2F;code&gt; on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to &lt;code&gt;top&lt;&#x2F;code&gt; by the plugin).&lt;&#x2F;p&gt;
+
+<pre><code class="html">
+&lt;!-- HTML to write --&gt;
+&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;Some tooltip text!&quot;&gt;Hover over me&lt;&#x2F;a&gt;
+
+&lt;!-- Generated markup by the plugin --&gt;
+&lt;div class=&quot;tooltip top&quot; role=&quot;tooltip&quot;&gt;
+  &lt;div class=&quot;tooltip-arrow&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;div class=&quot;tooltip-inner&quot;&gt;
+    Some tooltip text!
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-tooltip-multiline&quot;&gt;
+    &lt;h4&gt;Multiple-line links&lt;&#x2F;h4&gt;
+    &lt;p&gt;Sometimes you want to add a tooltip to a hyperlink that wraps multiple lines. The default behavior of the tooltip plugin is to center it horizontally and vertically. Add &lt;code&gt;white-space: nowrap;&lt;&#x2F;code&gt; to your anchors to avoid this.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-tooltip-groups&quot;&gt;
+    &lt;h4&gt;Tooltips in button groups, input groups, and tables require special setting&lt;&#x2F;h4&gt;
+    &lt;p&gt;When using tooltips on elements within a &lt;code&gt;.btn-group&lt;&#x2F;code&gt; or an &lt;code&gt;.input-group&lt;&#x2F;code&gt;, or on table-related elements (&lt;code&gt;&amp;lt;td&amp;gt;&lt;&#x2F;code&gt;, &lt;code&gt;&amp;lt;th&amp;gt;&lt;&#x2F;code&gt;, &lt;code&gt;&amp;lt;tr&amp;gt;&lt;&#x2F;code&gt;, &lt;code&gt;&amp;lt;thead&amp;gt;&lt;&#x2F;code&gt;, &lt;code&gt;&amp;lt;tbody&amp;gt;&lt;&#x2F;code&gt;, &lt;code&gt;&amp;lt;tfoot&amp;gt;&lt;&#x2F;code&gt;), you&#39;ll have to specify the option &lt;code&gt;container: &#39;body&#39;&lt;&#x2F;code&gt; (documented below) to avoid unwanted side effects (such as the element growing wider and&#x2F;or losing its rounded corners when the tooltip is triggered).&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-tooltip-hidden&quot;&gt;
+    &lt;h4&gt;Don&#39;t try to show tooltips on hidden elements&lt;&#x2F;h4&gt;
+    &lt;p&gt;Invoking &lt;code&gt;$(...).tooltip(&#39;show&#39;)&lt;&#x2F;code&gt; when the target element is &lt;code&gt;display: none;&lt;&#x2F;code&gt; will cause the tooltip to be incorrectly positioned.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-tooltip-accessibility&quot;&gt;
+    &lt;h4&gt;Accessible tooltips for keyboard and assistive technology users&lt;&#x2F;h4&gt;
+    &lt;p&gt;For users navigating with a keyboard, and in particular users of assistive technologies, you should only add tooltips to keyboard-focusable elements such as links, form controls, or any arbitrary element with a &lt;code&gt;tabindex=&quot;0&quot;&lt;&#x2F;code&gt; attribute.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-callout bs-callout-info&quot; id=&quot;callout-tooltip-disabled&quot;&gt;
+    &lt;h4&gt;Tooltips on disabled elements require wrapper elements&lt;&#x2F;h4&gt;
+    &lt;p&gt;To add a tooltip to a &lt;code&gt;disabled&lt;&#x2F;code&gt; or &lt;code&gt;.disabled&lt;&#x2F;code&gt; element, put the element inside of a &lt;code&gt;&amp;lt;div&amp;gt;&lt;&#x2F;code&gt; and apply the tooltip to that &lt;code&gt;&amp;lt;div&amp;gt;&lt;&#x2F;code&gt; instead.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;h3 id=&quot;tooltips-options&quot;&gt;Options&lt;&#x2F;h3&gt;
+  &lt;p&gt;Options can be passed via data attributes or JavaScript. For data attributes, append the option name to &lt;code&gt;data-&lt;&#x2F;code&gt;, as in &lt;code&gt;data-animation=&quot;&quot;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-bordered table-striped js-options-table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Name&lt;&#x2F;th&gt;
+          &lt;th&gt;Type&lt;&#x2F;th&gt;
+          &lt;th&gt;Default&lt;&#x2F;th&gt;
+          &lt;th&gt;Description&lt;&#x2F;th&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;animation&lt;&#x2F;td&gt;
+          &lt;td&gt;boolean&lt;&#x2F;td&gt;
+          &lt;td&gt;true&lt;&#x2F;td&gt;
+          &lt;td&gt;Apply a CSS fade transition to the tooltip&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;container&lt;&#x2F;td&gt;
+          &lt;td&gt;string | false&lt;&#x2F;td&gt;
+          &lt;td&gt;false&lt;&#x2F;td&gt;
+          &lt;td&gt;
+            &lt;p&gt;Appends the tooltip to a specific element. Example: &lt;code&gt;container: &#39;body&#39;&lt;&#x2F;code&gt;. This option is particularly useful in that it allows you to position the tooltip in the flow of the document  near the triggering element - which will prevent the tooltip from floating away from the triggering element during a window resize.&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;delay&lt;&#x2F;td&gt;
+          &lt;td&gt;number | object&lt;&#x2F;td&gt;
+          &lt;td&gt;0&lt;&#x2F;td&gt;
+          &lt;td&gt;
+            &lt;p&gt;Delay showing and hiding the tooltip (ms) - does not apply to manual trigger type&lt;&#x2F;p&gt;
+            &lt;p&gt;If a number is supplied, delay is applied to both hide&#x2F;show&lt;&#x2F;p&gt;
+            &lt;p&gt;Object structure is: &lt;code&gt;delay: { &quot;show&quot;: 500, &quot;hide&quot;: 100 }&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;html&lt;&#x2F;td&gt;
+          &lt;td&gt;boolean&lt;&#x2F;td&gt;
+          &lt;td&gt;false&lt;&#x2F;td&gt;
+          &lt;td&gt;Insert HTML into the tooltip. If false, jQuery&#39;s &lt;code&gt;text&lt;&#x2F;code&gt; method will be used to insert content into the DOM. Use text if you&#39;re worried about XSS attacks.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;placement&lt;&#x2F;td&gt;
+          &lt;td&gt;string | function&lt;&#x2F;td&gt;
+          &lt;td&gt;&#39;top&#39;&lt;&#x2F;td&gt;
+          &lt;td&gt;
+            &lt;p&gt;How to position the tooltip - top | bottom | left | right | auto.&lt;br&gt;When &quot;auto&quot; is specified, it will dynamically reorient the tooltip. For example, if placement is &quot;auto left&quot;, the tooltip will display to the left when possible, otherwise it will display right.&lt;&#x2F;p&gt;
+            &lt;p&gt;When a function is used to determine the placement, it is called with the tooltip DOM node as its first argument and the triggering element DOM node as its second. The &lt;code&gt;this&lt;&#x2F;code&gt; context is set to the tooltip instance.&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;selector&lt;&#x2F;td&gt;
+          &lt;td&gt;string&lt;&#x2F;td&gt;
+          &lt;td&gt;false&lt;&#x2F;td&gt;
+          &lt;td&gt;If a selector is provided, tooltip objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have tooltips added. See &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;twbs&#x2F;bootstrap&#x2F;issues&#x2F;4215&quot;&gt;this&lt;&#x2F;a&gt; and &lt;a href=&quot;http:&#x2F;&#x2F;jsbin.com&#x2F;zopod&#x2F;1&#x2F;edit&quot;&gt;an informative example&lt;&#x2F;a&gt;.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;template&lt;&#x2F;td&gt;
+          &lt;td&gt;string&lt;&#x2F;td&gt;
+          &lt;td&gt;&lt;code&gt;&#39;&amp;lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&amp;gt;&amp;lt;div class=&quot;tooltip-arrow&quot;&amp;gt;&amp;lt;&#x2F;div&amp;gt;&amp;lt;div class=&quot;tooltip-inner&quot;&amp;gt;&amp;lt;&#x2F;div&amp;gt;&amp;lt;&#x2F;div&amp;gt;&#39;&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;
+          &lt;td&gt;
+            &lt;p&gt;Base HTML to use when creating the tooltip.&lt;&#x2F;p&gt;
+            &lt;p&gt;The tooltip&#39;s &lt;code&gt;title&lt;&#x2F;code&gt; will be injected into the &lt;code&gt;.tooltip-inner&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+            &lt;p&gt;&lt;code&gt;.tooltip-arrow&lt;&#x2F;code&gt; will become the tooltip&#39;s arrow.&lt;&#x2F;p&gt;
+            &lt;p&gt;The outermost wrapper element should have the &lt;code&gt;.tooltip&lt;&#x2F;code&gt; class.&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;title&lt;&#x2F;td&gt;
+          &lt;td&gt;string | function&lt;&#x2F;td&gt;
+          &lt;td&gt;&#39;&#39;&lt;&#x2F;td&gt;
+          &lt;td&gt;
+            &lt;p&gt;Default title value if &lt;code&gt;title&lt;&#x2F;code&gt; attribute isn&#39;t present.&lt;&#x2F;p&gt;
+            &lt;p&gt;If a function is given, it will be called with its &lt;code&gt;this&lt;&#x2F;code&gt; reference set to the element that the tooltip is attached to.&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;trigger&lt;&#x2F;td&gt;
+          &lt;td&gt;string&lt;&#x2F;td&gt;
+          &lt;td&gt;&#39;hover focus&#39;&lt;&#x2F;td&gt;
+          &lt;td&gt;How tooltip is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space. &lt;code&gt;manual&lt;&#x2F;code&gt; cannot be combined with any other trigger.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;viewport&lt;&#x2F;td&gt;
+          &lt;td&gt;string | object | function&lt;&#x2F;td&gt;
+          &lt;td&gt;{ selector: &#39;body&#39;, padding: 0 }&lt;&#x2F;td&gt;
+          &lt;td&gt;
+            &lt;p&gt;Keeps the tooltip within the bounds of this element. Example: &lt;code&gt;viewport: &#39;#viewport&#39;&lt;&#x2F;code&gt; or &lt;code&gt;{ &quot;selector&quot;: &quot;#viewport&quot;, &quot;padding&quot;: 0 }&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+            &lt;p&gt;If a function is given, it is called with the triggering element DOM node as its only argument. The &lt;code&gt;this&lt;&#x2F;code&gt; context is set to the tooltip instance.&lt;&#x2F;p&gt;
+          &lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.table-responsive --&gt;
+  &lt;div class=&quot;bs-callout bs-callout-info&quot; id=&quot;callout-tooltip-data&quot;&gt;
+    &lt;h4&gt;Data attributes for individual tooltips&lt;&#x2F;h4&gt;
+    &lt;p&gt;Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;h3 id=&quot;tooltips-methods&quot;&gt;Methods&lt;&#x2F;h3&gt;
+
+  &lt;h4&gt;&lt;code&gt;$().tooltip(options)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Attaches a tooltip handler to an element collection.&lt;&#x2F;p&gt;
+
+  &lt;h4&gt;&lt;code&gt;.tooltip(&#39;show&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Reveals an element&#39;s tooltip. &lt;strong&gt;Returns to the caller before the tooltip has actually been shown&lt;&#x2F;strong&gt; (i.e. before the &lt;code&gt;shown.bs.tooltip&lt;&#x2F;code&gt; event occurs). This is considered a &quot;manual&quot; triggering of the tooltip. Tooltips with zero-length titles are never displayed.&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#element&#39;).tooltip(&#39;show&#39;)</code></pre>
+
+  &lt;h4&gt;&lt;code&gt;.tooltip(&#39;hide&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Hides an element&#39;s tooltip. &lt;strong&gt;Returns to the caller before the tooltip has actually been hidden&lt;&#x2F;strong&gt; (i.e. before the &lt;code&gt;hidden.bs.tooltip&lt;&#x2F;code&gt; event occurs). This is considered a &quot;manual&quot; triggering of the tooltip.&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#element&#39;).tooltip(&#39;hide&#39;)</code></pre>
+
+  &lt;h4&gt;&lt;code&gt;.tooltip(&#39;toggle&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Toggles an element&#39;s tooltip. &lt;strong&gt;Returns to the caller before the tooltip has actually been shown or hidden&lt;&#x2F;strong&gt; (i.e. before the &lt;code&gt;shown.bs.tooltip&lt;&#x2F;code&gt; or &lt;code&gt;hidden.bs.tooltip&lt;&#x2F;code&gt; event occurs). This is considered a &quot;manual&quot; triggering of the tooltip.&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#element&#39;).tooltip(&#39;toggle&#39;)</code></pre>
+
+  &lt;h4&gt;&lt;code&gt;.tooltip(&#39;destroy&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Hides and destroys an element&#39;s tooltip. Tooltips that use delegation (which are created using &lt;a href=&quot;#tooltips-options&quot;&gt;the &lt;code&gt;selector&lt;&#x2F;code&gt; option&lt;&#x2F;a&gt;) cannot be individually destroyed on descendant trigger elements.&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#element&#39;).tooltip(&#39;destroy&#39;)</code></pre>
+
+  &lt;h3 id=&quot;tooltips-events&quot;&gt;Events&lt;&#x2F;h3&gt;
+  &lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-bordered table-striped bs-events-table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Event Type&lt;&#x2F;th&gt;
+          &lt;th&gt;Description&lt;&#x2F;th&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;show.bs.tooltip&lt;&#x2F;td&gt;
+          &lt;td&gt;This event fires immediately when the &lt;code&gt;show&lt;&#x2F;code&gt; instance method is called.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;shown.bs.tooltip&lt;&#x2F;td&gt;
+          &lt;td&gt;This event is fired when the tooltip has been made visible to the user (will wait for CSS transitions to complete).&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;hide.bs.tooltip&lt;&#x2F;td&gt;
+          &lt;td&gt;This event is fired immediately when the &lt;code&gt;hide&lt;&#x2F;code&gt; instance method has been called.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;hidden.bs.tooltip&lt;&#x2F;td&gt;
+          &lt;td&gt;This event is fired when the tooltip has finished being hidden from the user (will wait for CSS transitions to complete).&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;inserted.bs.tooltip&lt;&#x2F;td&gt;
+          &lt;td&gt;This event is fired after the &lt;code&gt;show.bs.tooltip&lt;&#x2F;code&gt; event when the tooltip template has been added to the DOM.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.table-responsive --&gt;
+{% highlight js %}
+$(&#39;#myTooltip&#39;).on(&#39;hidden.bs.tooltip&#39;, function () {
+  &#x2F;&#x2F; do something…
+})
+</code></pre>
+</div>

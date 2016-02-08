@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  promo: {
+  less: {
     options: {
       replacements: '<%= config.replacements.less %>'
     },
@@ -12,6 +12,20 @@ module.exports = {
         src: ['bootstrap.less'],
         dest: '<%= config.dev.style %>/vendor',
         ext: '.less'
+      }
+    ]
+  },
+  ejs: {
+    options: {
+      replacements: '<%= config.replacements.bootstrap %>'
+    },
+    files: [
+      {
+        expand: true,
+        cwd: '_site/public/docs/_includes/',
+        src: ['**/*.html'],
+        dest: '_site/public/docs/_includes/',
+        ext: '.ejs'
       }
     ]
   }

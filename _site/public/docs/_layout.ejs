@@ -34,24 +34,28 @@
           <div class="panel panel-default">
             <!-- Default panel contents -->
             <div class="panel-heading">
-              <%- title %>
+              Browser View:
             </div>
             <div class="panel-body">
               <%- yield %>
             </div>
+          <% if (current.path[1] !== "collections") { %>
             <div class="panel-footer">
               Code:
-              <pre><code><%= yield %></code></pre>
+              <pre><code class="language-html">
+<%= yield %>
+              </code></pre>
             </div>
+          <% }; %>
           </div>
           
-          <!-- For debuging: <pre><%- JSON.stringify(public.docs, null, '\t') %></pre> -->
-          <!-- For debuging: <pre><%- JSON.stringify(current, null, '\t') %></pre> -->
+          <!-- For debuging: <pre>< %- JSON.stringify(public.docs, null, '\t') %></pre> -->
+          <!-- For debuging: <pre>< %- JSON.stringify(current, null, '\t') %></pre> -->
 
         </article>
         <aside id="aside" class="aside " role="sidebar">
           <% if (current.path.length > 2) { %>
-             <%- partial("_partials/_navmenu", { navItems: public.docs.elements._data }) %>
+             <%- partial("_partials/_navmenu", { navItems: public.docs[current.path[1]]._data }) %>
           <% }; %>
         </aside>
       </div>

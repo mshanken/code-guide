@@ -1,6 +1,11 @@
 {
 	"index": {
 		"title": "",
+		"name": "",
+		"layout": "_layoutAll"
+	},
+	"grid": {
+		"title": "grid",
 		"name": ""
 	}
 }

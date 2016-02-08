@@ -1,0 +1,89 @@
+<div class="bs-docs-section">
+  <h1 id="alerts" class="page-header">Alerts</h1>
+
+  <p class="lead">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+
+  <h2 id="alerts-examples">Examples</h2>
+  <p>Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual classes (e.g., <code>.alert-success</code>) for basic alert messages.</p>
+
+  <div class="bs-callout bs-callout-info" id="callout-alerts-no-default">
+    <h4>No default class</h4>
+    <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p>
+  </div>
+
+  <div class="bs-example" data-example-id="simple-alerts">
+    <div class="alert alert-success" role="alert">
+      <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    <div class="alert alert-info" role="alert">
+      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    </div>
+    <div class="alert alert-warning" role="alert">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+    <div class="alert alert-danger" role="alert">
+      <strong>Oh snap!</strong> Change a few things up and try submitting again.
+    </div>
+  </div>
+<pre><code class="html">
+&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;...&lt;&#x2F;div&gt;
+&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;...&lt;&#x2F;div&gt;
+&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;...&lt;&#x2F;div&gt;
+&lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;...&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;alerts-dismissible&quot;&gt;Dismissible alerts&lt;&#x2F;h2&gt;
+  &lt;p&gt;Build on any alert by adding an optional &lt;code&gt;.alert-dismissible&lt;&#x2F;code&gt; and close button.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-callout bs-callout-info&quot; id=&quot;callout-alerts-dismiss-plugin&quot;&gt;
+    &lt;h4&gt;Requires JavaScript alert plugin&lt;&#x2F;h4&gt;
+    &lt;p&gt;For fully functioning, dismissible alerts, you must use the &lt;a href=&quot;..&#x2F;javascript&#x2F;#alerts&quot;&gt;alerts JavaScript plugin&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;dismissible-alert-css&quot;&gt;
+    &lt;div class=&quot;alert alert-warning alert-dismissible&quot; role=&quot;alert&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+      &lt;strong&gt;Warning!&lt;&#x2F;strong&gt; Better check yourself, you&#39;re not looking too good.
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;alert alert-warning alert-dismissible&quot; role=&quot;alert&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+  &lt;strong&gt;Warning!&lt;&#x2F;strong&gt; Better check yourself, you&#39;re not looking too good.
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-alerts-dismiss-use-button&quot;&gt;
+    &lt;h4&gt;Ensure proper behavior across all devices&lt;&#x2F;h4&gt;
+    &lt;p&gt;Be sure to use the &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt; element with the &lt;code&gt;data-dismiss=&quot;alert&quot;&lt;&#x2F;code&gt; data attribute.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;h2 id=&quot;alerts-links&quot;&gt;Links in alerts&lt;&#x2F;h2&gt;
+  &lt;p&gt;Use the &lt;code&gt;.alert-link&lt;&#x2F;code&gt; utility class to quickly provide matching colored links within any alert.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;alerts-with-links&quot;&gt;
+    &lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;
+      &lt;strong&gt;Well done!&lt;&#x2F;strong&gt; You successfully read &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;this important alert message&lt;&#x2F;a&gt;.
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;
+      &lt;strong&gt;Heads up!&lt;&#x2F;strong&gt; This &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;alert needs your attention&lt;&#x2F;a&gt;, but it&#39;s not super important.
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;
+      &lt;strong&gt;Warning!&lt;&#x2F;strong&gt; Better check yourself, you&#39;re &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;not looking too good&lt;&#x2F;a&gt;.
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;
+      &lt;strong&gt;Oh snap!&lt;&#x2F;strong&gt; &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;Change a few things up&lt;&#x2F;a&gt; and try submitting again.
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;...&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;...&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;...&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;...&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+</div>

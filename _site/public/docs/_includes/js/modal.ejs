@@ -1,0 +1,520 @@
+<div class="bs-docs-section">
+  <h1 id="modals" class="page-header">Modals <small>modal.js</small></h1>
+  <p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+
+  <div class="bs-callout bs-callout-warning" id="callout-stacked-modals">
+    <h4>Multiple open modals not supported</h4>
+    <p>Be sure not to open a modal while another is still visible. Showing more than one modal at a time requires custom code.</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-modal-markup-placement">
+    <h4>Modal markup placement</h4>
+    <p>Always try to place a modal's HTML code in a top-level position in your document to avoid other components affecting the modal's appearance and/or functionality.</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-modal-mobile-caveats">
+    <h4>Mobile device caveats</h4>
+    <p>There are some caveats regarding using modals on mobile devices. <a href="../getting-started/#support-fixed-position-keyboards">See our browser support docs</a> for details.</p>
+  </div>
+
+  <p><strong class="text-danger">Due to how HTML5 defines its semantics, the <code>autofocus</code> HTML attribute has no effect in Bootstrap modals.</strong> To achieve the same effect, use some custom JavaScript:</p>
+{% highlight js %}
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+</code></pre>
+
+  <h2 id="modals-examples">Examples</h2>
+
+  <h3>Static example</h3>
+  <p>A rendered modal with header, body, and set of actions in the footer.</p>
+  <div class="bs-example bs-example-modal" data-example-id="static-modal">
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+  </div><!-- /example -->
+<pre><code class="html">
+&lt;div class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal title&lt;&#x2F;h4&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;One fine body&amp;hellip;&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;&#x2F;button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;&#x2F;button&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal-content --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal-dialog --&gt;
+&lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal --&gt;
+</code></pre>
+
+  &lt;h3&gt;Live demo&lt;&#x2F;h3&gt;
+  &lt;p&gt;Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.&lt;&#x2F;p&gt;
+  &lt;!-- sample modal content --&gt;
+  &lt;div id=&quot;myModal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+      &lt;div class=&quot;modal-content&quot;&gt;
+
+        &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+          &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Modal title&lt;&#x2F;h4&gt;
+        &lt;&#x2F;div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+          &lt;h4&gt;Text in a modal&lt;&#x2F;h4&gt;
+          &lt;p&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;&#x2F;p&gt;
+
+          &lt;h4&gt;Popover in a modal&lt;&#x2F;h4&gt;
+          &lt;p&gt;This &lt;a href=&quot;#&quot; role=&quot;button&quot; class=&quot;btn btn-default popover-test&quot; title=&quot;A Title&quot; data-content=&quot;And here&#39;s some amazing content. It&#39;s very engaging. right?&quot;&gt;button&lt;&#x2F;a&gt; should trigger a popover on click.&lt;&#x2F;p&gt;
+
+          &lt;h4&gt;Tooltips in a modal&lt;&#x2F;h4&gt;
+          &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;tooltip-test&quot; title=&quot;Tooltip&quot;&gt;This link&lt;&#x2F;a&gt; and &lt;a href=&quot;#&quot; class=&quot;tooltip-test&quot; title=&quot;Tooltip&quot;&gt;that link&lt;&#x2F;a&gt; should have tooltips on hover.&lt;&#x2F;p&gt;
+
+          &lt;hr&gt;
+
+          &lt;h4&gt;Overflowing text to show scroll behavior&lt;&#x2F;h4&gt;
+          &lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;&#x2F;p&gt;
+          &lt;p&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.&lt;&#x2F;p&gt;
+          &lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.&lt;&#x2F;p&gt;
+          &lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;&#x2F;p&gt;
+          &lt;p&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.&lt;&#x2F;p&gt;
+          &lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.&lt;&#x2F;p&gt;
+          &lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;&#x2F;p&gt;
+          &lt;p&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.&lt;&#x2F;p&gt;
+          &lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.&lt;&#x2F;p&gt;
+        &lt;&#x2F;div&gt;
+        &lt;div class=&quot;modal-footer&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;&#x2F;button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;&#x2F;button&gt;
+        &lt;&#x2F;div&gt;
+
+      &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal-content --&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal-dialog --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal --&gt;
+
+  &lt;div class=&quot;bs-example bs-example-padded-bottom&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;
+      Launch demo modal
+    &lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;example --&gt;
+<pre><code class="html">
+&lt;!-- Button trigger modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;
+  Launch demo modal
+&lt;&#x2F;button&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+        &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Modal title&lt;&#x2F;h4&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        ...
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;&#x2F;button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;&#x2F;button&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-modal-accessibility&quot;&gt;
+    &lt;h4&gt;Make modals accessible&lt;&#x2F;h4&gt;
+    &lt;p&gt;Be sure to add &lt;code&gt;role=&quot;dialog&quot;&lt;&#x2F;code&gt; and &lt;code&gt;aria-labelledby=&quot;...&quot;&lt;&#x2F;code&gt;, referencing the modal title, to &lt;code&gt;.modal&lt;&#x2F;code&gt;, and &lt;code&gt;role=&quot;document&quot;&lt;&#x2F;code&gt; to the &lt;code&gt;.modal-dialog&lt;&#x2F;code&gt;  itself.&lt;&#x2F;p&gt;
+    &lt;p&gt;Additionally, you may give a description of your modal dialog with &lt;code&gt;aria-describedby&lt;&#x2F;code&gt; on &lt;code&gt;.modal&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;div class=&quot;bs-callout bs-callout-info&quot; id=&quot;callout-modal-youtube&quot;&gt;
+    &lt;h4&gt;Embedding YouTube videos&lt;&#x2F;h4&gt;
+    &lt;p&gt;Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. &lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;18622508&#x2F;bootstrap-3-and-youtube-in-modal&quot;&gt;See this helpful Stack Overflow post&lt;&#x2F;a&gt; for more information.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;h2 id=&quot;modals-sizes&quot;&gt;Optional sizes&lt;&#x2F;h2&gt;
+  &lt;p&gt;Modals have two optional sizes, available via modifier classes to be placed on a &lt;code&gt;.modal-dialog&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;.bs-example-modal-lg&quot;&gt;Large modal&lt;&#x2F;button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;.bs-example-modal-sm&quot;&gt;Small modal&lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;!-- Large modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;.bs-example-modal-lg&quot;&gt;Large modal&lt;&#x2F;button&gt;
+
+&lt;div class=&quot;modal fade bs-example-modal-lg&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myLargeModalLabel&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      ...
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- Small modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;.bs-example-modal-sm&quot;&gt;Small modal&lt;&#x2F;button&gt;
+
+&lt;div class=&quot;modal fade bs-example-modal-sm&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;mySmallModalLabel&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      ...
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;!--  Modal content for the above example --&gt;
+  &lt;div class=&quot;modal fade bs-example-modal-lg&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myLargeModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+      &lt;div class=&quot;modal-content&quot;&gt;
+
+        &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+          &lt;h4 class=&quot;modal-title&quot; id=&quot;myLargeModalLabel&quot;&gt;Large modal&lt;&#x2F;h4&gt;
+        &lt;&#x2F;div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+          ...
+        &lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal-content --&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal-dialog --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal --&gt;
+  &lt;div class=&quot;modal fade bs-example-modal-sm&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;mySmallModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+      &lt;div class=&quot;modal-content&quot;&gt;
+
+        &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+          &lt;h4 class=&quot;modal-title&quot; id=&quot;mySmallModalLabel&quot;&gt;Small modal&lt;&#x2F;h4&gt;
+        &lt;&#x2F;div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+          ...
+        &lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal-content --&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal-dialog --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal --&gt;
+
+  &lt;h2 id=&quot;modals-remove-animation&quot;&gt;Remove animation&lt;&#x2F;h2&gt;
+  &lt;p&gt;For modals that simply appear rather than fade in to view, remove the &lt;code&gt;.fade&lt;&#x2F;code&gt; class from your modal markup.&lt;&#x2F;p&gt;
+<pre><code class="html">
+&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;...&quot;&gt;
+  ...
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;modals-grid-system&quot;&gt;Using the grid system&lt;&#x2F;h2&gt;
+  &lt;p&gt;To take advantage of the Bootstrap grid system within a modal, just nest &lt;code&gt;.row&lt;&#x2F;code&gt;s within the &lt;code&gt;.modal-body&lt;&#x2F;code&gt; and then use the normal grid system classes.&lt;&#x2F;p&gt;
+&lt;!-- sample modal content --&gt;
+  &lt;div id=&quot;gridSystemModal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;gridModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+      &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+          &lt;h4 class=&quot;modal-title&quot; id=&quot;gridModalLabel&quot;&gt;Modal title&lt;&#x2F;h4&gt;
+        &lt;&#x2F;div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;&#x2F;div&gt;
+            &lt;div class=&quot;col-md-4 col-md-offset-4&quot;&gt;.col-md-4 .col-md-offset-4&lt;&#x2F;div&gt;
+          &lt;&#x2F;div&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-3 col-md-offset-3&quot;&gt;.col-md-3 .col-md-offset-3&lt;&#x2F;div&gt;
+            &lt;div class=&quot;col-md-2 col-md-offset-4&quot;&gt;.col-md-2 .col-md-offset-4&lt;&#x2F;div&gt;
+          &lt;&#x2F;div&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-6 col-md-offset-3&quot;&gt;.col-md-6 .col-md-offset-3&lt;&#x2F;div&gt;
+          &lt;&#x2F;div&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-sm-9&quot;&gt;
+              Level 1: .col-sm-9
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-xs-8 col-sm-6&quot;&gt;
+                  Level 2: .col-xs-8 .col-sm-6
+                &lt;&#x2F;div&gt;
+                &lt;div class=&quot;col-xs-4 col-sm-6&quot;&gt;
+                  Level 2: .col-xs-4 .col-sm-6
+                &lt;&#x2F;div&gt;
+              &lt;&#x2F;div&gt;
+            &lt;&#x2F;div&gt;
+          &lt;&#x2F;div&gt;
+        &lt;&#x2F;div&gt;
+        &lt;div class=&quot;modal-footer&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;&#x2F;button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;&#x2F;button&gt;
+        &lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal-content --&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal-dialog --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal --&gt;
+&lt;div class=&quot;bs-example bs-example-padded-bottom&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#gridSystemModal&quot;&gt;
+    Launch demo modal
+  &lt;&#x2F;button&gt;
+&lt;&#x2F;div&gt;&lt;!-- &#x2F;example --&gt;
+<pre><code class="html">
+&lt;div class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;gridSystemModalLabel&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+        &lt;h4 class=&quot;modal-title&quot; id=&quot;gridSystemModalLabel&quot;&gt;Modal title&lt;&#x2F;h4&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;&#x2F;div&gt;
+          &lt;div class=&quot;col-md-4 col-md-offset-4&quot;&gt;.col-md-4 .col-md-offset-4&lt;&#x2F;div&gt;
+        &lt;&#x2F;div&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-3 col-md-offset-3&quot;&gt;.col-md-3 .col-md-offset-3&lt;&#x2F;div&gt;
+          &lt;div class=&quot;col-md-2 col-md-offset-4&quot;&gt;.col-md-2 .col-md-offset-4&lt;&#x2F;div&gt;
+        &lt;&#x2F;div&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-6 col-md-offset-3&quot;&gt;.col-md-6 .col-md-offset-3&lt;&#x2F;div&gt;
+        &lt;&#x2F;div&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-sm-9&quot;&gt;
+            Level 1: .col-sm-9
+            &lt;div class=&quot;row&quot;&gt;
+              &lt;div class=&quot;col-xs-8 col-sm-6&quot;&gt;
+                Level 2: .col-xs-8 .col-sm-6
+              &lt;&#x2F;div&gt;
+              &lt;div class=&quot;col-xs-4 col-sm-6&quot;&gt;
+                Level 2: .col-xs-4 .col-sm-6
+              &lt;&#x2F;div&gt;
+            &lt;&#x2F;div&gt;
+          &lt;&#x2F;div&gt;
+        &lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;&#x2F;button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;&#x2F;button&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal-content --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal-dialog --&gt;
+&lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal --&gt;
+
+</code></pre>
+
+  &lt;h2 id=&quot;modals-related-target&quot;&gt;Varying modal content based on trigger button&lt;&#x2F;h2&gt;
+  &lt;p&gt;Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use &lt;code&gt;event.relatedTarget&lt;&#x2F;code&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;Guide&#x2F;HTML&#x2F;Using_data_attributes&quot;&gt;HTML &lt;code&gt;data-*&lt;&#x2F;code&gt; attributes&lt;&#x2F;a&gt; (possibly &lt;a href=&quot;http:&#x2F;&#x2F;api.jquery.com&#x2F;data&#x2F;&quot;&gt;via jQuery&lt;&#x2F;a&gt;) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on &lt;code&gt;relatedTarget&lt;&#x2F;code&gt;,&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; data-whatever=&quot;@mdo&quot;&gt;Open modal for @mdo&lt;&#x2F;button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; data-whatever=&quot;@fat&quot;&gt;Open modal for @fat&lt;&#x2F;button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; data-whatever=&quot;@getbootstrap&quot;&gt;Open modal for @getbootstrap&lt;&#x2F;button&gt;
+    ...more buttons...
+
+    &lt;div class=&quot;modal fade&quot; id=&quot;exampleModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot;&gt;
+      &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+          &lt;div class=&quot;modal-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+            &lt;h4 class=&quot;modal-title&quot; id=&quot;exampleModalLabel&quot;&gt;New message&lt;&#x2F;h4&gt;
+          &lt;&#x2F;div&gt;
+          &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;form&gt;
+              &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Recipient:&lt;&#x2F;label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;recipient-name&quot;&gt;
+              &lt;&#x2F;div&gt;
+              &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;message-text&quot; class=&quot;control-label&quot;&gt;Message:&lt;&#x2F;label&gt;
+                &lt;textarea class=&quot;form-control&quot; id=&quot;message-text&quot;&gt;&lt;&#x2F;textarea&gt;
+              &lt;&#x2F;div&gt;
+            &lt;&#x2F;form&gt;
+          &lt;&#x2F;div&gt;
+          &lt;div class=&quot;modal-footer&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;&#x2F;button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Send message&lt;&#x2F;button&gt;
+          &lt;&#x2F;div&gt;
+        &lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;&lt;!-- &#x2F;.modal --&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.bs-example --&gt;
+<pre><code class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; data-whatever=&quot;@mdo&quot;&gt;Open modal for @mdo&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; data-whatever=&quot;@fat&quot;&gt;Open modal for @fat&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; data-whatever=&quot;@getbootstrap&quot;&gt;Open modal for @getbootstrap&lt;&#x2F;button&gt;
+...more buttons...
+
+&lt;div class=&quot;modal fade&quot; id=&quot;exampleModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+        &lt;h4 class=&quot;modal-title&quot; id=&quot;exampleModalLabel&quot;&gt;New message&lt;&#x2F;h4&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;form&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Recipient:&lt;&#x2F;label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;recipient-name&quot;&gt;
+          &lt;&#x2F;div&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;message-text&quot; class=&quot;control-label&quot;&gt;Message:&lt;&#x2F;label&gt;
+            &lt;textarea class=&quot;form-control&quot; id=&quot;message-text&quot;&gt;&lt;&#x2F;textarea&gt;
+          &lt;&#x2F;div&gt;
+        &lt;&#x2F;form&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;&#x2F;button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Send message&lt;&#x2F;button&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+{% highlight js %}
+$(&#39;#exampleModal&#39;).on(&#39;show.bs.modal&#39;, function (event) {
+  var button = $(event.relatedTarget) &#x2F;&#x2F; Button that triggered the modal
+  var recipient = button.data(&#39;whatever&#39;) &#x2F;&#x2F; Extract info from data-* attributes
+  &#x2F;&#x2F; If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  &#x2F;&#x2F; Update the modal&#39;s content. We&#39;ll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find(&#39;.modal-title&#39;).text(&#39;New message to &#39; + recipient)
+  modal.find(&#39;.modal-body input&#39;).val(recipient)
+})
+</code></pre>
+
+  &lt;h2 id=&quot;modals-usage&quot;&gt;Usage&lt;&#x2F;h2&gt;
+  &lt;p&gt;The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds &lt;code&gt;.modal-open&lt;&#x2F;code&gt; to the &lt;code&gt;&amp;lt;body&amp;gt;&lt;&#x2F;code&gt; to override default scrolling behavior and generates a &lt;code&gt;.modal-backdrop&lt;&#x2F;code&gt; to provide a click area for dismissing shown modals when clicking outside the modal.&lt;&#x2F;p&gt;
+
+  &lt;h3&gt;Via data attributes&lt;&#x2F;h3&gt;
+  &lt;p&gt;Activate a modal without writing JavaScript. Set &lt;code&gt;data-toggle=&quot;modal&quot;&lt;&#x2F;code&gt; on a controller element, like a button, along with a &lt;code&gt;data-target=&quot;#foo&quot;&lt;&#x2F;code&gt; or &lt;code&gt;href=&quot;#foo&quot;&lt;&#x2F;code&gt; to target a specific modal to toggle.&lt;&#x2F;p&gt;
+<pre><code class="html">
+&lt;button type=&quot;button&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Launch modal&lt;&#x2F;button&gt;
+</code></pre>
+
+  &lt;h3&gt;Via JavaScript&lt;&#x2F;h3&gt;
+  &lt;p&gt;Call a modal with id &lt;code&gt;myModal&lt;&#x2F;code&gt; with a single line of JavaScript:&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#myModal&#39;).modal(options)</code></pre>
+
+  &lt;h3 id=&quot;modals-options&quot;&gt;Options&lt;&#x2F;h3&gt;
+  &lt;p&gt;Options can be passed via data attributes or JavaScript. For data attributes, append the option name to &lt;code&gt;data-&lt;&#x2F;code&gt;, as in &lt;code&gt;data-backdrop=&quot;&quot;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-bordered table-striped js-options-table&quot;&gt;
+      &lt;thead&gt;
+       &lt;tr&gt;
+         &lt;th&gt;Name&lt;&#x2F;th&gt;
+         &lt;th&gt;type&lt;&#x2F;th&gt;
+         &lt;th&gt;default&lt;&#x2F;th&gt;
+         &lt;th&gt;description&lt;&#x2F;th&gt;
+       &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+       &lt;tr&gt;
+         &lt;td&gt;backdrop&lt;&#x2F;td&gt;
+         &lt;td&gt;boolean or the string &lt;code&gt;&#39;static&#39;&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;
+         &lt;td&gt;true&lt;&#x2F;td&gt;
+         &lt;td&gt;Includes a modal-backdrop element. Alternatively, specify &lt;code&gt;static&lt;&#x2F;code&gt; for a backdrop which doesn&#39;t close the modal on click.&lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+       &lt;tr&gt;
+         &lt;td&gt;keyboard&lt;&#x2F;td&gt;
+         &lt;td&gt;boolean&lt;&#x2F;td&gt;
+         &lt;td&gt;true&lt;&#x2F;td&gt;
+         &lt;td&gt;Closes the modal when escape key is pressed&lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+       &lt;tr&gt;
+         &lt;td&gt;show&lt;&#x2F;td&gt;
+         &lt;td&gt;boolean&lt;&#x2F;td&gt;
+         &lt;td&gt;true&lt;&#x2F;td&gt;
+         &lt;td&gt;Shows the modal when initialized.&lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+       &lt;tr&gt;
+         &lt;td&gt;remote&lt;&#x2F;td&gt;
+         &lt;td&gt;path&lt;&#x2F;td&gt;
+         &lt;td&gt;false&lt;&#x2F;td&gt;
+         &lt;td&gt;
+          &lt;p&gt;&lt;strong class=&quot;text-danger&quot;&gt;This option is deprecated since v3.3.0 and has been removed in v4.&lt;&#x2F;strong&gt; We recommend instead using client-side templating or a data binding framework, or calling &lt;a href=&quot;http:&#x2F;&#x2F;api.jquery.com&#x2F;load&#x2F;&quot;&gt;jQuery.load&lt;&#x2F;a&gt; yourself.&lt;&#x2F;p&gt;
+          &lt;p&gt;If a remote URL is provided, &lt;strong&gt;content will be loaded one time&lt;&#x2F;strong&gt; via jQuery&#39;s &lt;code&gt;load&lt;&#x2F;code&gt; method and injected into the &lt;code&gt;.modal-content&lt;&#x2F;code&gt; div. If you&#39;re using the data-api, you may alternatively use the &lt;code&gt;href&lt;&#x2F;code&gt; attribute to specify the remote source. An example of this is shown below:&lt;&#x2F;p&gt;
+<pre><code class="html">
+&lt;a data-toggle=&quot;modal&quot; href=&quot;remote.html&quot; data-target=&quot;#modal&quot;&gt;Click me&lt;&#x2F;a&gt;
+</code></pre>
+         &lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.table-responsive --&gt;
+
+  &lt;h3 id=&quot;modals-methods&quot;&gt;Methods&lt;&#x2F;h3&gt;
+
+  &lt;h4&gt;&lt;code&gt;.modal(options)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Activates your content as a modal. Accepts an optional options &lt;code&gt;object&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+{% highlight js %}
+$(&#39;#myModal&#39;).modal({
+  keyboard: false
+})
+</code></pre>
+
+  &lt;h4&gt;&lt;code&gt;.modal(&#39;toggle&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Manually toggles a modal. &lt;strong&gt;Returns to the caller before the modal has actually been shown or hidden&lt;&#x2F;strong&gt; (i.e. before the &lt;code&gt;shown.bs.modal&lt;&#x2F;code&gt; or &lt;code&gt;hidden.bs.modal&lt;&#x2F;code&gt; event occurs).&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#myModal&#39;).modal(&#39;toggle&#39;)</code></pre>
+
+  &lt;h4&gt;&lt;code&gt;.modal(&#39;show&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Manually opens a modal. &lt;strong&gt;Returns to the caller before the modal has actually been shown&lt;&#x2F;strong&gt; (i.e. before the &lt;code&gt;shown.bs.modal&lt;&#x2F;code&gt; event occurs).&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#myModal&#39;).modal(&#39;show&#39;)</code></pre>
+
+  &lt;h4&gt;&lt;code&gt;.modal(&#39;hide&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Manually hides a modal. &lt;strong&gt;Returns to the caller before the modal has actually been hidden&lt;&#x2F;strong&gt; (i.e. before the &lt;code&gt;hidden.bs.modal&lt;&#x2F;code&gt; event occurs).&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#myModal&#39;).modal(&#39;hide&#39;)</code></pre>
+
+  &lt;h4&gt;&lt;code&gt;.modal(&#39;handleUpdate&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Readjusts the modal&#39;s positioning to counter a scrollbar in case one should appear, which would make the modal jump to the left.&lt;&#x2F;p&gt;
+  &lt;p&gt;Only needed when the height of the modal changes while it is open.&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#myModal&#39;).modal(&#39;handleUpdate&#39;)</code></pre>
+
+  &lt;h3 id=&quot;modals-events&quot;&gt;Events&lt;&#x2F;h3&gt;
+  &lt;p&gt;Bootstrap&#39;s modal class exposes a few events for hooking into modal functionality.&lt;&#x2F;p&gt;
+  &lt;p&gt;All modal events are fired at the modal itself (i.e. at the &lt;code&gt;&amp;lt;div class=&quot;modal&quot;&amp;gt;&lt;&#x2F;code&gt;).&lt;&#x2F;p&gt;
+  &lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-bordered table-striped bs-events-table&quot;&gt;
+      &lt;thead&gt;
+       &lt;tr&gt;
+         &lt;th&gt;Event Type&lt;&#x2F;th&gt;
+         &lt;th&gt;Description&lt;&#x2F;th&gt;
+       &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+       &lt;tr&gt;
+         &lt;td&gt;show.bs.modal&lt;&#x2F;td&gt;
+         &lt;td&gt;This event fires immediately when the &lt;code&gt;show&lt;&#x2F;code&gt; instance method is called. If caused by a click, the clicked element is available as the &lt;code&gt;relatedTarget&lt;&#x2F;code&gt; property of the event.&lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+       &lt;tr&gt;
+         &lt;td&gt;shown.bs.modal&lt;&#x2F;td&gt;
+         &lt;td&gt;This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the &lt;code&gt;relatedTarget&lt;&#x2F;code&gt; property of the event.&lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+       &lt;tr&gt;
+         &lt;td&gt;hide.bs.modal&lt;&#x2F;td&gt;
+         &lt;td&gt;This event is fired immediately when the &lt;code&gt;hide&lt;&#x2F;code&gt; instance method has been called.&lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+       &lt;tr&gt;
+         &lt;td&gt;hidden.bs.modal&lt;&#x2F;td&gt;
+         &lt;td&gt;This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).&lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+       &lt;tr&gt;
+         &lt;td&gt;loaded.bs.modal&lt;&#x2F;td&gt;
+         &lt;td&gt;This event is fired when the modal has loaded content using the &lt;code&gt;remote&lt;&#x2F;code&gt; option.&lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.table-responsive --&gt;
+{% highlight js %}
+$(&#39;#myModal&#39;).on(&#39;hidden.bs.modal&#39;, function (e) {
+  &#x2F;&#x2F; do something...
+})
+</code></pre>
+</div>

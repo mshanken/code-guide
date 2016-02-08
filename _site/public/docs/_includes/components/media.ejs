@@ -1,0 +1,207 @@
+<div class="bs-docs-section">
+  <h1 id="media" class="page-header">Media object</h1>
+
+  <p class="lead">Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.</p>
+
+  <h2 id="media-default">Default media</h2>
+  <p>The default media displays a media object (images, video, audio) to the left or right of a content block.</p>
+  <div class="bs-example" data-example-id="default-media">
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </div>
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Nested media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+      </div>
+      <div class="media-right">
+        <a href="#">
+          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+        </a>
+      </div>
+    </div>
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+      </div>
+      <div class="media-right">
+        <a href="#">
+          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+        </a>
+      </div>
+    </div>
+  </div><!-- /.bs-example -->
+<pre><code class="html">
+&lt;div class=&quot;media&quot;&gt;
+  &lt;div class=&quot;media-left&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;media-object&quot; src=&quot;...&quot; alt=&quot;...&quot;&gt;
+    &lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;&#x2F;h4&gt;
+    ...
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;p&gt;The classes &lt;code&gt;.pull-left&lt;&#x2F;code&gt; and &lt;code&gt;.pull-right&lt;&#x2F;code&gt; also exist and were previously used as part of the media component, but are deprecated for that use as of v3.3.0. They are approximately equivalent to &lt;code&gt;.media-left&lt;&#x2F;code&gt; and &lt;code&gt;.media-right&lt;&#x2F;code&gt;, except that &lt;code&gt;.media-right&lt;&#x2F;code&gt; should be placed after the &lt;code&gt;.media-body&lt;&#x2F;code&gt; in the html.&lt;&#x2F;p&gt;
+  &lt;h2 id=&quot;media-alignment&quot;&gt;Media alignment&lt;&#x2F;h2&gt;
+  &lt;p&gt;The images or other media can be aligned top, middle, or bottom. The default is top aligned.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;media-alignment&quot;&gt;
+    &lt;div class=&quot;media&quot;&gt;
+      &lt;div class=&quot;media-left&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot; alt=&quot;Generic placeholder image&quot;&gt;
+        &lt;&#x2F;a&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;media-body&quot;&gt;
+        &lt;h4 class=&quot;media-heading&quot;&gt;Top aligned media&lt;&#x2F;h4&gt;
+        &lt;p&gt;Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.&lt;&#x2F;p&gt;
+        &lt;p&gt;Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;media&quot;&gt;
+      &lt;div class=&quot;media-left media-middle&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot; alt=&quot;Generic placeholder image&quot;&gt;
+        &lt;&#x2F;a&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;media-body&quot;&gt;
+        &lt;h4 class=&quot;media-heading&quot;&gt;Middle aligned media&lt;&#x2F;h4&gt;
+        &lt;p&gt;Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.&lt;&#x2F;p&gt;
+        &lt;p&gt;Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;media&quot;&gt;
+      &lt;div class=&quot;media-left media-bottom&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot; alt=&quot;Generic placeholder image&quot;&gt;
+        &lt;&#x2F;a&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;media-body&quot;&gt;
+        &lt;h4 class=&quot;media-heading&quot;&gt;Bottom aligned media&lt;&#x2F;h4&gt;
+        &lt;p&gt;Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.&lt;&#x2F;p&gt;
+        &lt;p&gt;Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;media&quot;&gt;
+  &lt;div class=&quot;media-left media-middle&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img class=&quot;media-object&quot; src=&quot;...&quot; alt=&quot;...&quot;&gt;
+    &lt;&#x2F;a&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h4 class=&quot;media-heading&quot;&gt;Middle aligned media&lt;&#x2F;h4&gt;
+    ...
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;media-list&quot;&gt;Media list&lt;&#x2F;h2&gt;
+  &lt;p&gt;With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists).&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;media-list&quot;&gt;
+    &lt;ul class=&quot;media-list&quot;&gt;
+      &lt;li class=&quot;media&quot;&gt;
+        &lt;div class=&quot;media-left&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;
+            &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot; alt=&quot;Generic placeholder image&quot;&gt;
+          &lt;&#x2F;a&gt;
+        &lt;&#x2F;div&gt;
+        &lt;div class=&quot;media-body&quot;&gt;
+          &lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;&#x2F;h4&gt;
+          &lt;p&gt;Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.&lt;&#x2F;p&gt;
+          &lt;!-- Nested media object --&gt;
+          &lt;div class=&quot;media&quot;&gt;
+            &lt;div class=&quot;media-left&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;
+                &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot; alt=&quot;Generic placeholder image&quot;&gt;
+              &lt;&#x2F;a&gt;
+            &lt;&#x2F;div&gt;
+            &lt;div class=&quot;media-body&quot;&gt;
+              &lt;h4 class=&quot;media-heading&quot;&gt;Nested media heading&lt;&#x2F;h4&gt;
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+              &lt;!-- Nested media object --&gt;
+              &lt;div class=&quot;media&quot;&gt;
+                &lt;div class=&quot;media-left&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot; alt=&quot;Generic placeholder image&quot;&gt;
+                  &lt;&#x2F;a&gt;
+                &lt;&#x2F;div&gt;
+                &lt;div class=&quot;media-body&quot;&gt;
+                  &lt;h4 class=&quot;media-heading&quot;&gt;Nested media heading&lt;&#x2F;h4&gt;
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                &lt;&#x2F;div&gt;
+              &lt;&#x2F;div&gt;
+            &lt;&#x2F;div&gt;
+          &lt;&#x2F;div&gt;
+          &lt;!-- Nested media object --&gt;
+          &lt;div class=&quot;media&quot;&gt;
+            &lt;div class=&quot;media-left&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;
+                &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js&#x2F;64x64&quot; alt=&quot;Generic placeholder image&quot;&gt;
+              &lt;&#x2F;a&gt;
+            &lt;&#x2F;div&gt;
+            &lt;div class=&quot;media-body&quot;&gt;
+              &lt;h4 class=&quot;media-heading&quot;&gt;Nested media heading&lt;&#x2F;h4&gt;
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+            &lt;&#x2F;div&gt;
+          &lt;&#x2F;div&gt;
+        &lt;&#x2F;div&gt;
+      &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;ul class=&quot;media-list&quot;&gt;
+  &lt;li class=&quot;media&quot;&gt;
+    &lt;div class=&quot;media-left&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img class=&quot;media-object&quot; src=&quot;...&quot; alt=&quot;...&quot;&gt;
+      &lt;&#x2F;a&gt;
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;media-body&quot;&gt;
+      &lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;&#x2F;h4&gt;
+      ...
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</code></pre>
+</div>

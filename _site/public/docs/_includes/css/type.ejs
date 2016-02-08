@@ -1,0 +1,461 @@
+<div class="bs-docs-section">
+  <h1 id="type" class="page-header">Typography</h1>
+
+  <!-- Headings -->
+  <h2 id="type-headings">Headings</h2>
+  <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.</p>
+  <div class="bs-example bs-example-type" data-example-id="simple-headings">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td><h1>h1. Bootstrap heading</h1></td>
+          <td class="type-info">Semibold 36px</td>
+        </tr>
+        <tr>
+          <td><h2>h2. Bootstrap heading</h2></td>
+          <td class="type-info">Semibold 30px</td>
+        </tr>
+        <tr>
+          <td><h3>h3. Bootstrap heading</h3></td>
+          <td class="type-info">Semibold 24px</td>
+        </tr>
+        <tr>
+          <td><h4>h4. Bootstrap heading</h4></td>
+          <td class="type-info">Semibold 18px</td>
+        </tr>
+        <tr>
+          <td><h5>h5. Bootstrap heading</h5></td>
+          <td class="type-info">Semibold 14px</td>
+        </tr>
+        <tr>
+          <td><h6>h6. Bootstrap heading</h6></td>
+          <td class="type-info">Semibold 12px</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<pre><code class="html">
+&lt;h1&gt;h1. Bootstrap heading&lt;&#x2F;h1&gt;
+&lt;h2&gt;h2. Bootstrap heading&lt;&#x2F;h2&gt;
+&lt;h3&gt;h3. Bootstrap heading&lt;&#x2F;h3&gt;
+&lt;h4&gt;h4. Bootstrap heading&lt;&#x2F;h4&gt;
+&lt;h5&gt;h5. Bootstrap heading&lt;&#x2F;h5&gt;
+&lt;h6&gt;h6. Bootstrap heading&lt;&#x2F;h6&gt;
+</code></pre>
+
+  &lt;p&gt;Create lighter, secondary text in any heading with a generic &lt;code&gt;&amp;lt;small&amp;gt;&lt;&#x2F;code&gt; tag or the &lt;code&gt;.small&lt;&#x2F;code&gt; class.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example bs-example-type&quot; data-example-id=&quot;small-headings&quot;&gt;
+    &lt;table class=&quot;table&quot;&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;h1&gt;h1. Bootstrap heading &lt;small&gt;Secondary text&lt;&#x2F;small&gt;&lt;&#x2F;h1&gt;&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;h2&gt;h2. Bootstrap heading &lt;small&gt;Secondary text&lt;&#x2F;small&gt;&lt;&#x2F;h2&gt;&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;h3&gt;h3. Bootstrap heading &lt;small&gt;Secondary text&lt;&#x2F;small&gt;&lt;&#x2F;h3&gt;&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;h4&gt;h4. Bootstrap heading &lt;small&gt;Secondary text&lt;&#x2F;small&gt;&lt;&#x2F;h4&gt;&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;h5&gt;h5. Bootstrap heading &lt;small&gt;Secondary text&lt;&#x2F;small&gt;&lt;&#x2F;h5&gt;&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;h6&gt;h6. Bootstrap heading &lt;small&gt;Secondary text&lt;&#x2F;small&gt;&lt;&#x2F;h6&gt;&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;h1&gt;h1. Bootstrap heading &lt;small&gt;Secondary text&lt;&#x2F;small&gt;&lt;&#x2F;h1&gt;
+&lt;h2&gt;h2. Bootstrap heading &lt;small&gt;Secondary text&lt;&#x2F;small&gt;&lt;&#x2F;h2&gt;
+&lt;h3&gt;h3. Bootstrap heading &lt;small&gt;Secondary text&lt;&#x2F;small&gt;&lt;&#x2F;h3&gt;
+&lt;h4&gt;h4. Bootstrap heading &lt;small&gt;Secondary text&lt;&#x2F;small&gt;&lt;&#x2F;h4&gt;
+&lt;h5&gt;h5. Bootstrap heading &lt;small&gt;Secondary text&lt;&#x2F;small&gt;&lt;&#x2F;h5&gt;
+&lt;h6&gt;h6. Bootstrap heading &lt;small&gt;Secondary text&lt;&#x2F;small&gt;&lt;&#x2F;h6&gt;
+</code></pre>
+
+
+  &lt;!-- Body copy --&gt;
+  &lt;h2 id=&quot;type-body-copy&quot;&gt;Body copy&lt;&#x2F;h2&gt;
+  &lt;p&gt;Bootstrap&#39;s global default &lt;code&gt;font-size&lt;&#x2F;code&gt; is &lt;strong&gt;14px&lt;&#x2F;strong&gt;, with a &lt;code&gt;line-height&lt;&#x2F;code&gt; of &lt;strong&gt;1.428&lt;&#x2F;strong&gt;. This is applied to the &lt;code&gt;&amp;lt;body&amp;gt;&lt;&#x2F;code&gt; and all paragraphs. In addition, &lt;code&gt;&amp;lt;p&amp;gt;&lt;&#x2F;code&gt; (paragraphs) receive a bottom margin of half their computed line-height (10px by default).&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;body-copy&quot;&gt;
+    &lt;p&gt;Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.&lt;&#x2F;p&gt;
+    &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.&lt;&#x2F;p&gt;
+    &lt;p&gt;Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;p&gt;...&lt;&#x2F;p&gt;
+</code></pre>
+
+  &lt;!-- Body copy .lead --&gt;
+  &lt;h3&gt;Lead body copy&lt;&#x2F;h3&gt;
+  &lt;p&gt;Make a paragraph stand out by adding &lt;code&gt;.lead&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;lead-copy&quot;&gt;
+    &lt;p class=&quot;lead&quot;&gt;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;p class=&quot;lead&quot;&gt;...&lt;&#x2F;p&gt;
+</code></pre>
+
+  &lt;!-- Using Less --&gt;
+  &lt;h3&gt;Built with Less&lt;&#x2F;h3&gt;
+  &lt;p&gt;The typographic scale is based on two Less variables in &lt;strong&gt;variables.less&lt;&#x2F;strong&gt;: &lt;code&gt;@font-size-base&lt;&#x2F;code&gt; and &lt;code&gt;@line-height-base&lt;&#x2F;code&gt;. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.&lt;&#x2F;p&gt;
+
+  &lt;!-- Inline text elements --&gt;
+  &lt;h2 id=&quot;type-inline-text&quot;&gt;Inline text elements&lt;&#x2F;h2&gt;
+  &lt;h3&gt;Marked text&lt;&#x2F;h3&gt;
+  &lt;p&gt;For highlighting a run of text due to its relevance in another context, use the &lt;code&gt;&amp;lt;mark&amp;gt;&lt;&#x2F;code&gt; tag.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-mark&quot;&gt;
+    &lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;&#x2F;mark&gt; text.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+You can use the mark tag to &lt;mark&gt;highlight&lt;&#x2F;mark&gt; text.
+</code></pre>
+
+
+  &lt;h3&gt;Deleted text&lt;&#x2F;h3&gt;
+  &lt;p&gt;For indicating blocks of text that have been deleted use the &lt;code&gt;&amp;lt;del&amp;gt;&lt;&#x2F;code&gt; tag.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-del&quot;&gt;
+    &lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;&#x2F;del&gt;&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;&#x2F;del&gt;
+</code></pre>
+
+  &lt;h3&gt;Strikethrough text&lt;&#x2F;h3&gt;
+  &lt;p&gt;For indicating blocks of text that are no longer relevant use the &lt;code&gt;&amp;lt;s&amp;gt;&lt;&#x2F;code&gt; tag.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-s&quot;&gt;
+    &lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;&#x2F;s&gt;&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;&#x2F;s&gt;
+</code></pre>
+
+  &lt;h3&gt;Inserted text&lt;&#x2F;h3&gt;
+  &lt;p&gt;For indicating additions to the document use the &lt;code&gt;&amp;lt;ins&amp;gt;&lt;&#x2F;code&gt; tag.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-ins&quot;&gt;
+    &lt;p&gt;&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;&#x2F;ins&gt;&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;&#x2F;ins&gt;
+</code></pre>
+
+  &lt;h3&gt;Underlined text&lt;&#x2F;h3&gt;
+  &lt;p&gt;To underline text use the &lt;code&gt;&amp;lt;u&amp;gt;&lt;&#x2F;code&gt; tag.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-u&quot;&gt;
+    &lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;&#x2F;u&gt;&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;u&gt;This line of text will render as underlined&lt;&#x2F;u&gt;
+</code></pre>
+
+  &lt;p&gt;Make use of HTML&#39;s default emphasis tags with lightweight styles.&lt;&#x2F;p&gt;
+
+  &lt;h3&gt;Small text&lt;&#x2F;h3&gt;
+  &lt;p&gt;For de-emphasizing inline or blocks of text, use the &lt;code&gt;&amp;lt;small&amp;gt;&lt;&#x2F;code&gt; tag to set text at 85% the size of the parent. Heading elements receive their own &lt;code&gt;font-size&lt;&#x2F;code&gt; for nested &lt;code&gt;&amp;lt;small&amp;gt;&lt;&#x2F;code&gt; elements.&lt;&#x2F;p&gt;
+  &lt;p&gt;You may alternatively use an inline element with &lt;code&gt;.small&lt;&#x2F;code&gt; in place of any &lt;code&gt;&amp;lt;small&amp;gt;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-small&quot;&gt;
+    &lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;&#x2F;small&gt;&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;small&gt;This line of text is meant to be treated as fine print.&lt;&#x2F;small&gt;
+</code></pre>
+
+
+  &lt;h3&gt;Bold&lt;&#x2F;h3&gt;
+  &lt;p&gt;For emphasizing a snippet of text with a heavier font-weight.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-strong&quot;&gt;
+    &lt;p&gt;The following snippet of text is &lt;strong&gt;rendered as bold text&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;strong&gt;rendered as bold text&lt;&#x2F;strong&gt;
+</code></pre>
+
+  &lt;h3&gt;Italics&lt;&#x2F;h3&gt;
+  &lt;p&gt;For emphasizing a snippet of text with italics.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-em&quot;&gt;
+    &lt;p&gt;The following snippet of text is &lt;em&gt;rendered as italicized text&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;em&gt;rendered as italicized text&lt;&#x2F;em&gt;
+</code></pre>
+
+  &lt;div class=&quot;bs-callout bs-callout-info&quot; id=&quot;callout-type-b-i-elems&quot;&gt;
+    &lt;h4&gt;Alternate elements&lt;&#x2F;h4&gt;
+    &lt;p&gt;Feel free to use &lt;code&gt;&amp;lt;b&amp;gt;&lt;&#x2F;code&gt; and &lt;code&gt;&amp;lt;i&amp;gt;&lt;&#x2F;code&gt; in HTML5. &lt;code&gt;&amp;lt;b&amp;gt;&lt;&#x2F;code&gt; is meant to highlight words or phrases without conveying additional importance while &lt;code&gt;&amp;lt;i&amp;gt;&lt;&#x2F;code&gt; is mostly for voice, technical terms, etc.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;h2 id=&quot;type-alignment&quot;&gt;Alignment classes&lt;&#x2F;h2&gt;
+  &lt;p&gt;Easily realign text to components with text alignment classes.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;text-alignment&quot;&gt;
+    &lt;p class=&quot;text-left&quot;&gt;Left aligned text.&lt;&#x2F;p&gt;
+    &lt;p class=&quot;text-center&quot;&gt;Center aligned text.&lt;&#x2F;p&gt;
+    &lt;p class=&quot;text-right&quot;&gt;Right aligned text.&lt;&#x2F;p&gt;
+    &lt;p class=&quot;text-justify&quot;&gt;Justified text.&lt;&#x2F;p&gt;
+    &lt;p class=&quot;text-nowrap&quot;&gt;No wrap text.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;p class=&quot;text-left&quot;&gt;Left aligned text.&lt;&#x2F;p&gt;
+&lt;p class=&quot;text-center&quot;&gt;Center aligned text.&lt;&#x2F;p&gt;
+&lt;p class=&quot;text-right&quot;&gt;Right aligned text.&lt;&#x2F;p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Justified text.&lt;&#x2F;p&gt;
+&lt;p class=&quot;text-nowrap&quot;&gt;No wrap text.&lt;&#x2F;p&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;type-transformation&quot;&gt;Transformation classes&lt;&#x2F;h2&gt;
+  &lt;p&gt;Transform text in components with text capitalization classes.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;text-capitalization&quot;&gt;
+    &lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;&#x2F;p&gt;
+    &lt;p class=&quot;text-uppercase&quot;&gt;Uppercased text.&lt;&#x2F;p&gt;
+    &lt;p class=&quot;text-capitalize&quot;&gt;Capitalized text.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;&#x2F;p&gt;
+&lt;p class=&quot;text-uppercase&quot;&gt;Uppercased text.&lt;&#x2F;p&gt;
+&lt;p class=&quot;text-capitalize&quot;&gt;Capitalized text.&lt;&#x2F;p&gt;
+</code></pre>
+
+  &lt;!-- Abbreviations --&gt;
+  &lt;h2 id=&quot;type-abbreviations&quot;&gt;Abbreviations&lt;&#x2F;h2&gt;
+  &lt;p&gt;Stylized implementation of HTML&#39;s &lt;code&gt;&amp;lt;abbr&amp;gt;&lt;&#x2F;code&gt; element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a &lt;code&gt;title&lt;&#x2F;code&gt; attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover and to users of assistive technologies.&lt;&#x2F;p&gt;
+
+  &lt;h3&gt;Basic abbreviation&lt;&#x2F;h3&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-abbr&quot;&gt;
+    &lt;p&gt;An abbreviation of the word attribute is &lt;abbr title=&quot;attribute&quot;&gt;attr&lt;&#x2F;abbr&gt;.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;abbr title=&quot;attribute&quot;&gt;attr&lt;&#x2F;abbr&gt;
+</code></pre>
+
+  &lt;h3&gt;Initialism&lt;&#x2F;h3&gt;
+  &lt;p&gt;Add &lt;code&gt;.initialism&lt;&#x2F;code&gt; to an abbreviation for a slightly smaller font-size.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-initialism&quot;&gt;
+    &lt;p&gt;&lt;abbr title=&quot;HyperText Markup Language&quot; class=&quot;initialism&quot;&gt;HTML&lt;&#x2F;abbr&gt; is the best thing since sliced bread.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;abbr title=&quot;HyperText Markup Language&quot; class=&quot;initialism&quot;&gt;HTML&lt;&#x2F;abbr&gt;
+</code></pre>
+
+
+  &lt;!-- Addresses --&gt;
+  &lt;h2 id=&quot;type-addresses&quot;&gt;Addresses&lt;&#x2F;h2&gt;
+  &lt;p&gt;Present contact information for the nearest ancestor or the entire body of work. Preserve formatting by ending all lines with &lt;code&gt;&amp;lt;br&amp;gt;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-address&quot;&gt;
+    &lt;address&gt;
+      &lt;strong&gt;Twitter, Inc.&lt;&#x2F;strong&gt;&lt;br&gt;
+      1355 Market Street, Suite 900&lt;br&gt;
+      San Francisco, CA 94103&lt;br&gt;
+      &lt;abbr title=&quot;Phone&quot;&gt;P:&lt;&#x2F;abbr&gt; (123) 456-7890
+    &lt;&#x2F;address&gt;
+    &lt;address&gt;
+      &lt;strong&gt;Full Name&lt;&#x2F;strong&gt;&lt;br&gt;
+      &lt;a href=&quot;mailto:#&quot;&gt;first.last@example.com&lt;&#x2F;a&gt;
+    &lt;&#x2F;address&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;address&gt;
+  &lt;strong&gt;Twitter, Inc.&lt;&#x2F;strong&gt;&lt;br&gt;
+  1355 Market Street, Suite 900&lt;br&gt;
+  San Francisco, CA 94103&lt;br&gt;
+  &lt;abbr title=&quot;Phone&quot;&gt;P:&lt;&#x2F;abbr&gt; (123) 456-7890
+&lt;&#x2F;address&gt;
+
+&lt;address&gt;
+  &lt;strong&gt;Full Name&lt;&#x2F;strong&gt;&lt;br&gt;
+  &lt;a href=&quot;mailto:#&quot;&gt;first.last@example.com&lt;&#x2F;a&gt;
+&lt;&#x2F;address&gt;
+</code></pre>
+
+
+  &lt;!-- Blockquotes --&gt;
+  &lt;h2 id=&quot;type-blockquotes&quot;&gt;Blockquotes&lt;&#x2F;h2&gt;
+  &lt;p&gt;For quoting blocks of content from another source within your document.&lt;&#x2F;p&gt;
+
+  &lt;h3&gt;Default blockquote&lt;&#x2F;h3&gt;
+  &lt;p&gt;Wrap &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;&#x2F;code&gt; around any &lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;&#x2F;abbr&gt; as the quote. For straight quotes, we recommend a &lt;code&gt;&amp;lt;p&amp;gt;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-blockquote&quot;&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;&#x2F;p&gt;
+    &lt;&#x2F;blockquote&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</code></pre>
+
+  &lt;h3&gt;Blockquote options&lt;&#x2F;h3&gt;
+  &lt;p&gt;Style and content changes for simple variations on a standard &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+
+  &lt;h4&gt;Naming a source&lt;&#x2F;h4&gt;
+  &lt;p&gt;Add a &lt;code&gt;&amp;lt;footer&amp;gt;&lt;&#x2F;code&gt; for identifying the source. Wrap the name of the source work in &lt;code&gt;&amp;lt;cite&amp;gt;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;blockquote-cite&quot;&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;&#x2F;p&gt;
+      &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;&#x2F;cite&gt;&lt;&#x2F;footer&gt;
+    &lt;&#x2F;blockquote&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;&#x2F;p&gt;
+  &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;&#x2F;cite&gt;&lt;&#x2F;footer&gt;
+&lt;&#x2F;blockquote&gt;
+</code></pre>
+
+  &lt;h4&gt;Alternate displays&lt;&#x2F;h4&gt;
+  &lt;p&gt;Add &lt;code&gt;.blockquote-reverse&lt;&#x2F;code&gt; for a blockquote with right-aligned content.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; style=&quot;overflow: hidden;&quot; data-example-id=&quot;blockquote-reverse&quot;&gt;
+    &lt;blockquote class=&quot;blockquote-reverse&quot;&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;&#x2F;p&gt;
+      &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;&#x2F;cite&gt;&lt;&#x2F;footer&gt;
+    &lt;&#x2F;blockquote&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;blockquote class=&quot;blockquote-reverse&quot;&gt;
+  ...
+&lt;&#x2F;blockquote&gt;
+</code></pre>
+
+
+  &lt;!-- Lists --&gt;
+  &lt;h2 id=&quot;type-lists&quot;&gt;Lists&lt;&#x2F;h2&gt;
+
+  &lt;h3&gt;Unordered&lt;&#x2F;h3&gt;
+  &lt;p&gt;A list of items in which the order does &lt;em&gt;not&lt;&#x2F;em&gt; explicitly matter.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-ul&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Lorem ipsum dolor sit amet&lt;&#x2F;li&gt;
+      &lt;li&gt;Consectetur adipiscing elit&lt;&#x2F;li&gt;
+      &lt;li&gt;Integer molestie lorem at massa&lt;&#x2F;li&gt;
+      &lt;li&gt;Facilisis in pretium nisl aliquet&lt;&#x2F;li&gt;
+      &lt;li&gt;Nulla volutpat aliquam velit
+        &lt;ul&gt;
+          &lt;li&gt;Phasellus iaculis neque&lt;&#x2F;li&gt;
+          &lt;li&gt;Purus sodales ultricies&lt;&#x2F;li&gt;
+          &lt;li&gt;Vestibulum laoreet porttitor sem&lt;&#x2F;li&gt;
+          &lt;li&gt;Ac tristique libero volutpat at&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;Faucibus porta lacus fringilla vel&lt;&#x2F;li&gt;
+      &lt;li&gt;Aenean sit amet erat nunc&lt;&#x2F;li&gt;
+      &lt;li&gt;Eget porttitor lorem&lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;ul&gt;
+  &lt;li&gt;...&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</code></pre>
+
+  &lt;h3&gt;Ordered&lt;&#x2F;h3&gt;
+  &lt;p&gt;A list of items in which the order &lt;em&gt;does&lt;&#x2F;em&gt; explicitly matter.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-ol&quot;&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Lorem ipsum dolor sit amet&lt;&#x2F;li&gt;
+      &lt;li&gt;Consectetur adipiscing elit&lt;&#x2F;li&gt;
+      &lt;li&gt;Integer molestie lorem at massa&lt;&#x2F;li&gt;
+      &lt;li&gt;Facilisis in pretium nisl aliquet&lt;&#x2F;li&gt;
+      &lt;li&gt;Nulla volutpat aliquam velit&lt;&#x2F;li&gt;
+      &lt;li&gt;Faucibus porta lacus fringilla vel&lt;&#x2F;li&gt;
+      &lt;li&gt;Aenean sit amet erat nunc&lt;&#x2F;li&gt;
+      &lt;li&gt;Eget porttitor lorem&lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;ol&gt;
+  &lt;li&gt;...&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</code></pre>
+
+  &lt;h3&gt;Unstyled&lt;&#x2F;h3&gt;
+  &lt;p&gt;Remove the default &lt;code&gt;list-style&lt;&#x2F;code&gt; and left margin on list items (immediate children only). &lt;strong&gt;This only applies to immediate children list items&lt;&#x2F;strong&gt;, meaning you will need to add the class for any nested lists as well.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;unstyled-list&quot;&gt;
+    &lt;ul class=&quot;list-unstyled&quot;&gt;
+      &lt;li&gt;Lorem ipsum dolor sit amet&lt;&#x2F;li&gt;
+      &lt;li&gt;Consectetur adipiscing elit&lt;&#x2F;li&gt;
+      &lt;li&gt;Integer molestie lorem at massa&lt;&#x2F;li&gt;
+      &lt;li&gt;Facilisis in pretium nisl aliquet&lt;&#x2F;li&gt;
+      &lt;li&gt;Nulla volutpat aliquam velit
+        &lt;ul&gt;
+          &lt;li&gt;Phasellus iaculis neque&lt;&#x2F;li&gt;
+          &lt;li&gt;Purus sodales ultricies&lt;&#x2F;li&gt;
+          &lt;li&gt;Vestibulum laoreet porttitor sem&lt;&#x2F;li&gt;
+          &lt;li&gt;Ac tristique libero volutpat at&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;Faucibus porta lacus fringilla vel&lt;&#x2F;li&gt;
+      &lt;li&gt;Aenean sit amet erat nunc&lt;&#x2F;li&gt;
+      &lt;li&gt;Eget porttitor lorem&lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+  &lt;li&gt;...&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</code></pre>
+
+  &lt;h3&gt;Inline&lt;&#x2F;h3&gt;
+  &lt;p&gt;Place all list items on a single line with &lt;code&gt;display: inline-block;&lt;&#x2F;code&gt; and some light padding.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;list-inline&quot;&gt;
+    &lt;ul class=&quot;list-inline&quot;&gt;
+      &lt;li&gt;Lorem ipsum&lt;&#x2F;li&gt;
+      &lt;li&gt;Phasellus iaculis&lt;&#x2F;li&gt;
+      &lt;li&gt;Nulla volutpat&lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;ul class=&quot;list-inline&quot;&gt;
+  &lt;li&gt;...&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</code></pre>
+
+  &lt;h3&gt;Description&lt;&#x2F;h3&gt;
+  &lt;p&gt;A list of terms with their associated descriptions.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-dl&quot;&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;Description lists&lt;&#x2F;dt&gt;
+      &lt;dd&gt;A description list is perfect for defining terms.&lt;&#x2F;dd&gt;
+      &lt;dt&gt;Euismod&lt;&#x2F;dt&gt;
+      &lt;dd&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;&#x2F;dd&gt;
+      &lt;dd&gt;Donec id elit non mi porta gravida at eget metus.&lt;&#x2F;dd&gt;
+      &lt;dt&gt;Malesuada porta&lt;&#x2F;dt&gt;
+      &lt;dd&gt;Etiam porta sem malesuada magna mollis euismod.&lt;&#x2F;dd&gt;
+    &lt;&#x2F;dl&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;dl&gt;
+  &lt;dt&gt;...&lt;&#x2F;dt&gt;
+  &lt;dd&gt;...&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+</code></pre>
+
+  &lt;h4&gt;Horizontal description&lt;&#x2F;h4&gt;
+  &lt;p&gt;Make terms and descriptions in &lt;code&gt;&amp;lt;dl&amp;gt;&lt;&#x2F;code&gt; line up side-by-side. Starts off stacked like default &lt;code&gt;&amp;lt;dl&amp;gt;&lt;&#x2F;code&gt;s, but when the navbar expands, so do these.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;horizontal-dl&quot;&gt;
+    &lt;dl class=&quot;dl-horizontal&quot;&gt;
+      &lt;dt&gt;Description lists&lt;&#x2F;dt&gt;
+      &lt;dd&gt;A description list is perfect for defining terms.&lt;&#x2F;dd&gt;
+      &lt;dt&gt;Euismod&lt;&#x2F;dt&gt;
+      &lt;dd&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;&#x2F;dd&gt;
+      &lt;dd&gt;Donec id elit non mi porta gravida at eget metus.&lt;&#x2F;dd&gt;
+      &lt;dt&gt;Malesuada porta&lt;&#x2F;dt&gt;
+      &lt;dd&gt;Etiam porta sem malesuada magna mollis euismod.&lt;&#x2F;dd&gt;
+      &lt;dt&gt;Felis euismod semper eget lacinia&lt;&#x2F;dt&gt;
+      &lt;dd&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;&#x2F;dd&gt;
+    &lt;&#x2F;dl&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;dl class=&quot;dl-horizontal&quot;&gt;
+  &lt;dt&gt;...&lt;&#x2F;dt&gt;
+  &lt;dd&gt;...&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+</code></pre>
+
+  <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate">
+    <h4>Auto-truncating</h4>
+    <p>Horizontal description lists will truncate terms that are too long to fit in the left column with <code>text-overflow</code>. In narrower viewports, they will change to the default stacked layout.</p>
+  </div>
+</div>

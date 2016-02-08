@@ -1,0 +1,73 @@
+<div class="bs-docs-section">
+  <h1 id="alerts" class="page-header">Alert messages <small>alert.js</small></h1>
+
+  <h2 id="alerts-examples">Example alerts</h2>
+  <p>Add dismiss functionality to all alert messages with this plugin.</p>
+  <p>When using a <code>.close</code> button, it must be the first child of the <code>.alert-dismissible</code> and no text content may come before it in the markup.</p>
+  <div class="bs-example bs-example-standalone" data-example-id="dismissible-alert-js">
+    <div class="alert alert-warning alert-dismissible fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+    </div>
+
+    <div class="alert alert-danger alert-dismissible fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4>Oh snap! You got an error!</h4>
+      <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+      <p>
+        <button type="button" class="btn btn-danger">Take this action</button>
+        <button type="button" class="btn btn-default">Or do this</button>
+      </p>
+    </div>
+  </div><!-- /example -->
+
+
+  <h2 id="alerts-usage">Usage</h2>
+
+  <p>Just add <code>data-dismiss="alert"</code> to your close button to automatically give an alert close functionality. Closing an alert removes it from the DOM.</p>
+
+<pre><code class="html">
+&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;
+  &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;
+&lt;&#x2F;button&gt;
+</code></pre>
+
+  &lt;p&gt;To have your alerts use animation when closing, make sure they have the &lt;code&gt;.fade&lt;&#x2F;code&gt; and &lt;code&gt;.in&lt;&#x2F;code&gt; classes already applied to them.&lt;&#x2F;p&gt;
+
+  &lt;h3 id=&quot;alerts-methods&quot;&gt;Methods&lt;&#x2F;h3&gt;
+
+  &lt;h4&gt;&lt;code&gt;$().alert()&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Makes an alert listen for click events on descendant elements which have the &lt;code&gt;data-dismiss=&quot;alert&quot;&lt;&#x2F;code&gt; attribute. (Not necessary when using the data-api&#39;s auto-initialization.)&lt;&#x2F;p&gt;
+
+  &lt;h4&gt;&lt;code&gt;$().alert(&#39;close&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Closes an alert by removing it from the DOM. If the &lt;code&gt;.fade&lt;&#x2F;code&gt; and &lt;code&gt;.in&lt;&#x2F;code&gt; classes are present on the element, the alert will fade out before it is removed.&lt;&#x2F;p&gt;
+
+
+  &lt;h3 id=&quot;alerts-events&quot;&gt;Events&lt;&#x2F;h3&gt;
+  &lt;p&gt;Bootstrap&#39;s alert plugin exposes a few events for hooking into alert functionality.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-bordered table-striped bs-events-table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Event Type&lt;&#x2F;th&gt;
+          &lt;th&gt;Description&lt;&#x2F;th&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;close.bs.alert&lt;&#x2F;td&gt;
+          &lt;td&gt;This event fires immediately when the &lt;code&gt;close&lt;&#x2F;code&gt; instance method is called.&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;closed.bs.alert&lt;&#x2F;td&gt;
+          &lt;td&gt;This event is fired when the alert has been closed (will wait for CSS transitions to complete).&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.table-responsive --&gt;
+{% highlight js %}
+$(&#39;#myAlert&#39;).on(&#39;closed.bs.alert&#39;, function () {
+  &#x2F;&#x2F; do something…
+})
+</code></pre>
+</div>

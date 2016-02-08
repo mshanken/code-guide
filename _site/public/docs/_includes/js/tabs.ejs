@@ -1,0 +1,147 @@
+<div class="bs-docs-section">
+  <h1 id="tabs" class="page-header">Togglable tabs <small>tab.js</small></h1>
+
+  <h2 id="tabs-examples">Example tabs</h2>
+  <p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. <strong>Nested tabs are not supported.</strong></p>
+  <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+    <ul id="myTabs" class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a></li>
+      <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Profile</a></li>
+      <li role="presentation" class="dropdown">
+        <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+          <li><a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">@fat</a></li>
+          <li><a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledBy="home-tab">
+        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledBy="profile-tab">
+        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledBy="dropdown1-tab">
+        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledBy="dropdown2-tab">
+        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+      </div>
+    </div>
+  </div><!-- /example -->
+
+  <div class="bs-callout bs-callout-info" id="callout-tabs-extends-component">
+    <h4>Extends tabbed navigation</h4>
+    <p>This plugin extends the <a href="../components/#nav-tabs">tabbed navigation component</a> to add tabbable areas.</p>
+  </div>
+
+
+  <h2 id="tabs-usage">Usage</h2>
+  <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
+
+{% highlight js %}
+$('#myTabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</code></pre>
+
+  <p>You can activate individual tabs in several ways:</p>
+
+{% highlight js %}
+$('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+$('#myTabs a:first').tab('show') // Select first tab
+$('#myTabs a:last').tab('show') // Select last tab
+$('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
+</code></pre>
+
+  <h3>Markup</h3>
+  <p>You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code>data-toggle="tab"</code> or <code>data-toggle="pill"</code> on an element. Adding the <code>nav</code> and <code>nav-tabs</code> classes to the tab <code>ul</code> will apply the Bootstrap <a href="../components/#nav-tabs">tab styling</a>, while adding the <code>nav</code> and <code>nav-pills</code> classes will apply <a href="../components/#nav-pills">pill styling</a>.</p>
+<pre><code class="html">
+&lt;div&gt;
+
+  &lt;!-- Nav tabs --&gt;
+  &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot; aria-controls=&quot;home&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#profile&quot; aria-controls=&quot;profile&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Profile&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#messages&quot; aria-controls=&quot;messages&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Messages&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#settings&quot; aria-controls=&quot;settings&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Settings&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+
+  &lt;!-- Tab panes --&gt;
+  &lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane active&quot; id=&quot;home&quot;&gt;...&lt;&#x2F;div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;profile&quot;&gt;...&lt;&#x2F;div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;messages&quot;&gt;...&lt;&#x2F;div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;settings&quot;&gt;...&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h3&gt;Fade effect&lt;&#x2F;h3&gt;
+  &lt;p&gt;To make tabs fade in, add &lt;code&gt;.fade&lt;&#x2F;code&gt; to each &lt;code&gt;.tab-pane&lt;&#x2F;code&gt;. The first tab pane must also have &lt;code&gt;.in&lt;&#x2F;code&gt; to make the initial content visible.&lt;&#x2F;p&gt;
+<pre><code class="html">
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active&quot; id=&quot;home&quot;&gt;...&lt;&#x2F;div&gt;
+  &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;profile&quot;&gt;...&lt;&#x2F;div&gt;
+  &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;messages&quot;&gt;...&lt;&#x2F;div&gt;
+  &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;settings&quot;&gt;...&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h3 id=&quot;tabs-methods&quot;&gt;Methods&lt;&#x2F;h3&gt;
+  &lt;h4&gt;&lt;code&gt;$().tab&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;
+    Activates a tab element and content container. Tab should have either a &lt;code&gt;data-target&lt;&#x2F;code&gt; or an &lt;code&gt;href&lt;&#x2F;code&gt; targeting a container node in the DOM. In the above examples, the tabs are the &lt;code&gt;&amp;lt;a&amp;gt;&lt;&#x2F;code&gt;s with &lt;code&gt;data-toggle=&quot;tab&quot;&lt;&#x2F;code&gt; attributes.
+  &lt;&#x2F;p&gt;
+
+  &lt;h4&gt;&lt;code&gt;.tab(&#39;show&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Selects the given tab and shows its associated content. Any other tab that was previously selected becomes unselected and its associated content is hidden. &lt;strong&gt;Returns to the caller before the tab pane has actually been shown&lt;&#x2F;strong&gt; (i.e. before the &lt;code&gt;shown.bs.tab&lt;&#x2F;code&gt; event occurs).&lt;&#x2F;p&gt;
+  {% highlight js %}$(&#39;#someTab&#39;).tab(&#39;show&#39;)</code></pre>
+
+  &lt;h3 id=&quot;tabs-events&quot;&gt;Events&lt;&#x2F;h3&gt;
+  &lt;p&gt;When showing a new tab, the events fire in the following order:&lt;&#x2F;p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;&lt;code&gt;hide.bs.tab&lt;&#x2F;code&gt; (on the current active tab)&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;code&gt;show.bs.tab&lt;&#x2F;code&gt; (on the to-be-shown tab)&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;code&gt;hidden.bs.tab&lt;&#x2F;code&gt; (on the previous active tab, the same one as for the &lt;code&gt;hide.bs.tab&lt;&#x2F;code&gt; event)&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;code&gt;shown.bs.tab&lt;&#x2F;code&gt; (on the newly-active just-shown tab, the same one as for the &lt;code&gt;show.bs.tab&lt;&#x2F;code&gt; event)&lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+  &lt;p&gt;If no tab was already active, then the &lt;code&gt;hide.bs.tab&lt;&#x2F;code&gt; and &lt;code&gt;hidden.bs.tab&lt;&#x2F;code&gt; events will not be fired.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-bordered table-striped bs-events-table&quot;&gt;
+      &lt;thead&gt;
+       &lt;tr&gt;
+         &lt;th&gt;Event Type&lt;&#x2F;th&gt;
+         &lt;th&gt;Description&lt;&#x2F;th&gt;
+       &lt;&#x2F;tr&gt;
+      &lt;&#x2F;thead&gt;
+      &lt;tbody&gt;
+       &lt;tr&gt;
+         &lt;td&gt;show.bs.tab&lt;&#x2F;td&gt;
+         &lt;td&gt;This event fires on tab show, but before the new tab has been shown. Use &lt;code&gt;event.target&lt;&#x2F;code&gt; and &lt;code&gt;event.relatedTarget&lt;&#x2F;code&gt; to target the active tab and the previous active tab (if available) respectively.&lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt;
+      &lt;tr&gt;
+         &lt;td&gt;shown.bs.tab&lt;&#x2F;td&gt;
+         &lt;td&gt;This event fires on tab show after a tab has been shown. Use &lt;code&gt;event.target&lt;&#x2F;code&gt; and &lt;code&gt;event.relatedTarget&lt;&#x2F;code&gt; to target the active tab and the previous active tab (if available) respectively.&lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+       &lt;tr&gt;
+         &lt;td&gt;hide.bs.tab&lt;&#x2F;td&gt;
+         &lt;td&gt;This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use &lt;code&gt;event.target&lt;&#x2F;code&gt; and &lt;code&gt;event.relatedTarget&lt;&#x2F;code&gt; to target the current active tab and the new soon-to-be-active tab, respectively.&lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+       &lt;tr&gt;
+         &lt;td&gt;hidden.bs.tab&lt;&#x2F;td&gt;
+         &lt;td&gt;This event fires after a new tab is shown (and thus the previous active tab is hidden). Use &lt;code&gt;event.target&lt;&#x2F;code&gt; and &lt;code&gt;event.relatedTarget&lt;&#x2F;code&gt; to target the previous active tab and the new active tab, respectively.&lt;&#x2F;td&gt;
+       &lt;&#x2F;tr&gt;
+      &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;.table-responsive --&gt;
+{% highlight js %}
+$(&#39;a[data-toggle=&quot;tab&quot;]&#39;).on(&#39;shown.bs.tab&#39;, function (e) {
+  e.target &#x2F;&#x2F; newly activated tab
+  e.relatedTarget &#x2F;&#x2F; previous active tab
+})
+</code></pre>
+</div>

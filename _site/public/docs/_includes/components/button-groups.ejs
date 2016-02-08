@@ -1,0 +1,268 @@
+<div class="bs-docs-section">
+  <h1 id="btn-groups" class="page-header">Button groups</h1>
+
+  <p class="lead">Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with <a href="../javascript/#buttons">our buttons plugin</a>.</p>
+
+  <div class="bs-callout bs-callout-warning" id="callout-btn-group-tooltips">
+    <h4>Tooltips &amp; popovers in button groups require special setting</h4>
+    <p>When using tooltips or popovers on elements within a <code>.btn-group</code>, you'll have to specify the option <code>container: 'body'</code> to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).</p>
+  </div>
+
+  <div class="bs-callout bs-callout-warning" id="callout-btn-group-accessibility">
+    <h4>Ensure correct <code>role</code> and provide a label</h4>
+    <p>In order for assistive technologies – such as screen readers – to convey that a series of buttons is grouped, an appropriate <code>role</code> attribute needs to be provided. For button groups, this would be <code>role="group"</code>, while toolbars should have a <code>role="toolbar"</code>.</p>
+    <p>One exception are groups which only contain a single control (for instance the <a href="#btn-groups-justified">justified button groups</a> with <code>&lt;button&gt;</code> elements) or a dropdown.</p>
+    <p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct <code>role</code> attribute. In the examples provided here, we use <code>aria-label</code>, but alternatives such as <code>aria-labelledby</code> can also be used.</p>
+  </div>
+
+  <h2 id="btn-groups-single">Basic example</h2>
+  <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
+  <div class="bs-example" data-example-id="simple-button-group">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+  </div>
+<pre><code class="html">
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;&#x2F;button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;&#x2F;button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;&#x2F;button&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;btn-groups-toolbar&quot;&gt;Button toolbar&lt;&#x2F;h2&gt;
+  &lt;p&gt;Combine sets of &lt;code&gt;&amp;lt;div class=&quot;btn-group&quot;&amp;gt;&lt;&#x2F;code&gt; into a &lt;code&gt;&amp;lt;div class=&quot;btn-toolbar&quot;&amp;gt;&lt;&#x2F;code&gt; for more complex components.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-button-toolbar&quot;&gt;
+    &lt;div class=&quot;btn-toolbar&quot; role=&quot;toolbar&quot; aria-label=&quot;Toolbar with button groups&quot;&gt;
+      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;First group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;1&lt;&#x2F;button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;2&lt;&#x2F;button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;3&lt;&#x2F;button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;4&lt;&#x2F;button&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Second group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;5&lt;&#x2F;button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;6&lt;&#x2F;button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;7&lt;&#x2F;button&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Third group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;8&lt;&#x2F;button&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;btn-toolbar&quot; role=&quot;toolbar&quot; aria-label=&quot;...&quot;&gt;
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;&#x2F;div&gt;
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;&#x2F;div&gt;
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;btn-groups-sizing&quot;&gt;Sizing&lt;&#x2F;h2&gt;
+  &lt;p&gt;Instead of applying button sizing classes to every button in a group, just add &lt;code&gt;.btn-group-*&lt;&#x2F;code&gt; to each &lt;code&gt;.btn-group&lt;&#x2F;code&gt;, including when nesting multiple groups.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;button-group-sizing&quot;&gt;
+    &lt;div class=&quot;btn-group btn-group-lg&quot; role=&quot;group&quot; aria-label=&quot;Large button group&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;&#x2F;button&gt;
+    &lt;&#x2F;div&gt;
+    &lt;br&gt;
+    &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Default button group&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;&#x2F;button&gt;
+    &lt;&#x2F;div&gt;
+    &lt;br&gt;
+    &lt;div class=&quot;btn-group btn-group-sm&quot; role=&quot;group&quot; aria-label=&quot;Small button group&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;&#x2F;button&gt;
+    &lt;&#x2F;div&gt;
+    &lt;br&gt;
+    &lt;div class=&quot;btn-group btn-group-xs&quot; role=&quot;group&quot; aria-label=&quot;Extra-small button group&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;&#x2F;button&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;btn-group btn-group-lg&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;&#x2F;div&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;&#x2F;div&gt;
+&lt;div class=&quot;btn-group btn-group-sm&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;&#x2F;div&gt;
+&lt;div class=&quot;btn-group btn-group-xs&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;...&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;btn-groups-nested&quot;&gt;Nesting&lt;&#x2F;h2&gt;
+  &lt;p&gt;Place a &lt;code&gt;.btn-group&lt;&#x2F;code&gt; within another &lt;code&gt;.btn-group&lt;&#x2F;code&gt; when you want dropdown menus mixed with a series of buttons.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;button-group-nesting&quot;&gt;
+    &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Button group with nested dropdown&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;1&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;2&lt;&#x2F;button&gt;
+
+      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button id=&quot;btnGroupDrop1&quot; type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+          Dropdown
+          &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+        &lt;&#x2F;button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupDrop1&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;1&lt;&#x2F;button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;2&lt;&#x2F;button&gt;
+
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+      Dropdown
+      &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+    &lt;&#x2F;button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;btn-groups-vertical&quot;&gt;Vertical variation&lt;&#x2F;h2&gt;
+  &lt;p&gt;Make a set of buttons appear vertically stacked rather than horizontally. &lt;strong class=&quot;text-danger&quot;&gt;Split button dropdowns are not supported here.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;vertical-button-group&quot;&gt;
+    &lt;div class=&quot;btn-group-vertical&quot; role=&quot;group&quot; aria-label=&quot;Vertical button group&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Button&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Button&lt;&#x2F;button&gt;
+      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button id=&quot;btnGroupVerticalDrop1&quot; type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+          Dropdown
+          &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+        &lt;&#x2F;button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupVerticalDrop1&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;div&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Button&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Button&lt;&#x2F;button&gt;
+      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button id=&quot;btnGroupVerticalDrop2&quot; type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+          Dropdown
+          &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+        &lt;&#x2F;button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupVerticalDrop2&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button id=&quot;btnGroupVerticalDrop3&quot; type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+          Dropdown
+          &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+        &lt;&#x2F;button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupVerticalDrop3&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button id=&quot;btnGroupVerticalDrop4&quot; type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+          Dropdown
+          &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+        &lt;&#x2F;button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupVerticalDrop4&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;btn-group-vertical&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+  ...
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;btn-groups-justified&quot;&gt;Justified button groups&lt;&#x2F;h2&gt;
+  &lt;p&gt;Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group.&lt;&#x2F;p&gt;
+
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-btn-group-justified-dbl-border&quot;&gt;
+    &lt;h4&gt;Handling borders&lt;&#x2F;h4&gt;
+    &lt;p&gt;Due to the specific HTML and CSS used to justify buttons (namely &lt;code&gt;display: table-cell&lt;&#x2F;code&gt;), the borders between them are doubled. In regular button groups, &lt;code&gt;margin-left: -1px&lt;&#x2F;code&gt; is used to stack the borders instead of removing them. However, &lt;code&gt;margin&lt;&#x2F;code&gt; doesn&#39;t work with &lt;code&gt;display: table-cell&lt;&#x2F;code&gt;. As a result, depending on your customizations to Bootstrap, you may wish to remove or re-color the borders.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-btn-group-ie8-border&quot;&gt;
+    &lt;h4&gt;IE8 and borders&lt;&#x2F;h4&gt;
+    &lt;p&gt;Internet Explorer 8 doesn&#39;t render borders on buttons in a justified button group, whether it&#39;s on &lt;code&gt;&amp;lt;a&amp;gt;&lt;&#x2F;code&gt; or &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt; elements. To get around that, wrap each button in another &lt;code&gt;.btn-group&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+    &lt;p&gt;See &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;twbs&#x2F;bootstrap&#x2F;issues&#x2F;12476&quot;&gt;#12476&lt;&#x2F;a&gt; for more information.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;h4&gt;With &lt;code&gt;&amp;lt;a&amp;gt;&lt;&#x2F;code&gt; elements&lt;&#x2F;h4&gt;
+  &lt;p&gt;Just wrap a series of &lt;code&gt;.btn&lt;&#x2F;code&gt;s in &lt;code&gt;.btn-group.btn-group-justified&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-justified-button-group&quot;&gt;
+    &lt;div class=&quot;btn-group btn-group-justified&quot; role=&quot;group&quot; aria-label=&quot;Justified button group&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot; role=&quot;button&quot;&gt;Left&lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot; role=&quot;button&quot;&gt;Middle&lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot; role=&quot;button&quot;&gt;Right&lt;&#x2F;a&gt;
+    &lt;&#x2F;div&gt;
+    &lt;br&gt;
+    &lt;div class=&quot;btn-group btn-group-justified&quot; role=&quot;group&quot; aria-label=&quot;Justified button group with nested dropdown&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot; role=&quot;button&quot;&gt;Left&lt;&#x2F;a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot; role=&quot;button&quot;&gt;Middle&lt;&#x2F;a&gt;
+      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+          Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
+        &lt;&#x2F;a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+          &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;&#x2F;li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;btn-group btn-group-justified&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+  ...
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-btn-group-anchor-btn&quot;&gt;
+    &lt;h4&gt;Links acting as buttons&lt;&#x2F;h4&gt;
+    &lt;p&gt;If the &lt;code&gt;&amp;lt;a&amp;gt;&lt;&#x2F;code&gt; elements are used to act as buttons – triggering in-page functionality, rather than navigating to another document or section within the current page – they should also be given an appropriate &lt;code&gt;role=&quot;button&quot;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;h4&gt;With &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt; elements&lt;&#x2F;h4&gt;
+  &lt;p&gt;To use justified button groups with &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt; elements, &lt;strong class=&quot;text-danger&quot;&gt;you must wrap each button in a button group&lt;&#x2F;strong&gt;. Most browsers don&#39;t properly apply our CSS for justification to &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt; elements, but since we support button dropdowns, we can work around that.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;button-tag-button-group-justified&quot;&gt;
+    &lt;div class=&quot;btn-group btn-group-justified&quot; role=&quot;group&quot; aria-label=&quot;Justified button group&quot;&gt;
+      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;&#x2F;button&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;&#x2F;button&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;&#x2F;button&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;div class=&quot;btn-group btn-group-justified&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+</div>

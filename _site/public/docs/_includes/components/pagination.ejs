@@ -1,0 +1,197 @@
+<div class="bs-docs-section">
+  <h1 id="pagination" class="page-header">Pagination</h1>
+
+  <p class="lead">Provide pagination links for your site or app with the multi-page pagination component, or the simpler <a href="#pagination-pager">pager alternative</a>.</p>
+
+  <h2 id="pagination-default">Default pagination</h2>
+  <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+  <div class="bs-example" data-example-id="simple-pagination">
+    <nav>
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+<pre><code class="html">
+&lt;nav&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;&#x2F;span&gt;
+      &lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;&#x2F;span&gt;
+      &lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;nav&gt;
+</code></pre>
+
+  &lt;h3&gt;Disabled and active states&lt;&#x2F;h3&gt;
+  &lt;p&gt;Links are customizable for different circumstances. Use &lt;code&gt;.disabled&lt;&#x2F;code&gt; for unclickable links and &lt;code&gt;.active&lt;&#x2F;code&gt; to indicate the current page.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;disabled-active-pagination&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul class=&quot;pagination&quot;&gt;
+        &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;1 &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+     &lt;&#x2F;ul&gt;
+   &lt;&#x2F;nav&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;nav&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;1 &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    ...
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;nav&gt;
+</code></pre>
+  &lt;p&gt;You can optionally swap out active or disabled anchors for &lt;code&gt;&amp;lt;span&amp;gt;&lt;&#x2F;code&gt;, or omit the anchor in the case of the previous&#x2F;next arrows, to remove click functionality while retaining intended styles.&lt;&#x2F;p&gt;
+<pre><code class="html">
+&lt;nav&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;disabled&quot;&gt;
+      &lt;span&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;&#x2F;span&gt;
+      &lt;&#x2F;span&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li class=&quot;active&quot;&gt;
+      &lt;span&gt;1 &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+    &lt;&#x2F;li&gt;
+    ...
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;nav&gt;
+</code></pre>
+
+
+  &lt;h3&gt;Sizing&lt;&#x2F;h3&gt;
+  &lt;p&gt;Fancy larger or smaller pagination? Add &lt;code&gt;.pagination-lg&lt;&#x2F;code&gt; or &lt;code&gt;.pagination-sm&lt;&#x2F;code&gt; for additional sizes.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;pagination-sizing&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul class=&quot;pagination pagination-lg&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;nav&gt;
+    &lt;nav&gt;
+      &lt;ul class=&quot;pagination&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;nav&gt;
+    &lt;nav&gt;
+      &lt;ul class=&quot;pagination pagination-sm&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;nav&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;nav&gt;&lt;ul class=&quot;pagination pagination-lg&quot;&gt;...&lt;&#x2F;ul&gt;&lt;&#x2F;nav&gt;
+&lt;nav&gt;&lt;ul class=&quot;pagination&quot;&gt;...&lt;&#x2F;ul&gt;&lt;&#x2F;nav&gt;
+&lt;nav&gt;&lt;ul class=&quot;pagination pagination-sm&quot;&gt;...&lt;&#x2F;ul&gt;&lt;&#x2F;nav&gt;
+</code></pre>
+
+
+  &lt;h2 id=&quot;pagination-pager&quot;&gt;Pager&lt;&#x2F;h2&gt;
+  &lt;p&gt;Quick previous and next links for simple pagination implementations with light markup and styles. It&#39;s great for simple sites like blogs or magazines.&lt;&#x2F;p&gt;
+
+  &lt;h3&gt;Default example&lt;&#x2F;h3&gt;
+  &lt;p&gt;By default, the pager centers links.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;simple-pager&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul class=&quot;pager&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Previous&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Next&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;nav&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;nav&gt;
+  &lt;ul class=&quot;pager&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Previous&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Next&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;nav&gt;
+</code></pre>
+
+  &lt;h3&gt;Aligned links&lt;&#x2F;h3&gt;
+  &lt;p&gt;Alternatively, you can align each link to the sides:&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;aligned-pager-links&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul class=&quot;pager&quot;&gt;
+        &lt;li class=&quot;previous&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;larr;&lt;&#x2F;span&gt; Older&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Newer &lt;span aria-hidden=&quot;true&quot;&gt;&amp;rarr;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;nav&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;nav&gt;
+  &lt;ul class=&quot;pager&quot;&gt;
+    &lt;li class=&quot;previous&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;larr;&lt;&#x2F;span&gt; Older&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Newer &lt;span aria-hidden=&quot;true&quot;&gt;&amp;rarr;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;nav&gt;
+</code></pre>
+
+
+  &lt;h3&gt;Optional disabled state&lt;&#x2F;h3&gt;
+  &lt;p&gt;Pager links also use the general &lt;code&gt;.disabled&lt;&#x2F;code&gt; utility class from the pagination.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;disabled-pager&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul class=&quot;pager&quot;&gt;
+        &lt;li class=&quot;previous disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;larr;&lt;&#x2F;span&gt; Older&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Newer &lt;span aria-hidden=&quot;true&quot;&gt;&amp;rarr;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;nav&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;nav&gt;
+  &lt;ul class=&quot;pager&quot;&gt;
+    &lt;li class=&quot;previous disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;larr;&lt;&#x2F;span&gt; Older&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Newer &lt;span aria-hidden=&quot;true&quot;&gt;&amp;rarr;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;nav&gt;
+</code></pre>
+</div>

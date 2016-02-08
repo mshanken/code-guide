@@ -1,0 +1,189 @@
+<div class="bs-docs-section">
+  <h1 id="buttons" class="page-header">Buttons</h1>
+
+  <h2 id="buttons-tags">Button tags</h2>
+  <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+  <form class="bs-example" data-example-id="btn-tags">
+    <a class="btn btn-default" href="#" role="button">Link</a>
+    <button class="btn btn-default" type="submit">Button</button>
+    <input class="btn btn-default" type="button" value="Input">
+    <input class="btn btn-default" type="submit" value="Submit">
+  </form>
+<pre><code class="html">
+&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link&lt;&#x2F;a&gt;
+&lt;button class=&quot;btn btn-default&quot; type=&quot;submit&quot;&gt;Button&lt;&#x2F;button&gt;
+&lt;input class=&quot;btn btn-default&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
+&lt;input class=&quot;btn btn-default&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+</code></pre>
+
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-buttons-context-usage&quot;&gt;
+    &lt;h4&gt;Context-specific usage&lt;&#x2F;h4&gt;
+    &lt;p&gt;While button classes can be used on &lt;code&gt;&amp;lt;a&amp;gt;&lt;&#x2F;code&gt; and &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt; elements, only &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt; elements are supported within our nav and navbar components.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-buttons-anchor-accessibility&quot;&gt;
+    &lt;h4&gt;Links acting as buttons&lt;&#x2F;h4&gt;
+    &lt;p&gt;If the &lt;code&gt;&amp;lt;a&amp;gt;&lt;&#x2F;code&gt; elements are used to act as buttons – triggering in-page functionality, rather than navigating to another document or section within the current page – they should also be given an appropriate &lt;code&gt;role=&quot;button&quot;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-buttons-ff-height&quot;&gt;
+    &lt;h4&gt;Cross-browser rendering&lt;&#x2F;h4&gt;
+    &lt;p&gt;As a best practice, &lt;strong&gt;we highly recommend using the &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt; element whenever possible&lt;&#x2F;strong&gt; to ensure matching cross-browser rendering.&lt;&#x2F;p&gt;
+    &lt;p&gt;Among other things, there&#39;s &lt;a href=&quot;https:&#x2F;&#x2F;bugzilla.mozilla.org&#x2F;show_bug.cgi?id=697451&quot;&gt;a bug in Firefox &amp;lt;30&lt;&#x2F;a&gt; that prevents us from setting the &lt;code&gt;line-height&lt;&#x2F;code&gt; of &lt;code&gt;&amp;lt;input&amp;gt;&lt;&#x2F;code&gt;-based buttons, causing them to not exactly match the height of other buttons on Firefox.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;h2 id=&quot;buttons-options&quot;&gt;Options&lt;&#x2F;h2&gt;
+  &lt;p&gt;Use any of the available button classes to quickly create a styled button.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;btn-variants&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;&#x2F;button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;&#x2F;button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;&#x2F;button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;&#x2F;button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;&#x2F;button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;&#x2F;button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;!-- Standard button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;&#x2F;button&gt;
+
+&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;&#x2F;button&gt;
+
+&lt;!-- Indicates a successful or positive action --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;&#x2F;button&gt;
+
+&lt;!-- Contextual button for informational alert messages --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;&#x2F;button&gt;
+
+&lt;!-- Indicates caution should be taken with this action --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;&#x2F;button&gt;
+
+&lt;!-- Indicates a dangerous or potentially negative action --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;&#x2F;button&gt;
+
+&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;&#x2F;button&gt;
+</code></pre>
+
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-buttons-color-accessibility&quot;&gt;
+    &lt;h4&gt;Conveying meaning to assistive technologies&lt;&#x2F;h4&gt;
+    &lt;p&gt;Using color to add meaning to a button only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text of the button), or is included through alternative means, such as additional text hidden with the &lt;code&gt;.sr-only&lt;&#x2F;code&gt; class.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;h2 id=&quot;buttons-sizes&quot;&gt;Sizes&lt;&#x2F;h2&gt;
+  &lt;p&gt;Fancy larger or smaller buttons? Add &lt;code&gt;.btn-lg&lt;&#x2F;code&gt;, &lt;code&gt;.btn-sm&lt;&#x2F;code&gt;, or &lt;code&gt;.btn-xs&lt;&#x2F;code&gt; for additional sizes.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;btn-sizes&quot;&gt;
+    &lt;p&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Large button&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot;&gt;Large button&lt;&#x2F;button&gt;
+    &lt;&#x2F;p&gt;
+    &lt;p&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Default button&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default button&lt;&#x2F;button&gt;
+    &lt;&#x2F;p&gt;
+    &lt;p&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Small button&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm&quot;&gt;Small button&lt;&#x2F;button&gt;
+    &lt;&#x2F;p&gt;
+    &lt;p&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-xs&quot;&gt;Extra small button&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs&quot;&gt;Extra small button&lt;&#x2F;button&gt;
+    &lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;p&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Large button&lt;&#x2F;button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot;&gt;Large button&lt;&#x2F;button&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Default button&lt;&#x2F;button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default button&lt;&#x2F;button&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Small button&lt;&#x2F;button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm&quot;&gt;Small button&lt;&#x2F;button&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-xs&quot;&gt;Extra small button&lt;&#x2F;button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs&quot;&gt;Extra small button&lt;&#x2F;button&gt;
+&lt;&#x2F;p&gt;
+</code></pre>
+
+  &lt;p&gt;Create block level buttons&amp;mdash;those that span the full width of a parent&amp;mdash; by adding &lt;code&gt;.btn-block&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;block-btns&quot;&gt;
+    &lt;div class=&quot;well center-block&quot; style=&quot;max-width: 400px;&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg btn-block&quot;&gt;Block level button&lt;&#x2F;button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block&quot;&gt;Block level button&lt;&#x2F;button&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+<pre><code class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg btn-block&quot;&gt;Block level button&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block&quot;&gt;Block level button&lt;&#x2F;button&gt;
+</code></pre>
+
+
+  &lt;h2 id=&quot;buttons-active&quot;&gt;Active state&lt;&#x2F;h2&gt;
+  &lt;p&gt;Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt; elements, this is done via &lt;code&gt;:active&lt;&#x2F;code&gt;. For &lt;code&gt;&amp;lt;a&amp;gt;&lt;&#x2F;code&gt; elements, it&#39;s done with &lt;code&gt;.active&lt;&#x2F;code&gt;. However, you may use &lt;code&gt;.active&lt;&#x2F;code&gt; on &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt;s (and include the &lt;code&gt;aria-pressed=&quot;true&quot;&lt;&#x2F;code&gt; attribute) should you need to replicate the active state programmatically.&lt;&#x2F;p&gt;
+
+  &lt;h3&gt;Button element&lt;&#x2F;h3&gt;
+  &lt;p&gt;No need to add &lt;code&gt;:active&lt;&#x2F;code&gt; as it&#39;s a pseudo-class, but if you need to force the same appearance, go ahead and add &lt;code&gt;.active&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+  &lt;p class=&quot;bs-example&quot; data-example-id=&quot;active-button-btns&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg active&quot;&gt;Primary button&lt;&#x2F;button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg active&quot;&gt;Button&lt;&#x2F;button&gt;
+  &lt;&#x2F;p&gt;
+<pre><code class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg active&quot;&gt;Primary button&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg active&quot;&gt;Button&lt;&#x2F;button&gt;
+</code></pre>
+
+  &lt;h3&gt;Anchor element&lt;&#x2F;h3&gt;
+  &lt;p&gt;Add the &lt;code&gt;.active&lt;&#x2F;code&gt; class to &lt;code&gt;&amp;lt;a&amp;gt;&lt;&#x2F;code&gt; buttons.&lt;&#x2F;p&gt;
+  &lt;p class=&quot;bs-example&quot; data-example-id=&quot;active-anchor-btns&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-lg active&quot; role=&quot;button&quot;&gt;Primary link&lt;&#x2F;a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-lg active&quot; role=&quot;button&quot;&gt;Link&lt;&#x2F;a&gt;
+  &lt;&#x2F;p&gt;
+<pre><code class="html">
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-lg active&quot; role=&quot;button&quot;&gt;Primary link&lt;&#x2F;a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-lg active&quot; role=&quot;button&quot;&gt;Link&lt;&#x2F;a&gt;
+</code></pre>
+
+
+  &lt;h2 id=&quot;buttons-disabled&quot;&gt;Disabled state&lt;&#x2F;h2&gt;
+  &lt;p&gt;Make buttons look unclickable by fading them back with &lt;code&gt;opacity&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+
+  &lt;h3&gt;Button element&lt;&#x2F;h3&gt;
+  &lt;p&gt;Add the &lt;code&gt;disabled&lt;&#x2F;code&gt; attribute to &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt; buttons.&lt;&#x2F;p&gt;
+  &lt;p class=&quot;bs-example&quot; data-example-id=&quot;disabled-button-btns&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; disabled=&quot;disabled&quot;&gt;Primary button&lt;&#x2F;button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot; disabled=&quot;disabled&quot;&gt;Button&lt;&#x2F;button&gt;
+  &lt;&#x2F;p&gt;
+<pre><code class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-lg btn-primary&quot; disabled=&quot;disabled&quot;&gt;Primary button&lt;&#x2F;button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot; disabled=&quot;disabled&quot;&gt;Button&lt;&#x2F;button&gt;
+</code></pre>
+
+  &lt;div class=&quot;bs-callout bs-callout-danger&quot; id=&quot;callout-buttons-ie-disabled&quot;&gt;
+    &lt;h4&gt;Cross-browser compatibility&lt;&#x2F;h4&gt;
+    &lt;p&gt;If you add the &lt;code&gt;disabled&lt;&#x2F;code&gt; attribute to a &lt;code&gt;&amp;lt;button&amp;gt;&lt;&#x2F;code&gt;, Internet Explorer 9 and below will render text gray with a nasty text-shadow that we cannot fix.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;h3&gt;Anchor element&lt;&#x2F;h3&gt;
+  &lt;p&gt;Add the &lt;code&gt;.disabled&lt;&#x2F;code&gt; class to &lt;code&gt;&amp;lt;a&amp;gt;&lt;&#x2F;code&gt; buttons.&lt;&#x2F;p&gt;
+  &lt;p class=&quot;bs-example&quot; data-example-id=&quot;disabled-anchor-btns&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-lg disabled&quot; role=&quot;button&quot;&gt;Primary link&lt;&#x2F;a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-lg disabled&quot; role=&quot;button&quot;&gt;Link&lt;&#x2F;a&gt;
+  &lt;&#x2F;p&gt;
+<pre><code class="html">
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-lg disabled&quot; role=&quot;button&quot;&gt;Primary link&lt;&#x2F;a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-lg disabled&quot; role=&quot;button&quot;&gt;Link&lt;&#x2F;a&gt;
+</code></pre>
+  <p>
+    We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required.
+  </p>
+  <div class="bs-callout bs-callout-warning" id="callout-buttons-disabled-anchor">
+    <h4>Link functionality caveat</h4>
+    <p>This class uses <code>pointer-events: none</code> to try to disable the link functionality of <code>&lt;a&gt;</code>s, but that CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11. In addition, even in browsers that do support <code>pointer-events: none</code>, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, use custom JavaScript to disable such links.</p>
+  </div>
+
+</div>

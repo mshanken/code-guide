@@ -1,0 +1,139 @@
+<div class="bs-docs-section">
+  <h1 id="buttons" class="page-header">Buttons <small>button.js</small></h1>
+
+  <p class="lead">Do more with buttons. Control button states or create groups of buttons for more components like toolbars.</p>
+
+  <div class="bs-callout bs-callout-danger" id="callout-buttons-ff-autocomplete">
+    <h4>Cross-browser compatibility</h4>
+    <p><a href="https://github.com/twbs/bootstrap/issues/793">Firefox persists form control states (disabledness and checkedness) across page loads</a>. A workaround for this is to use <code>autocomplete="off"</code>. See <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=654072">Mozilla bug #654072</a>.</p>
+  </div>
+
+  <h2 id="buttons-stateful">Stateful</h2>
+  <p>Add <code>data-loading-text="Loading..."</code> to use a loading state on a button.</p>
+  <p><strong class="text-danger">This feature is deprecated since v3.3.5 and has been removed in v4.</strong></p>
+  <div class="bs-callout bs-callout-info" id="callout-buttons-state-names">
+    <h4>Use whichever state you like!</h4>
+    <p>For the sake of this demonstration, we are using <code>data-loading-text</code> and <code>$().button('loading')</code>, but that's not the only state you can use. <a href="#buttons-methods">See more on this below in the <code>$().button(string)</code> documentation</a>.</p>
+  </div>
+  <div class="bs-example">
+    <button type="button" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+      Loading state
+    </button>
+  </div><!-- /example -->
+<pre><code class="html">
+&lt;button type=&quot;button&quot; id=&quot;myButton&quot; data-loading-text=&quot;Loading...&quot; class=&quot;btn btn-primary&quot; autocomplete=&quot;off&quot;&gt;
+  Loading state
+&lt;&#x2F;button&gt;
+
+&lt;script&gt;
+  $(&#39;#myButton&#39;).on(&#39;click&#39;, function () {
+    var $btn = $(this).button(&#39;loading&#39;)
+    &#x2F;&#x2F; business logic...
+    $btn.button(&#39;reset&#39;)
+  })
+&lt;&#x2F;script&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;buttons-single-toggle&quot;&gt;Single toggle&lt;&#x2F;h2&gt;
+  &lt;p&gt;Add &lt;code&gt;data-toggle=&quot;button&quot;&lt;&#x2F;code&gt; to activate toggling on a single button.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-buttons-single-pretoggled&quot;&gt;
+    &lt;h4&gt;Pre-toggled buttons need &lt;code&gt;.active&lt;&#x2F;code&gt; and &lt;code&gt;aria-pressed=&quot;true&quot;&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+    &lt;p&gt;For pre-toggled buttons, you must add the &lt;code&gt;.active&lt;&#x2F;code&gt; class and the &lt;code&gt;aria-pressed=&quot;true&quot;&lt;&#x2F;code&gt; attribute to the &lt;code&gt;button&lt;&#x2F;code&gt; yourself.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-example&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;button&quot; aria-pressed=&quot;false&quot; autocomplete=&quot;off&quot;&gt;
+      Single toggle
+    &lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;example --&gt;
+<pre><code class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;button&quot; aria-pressed=&quot;false&quot; autocomplete=&quot;off&quot;&gt;
+  Single toggle
+&lt;&#x2F;button&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;buttons-checkbox-radio&quot;&gt;Checkbox &#x2F; Radio&lt;&#x2F;h2&gt;
+  &lt;p&gt;Add &lt;code&gt;data-toggle=&quot;buttons&quot;&lt;&#x2F;code&gt; to a &lt;code&gt;.btn-group&lt;&#x2F;code&gt; containing checkbox or radio inputs to enable toggling in their respective styles.&lt;&#x2F;p&gt;
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-buttons-multi-preselected&quot;&gt;
+    &lt;h4&gt;Preselected options need &lt;code&gt;.active&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+    &lt;p&gt;For preselected options, you must add the &lt;code&gt;.active&lt;&#x2F;code&gt; class to the input&#39;s &lt;code&gt;label&lt;&#x2F;code&gt; yourself.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-buttons-only-click&quot;&gt;
+    &lt;h4&gt;Visual checked state only updated on click&lt;&#x2F;h4&gt;
+    &lt;p&gt;If the checked state of a checkbox button is updated without firing a &lt;code&gt;click&lt;&#x2F;code&gt; event on the button (e.g. via &lt;code&gt;&amp;lt;input type=&quot;reset&quot;&amp;gt;&lt;&#x2F;code&gt; or via setting the &lt;code&gt;checked&lt;&#x2F;code&gt; property of the input), you will need to toggle the &lt;code&gt;.active&lt;&#x2F;code&gt; class on the input&#39;s &lt;code&gt;label&lt;&#x2F;code&gt; yourself.&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;buttons-checkbox&quot;&gt;
+    &lt;div class=&quot;btn-group&quot; data-toggle=&quot;buttons&quot;&gt;
+      &lt;label class=&quot;btn btn-primary active&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; checked autocomplete=&quot;off&quot;&gt; Checkbox 1 (pre-checked)
+      &lt;&#x2F;label&gt;
+      &lt;label class=&quot;btn btn-primary&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; autocomplete=&quot;off&quot;&gt; Checkbox 2
+      &lt;&#x2F;label&gt;
+      &lt;label class=&quot;btn btn-primary&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; autocomplete=&quot;off&quot;&gt; Checkbox 3
+      &lt;&#x2F;label&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;example --&gt;
+<pre><code class="html">
+&lt;div class=&quot;btn-group&quot; data-toggle=&quot;buttons&quot;&gt;
+  &lt;label class=&quot;btn btn-primary active&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; autocomplete=&quot;off&quot; checked&gt; Checkbox 1 (pre-checked)
+  &lt;&#x2F;label&gt;
+  &lt;label class=&quot;btn btn-primary&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; autocomplete=&quot;off&quot;&gt; Checkbox 2
+  &lt;&#x2F;label&gt;
+  &lt;label class=&quot;btn btn-primary&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; autocomplete=&quot;off&quot;&gt; Checkbox 3
+  &lt;&#x2F;label&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;div class=&quot;bs-example&quot; data-example-id=&quot;buttons-radio&quot;&gt;
+    &lt;div class=&quot;btn-group&quot; data-toggle=&quot;buttons&quot;&gt;
+      &lt;label class=&quot;btn btn-primary active&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option1&quot; autocomplete=&quot;off&quot; checked&gt; Radio 1 (preselected)
+      &lt;&#x2F;label&gt;
+      &lt;label class=&quot;btn btn-primary&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option2&quot; autocomplete=&quot;off&quot;&gt; Radio 2
+      &lt;&#x2F;label&gt;
+      &lt;label class=&quot;btn btn-primary&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option3&quot; autocomplete=&quot;off&quot;&gt; Radio 3
+      &lt;&#x2F;label&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;&lt;!-- &#x2F;example --&gt;
+<pre><code class="html">
+&lt;div class=&quot;btn-group&quot; data-toggle=&quot;buttons&quot;&gt;
+  &lt;label class=&quot;btn btn-primary active&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option1&quot; autocomplete=&quot;off&quot; checked&gt; Radio 1 (preselected)
+  &lt;&#x2F;label&gt;
+  &lt;label class=&quot;btn btn-primary&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option2&quot; autocomplete=&quot;off&quot;&gt; Radio 2
+  &lt;&#x2F;label&gt;
+  &lt;label class=&quot;btn btn-primary&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option3&quot; autocomplete=&quot;off&quot;&gt; Radio 3
+  &lt;&#x2F;label&gt;
+&lt;&#x2F;div&gt;
+</code></pre>
+
+  &lt;h2 id=&quot;buttons-methods&quot;&gt;Methods&lt;&#x2F;h2&gt;
+  &lt;h4&gt;&lt;code&gt;$().button(&#39;toggle&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Toggles push state. Gives the button the appearance that it has been activated.&lt;&#x2F;p&gt;
+
+  &lt;h4&gt;&lt;code&gt;$().button(&#39;reset&#39;)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Resets button state - swaps text to original text. &lt;strong&gt;This method is asynchronous and returns before the resetting has actually completed.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+
+  &lt;h4&gt;&lt;code&gt;$().button(string)&lt;&#x2F;code&gt;&lt;&#x2F;h4&gt;
+  &lt;p&gt;Swaps text to any data defined text state.&lt;&#x2F;p&gt;
+
+<pre><code class="html">
+&lt;button type=&quot;button&quot; id=&quot;myStateButton&quot; data-complete-text=&quot;finished!&quot; class=&quot;btn btn-primary&quot; autocomplete=&quot;off&quot;&gt;
+  ...
+&lt;&#x2F;button&gt;
+
+&lt;script&gt;
+  $(&#39;#myStateButton&#39;).on(&#39;click&#39;, function () {
+    $(this).button(&#39;complete&#39;) &#x2F;&#x2F; button text will be &quot;finished!&quot;
+  })
+&lt;&#x2F;script&gt;
+</code></pre>
+</div>
