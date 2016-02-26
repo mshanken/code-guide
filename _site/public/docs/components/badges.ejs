@@ -1,0 +1,45 @@
+<div class="bs-docs-section">
+  <h1 class="page-header" id="badges">Badges</h1>
+
+  <p class="lead">Easily highlight new or unread items by adding a <code>&lt;span class="badge"&gt;</code> to links, Bootstrap navs, and more.</p>
+
+  <div class="bs-example" data-example-id="simple-badges">
+    <a href="#">Inbox <span class="badge">42</span></a>
+    <br><br>
+    <button class="btn btn-primary" type="button">
+      Messages <span class="badge">4</span>
+    </button>
+  </div>
+<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+&lt;a href=&quot;#&quot;&gt;Inbox &lt;span class=&quot;badge&quot;&gt;42&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
+
+&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;
+  Messages &lt;span class=&quot;badge&quot;&gt;4&lt;&#x2F;span&gt;
+&lt;&#x2F;button&gt;
+</code></pre></figure>
+
+  <h4>Self collapsing</h4>
+  <p>When there are no new or unread items, badges will simply collapse (via CSS's <code>:empty</code> selector) provided no content exists within.</p>
+
+  <div class="bs-callout bs-callout-danger" id="callout-badges-ie8-empty">
+    <h4>Cross-browser compatibility</h4>
+    <p>Badges won't self collapse in Internet Explorer 8 because it lacks support for the <code>:empty</code> selector.</p>
+  </div>
+
+  <h4>Adapts to active nav states</h4>
+  <p>Built-in styles are included for placing badges in active states in pill navigations.</p>
+  <div class="bs-example" data-example-id="badges-in-pills">
+    <ul class="nav nav-pills" role="tablist">
+      <li class="active" role="presentation"><a href="#">Home <span class="badge">42</span></a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+    </ul>
+  </div>
+<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+&lt;ul class=&quot;nav nav-pills&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;active&quot; role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home &lt;span class=&quot;badge&quot;&gt;42&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages &lt;span class=&quot;badge&quot;&gt;3&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</code></pre></figure>
+</div>

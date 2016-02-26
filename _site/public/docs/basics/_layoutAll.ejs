@@ -1,0 +1,60 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    <%- partial("../../_themes/default/partials/_headingtags") %>
+    <%- partial("../../_themes/default/partials/_styles") %>
+    <%- partial("../../_themes/default/partials/_ga") %>
+  
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.js"></script>
+        <script src="/js/vendor/respond.src.js"></script>
+      <![endif]-->
+    <script src="/js/vendor/modernizr.js"></script>
+    
+  </head>
+  
+  <body class="fuelux">
+    <!--[if (lt IE 8)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--[if (gt IEMobile 8)|(IEMobile)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <%- partial("../../_themes/default/_header") %>
+    <%- partial("../../_themes/default/_navbar", {navItems:public.docs._data}) %>
+
+    <main id="main" class="container main" role="main">
+      <div class="row wrapper">
+        <article id="article" class="article" role="main-article">
+          <% for(var slug in public.docs[current.path[1]]._data){ %>
+            <% if(slug !== 'index'){ %>
+              <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active"><%= current.path[1] %></li>
+                <li><a href="<%= slug %>"><%=: public.docs[current.path[1]]._data[slug].title %></a></li>
+              </ol>
+              
+              <%- partial(slug) %>
+
+            <% } %>
+          <% } %>
+
+          <!-- For debuging: <pre>< %- JSON.stringify(public.docs, null, '\t') %></pre> -->
+          <!-- For debuging: <pre>< %- JSON.stringify(current, null, '\t') %></pre> -->
+
+        </article>
+        <aside id="aside" class="aside " role="sidebar">
+          <%- partial("../_partials/_navmenu", { navItems: public.docs[current.path[1]]._data }) %>
+        </aside>
+      </div>
+    </main>
+    
+    <%- partial("../../_themes/default/_footer") %>
+    <%- partial("../../_themes/default/partials/_scripts") %>
+  </body>
+</html>
+      

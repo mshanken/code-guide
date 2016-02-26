@@ -1,0 +1,25 @@
+/*******************************
+         Grid Overrides
+*******************************/
+
+#main article{
+  .make-md-column(10);
+}
+#main aside{
+  .make-md-column(2);
+}
+/*
+ * For Sematic UI
+ * .wrapper {
+ *   .make-row();
+ * }
+ * .content-main {
+ *   .make-lg-column(8);
+ * }
+ * .content-secondary {
+ *   .make-lg-column(3);
+ *   .make-lg-column-offset(1);
+ * }
+ * #main article .panel .row, .wrapper{ margin-bottom: 10px; }
+ * #main article .panel .row div, .content-main, .content-secondary{ border:1px solid #666; background-color: #ccc;}
+ */

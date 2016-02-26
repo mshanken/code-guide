@@ -1,0 +1,8 @@
+// mixins
+.checkbox-radio-hover() {
+	box-shadow: inset 0px 0px 2px 1px rgba(91, 157, 217, .7), 0px 0px 5px 0px rgba(91, 157, 217, .7);
+}
+
+.checkbox-radio-focus() {
+	box-shadow: inset 0px 0px 2px 1px rgb(91, 157, 217), 0px 0px 5px 0px rgb(91, 157, 217);
+}

@@ -1,14 +1,16 @@
-		
-		<nav id="menu" class="navbar navbar-default" role="main-menu">
-			<div>
-				<ul class="nav navbar-nav">
-			<% for(var nav in navItems){ 
-				if (current.path.length < 2) { %>
-					<li class="<%- (current.source == nav) ? 'active' : '' %>"><a href="/docs/<%= nav %>"><%-: nav === 'index' ? 'Home' : nav | capitalize %></a></li>
-				<% } else { %>
-					<li class="<%- (current.path[1] == nav) ? 'active' : '' %>"><a href="/docs/<%= nav %>"><%-: nav === 'index' ? 'Home' : nav | capitalize %></a></li>
-				<% }; %>
+ 		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<div>
+		<ul class="nav navbar-nav">
+	<% for(var nav in navItems){ 
+		if (nav !== 'index') {
+			if (current.path.length < 2) { %>
+				<li class="<%- (current.source == nav) ? 'active' : '' %>"><a href="/docs/<%= nav %>"><%-: nav | capitalize %></a></li>
+			<% } else { %>
+				<li class="<%- (current.path[1] == nav) ? 'active' : '' %>"><a href="/docs/<%= nav %>"><%-: nav | capitalize %></a></li>
 			<% }; %>
-				</ul>
-			</div>
-		</nav>
+		<% }; %>
+	<% }; %>
+		</ul>
+	</div>
+</nav>

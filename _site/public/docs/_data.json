@@ -1,30 +1,65 @@
 {
 	"index": {
-		"title": "Code Guide - Patterns",
-		"name": "Start"
+		"css"         : "",
+		"standalone"  : true,
+		"element"     : "",
+		"elementType" : "",
+		"title"       : "Code Guide - Patterns",
+		"description" : "",
+		"type"        : "UI Element"
 	},
 	"globals": {
-		"title": "Your website title 3",
-		"name": "Style Guide Patterns"
+		"css"         : "",
+		"standalone"  : true,
+		"element"     : "",
+		"elementType" : "",
+		"title"       : "Code Guide - Globals",
+		"description" : "",
+		"type"        : "UI Element"
 	},
-	"elements": {
-		"title": "Your website title 3",
-		"name": "Style Guide Patterns"
+	"basics": {
+		"css"         : "",
+		"standalone"  : true,
+		"element"     : "",
+		"elementType" : "",
+		"title"       : "Code Guide - Element",
+		"description" : "",
+		"type"        : "UI Element"
 	},
-	"collections": {
-		"title": "Your website title 3",
-		"name": "Style Guide Patterns"
+	"components": {
+		"css"         : "",
+		"standalone"  : true,
+		"element"     : "",
+		"elementType" : "",
+		"title"       : "Code Guide - Collections",
+		"description" : "",
+		"type"        : "UI Element"
 	},
 	"modules": {
-		"title": "Your website title 3",
-		"name": "Style Guide Patterns"
+		"css"         : "",
+		"standalone"  : true,
+		"element"     : "",
+		"elementType" : "",
+		"title"       : "Code Guide - Modules",
+		"description" : "",
+		"type"        : "UI Element"
 	},
 	"views": {
-		"title": "Your website title 3",
-		"name": "Style Guide Patterns"
+		"css"         : "",
+		"standalone"  : true,
+		"element"     : "",
+		"elementType" : "",
+		"title"       : "Code Guide - Views",
+		"description" : "",
+		"type"        : "UI Element"
 	},
-	"behaviors": {
-		"title": "Your website title 3",
-		"name": "Style Guide Patterns"
+	"pages": {
+		"css"         : "",
+		"standalone"  : true,
+		"element"     : "",
+		"elementType" : "",
+		"title"       : "Code Guide - Pages",
+		"description" : "",
+		"type"        : "UI Element"
 	}
 }

@@ -1,0 +1,212 @@
+{
+	"index": {
+		"css"         : "",
+		"standalone"  : true,
+		"element"     : "",
+		"elementType" : "component",
+		"title"       : "Code Guide - Patterns",
+		"description" : "",
+		"type"        : "UI Element",
+		"layout"	  : "_layoutAll"
+
+	},
+	"alerts": {
+		"css"         : "alerts",
+		"element"     : "alerts",
+		"elementType" : "component",
+		"standalone"  : true,
+		"title"       : "Alerts",
+		"description" : "A alerts indicates a possible user action",
+		"type"        : "UI Element",
+		"tabs"        : ""
+	},
+	"badges": {
+		"css"         : "badges",
+		"element"     : "badges",
+		"elementType" : "component",
+		"standalone"  : true,
+		"title"       : "Badges",
+		"description" : "A badges indicates a possible user action",
+		"type"        : "UI Element",
+		"tabs"        : ""
+	},
+	"breadcrumbs": {
+		"css"         : "breadcrumbs",
+		"element"     : "breadcrumbs",
+		"elementType" : "component",
+		"standalone"  : true,
+		"title"       : "breadcrumbs",
+		"description" : "A breadcrumbs indicates a possible user action",
+		"type"        : "UI Element",
+		"tabs"        : ""
+	},
+	"button-dropdown": {
+		"css"         : "button-dropdown",
+		"standalone"  : true,
+		"element"     : "button-dropdown",
+		"elementType" : "component",
+		"title"       : "Button-dropdown",
+		"description" : "A button-dropdown is used to show hierarchy between content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"button-groups": {
+		"css"         : "button-groups",
+		"standalone"  : true,
+		"element"     : "button-groups",
+		"elementType" : "component",
+		"title"       : "Button-groups",
+		"description" : "A button-groups is used to show hierarchy between content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+  "dropdowns": {
+		"css"         : "dropdowns",
+		"standalone"  : true,
+		"element"     : "dropdowns",
+		"elementType" : "component",
+		"title"       : "dropdowns",
+		"description" : "A dropdowns is used to show hierarchy between content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"input-groups": {
+		"css"         : "input-groups",
+		"standalone"  : true,
+		"element"     : "input-groups",
+		"elementType" : "component",
+		"title"       : "Input-groups",
+		"description" : "A input-groups is used to show hierarchy between content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"labels": {
+		"css"         : "labels",
+		"standalone"  : true,
+		"element"     : "labels",
+		"elementType" : "component",
+		"title"       : "Labels",
+		"description" : "A label displays content classification",
+		"type"        : "UI Element",
+		"tabs"        : ""
+	},
+	"list-group": {
+		"css"         : "list-group",
+		"standalone"  : true,
+		"element"     : "list-group",
+		"elementType" : "component",
+		"title"       : "List-group",
+		"description" : "A list-group is used to show hierarchy between content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"media": {
+		"css"         : "media",
+		"standalone"  : true,
+		"element"     : "media",
+		"elementType" : "component",
+		"title"       : "Media",
+		"description" : "A media displays information that explains nearby content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"navbar": {
+		"css"         : "navbar",
+		"standalone"  : true,
+		"element"     : "navbar",
+		"elementType" : "component",
+		"title"       : "navbar",
+		"description" : "A navbar displays a collections of data grouped into rows",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"navmenu-alerts": {
+		"css"         : "navmenu-alerts",
+		"standalone"  : true,
+		"element"     : "navmenu-alerts",
+		"elementType" : "component",
+		"title"       : "Navmenu-alerts",
+		"description" : "A navmenu-alerts is used to show hierarchy between content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"navs": {
+		"css"         : "navs",
+		"standalone"  : true,
+		"element"     : "navs",
+		"elementType" : "component",
+		"title"       : "navs",
+		"description" : "A navs is used to show hierarchy between content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"page-header": {
+		"css"         : "page-header",
+		"standalone"  : true,
+		"element"     : "page-header",
+		"elementType" : "component",
+		"title"       : "Page-header",
+		"description" : "A page-header is used to show hierarchy between content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"pagination": {
+		"css"         : "pagination",
+		"standalone"  : true,
+		"element"     : "pagination",
+		"elementType" : "component",
+		"title"       : "Pagination",
+		"description" : "A pagination is used to show hierarchy between content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"panels": {
+		"css"         : "panels",
+		"standalone"  : true,
+		"element"     : "panels",
+		"elementType" : "component",
+		"title"       : "Panels",
+		"description" : "A panels is used to show hierarchy between content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"progress-bars": {
+		"css"         : "progress-bars",
+		"standalone"  : true,
+		"element"     : "progress-bars",
+		"elementType" : "component",
+		"title"       : "Progress-bars",
+		"description" : "A progress-bars is used to show hierarchy between content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"responsive-embed": {
+		"css"         : "responsive-embed",
+		"standalone"  : true,
+		"element"     : "responsive-embed",
+		"elementType" : "component",
+		"title"       : "Responsive-embed",
+		"description" : "A responsive-embed is used to group related content",
+		"type"        : "UI Element",
+		"tabs"        : ""
+	},
+	"thumbnails": {
+		"css"         : "thumbnails",
+		"standalone"  : true,
+		"element"     : "thumbnails",
+		"elementType" : "component",
+		"title"       : "Thumbnails",
+		"description" : "A thumbnails is used to show hierarchy between content",
+		"type"        : "UI Collection",
+		"tabs"        : ""
+	},
+	"wells": {
+		"css"         : "basic minimal",
+		"element"     : "wells",
+		"elementType" : "component",
+		"standalone"  : true,
+		"title"       : "Wells",
+		"description" : "A wells is used to show accompanying content outside the boundaries of the main view of a site",
+		"type"        : "UI Element"
+	}
+}

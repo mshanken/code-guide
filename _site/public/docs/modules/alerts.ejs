@@ -1,89 +1,73 @@
 <div class="bs-docs-section">
-  <h1 id="alerts" class="page-header">Alerts</h1>
+  <h1 class="page-header" id="alerts">Alert messages <small>alert.js</small></h1>
 
-  <p class="lead">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+  <h2 id="alerts-examples">Example alerts</h2>
+  <p>Add dismiss functionality to all alert messages with this plugin.</p>
+  <p>When using a <code>.close</code> button, it must be the first child of the <code>.alert-dismissible</code> and no text content may come before it in the markup.</p>
+  <div class="bs-example bs-example-standalone" data-example-id="dismissible-alert-js">
+    <div class="alert alert-warning alert-dismissible fade in" role="alert">
+      <button class="close" data-dismiss="alert" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+    </div>
 
-  <h2 id="alerts-examples">Examples</h2>
-  <p>Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual classes (e.g., <code>.alert-success</code>) for basic alert messages.</p>
+    <div class="alert alert-danger alert-dismissible fade in" role="alert">
+      <button class="close" data-dismiss="alert" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4>Oh snap! You got an error!</h4>
+      <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+      <p>
+        <button class="btn btn-danger" type="button">Take this action</button>
+        <button class="btn btn-default" type="button">Or do this</button>
+      </p>
+    </div>
+  </div><!-- /example -->
 
-  <div class="bs-callout bs-callout-info" id="callout-alerts-no-default">
-    <h4>No default class</h4>
-    <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p>
-  </div>
 
-  <div class="bs-example" data-example-id="simple-alerts">
-    <div class="alert alert-success" role="alert">
-      <strong>Well done!</strong> You successfully read this important alert message.
-    </div>
-    <div class="alert alert-info" role="alert">
-      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-    </div>
-    <div class="alert alert-warning" role="alert">
-      <strong>Warning!</strong> Better check yourself, you're not looking too good.
-    </div>
-    <div class="alert alert-danger" role="alert">
-      <strong>Oh snap!</strong> Change a few things up and try submitting again.
-    </div>
-  </div>
-<pre><code class="html">
-<div class="alert alert-success" role="alert">...</div>
-<div class="alert alert-info" role="alert">...</div>
-<div class="alert alert-warning" role="alert">...</div>
-<div class="alert alert-danger" role="alert">...</div>
-</code></pre>
+  <h2 id="alerts-usage">Usage</h2>
 
-  <h2 id="alerts-dismissible">Dismissible alerts</h2>
-  <p>Build on any alert by adding an optional <code>.alert-dismissible</code> and close button.</p>
-  <div class="bs-callout bs-callout-info" id="callout-alerts-dismiss-plugin">
-    <h4>Requires JavaScript alert plugin</h4>
-    <p>For fully functioning, dismissible alerts, you must use the <a href="../javascript/#alerts">alerts JavaScript plugin</a>.</p>
-  </div>
-  <div class="bs-example" data-example-id="dismissible-alert-css">
-    <div class="alert alert-warning alert-dismissible" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <strong>Warning!</strong> Better check yourself, you're not looking too good.
-    </div>
-  </div>
-<pre><code class="html">
-<div class="alert alert-warning alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Warning!</strong> Better check yourself, you're not looking too good.
-</div>
-</code></pre>
+  <p>Just add <code>data-dismiss="alert"</code> to your close button to automatically give an alert close functionality. Closing an alert removes it from the DOM.</p>
 
-  <div class="bs-callout bs-callout-warning" id="callout-alerts-dismiss-use-button">
-    <h4>Ensure proper behavior across all devices</h4>
-    <p>Be sure to use the <code>&lt;button&gt;</code> element with the <code>data-dismiss="alert"</code> data attribute.</p>
-  </div>
+<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+&lt;button class=&quot;close&quot; data-dismiss=&quot;alert&quot; type=&quot;button&quot; aria-label=&quot;Close&quot;&gt;
+  &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;
+&lt;&#x2F;button&gt;
+</code></pre></figure>
 
-  <h2 id="alerts-links">Links in alerts</h2>
-  <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
-  <div class="bs-example" data-example-id="alerts-with-links">
-    <div class="alert alert-success" role="alert">
-      <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
-    </div>
-    <div class="alert alert-info" role="alert">
-      <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
-    </div>
-    <div class="alert alert-warning" role="alert">
-      <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
-    </div>
-    <div class="alert alert-danger" role="alert">
-      <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
-    </div>
-  </div>
-<pre><code class="html">
-<div class="alert alert-success" role="alert">
-  <a href="#" class="alert-link">...</a>
-</div>
-<div class="alert alert-info" role="alert">
-  <a href="#" class="alert-link">...</a>
-</div>
-<div class="alert alert-warning" role="alert">
-  <a href="#" class="alert-link">...</a>
-</div>
-<div class="alert alert-danger" role="alert">
-  <a href="#" class="alert-link">...</a>
-</div>
-</code></pre>
+  <p>To have your alerts use animation when closing, make sure they have the <code>.fade</code> and <code>.in</code> classes already applied to them.</p>
+
+  <h3 id="alerts-methods">Methods</h3>
+
+  <h4><code>$().alert()</code></h4>
+  <p>Makes an alert listen for click events on descendant elements which have the <code>data-dismiss="alert"</code> attribute. (Not necessary when using the data-api's auto-initialization.)</p>
+
+  <h4><code>$().alert('close')</code></h4>
+  <p>Closes an alert by removing it from the DOM. If the <code>.fade</code> and <code>.in</code> classes are present on the element, the alert will fade out before it is removed.</p>
+
+
+  <h3 id="alerts-events">Events</h3>
+  <p>Bootstrap's alert plugin exposes a few events for hooking into alert functionality.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped bs-events-table">
+      <thead>
+        <tr>
+          <th>Event Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>close.bs.alert</td>
+          <td>This event fires immediately when the <code>close</code> instance method is called.</td>
+        </tr>
+        <tr>
+          <td>closed.bs.alert</td>
+          <td>This event is fired when the alert has been closed (will wait for CSS transitions to complete).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /.table-responsive -->
+<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+$('#myAlert').on('closed.bs.alert', function () {
+  // do something…
+})
+</code></pre></figure>
 </div>

@@ -1,0 +1,13 @@
+{
+	"index": {
+		"css"         : "",
+		"standalone"  : true,
+		"element"     : "",
+		"elementType" : "view",
+		"title"       : "Code Guide - Patterns",
+		"description" : "",
+		"type"        : "UI Element",
+		"layout"	  : "_layoutAll"
+
+	}
+}
