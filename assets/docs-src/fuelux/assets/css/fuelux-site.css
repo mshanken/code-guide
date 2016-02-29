@@ -1,0 +1,92 @@
+@font-face {
+    font-family:"Salesforce Sans";
+    src:url(../fonts/SalesforceSans-Regular.eot) format("eot"),
+    url(../fonts/SalesforceSans-Regular.woff) format("woff"),
+    url(../fonts/SalesforceSans-Regular.ttf) format("truetype"),
+    url(../fonts/SalesforceSans-Regular.svg) format("svg")
+}
+
+#fuelux-site-body {
+    padding:50px;
+    padding-top:0;
+    font-size: 14px;
+}
+
+
+#fuelux-site-body .page-header {
+    display: none;
+}
+
+
+#fuelux-site-body .fu-docs-section > h1,
+#fuelux-site-body .fu-docs-section > h2,
+#fuelux-site-body .fu-docs-section > h3,
+#fuelux-site-body .fu-docs-section > h4,
+#fuelux-site-body .fu-docs-section > h5,
+#fuelux-site-body .fu-docs-section > h6,
+#fuelux-site-body .fu-docs-section > .table-responsive th,
+#fuelux-site-body .fu-docs-section > .table-responsive td,
+#fuelux-site-body .fu-docs-section > dl dt,
+#fuelux-site-body .fu-docs-section > dl dd,
+#fuelux-site-body .fu-docs-section > p
+{
+    font-family: "Salesforce Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#fuelux-site-body .fu-docs-section > h2 {
+    color: #16325c;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#fuelux-site-body .fu-docs-section > h3 {
+    color: #16325c;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#fuelux-site-body .fu-docs-section > p {
+    font-size: 14px;
+    color: #333;
+}
+
+#fuelux-site-body .fu-example.section:last-child {
+    margin-bottom: 200px;
+}
+
+h1 .header-anchor{
+    left:-1px;   
+}
+h2 .header-anchor{
+    left:7px;
+}
+h3 .header-anchor{
+    left:12px;   
+}
+h4 .header-anchor{
+    left:15px;   
+}
+dt .header-anchor{
+    left:20px;   
+}
+h1:first-of-type{
+    padding-top:0px;   
+}
+
+#fuelux-site-body .page-header {
+    display: none;
+}
+
+#fuelux-site-body .fu-example {
+    font-family: Arial,sans-serif;
+}
+
+#fuelux-site-body .glyphicon-link:before {
+    display: none;
+}
+
+#fuelux-site-body .fu-docs-section .fuelux-mctheme-do-not-use {
+    display: none;
+}

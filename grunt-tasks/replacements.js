@@ -112,7 +112,24 @@ module.exports = {
 	    {
 	      pattern: /(@import "forms.less");/g,
 	      replacement: ''
-	    }
+	    }/* To remove fluel-ux class
+	    ,
+	    {
+	      pattern: /(.fuelux )({)([\s\S]+)(})/g,
+	      replacement: '$3'
+	    },
+	    {
+	      pattern: /(}[\s]+)(.fuelux {)/g,
+	      replacement: ''
+	    },
+	    {
+	      pattern: /(.fuelux )|(.fuelux)/g,
+	      replacement: ''
+	    }, extra not need it.
+	    {
+	      pattern: /((,)( )([.:&\s~\s\-\w="\(\)\[\]]+)){1,2}( {)/g,
+	      replacement: '$2\n$3$4$5'
+	    } */
 	],
 	uidocs: [
 		{
