@@ -18,12 +18,12 @@
   <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first-class API and should be your first consideration when using a plugin.</p>
 
   <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the document namespaced with <code>data-api</code>. This looks like this:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $(document).off('.data-api')
 </code></pre></figure>
 
   <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $(document).off('.alert.data-api')
 </code></pre></figure>
 
@@ -34,12 +34,12 @@ $(document).off('.alert.data-api')
 
   <h2 id="js-programmatic-api">Programmatic API</h2>
   <p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('.btn.danger').button('toggle').addClass('fat')
 </code></pre></figure>
 
   <p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myModal').modal()                      // initialized with defaults
 $('#myModal').modal({ keyboard: false })   // initialized with no keyboard
 $('#myModal').modal('show')                // initializes and invokes show immediately
@@ -49,13 +49,13 @@ $('#myModal').modal('show')                // initializes and invokes show immed
 
   <h4>Default settings</h4>
   <p>You can change the default settings for a plugin by modifying the plugin's <code>Constructor.DEFAULTS</code> object:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $.fn.modal.Constructor.DEFAULTS.keyboard = false // changes default for the modal plugin's `keyboard` option to false
 </code></pre></figure>
 
   <h2 id="js-noconflict">No conflict</h2>
   <p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
 $.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Bootstrap functionality
 </code></pre></figure>
@@ -64,7 +64,7 @@ $.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Boot
   <p>Bootstrap provides custom events for most plugins' unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is triggered on the completion of an action.</p>
   <p>As of 3.0.0, all Bootstrap events are namespaced.</p>
   <p>All infinitive events provide <code>preventDefault</code> functionality. This provides the ability to stop the execution of an action before it starts.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myModal').on('show.bs.modal', function (e) {
   if (!data) return e.preventDefault() // stops modal from being shown
 })
@@ -72,7 +72,7 @@ $('#myModal').on('show.bs.modal', function (e) {
 
   <h2 id="js-version-nums">Version numbers</h2>
   <p>The version of each of Bootstrap's jQuery plugins can be accessed via the <code>VERSION</code> property of the plugin's constructor. For example, for the tooltip plugin:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $.fn.tooltip.Constructor.VERSION // => "{{ site.current_version }}"
 </code></pre></figure>
 

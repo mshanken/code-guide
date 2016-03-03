@@ -10,7 +10,7 @@
     <div class="form-group">
 
       <div class="spinbox digits-3" id="spinboxIllustration" data-initialize="spinbox">
-        <input id="overviewSpinboxInput" type="text" class="form-control input-mini spinbox-input" value="3">
+        <input class="form-control input-mini spinbox-input" id="overviewSpinboxInput" type="text" value="3">
 
         <div class="spinbox-buttons btn-group btn-group-vertical">
           <button class="btn btn-default spinbox-up btn-xs" type="button">
@@ -32,7 +32,7 @@
 
   <h3 id="spinbox-usage-javascript">Via JavaScript</h3>
   <p>Call the selectlist control via JavaScript:</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox();</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox();</code></pre></figure>
 
   <h3 id="spinbox-usage-data-attributes">Via data-attributes</h3>
   <p>To enable the spinbox control without writing JavaScript, add <code>data-initialize="spinbox"</code> to the <code>.spinbox</code> element that you wish to initialize. Such elements that exist when <code>$.ready()</code> executes will be initialized. Any spinbox markup that is programmatically created with <code>data-initialize="spinbox"</code> sometime after the initial page load will not immediately initialize. Rather, it will initialize when the <code>mousedown</code> event is fired on it.</p>
@@ -41,7 +41,7 @@
 
   <p>Add <code>class="spinbox"</code> to a div within a <code>class="fuelux"</code> container.</p>
 
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;spinbox&quot; id=&quot;mySpinbox&quot; data-initialize=&quot;spinbox&quot;&gt;
   &lt;input class=&quot;form-control input-mini spinbox-input&quot; type=&quot;text&quot;&gt;
   &lt;div class=&quot;spinbox-buttons btn-group btn-group-vertical&quot;&gt;
@@ -59,7 +59,7 @@
   <dl>
     <dt id="spinbox-usage-methods-destroy">.spinbox('destroy')</dt>
     <dd>Removes all functionality, jQuery data, and the markup from the DOM. Returns string of control markup.
-    <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox('destroy');</code></pre></figure></dd>
+    <figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox('destroy');</code></pre></figure></dd>
 
     <dt id="spinbox-usage-methods-getintvalue">.spinbox('getIntValue')</dt>
     <dd>
@@ -79,8 +79,8 @@
     <dt id="spinbox-usage-methods-value">.spinbox('value')</dt>
     <dd>
       Sets or returns the spinner value
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox('value') </code></pre></figure>
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox('value', 11) </code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox('value') </code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox('value', 11) </code></pre></figure>
       <p>If value contains non-integers, the value returns as a string. Otherwise, the value returns as a number.</p>
     </dd>
   </dl>
@@ -180,7 +180,7 @@
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All spinbox events are fired on the <code>.spinbox</code> classed element.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#mySpinbox').on('changed.fu.spinbox', function () {
   // do something
 })
@@ -196,7 +196,7 @@ $('#mySpinbox').on('changed.fu.spinbox', function () {
       <div class="form-group">
 
         <div class="spinbox digits-3" id="mySpinboxWithDefault" data-initialize="spinbox">
-          <input id="mySpinboxWithDefaultInput" type="text" class="form-control input-mini spinbox-input" value="3">
+          <input class="form-control input-mini spinbox-input" id="mySpinboxWithDefaultInput" type="text" value="3">
 
           <div class="spinbox-buttons btn-group btn-group-vertical">
             <button class="btn btn-default spinbox-up btn-xs" type="button">

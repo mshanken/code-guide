@@ -10,6 +10,68 @@
 		"layout"	  : "_layoutAll"
 
 	},
+  "overview": {
+    "css"         : "overview",
+    "standalone"  : true,
+    "element"     : "overview",
+    "elementType" : "basic",
+    "title"       : "Overview",
+    "description" : "An overview is a graphic representation of something",
+    "type"        : "UI Element",
+    "tabs"        : ""
+  },
+  "grid": {
+    "css"         : "Grid",
+    "standalone"  : true,
+    "element"     : "grid",
+    "elementType" : "basic",
+    "title"       : "Grid",
+    "description" : "A grid is used to harmonize negative space in a layout",
+    "type"        : "UI Collection",
+    "tabs"      : {
+      "overview": "Overview",
+      "definition": "Definition"
+    }
+  },
+  "type": {
+    "css"         : "type",
+    "standalone"  : true,
+    "element"     : "type",
+    "elementType" : "basic",
+    "title"       : "Type",
+    "description" : "A type alerts a user to wait for an activity to complete",
+    "type"        : "UI Element",
+    "tabs"        : ""
+  },
+  "code": {
+    "css"         : "code",
+    "element"     : "code",
+    "elementType" : "basic",
+    "standalone"  : true,
+    "title"       : "Code",
+    "description" : "A code is is used to represent a political state",
+    "type"        : "UI Element"
+  },
+  "tables": {
+    "css"         : "tables",
+    "standalone"  : true,
+    "element"     : "tables",
+    "elementType" : "basic",
+    "title"       : "Tables",
+    "description" : "A tables alerts a user to wait for an activity to complete",
+    "type"        : "UI Element",
+    "tabs"        : ""
+  },
+  "forms": {
+    "css"         : "form",
+    "standalone"  : true,
+    "element"     : "form",
+    "elementType" : "basic",
+    "title"       : "Form",
+    "description" : "A form displays a set of related user input fields in a structured way",
+    "type"        : "UI Collection",
+    "tabs"        : ""
+  },
   "buttons-labels": {
     "css"         : "buttons-labels",
     "element"     : "buttons-labels",
@@ -29,37 +91,15 @@
 		"type"        : "UI Element",
 		"tabs"        : ""
 	},
-  "code": {
-    "css"         : "code",
-    "element"     : "code",
-    "elementType" : "basic",
+  "images": {
+    "css"         : "images",
     "standalone"  : true,
-    "title"       : "Code",
-    "description" : "A code is is used to represent a political state",
-    "type"        : "UI Element"
-  },
-  "forms": {
-    "css"         : "form",
-    "standalone"  : true,
-    "element"     : "form",
+    "element"     : "images",
     "elementType" : "basic",
-    "title"       : "Form",
-    "description" : "A form displays a set of related user input fields in a structured way",
-    "type"        : "UI Collection",
+    "title"       : "Images",
+    "description" : "An images is a graphic representation of something",
+    "type"        : "UI Element",
     "tabs"        : ""
-  },
-  "grid": {
-    "css"         : "Grid",
-    "standalone"  : true,
-    "element"     : "grid",
-    "elementType" : "basic",
-    "title"       : "Grid",
-    "description" : "A grid is used to harmonize negative space in a layout",
-    "type"        : "UI Collection",
-    "tabs"      : {
-      "overview": "Overview",
-      "definition": "Definition"
-    }
   },
   "helpers": {
     "css"         : "helpers",
@@ -68,26 +108,6 @@
     "standalone"  : true,
     "title"       : "Helpers",
     "description" : "A helpers indicates a possible user action",
-    "type"        : "UI Element",
-    "tabs"        : ""
-  },
-	"images": {
-		"css"         : "images",
-		"standalone"  : true,
-		"element"     : "images",
-		"elementType" : "basic",
-		"title"       : "Images",
-		"description" : "An images is a graphic representation of something",
-		"type"        : "UI Element",
-		"tabs"        : ""
-	},
-  "overview": {
-    "css"         : "overview",
-    "standalone"  : true,
-    "element"     : "overview",
-    "elementType" : "basic",
-    "title"       : "Overview",
-    "description" : "An overview is a graphic representation of something",
     "type"        : "UI Element",
     "tabs"        : ""
   },
@@ -101,23 +121,13 @@
     "type"        : "UI Element",
     "tabs"        : ""
   },
-	"tables": {
-		"css"         : "tables",
-		"standalone"  : true,
-		"element"     : "tables",
-		"elementType" : "basic",
-		"title"       : "Tables",
-		"description" : "A tables alerts a user to wait for an activity to complete",
-		"type"        : "UI Element",
-		"tabs"        : ""
-	},
-  "type": {
-    "css"         : "type",
-    "standalone"  : true,
-    "element"     : "type",
+  "less": {
+    "css"         : "less",
+    "element"     : "less",
     "elementType" : "basic",
-    "title"       : "Type",
-    "description" : "A type alerts a user to wait for an activity to complete",
+    "standalone"  : true,
+    "title"       : "Less",
+    "description" : "A less indicates a possible user action",
     "type"        : "UI Element",
     "tabs"        : ""
   }

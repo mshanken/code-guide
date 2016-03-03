@@ -121,7 +121,7 @@
 
   <h2 id="repeater-usage">Usage</h2>
   <p>Because of its reliance upon a <code>dataSource</code>, you must initialize a <code>repeater()</code> via JavaScript:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
   dataSource = function(options, callback){
     //...
   };
@@ -132,7 +132,7 @@
   <h3 id="repeater-usage-markup">Markup</h3>
   <p>Use the following markup to setup the repeater:</p>
   <div class="truncate-highlight">
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+  <figure class="highlight"><pre><code class="html">
   &lt;div class=&quot;repeater&quot; id=&quot;myRepeater&quot;&gt;
     &lt;div class=&quot;repeater-header&quot;&gt;
       &lt;div class=&quot;repeater-header-left&quot;&gt;
@@ -313,7 +313,7 @@
           following the syntax <code>[viewType].[viewName]</code> (Ex: "list.view1") Then, within the <code>views</code>
           option object, add these view names as attributes. Each attribute can be an object, with it's own view plugin / repeater
           configuration. This configuration will then be honored by the repeater per view. Example:
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myRepeater').repeater({
   views: {
     'list.view1': {
@@ -340,8 +340,8 @@ $('#myRepeater').repeater({
   <dl>
     <dt id="repeater-usage-methods-clear">.repeater('clear');</dt>
     <dd>Clears the repeater of current data. Accepts an <em>optional</em> <code>options</code> object.
-    <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('clear');</code></pre></figure>
-    <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('clear', {preserve: true});</code></pre></figure>
+    <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('clear');</code></pre></figure>
+    <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('clear', {preserve: true});</code></pre></figure>
 
       <div class="table-responsive">
         <table class="table table-bordered table-striped">
@@ -373,8 +373,8 @@ $('#myRepeater').repeater({
 
     <dt id="repeater-usage-methods-infinite-scrolling">.repeater('infiniteScrolling');</dt>
     <dd>Enables or disabled infinite scrolling within the repeater. Used primarily by view extensions. Accepts an <em>optional</em> <code>options</code> object.
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('infiniteScrolling');</code></pre></figure>
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('infinitescrolling', true, {hybrid: true, percentage: 60});</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('infiniteScrolling');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('infinitescrolling', true, {hybrid: true, percentage: 60});</code></pre></figure>
 
       <div class="table-responsive">
         <table class="table table-bordered table-striped">
@@ -406,8 +406,8 @@ $('#myRepeater').repeater({
 
     <dt id="repeater-usage-methods-render">.repeater('render');</dt>
     <dd>Calls the <a href="#repeater-dataSource">dataSource</a> and renders the repeater data. Accepts an <em>optional</em> <code>options</code> object.
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('render');</code></pre></figure>
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('render', {'changeView': 'widescreen', 'preserve': true});</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('render');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('render', {'changeView': 'widescreen', 'preserve': true});</code></pre></figure>
 
       <div class="table-responsive">
         <table class="table table-bordered table-striped">
@@ -623,7 +623,7 @@ $('#myRepeater').repeater({
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All repeater events are fired on the <code>.repeater</code> classed element.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+  <figure class="highlight"><pre><code class="js">
   $('#myRepeater').on('resized.fu.repeater', function () {
   // do something…
   });
@@ -785,7 +785,7 @@ $('#myRepeater').repeater({
     </div>
   </div>
   <div class="truncate-highlight">
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+  <figure class="highlight"><pre><code class="html">
   &lt;div class=&quot;fu-example section&quot;&gt;
     &lt;div class=&quot;repeater&quot; id=&quot;myRepeater&quot; data-staticheight=&quot;400&quot;&gt;
       &lt;div class=&quot;repeater-header&quot;&gt;

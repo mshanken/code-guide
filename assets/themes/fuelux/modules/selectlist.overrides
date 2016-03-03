@@ -1,9 +1,6 @@
 
-// TODO use bs base variables if possible
-@selectlist-horizontal-padding: 12px;
-@selectlist-caret-width: 4px;
 
-.fuelux {
+
 
 	.selectlist {
 
@@ -51,4 +48,3 @@
 		}
 	}
 
-}

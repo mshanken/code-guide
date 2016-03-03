@@ -1,15 +1,5 @@
 
 
-// mixins
-.checkbox-radio-hover() {
-	box-shadow: inset 0px 0px 2px 1px rgba(91, 157, 217, .7), 0px 0px 5px 0px rgba(91, 157, 217, .7);
-}
-
-.checkbox-radio-focus() {
-	box-shadow: inset 0px 0px 2px 1px rgb(91, 157, 217), 0px 0px 5px 0px rgb(91, 157, 217);
-}
-
-
 .fuelux .radio, .fuelux .checkbox {
 
 	&-inline {
@@ -178,17 +168,14 @@
 
 // Allows multiline labels next to checkboxes and radio 
 // Should be wrapped in `<form class="form-horizontal"><div class="form-group">`
-.fuelux {
+
 
 	.checkbox.multiline, .radio.multiline {
 		float: left; 
 		margin-left: 15px;
 	}
 
-}
 
-
-.fuelux {
 
 	.checkbox.multiline ~ .control-label, .radio.multiline ~ .control-label {
 		float: left; 
@@ -202,5 +189,5 @@
 		}
 	}
 
-}
+
 

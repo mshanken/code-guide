@@ -12,7 +12,7 @@
     <h4>Opt-in functionality</h4>
     <p>For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning <strong>you must initialize them yourself</strong>.</p>
     <p>One way to initialize all popovers on a page would be to select them by their <code>data-toggle</code> attribute:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
@@ -79,42 +79,42 @@ $(function () {
   <div class="bs-example bs-example-padded-bottom">
     <button class="btn btn-lg btn-danger bs-docs-popover" data-toggle="popover" type="button" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;button class=&quot;btn btn-lg btn-danger&quot; data-toggle=&quot;popover&quot; type=&quot;button&quot; title=&quot;Popover title&quot; data-content=&quot;And here&#39;s some amazing content. It&#39;s very engaging. Right?&quot;&gt;Click to toggle popover&lt;&#x2F;button&gt;
 </code></pre></figure>
 
   <h4>Four directions</h4>
   <div class="bs-example popover-demo">
     <div class="bs-example-popovers">
-      <button class="btn btn-default" data-container="body" type="button" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      <button class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." type="button">
         Popover on right
       </button>
-      <button class="btn btn-default" data-container="body" type="button" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      <button class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." type="button">
         Popover on top
       </button>
-      <button class="btn btn-default" data-container="body" type="button" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      <button class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." type="button">
         Popover on bottom
       </button>
-      <button class="btn btn-default" data-container="body" type="button" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      <button class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." type="button">
         Popover on left
       </button>
     </div>
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; type=&quot;button&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+<figure class="highlight"><pre><code class="html">
+&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot; type=&quot;button&quot;&gt;
   Popover on left
 &lt;&#x2F;button&gt;
 
-&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; type=&quot;button&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot; type=&quot;button&quot;&gt;
   Popover on top
 &lt;&#x2F;button&gt;
 
-&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; type=&quot;button&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.&quot; type=&quot;button&quot;&gt;
   Popover on bottom
 &lt;&#x2F;button&gt;
 
-&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; type=&quot;button&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot; type=&quot;button&quot;&gt;
   Popover on right
 &lt;&#x2F;button&gt;
 </code></pre></figure>
@@ -126,16 +126,16 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
     <p>For proper cross-browser and cross-platform behavior, you must use the <code>&lt;a&gt;</code> tag, <i>not</i> the <code>&lt;button&gt;</code> tag, and you also must include the <code>role="button"</code> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#tabindex"><code>tabindex</code></a> attributes.</p>
   </div>
   <div class="bs-example bs-example-padded-bottom">
-    <a class="btn btn-lg btn-danger bs-docs-popover" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+    <a class="btn btn-lg btn-danger bs-docs-popover" data-toggle="popover" data-trigger="focus" tabindex="0" role="button" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-&lt;a class=&quot;btn btn-lg btn-danger&quot; tabindex=&quot;0&quot; role=&quot;button&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;focus&quot; title=&quot;Dismissible popover&quot; data-content=&quot;And here&#39;s some amazing content. It&#39;s very engaging. Right?&quot;&gt;Dismissible popover&lt;&#x2F;a&gt;
+<figure class="highlight"><pre><code class="html">
+&lt;a class=&quot;btn btn-lg btn-danger&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;focus&quot; tabindex=&quot;0&quot; role=&quot;button&quot; title=&quot;Dismissible popover&quot; data-content=&quot;And here&#39;s some amazing content. It&#39;s very engaging. Right?&quot;&gt;Dismissible popover&lt;&#x2F;a&gt;
 </code></pre></figure>
 
 
   <h2 id="popovers-usage">Usage</h2>
   <p>Enable popovers via JavaScript:</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#example').popover(options)</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#example').popover(options)</code></pre></figure>
 
   <h3 id="popovers-options">Options</h3>
   <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
@@ -254,19 +254,19 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
 
   <h4><code>.popover('show')</code></h4>
   <p>Reveals an element's popover. <strong>Returns to the caller before the popover has actually been shown</strong> (i.e. before the <code>shown.bs.popover</code> event occurs). This is considered a "manual" triggering of the popover. Popovers whose both title and content are zero-length are never displayed.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#element').popover('show')</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#element').popover('show')</code></pre></figure>
 
   <h4><code>.popover('hide')</code></h4>
   <p>Hides an element's popover. <strong>Returns to the caller before the popover has actually been hidden</strong> (i.e. before the <code>hidden.bs.popover</code> event occurs). This is considered a "manual" triggering of the popover.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#element').popover('hide')</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#element').popover('hide')</code></pre></figure>
 
   <h4><code>.popover('toggle')</code></h4>
   <p>Toggles an element's popover. <strong>Returns to the caller before the popover has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.popover</code> or <code>hidden.bs.popover</code> event occurs). This is considered a "manual" triggering of the popover.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#element').popover('toggle')</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#element').popover('toggle')</code></pre></figure>
 
   <h4><code>.popover('destroy')</code></h4>
   <p>Hides and destroys an element's popover. Popovers that use delegation (which are created using <a href="#popovers-options">the <code>selector</code> option</a>) cannot be individually destroyed on descendant trigger elements.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#element').popover('destroy')</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#element').popover('destroy')</code></pre></figure>
 
   <h3 id="popovers-events">Events</h3>
   <div class="table-responsive">
@@ -301,7 +301,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myPopover').on('hidden.bs.popover', function () {
   // do something…
 })

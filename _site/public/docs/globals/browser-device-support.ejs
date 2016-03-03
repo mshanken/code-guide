@@ -111,7 +111,7 @@
 
   <h2 id="support-ie-compatibility-modes">IE Compatibility modes</h2>
   <p>Bootstrap is not supported in the old Internet Explorer compatibility modes. To be sure you're using the latest rendering mode for IE, consider including the appropriate <code>&lt;meta&gt;</code> tag in your pages:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
 </code></pre></figure>
   <p>Confirm the document mode by opening the debugging tools: press <kbd>F12</kbd> and check the "Document Mode".</p>
@@ -120,11 +120,11 @@
 
   <h2 id="support-ie10-width">Internet Explorer 10 in Windows 8 and Windows Phone 8</h2>
   <p>Internet Explorer 10 doesn't differentiate <strong>device width</strong> from <strong>viewport width</strong>, and thus doesn't properly apply the media queries in Bootstrap's CSS. Normally you'd just add a quick snippet of CSS to fix this:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="scss">
+<figure class="highlight"><pre><code class="scss">
 @-ms-viewport       { width: device-width; }
 </code></pre></figure>
   <p>However, this doesn't work for devices running Windows Phone 8 versions older than <a href="http://blogs.windows.com/windows_phone/b/wpdev/archive/2013/10/14/introducing-windows-phone-preview-for-developers.aspx">Update 3 (a.k.a. GDR3)</a>, as it causes such devices to show a mostly desktop view instead of narrow "phone" view. To address this, you'll need to <strong>include the following CSS and JavaScript to work around the bug</strong>.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="scss">
+<figure class="highlight"><pre><code class="scss">
 @-webkit-viewport   { width: device-width; }
 @-moz-viewport      { width: device-width; }
 @-ms-viewport       { width: device-width; }
@@ -132,7 +132,7 @@
 @viewport           { width: device-width; }
 </code></pre></figure>
 
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 // Copyright 2014-2015 Twitter, Inc.
 // Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
@@ -178,7 +178,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     <li>Add custom media queries to change the grid size breakpoints for print media only.</li>
   </ul>
   <p>Also, as of Safari v8.0, fixed-width <code>.container</code>s can cause Safari to use an unusually small font size when printing. See <a href="https://github.com/twbs/bootstrap/issues/14868">#14868</a> for more details. One potential workaround for this is adding the following CSS:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="css">
+<figure class="highlight"><pre><code class="css">
 @media print {
   .container {
     width: auto;
@@ -190,7 +190,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   <p>Out of the box, Android 4.1 (and even some newer releases apparently) ship with the Browser app as the default web browser of choice (as opposed to Chrome). Unfortunately, the Browser app has lots of bugs and inconsistencies with CSS in general.</p>
   <h3>Select menus</h3>
   <p>On <code>&lt;select&gt;</code> elements, the Android stock browser will not display the side controls if there is a <code>border-radius</code> and/or <code>border</code> applied. (See <a href="https://stackoverflow.com/questions/14744437/html-select-box-not-showing-drop-down-arrow-on-android-version-4-0-when-set-with">this StackOverflow question</a> for details.) Use the snippet of code below to remove the offending CSS and render the <code>&lt;select&gt;</code> as an unstyled element on the Android stock browser. The user agent sniffing avoids interference with Chrome, Safari, and Mozilla browsers.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;script&gt;
 $(function () {
   var nua = navigator.userAgent

@@ -4,14 +4,14 @@
   <h1 class="page-header" id="checkbox">Checkbox <a href="{{ site.repo }}/blob/{{ site.current_version }}/js/checkbox.js"><small>checkbox.js</small></a></h1>
 
   <p>The checkbox control provides a customized look and feel that can be standardized across all browsers.</p>
-  <label class="checkbox-custom checkbox-inline" data-initialize="checkbox"  id="myCheckbox7">
+  <label  class="checkbox-custom checkbox-inline" id="myCheckbox7" data-initialize="checkbox">
     <input class="sr-only" type="checkbox" value="option3"> <span class="checkbox-label">checkbox</span>
   </label>
 
   <h2 id="checkbox-usage">Usage</h2>
   <h3 id="checkbox-usage-javascript">Via JavaScript</h3>
   <p>Initialize the checkbox control via JavaScript:</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myCheckbox').checkbox();</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myCheckbox').checkbox();</code></pre></figure>
 
   <h3 id="checkbox-usage-data-attributes">Via data-attributes</h3>
   <ul>
@@ -82,7 +82,7 @@
   </div><!-- ./fu-table-responsive -->
 
   <p>All checkbox events are fired on the <code>.checkbox</code> classed element. However, unlike the majority of Fuel UX controls, it is recommended to listen to and check the state of the checkbox control by listening to the native checkbox with the <code>change</code> event and check its status with the presence of the <code>checked</code> attribute. For the sample markup provided, this would be:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('.checkbox input').on('change', function () {
   console.log( $(this).is(':checked') );
 });
@@ -118,7 +118,7 @@ $('.checkbox input').on('change', function () {
       </label>
     </div>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;checkbox&quot; id=&quot;myCheckbox&quot;&gt;
   &lt;label class=&quot;checkbox-custom&quot; data-initialize=&quot;checkbox&quot;&gt;
     &lt;input class=&quot;sr-only&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;
@@ -158,14 +158,14 @@ $('.checkbox input').on('change', function () {
       <input class="sr-only" disabled="disabled" type="checkbox" value="option3"> <span class="checkbox-label">3</span>
     </label>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-&lt;label class=&quot;checkbox-custom checkbox-inline&quot; data-initialize=&quot;checkbox&quot;  id=&quot;myCheckbox5&quot;&gt;
+<figure class="highlight"><pre><code class="html">
+&lt;label  class=&quot;checkbox-custom checkbox-inline&quot; id=&quot;myCheckbox5&quot; data-initialize=&quot;checkbox&quot;&gt;
   &lt;input class=&quot;sr-only&quot; type=&quot;checkbox&quot; value=&quot;option1&quot;&gt; &lt;span class=&quot;checkbox-label&quot;&gt;1&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;label class=&quot;checkbox-custom checkbox-inline&quot; data-initialize=&quot;checkbox&quot;  id=&quot;myCheckbox6&quot;&gt;
+&lt;label  class=&quot;checkbox-custom checkbox-inline&quot; id=&quot;myCheckbox6&quot; data-initialize=&quot;checkbox&quot;&gt;
   &lt;input class=&quot;sr-only&quot; checked=&quot;checked&quot; type=&quot;checkbox&quot; value=&quot;option2&quot;&gt; &lt;span class=&quot;checkbox-label&quot;&gt;2&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;label class=&quot;checkbox-custom checkbox-inline disabled&quot; data-initialize=&quot;checkbox&quot;  id=&quot;myCheckbox7&quot;&gt;
+&lt;label  class=&quot;checkbox-custom checkbox-inline disabled&quot; id=&quot;myCheckbox7&quot; data-initialize=&quot;checkbox&quot;&gt;
   &lt;input class=&quot;sr-only&quot; disabled=&quot;disabled&quot; type=&quot;checkbox&quot; value=&quot;option3&quot;&gt; &lt;span class=&quot;checkbox-label&quot;&gt;3&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
 </code></pre></figure>
@@ -182,7 +182,7 @@ $('.checkbox input').on('change', function () {
       <input class="form-control" type="text">
     </div>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
   &lt;div class=&quot;input-group&quot;&gt;
     &lt;label class=&quot;input-group-addon checkbox-custom checkbox-inline&quot; data-initialize=&quot;checkbox&quot;&gt;
       &lt;input class=&quot;sr-only&quot; type=&quot;checkbox&quot; value=&quot;option1&quot;&gt;
@@ -214,7 +214,7 @@ $('.checkbox input').on('change', function () {
     <div class="alert bg-success checkboxToggleCLASS">Class toggling container</div>
     <div class="alert bg-success checkboxToggleCLASS">Class toggling container</div>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;checkbox&quot; id=&quot;myCheckbox8&quot;&gt;
   &lt;label class=&quot;checkbox-custom&quot; data-initialize=&quot;checkbox&quot;&gt;
     &lt;input class=&quot;sr-only&quot; data-toggle=&quot;#checkboxToggleID&quot; type=&quot;checkbox&quot; value=&quot;option1&quot;&gt;
@@ -247,7 +247,7 @@ $('.checkbox input').on('change', function () {
       This control highlights an inline checkbox on check
     </label>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;checkbox highlight&quot; id=&quot;myCheckbox10&quot;&gt;
   &lt;label class=&quot;checkbox-custom highlight&quot; data-initialize=&quot;checkbox&quot;&gt;
     &lt;input class=&quot;sr-only&quot; type=&quot;checkbox&quot; value=&quot;option1&quot;&gt;
@@ -262,7 +262,7 @@ $('.checkbox input').on('change', function () {
 
  <h3>Events</h3>
     <p>Unlike the majority of Fuel UX controls, it is recommended to listen to and check the state of the checkbox control by listening to the native checkbox with the <code>change</code> event and check its status with the presence of the <code>checked</code> attribute. For the sample markup provided, this would be:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('.checkbox input').on('change', function () {
   console.log( $(this).is(':checked') );
 });

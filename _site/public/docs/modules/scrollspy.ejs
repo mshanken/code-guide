@@ -7,7 +7,7 @@
     <nav class="navbar navbar-default navbar-static" id="navbar-example2">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+          <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy" type="button">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -20,7 +20,7 @@
             <li><a href="#fat">@fat</a></li>
             <li><a href="#mdo">@mdo</a></li>
             <li class="dropdown">
-              <a class="dropdown-toggle" href="#" id="navbarDrop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a class="dropdown-toggle" id="navbarDrop1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="navbarDrop1">
                 <li><a href="#one">one</a></li>
                 <li><a href="#two">two</a></li>
@@ -32,7 +32,7 @@
         </div>
       </div>
     </nav>
-    <div data-spy="scroll" data-target="#navbar-example2" class="scrollspy-example" data-offset="0">
+    <div class="scrollspy-example" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
       <h4 id="fat">@fat</h4>
       <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
       <h4 id="mdo">@mdo</h4>
@@ -69,12 +69,12 @@
 
   <h3>Via data attributes</h3>
   <p>To easily add scrollspy behavior to your topbar navigation, add <code>data-spy="scroll"</code> to the element you want to spy on (most typically this would be the <code>&lt;body&gt;</code>). Then add the <code>data-target</code> attribute with the ID or class of the parent element of any Bootstrap <code>.nav</code> component.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="css">
+<figure class="highlight"><pre><code class="css">
 body {
   position: relative;
 }
 </code></pre></figure>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;body data-spy=&quot;scroll&quot; data-target=&quot;#navbar-example&quot;&gt;
   ...
   &lt;div id=&quot;navbar-example&quot;&gt;
@@ -88,7 +88,7 @@ body {
 
   <h3>Via JavaScript</h3>
   <p>After adding <code>position: relative;</code> in your CSS, call the scrollspy via JavaScript:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('body').scrollspy({ target: '#navbar-example' })
 </code></pre></figure>
 
@@ -96,7 +96,7 @@ $('body').scrollspy({ target: '#navbar-example' })
   <h3 id="scrollspy-methods">Methods</h3>
   <h4><code>.scrollspy('refresh')</code></h4>
   <p>When using scrollspy in conjunction with adding or removing of elements from the DOM, you'll need to call the refresh method like so:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
 })
@@ -143,7 +143,7 @@ $('[data-spy="scroll"]').each(function () {
       </tbody>
     </table>
   </div><!-- ./bs-table-responsive -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myScrollspy').on('activate.bs.scrollspy', function () {
   // do something…
 })

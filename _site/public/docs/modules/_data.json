@@ -10,6 +10,16 @@
 		"layout"	  : "_layoutAll"
 
 	},
+	"overview": {
+		"css"         : "overview",
+		"element"     : "overview",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Overview",
+		"description" : "A overview indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
 	"affix": {
 		"css"         : "affix",
 		"element"     : "affix",
@@ -157,16 +167,6 @@
 		"standalone"  : true,
 		"title"       : "Modal",
 		"description" : "A modal indicates a possible user action",
-		"type"        : "UI Module",
-		"tabs"        : ""
-	},
-	"overview": {
-		"css"         : "overview",
-		"element"     : "overview",
-		"elementType" : "module",
-		"standalone"  : true,
-		"title"       : "Overview",
-		"description" : "A overview indicates a possible user action",
 		"type"        : "UI Module",
 		"tabs"        : ""
 	},

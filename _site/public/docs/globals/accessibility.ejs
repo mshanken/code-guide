@@ -9,7 +9,7 @@
     <p>In addition, you may want to explicitly suppress a visible focus indication on the target (particularly as Chrome currently also sets focus on elements with <code>tabindex="-1"</code> when they are clicked with the mouse) with <code>#content:focus { outline: none; }</code>.</p>
     <p>Note that this bug will also affect any other in-page links your site may be using, rendering them useless for keyboard users. You may consider adding a similar stop-gap fix to all other named anchors / fragment identifiers that act as link targets.</p>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;body&gt;
   &lt;a class=&quot;sr-only sr-only-focusable&quot; href=&quot;#content&quot;&gt;Skip to main content&lt;&#x2F;a&gt;
   ...

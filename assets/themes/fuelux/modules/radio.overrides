@@ -1,15 +1,6 @@
 
-.radioTabbing() {
 
-	/* for keyboard tabbing */
-	input[type="radio"]:focus + .radio-label,
-	input[type="radio"]:hover + .radio-label,
-	.radio-label:hover {
-		color: @gray60;
-	}
-}
 
-.fuelux {
 	.radio {
 		&.highlight {
 			padding: 4px;
@@ -150,4 +141,4 @@
 		padding-left: 20px;
 	}
 
-}
+

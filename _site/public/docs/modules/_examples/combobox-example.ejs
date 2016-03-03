@@ -1,0 +1,49 @@
+<div class="fu-example section">
+	<div class="fu-example-narrowize">
+		<form>
+			<div class="input-group input-append dropdown combobox" id="myCombobox" data-initialize="combobox">
+				<input class="form-control" type="text">
+				<div class="input-group-btn">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li data-value="1"><a href="#">One</a></li>
+						<li data-value="2"><a href="#">Two</a></li>
+						<li data-value="3"><a href="#">Three</a></li>
+						<li data-value="4" ><a href="#">Four</a></li>
+						<li data-value="Item Five" data-foo="bar" data-fizz="buzz"><a href="#">Item Five</a></li>
+					</ul>
+				</div>
+			</div>
+		</form>
+		
+	</div>
+	<br/>
+	<h5 id="combobox-examples-sample-methods">Sample Methods</h5>
+	<div class="btn-group clearfix">
+		<button class="btn btn-default" id="btnComboboxGetSelectedItem" type="button">log item</button>
+		<button class="btn btn-default" id="btnComboboxSelectByValue" type="button">set by value (1)</button>
+		<button class="btn btn-default" id="btnComboboxSelectByIndex" type="button">set by element index (1)</button>
+		<button class="btn btn-default" id="btnComboboxSelectByText" type="button">set by text (Four)</button>
+	</div>
+	<div class="btn-group clearfix">
+		<button class="btn btn-default" id="btnComboboxSelectBySelector" type="button">set by CSS selector li[data-fizz=buzz] (6)</button>
+		<button class="btn btn-default" id="btnComboboxDisable" type="button">disable</button>
+		<button class="btn btn-default" id="btnComboboxEnable" type="button">enable</button>
+		<button class="btn btn-default" id="btnComboboxDestroy" type="button">destroy and append</button>
+	</div>
+</div><!-- /example -->
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;input-group input-append dropdown combobox&quot; id=&quot;myCombobox&quot; data-initialize=&quot;combobox&quot;&gt;
+	&lt;input class=&quot;form-control&quot; type=&quot;text&quot;&gt;
+	&lt;div class=&quot;input-group-btn&quot;&gt;
+		&lt;button class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+		&lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+			&lt;li data-value=&quot;1&quot;&gt;&lt;a href=&quot;#&quot;&gt;One&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+			&lt;li data-value=&quot;2&quot;&gt;&lt;a href=&quot;#&quot;&gt;Two&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+			&lt;li data-value=&quot;3&quot;&gt;&lt;a href=&quot;#&quot;&gt;Three&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+			&lt;li data-value=&quot;4&quot; &gt;&lt;a href=&quot;#&quot;&gt;Four&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+			&lt;li data-value=&quot;Item Five&quot; data-foo=&quot;bar&quot; data-fizz=&quot;buzz&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item Five&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;&#x2F;ul&gt;
+	&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre></figure>

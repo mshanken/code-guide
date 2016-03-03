@@ -16,7 +16,7 @@
   </div>
 
   <p><strong class="text-danger">Due to how HTML5 defines its semantics, the <code>autofocus</code> HTML attribute has no effect in Bootstrap modals.</strong> To achieve the same effect, use some custom JavaScript:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').focus()
 })
@@ -45,7 +45,7 @@ $('#myModal').on('shown.bs.modal', function () {
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
   &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
     &lt;div class=&quot;modal-content&quot;&gt;
@@ -81,7 +81,7 @@ $('#myModal').on('shown.bs.modal', function () {
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
 
           <h4>Popover in a modal</h4>
-          <p>This <a href="#" class="btn btn-default popover-test" role="button" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
+          <p>This <a class="btn btn-default popover-test" href="#" role="button" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
 
           <h4>Tooltips in a modal</h4>
           <p><a class="tooltip-test" href="#" title="Tooltip">This link</a> and <a class="tooltip-test" href="#" title="Tooltip">that link</a> should have tooltips on hover.</p>
@@ -109,13 +109,13 @@ $('#myModal').on('shown.bs.modal', function () {
   </div><!-- /.modal -->
 
   <div class="bs-example bs-example-padded-bottom">
-    <button class="btn btn-primary btn-lg" data-toggle="modal" type="button" data-target="#myModal">
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" type="button">
       Launch demo modal
     </button>
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;!-- Button trigger modal --&gt;
-&lt;button class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; type=&quot;button&quot; data-target=&quot;#myModal&quot;&gt;
+&lt;button class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot; type=&quot;button&quot;&gt;
   Launch demo modal
 &lt;&#x2F;button&gt;
 
@@ -153,12 +153,12 @@ $('#myModal').on('shown.bs.modal', function () {
   <h2 id="modals-sizes">Optional sizes</h2>
   <p>Modals have two optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>.</p>
   <div class="bs-example">
-    <button class="btn btn-primary" data-toggle="modal" type="button" data-target=".bs-example-modal-lg">Large modal</button>
-    <button class="btn btn-primary" data-toggle="modal" type="button" data-target=".bs-example-modal-sm">Small modal</button>
+    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" type="button">Large modal</button>
+    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm" type="button">Small modal</button>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;!-- Large modal --&gt;
-&lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; type=&quot;button&quot; data-target=&quot;.bs-example-modal-lg&quot;&gt;Large modal&lt;&#x2F;button&gt;
+&lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;.bs-example-modal-lg&quot; type=&quot;button&quot;&gt;Large modal&lt;&#x2F;button&gt;
 
 &lt;div class=&quot;modal fade bs-example-modal-lg&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myLargeModalLabel&quot;&gt;
   &lt;div class=&quot;modal-dialog modal-lg&quot; role=&quot;document&quot;&gt;
@@ -169,7 +169,7 @@ $('#myModal').on('shown.bs.modal', function () {
 &lt;&#x2F;div&gt;
 
 &lt;!-- Small modal --&gt;
-&lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; type=&quot;button&quot; data-target=&quot;.bs-example-modal-sm&quot;&gt;Small modal&lt;&#x2F;button&gt;
+&lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;.bs-example-modal-sm&quot; type=&quot;button&quot;&gt;Small modal&lt;&#x2F;button&gt;
 
 &lt;div class=&quot;modal fade bs-example-modal-sm&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;mySmallModalLabel&quot;&gt;
   &lt;div class=&quot;modal-dialog modal-sm&quot; role=&quot;document&quot;&gt;
@@ -212,7 +212,7 @@ $('#myModal').on('shown.bs.modal', function () {
 
   <h2 id="modals-remove-animation">Remove animation</h2>
   <p>For modals that simply appear rather than fade in to view, remove the <code>.fade</code> class from your modal markup.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;...&quot;&gt;
   ...
 &lt;&#x2F;div&gt;
@@ -262,11 +262,11 @@ $('#myModal').on('shown.bs.modal', function () {
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 <div class="bs-example bs-example-padded-bottom">
-  <button class="btn btn-primary btn-lg" data-toggle="modal" type="button" data-target="#gridSystemModal">
+  <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#gridSystemModal" type="button">
     Launch demo modal
   </button>
 </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;gridSystemModalLabel&quot;&gt;
   &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
     &lt;div class=&quot;modal-content&quot;&gt;
@@ -313,9 +313,9 @@ $('#myModal').on('shown.bs.modal', function () {
   <h2 id="modals-related-target">Varying modal content based on trigger button</h2>
   <p>Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use <code>event.relatedTarget</code> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes">HTML <code>data-*</code> attributes</a> (possibly <a href="http://api.jquery.com/data/">via jQuery</a>) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on <code>relatedTarget</code>,</p>
   <div class="bs-example">
-    <button class="btn btn-primary" data-toggle="modal" type="button" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-    <button class="btn btn-primary" data-toggle="modal" type="button" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-    <button class="btn btn-primary" data-toggle="modal" type="button" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" type="button" data-whatever="@mdo">Open modal for @mdo</button>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" type="button" data-whatever="@fat">Open modal for @fat</button>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" type="button" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
     ...more buttons...
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
@@ -328,11 +328,11 @@ $('#myModal').on('shown.bs.modal', function () {
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="recipient-name" class="control-label">Recipient:</label>
+                <label class="control-label" for="recipient-name">Recipient:</label>
                 <input class="form-control" id="recipient-name" type="text">
               </div>
               <div class="form-group">
-                <label for="message-text" class="control-label">Message:</label>
+                <label class="control-label" for="message-text">Message:</label>
                 <textarea class="form-control" id="message-text"></textarea>
               </div>
             </form>
@@ -345,10 +345,10 @@ $('#myModal').on('shown.bs.modal', function () {
       </div>
     </div><!-- /.modal -->
   </div><!-- /.bs-example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-&lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; type=&quot;button&quot; data-target=&quot;#exampleModal&quot; data-whatever=&quot;@mdo&quot;&gt;Open modal for @mdo&lt;&#x2F;button&gt;
-&lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; type=&quot;button&quot; data-target=&quot;#exampleModal&quot; data-whatever=&quot;@fat&quot;&gt;Open modal for @fat&lt;&#x2F;button&gt;
-&lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; type=&quot;button&quot; data-target=&quot;#exampleModal&quot; data-whatever=&quot;@getbootstrap&quot;&gt;Open modal for @getbootstrap&lt;&#x2F;button&gt;
+<figure class="highlight"><pre><code class="html">
+&lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; type=&quot;button&quot; data-whatever=&quot;@mdo&quot;&gt;Open modal for @mdo&lt;&#x2F;button&gt;
+&lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; type=&quot;button&quot; data-whatever=&quot;@fat&quot;&gt;Open modal for @fat&lt;&#x2F;button&gt;
+&lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; type=&quot;button&quot; data-whatever=&quot;@getbootstrap&quot;&gt;Open modal for @getbootstrap&lt;&#x2F;button&gt;
 ...more buttons...
 
 &lt;div class=&quot;modal fade&quot; id=&quot;exampleModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot;&gt;
@@ -361,11 +361,11 @@ $('#myModal').on('shown.bs.modal', function () {
       &lt;div class=&quot;modal-body&quot;&gt;
         &lt;form&gt;
           &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Recipient:&lt;&#x2F;label&gt;
+            &lt;label class=&quot;control-label&quot; for=&quot;recipient-name&quot;&gt;Recipient:&lt;&#x2F;label&gt;
             &lt;input class=&quot;form-control&quot; id=&quot;recipient-name&quot; type=&quot;text&quot;&gt;
           &lt;&#x2F;div&gt;
           &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label for=&quot;message-text&quot; class=&quot;control-label&quot;&gt;Message:&lt;&#x2F;label&gt;
+            &lt;label class=&quot;control-label&quot; for=&quot;message-text&quot;&gt;Message:&lt;&#x2F;label&gt;
             &lt;textarea class=&quot;form-control&quot; id=&quot;message-text&quot;&gt;&lt;&#x2F;textarea&gt;
           &lt;&#x2F;div&gt;
         &lt;&#x2F;form&gt;
@@ -378,7 +378,7 @@ $('#myModal').on('shown.bs.modal', function () {
   &lt;&#x2F;div&gt;
 &lt;&#x2F;div&gt;
 </code></pre></figure>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#exampleModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient = button.data('whatever') // Extract info from data-* attributes
@@ -395,13 +395,13 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 
   <h3>Via data attributes</h3>
   <p>Activate a modal without writing JavaScript. Set <code>data-toggle="modal"</code> on a controller element, like a button, along with a <code>data-target="#foo"</code> or <code>href="#foo"</code> to target a specific modal to toggle.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-&lt;button type=&quot;button&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Launch modal&lt;&#x2F;button&gt;
+<figure class="highlight"><pre><code class="html">
+&lt;button data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot; type=&quot;button&quot;&gt;Launch modal&lt;&#x2F;button&gt;
 </code></pre></figure>
 
   <h3>Via JavaScript</h3>
   <p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myModal').modal(options)</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myModal').modal(options)</code></pre></figure>
 
   <h3 id="modals-options">Options</h3>
   <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
@@ -441,8 +441,8 @@ $('#exampleModal').on('show.bs.modal', function (event) {
          <td>
           <p><strong class="text-danger">This option is deprecated since v3.3.0 and has been removed in v4.</strong> We recommend instead using client-side templating or a data binding framework, or calling <a href="http://api.jquery.com/load/">jQuery.load</a> yourself.</p>
           <p>If a remote URL is provided, <strong>content will be loaded one time</strong> via jQuery's <code>load</code> method and injected into the <code>.modal-content</code> div. If you're using the data-api, you may alternatively use the <code>href</code> attribute to specify the remote source. An example of this is shown below:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-&lt;a data-toggle=&quot;modal&quot; href=&quot;remote.html&quot; data-target=&quot;#modal&quot;&gt;Click me&lt;&#x2F;a&gt;
+<figure class="highlight"><pre><code class="html">
+&lt;a data-toggle=&quot;modal&quot; data-target=&quot;#modal&quot; href=&quot;remote.html&quot;&gt;Click me&lt;&#x2F;a&gt;
 </code></pre></figure>
          </td>
        </tr>
@@ -454,7 +454,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 
   <h4><code>.modal(options)</code></h4>
   <p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myModal').modal({
   keyboard: false
 })
@@ -462,20 +462,20 @@ $('#myModal').modal({
 
   <h4><code>.modal('toggle')</code></h4>
   <p>Manually toggles a modal. <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myModal').modal('toggle')</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myModal').modal('toggle')</code></pre></figure>
 
   <h4><code>.modal('show')</code></h4>
   <p>Manually opens a modal. <strong>Returns to the caller before the modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event occurs).</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myModal').modal('show')</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myModal').modal('show')</code></pre></figure>
 
   <h4><code>.modal('hide')</code></h4>
   <p>Manually hides a modal. <strong>Returns to the caller before the modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event occurs).</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myModal').modal('hide')</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myModal').modal('hide')</code></pre></figure>
 
   <h4><code>.modal('handleUpdate')</code></h4>
   <p>Readjusts the modal's positioning to counter a scrollbar in case one should appear, which would make the modal jump to the left.</p>
   <p>Only needed when the height of the modal changes while it is open.</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myModal').modal('handleUpdate')</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myModal').modal('handleUpdate')</code></pre></figure>
 
   <h3 id="modals-events">Events</h3>
   <p>Bootstrap's modal class exposes a few events for hooking into modal functionality.</p>
@@ -512,7 +512,7 @@ $('#myModal').modal({
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myModal').on('hidden.bs.modal', function (e) {
   // do something...
 })

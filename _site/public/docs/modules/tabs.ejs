@@ -5,13 +5,13 @@
   <p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. <strong>Nested tabs are not supported.</strong></p>
   <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
     <ul class="nav nav-tabs" id="myTabs" role="tablist">
-      <li class="active" role="presentation"><a id="home-tab" href="#home" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a></li>
-      <li role="presentation"><a href="#profile" id="profile-tab" role="tab" data-toggle="tab" aria-controls="profile">Profile</a></li>
+      <li class="active" role="presentation"><a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Home</a></li>
+      <li role="presentation"><a id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a></li>
       <li class="dropdown" role="presentation">
-        <a class="dropdown-toggle" href="#" id="myTabDrop1" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Dropdown <span class="caret"></span></a>
-        <ul class="dropdown-menu" id="myTabDrop1-contents" aria-labelledby="myTabDrop1">
-          <li><a href="#dropdown1" id="dropdown1-tab" role="tab" data-toggle="tab" aria-controls="dropdown1">@fat</a></li>
-          <li><a href="#dropdown2" id="dropdown2-tab" role="tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a></li>
+        <a class="dropdown-toggle" id="myTabDrop1" data-toggle="dropdown" href="#" aria-controls="myTabDrop1-contents">Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+          <li><a id="dropdown1-tab" data-toggle="tab" href="#dropdown1" role="tab" aria-controls="dropdown1">@fat</a></li>
+          <li><a id="dropdown2-tab" data-toggle="tab" href="#dropdown2" role="tab" aria-controls="dropdown2">@mdo</a></li>
         </ul>
       </li>
     </ul>
@@ -40,7 +40,7 @@
   <h2 id="tabs-usage">Usage</h2>
   <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
 
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myTabs a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
@@ -49,7 +49,7 @@ $('#myTabs a').click(function (e) {
 
   <p>You can activate individual tabs in several ways:</p>
 
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myTabs a[href="#profile"]').tab('show') // Select tab by name
 $('#myTabs a:first').tab('show') // Select first tab
 $('#myTabs a:last').tab('show') // Select last tab
@@ -58,15 +58,15 @@ $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
 
   <h3>Markup</h3>
   <p>You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code>data-toggle="tab"</code> or <code>data-toggle="pill"</code> on an element. Adding the <code>nav</code> and <code>nav-tabs</code> classes to the tab <code>ul</code> will apply the Bootstrap <a href="../components/#nav-tabs">tab styling</a>, while adding the <code>nav</code> and <code>nav-pills</code> classes will apply <a href="../components/#nav-pills">pill styling</a>.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div&gt;
 
   &lt;!-- Nav tabs --&gt;
   &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
-    &lt;li class=&quot;active&quot; role=&quot;presentation&quot;&gt;&lt;a href=&quot;#home&quot; aria-controls=&quot;home&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#profile&quot; aria-controls=&quot;profile&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Profile&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#messages&quot; aria-controls=&quot;messages&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Messages&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#settings&quot; aria-controls=&quot;settings&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Settings&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li class=&quot;active&quot; role=&quot;presentation&quot;&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#home&quot; aria-controls=&quot;home&quot; role=&quot;tab&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#profile&quot; aria-controls=&quot;profile&quot; role=&quot;tab&quot;&gt;Profile&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#messages&quot; aria-controls=&quot;messages&quot; role=&quot;tab&quot;&gt;Messages&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#settings&quot; aria-controls=&quot;settings&quot; role=&quot;tab&quot;&gt;Settings&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
   &lt;&#x2F;ul&gt;
 
   &lt;!-- Tab panes --&gt;
@@ -82,7 +82,7 @@ $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
 
   <h3>Fade effect</h3>
   <p>To make tabs fade in, add <code>.fade</code> to each <code>.tab-pane</code>. The first tab pane must also have <code>.in</code> to make the initial content visible.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;tab-content&quot;&gt;
   &lt;div class=&quot;tab-pane fade in active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot;&gt;...&lt;&#x2F;div&gt;
   &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot;&gt;...&lt;&#x2F;div&gt;
@@ -99,7 +99,7 @@ $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
 
   <h4><code>.tab('show')</code></h4>
   <p>Selects the given tab and shows its associated content. Any other tab that was previously selected becomes unselected and its associated content is hidden. <strong>Returns to the caller before the tab pane has actually been shown</strong> (i.e. before the <code>shown.bs.tab</code> event occurs).</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#someTab').tab('show')</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#someTab').tab('show')</code></pre></figure>
 
   <h3 id="tabs-events">Events</h3>
   <p>When showing a new tab, the events fire in the following order:</p>
@@ -138,7 +138,7 @@ $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   e.target // newly activated tab
   e.relatedTarget // previous active tab

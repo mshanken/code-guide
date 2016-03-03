@@ -16,12 +16,12 @@
     <p>For the sake of this demonstration, we are using <code>data-loading-text</code> and <code>$().button('loading')</code>, but that's not the only state you can use. <a href="#buttons-methods">See more on this below in the <code>$().button(string)</code> documentation</a>.</p>
   </div>
   <div class="bs-example">
-    <button id="loading-example-btn" type="button" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+    <button class="btn btn-primary" id="loading-example-btn" data-loading-text="Loading..." type="button" autocomplete="off">
       Loading state
     </button>
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-&lt;button id=&quot;myButton&quot; type=&quot;button&quot; data-loading-text=&quot;Loading...&quot; class=&quot;btn btn-primary&quot; autocomplete=&quot;off&quot;&gt;
+<figure class="highlight"><pre><code class="html">
+&lt;button class=&quot;btn btn-primary&quot; id=&quot;myButton&quot; data-loading-text=&quot;Loading...&quot; type=&quot;button&quot; autocomplete=&quot;off&quot;&gt;
   Loading state
 &lt;&#x2F;button&gt;
 
@@ -45,7 +45,7 @@
       Single toggle
     </button>
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;button&quot; type=&quot;button&quot; aria-pressed=&quot;false&quot; autocomplete=&quot;off&quot;&gt;
   Single toggle
 &lt;&#x2F;button&gt;
@@ -74,7 +74,7 @@
       </label>
     </div>
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;btn-group&quot; data-toggle=&quot;buttons&quot;&gt;
   &lt;label class=&quot;btn btn-primary active&quot;&gt;
     &lt;input type=&quot;checkbox&quot; autocomplete=&quot;off&quot; checked&gt; Checkbox 1 (pre-checked)
@@ -91,26 +91,26 @@
   <div class="bs-example" data-example-id="buttons-radio">
     <div class="btn-group" data-toggle="buttons">
       <label class="btn btn-primary active">
-        <input type="radio" id="option1" name="options" autocomplete="off" checked> Radio 1 (preselected)
+        <input id="option1" name="options" type="radio" autocomplete="off" checked> Radio 1 (preselected)
       </label>
       <label class="btn btn-primary">
-        <input type="radio" id="option2" name="options" autocomplete="off"> Radio 2
+        <input id="option2" name="options" type="radio" autocomplete="off"> Radio 2
       </label>
       <label class="btn btn-primary">
-        <input type="radio" id="option3" name="options" autocomplete="off"> Radio 3
+        <input id="option3" name="options" type="radio" autocomplete="off"> Radio 3
       </label>
     </div>
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;btn-group&quot; data-toggle=&quot;buttons&quot;&gt;
   &lt;label class=&quot;btn btn-primary active&quot;&gt;
-    &lt;input type=&quot;radio&quot; id=&quot;option1&quot; name=&quot;options&quot; autocomplete=&quot;off&quot; checked&gt; Radio 1 (preselected)
+    &lt;input id=&quot;option1&quot; name=&quot;options&quot; type=&quot;radio&quot; autocomplete=&quot;off&quot; checked&gt; Radio 1 (preselected)
   &lt;&#x2F;label&gt;
   &lt;label class=&quot;btn btn-primary&quot;&gt;
-    &lt;input type=&quot;radio&quot; id=&quot;option2&quot; name=&quot;options&quot; autocomplete=&quot;off&quot;&gt; Radio 2
+    &lt;input id=&quot;option2&quot; name=&quot;options&quot; type=&quot;radio&quot; autocomplete=&quot;off&quot;&gt; Radio 2
   &lt;&#x2F;label&gt;
   &lt;label class=&quot;btn btn-primary&quot;&gt;
-    &lt;input type=&quot;radio&quot; id=&quot;option3&quot; name=&quot;options&quot; autocomplete=&quot;off&quot;&gt; Radio 3
+    &lt;input id=&quot;option3&quot; name=&quot;options&quot; type=&quot;radio&quot; autocomplete=&quot;off&quot;&gt; Radio 3
   &lt;&#x2F;label&gt;
 &lt;&#x2F;div&gt;
 </code></pre></figure>
@@ -125,8 +125,8 @@
   <h4><code>$().button(string)</code></h4>
   <p>Swaps text to any data defined text state.</p>
 
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-&lt;button id=&quot;myStateButton&quot; type=&quot;button&quot; data-complete-text=&quot;finished!&quot; class=&quot;btn btn-primary&quot; autocomplete=&quot;off&quot;&gt;
+<figure class="highlight"><pre><code class="html">
+&lt;button class=&quot;btn btn-primary&quot; id=&quot;myStateButton&quot; data-complete-text=&quot;finished!&quot; type=&quot;button&quot; autocomplete=&quot;off&quot;&gt;
   ...
 &lt;&#x2F;button&gt;
 

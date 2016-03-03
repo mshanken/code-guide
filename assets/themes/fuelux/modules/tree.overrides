@@ -1,5 +1,5 @@
 
-.fuelux {
+
 
 	.tree {
 		border: 1px solid @gray60;
@@ -175,4 +175,3 @@
 
 	}
 
-}

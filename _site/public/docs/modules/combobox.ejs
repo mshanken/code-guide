@@ -21,10 +21,10 @@
 
   <h3 id="combobox-usage-javascript">Via JavaScript</h3>
   <p>Call the combobox control via JavaScript:</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myCombobox').combobox();</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox();</code></pre></figure>
 
   <p>The combobox also accepts an optional options param during initialization:</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myCombobox').combobox({autoResizeMenu: false});</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox({autoResizeMenu: false});</code></pre></figure>
 
   <h3 id="combobox-usage-data-attributes">Via data-attributes</h3>
 
@@ -33,7 +33,7 @@
 
   <h3 id="combobox-usage-markup">Markup</h3>
   <p>A combobox consists of an input group containing a text <code>input</code> with a <code><a href="#selectlist">selectlist</a></code> appended to it.</code>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;input-group input-append dropdown combobox&quot; id=&quot;myCombobox&quot; data-initialize=&quot;combobox&quot;&gt;
   &lt;input class=&quot;form-control&quot; type=&quot;text&quot;&gt;
   &lt;div class=&quot;input-group-btn&quot;&gt;
@@ -113,25 +113,25 @@
     <dt id="combobox-usage-methods-select-by-index">.combobox('selectByIndex')</dt>
     <dd>
       Set the selected item based on its index in the list (zero-based index). <span class="text-muted">Convenience method for <a href="#combobox-usage-methods-select-by-selector"><code>.selectBySelector('li:eq({index})')</code></a></span>
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByIndex', '1');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByIndex', '1');</code></pre></figure>
     </dd>
 
     <dt id="combobox-usage-methods-select-by-text">.combobox('selectByText')</dt>
     <dd>
       Set the selected item based on its text value.
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByText', 'Four');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByText', 'Four');</code></pre></figure>
     </dd>
 
     <dt id="combobox-usage-methods-select-by-selector">.combobox('selectBySelector')</dt>
     <dd>
       Set the selected item based on a selector.
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
     </dd>
 
     <dt id="combobox-usage-methods-select-by-value">.combobox('selectByValue')</dt>
     <dd>
       Set the selected item based on its value. Convenience method for <code>.selectBySelector('data-value={value}')</code> that requires the item to include a <code>.data-value="{value}"</code> attribute
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByValue', '1');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByValue', '1');</code></pre></figure>
     </dd>
   </dl>
 
@@ -153,18 +153,18 @@
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All combobox event listeners should be attached to the element containing the <code>combobox</code> class; given the following HTML:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;input-group input-append dropdown combobox&quot; id=&quot;myCombobox&quot; data-initialize=&quot;combobox&quot;&gt;..&lt;&#x2F;div&gt;
 </code></pre></figure>
 <p>You would attach your event listener thusly:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myCombobox').on('changed.fu.combobox', function (evt, data) {
   // do something…
 });
 </code></pre></figure>
 
   <h2 id="combobox-examples">Examples</h2>
-  <%- partial("combobox-example") %>
+  <%- partial("_examples/combobox-example") %>
 
 
   <h3 id="comboboxes-alignment">Alignment</h3>

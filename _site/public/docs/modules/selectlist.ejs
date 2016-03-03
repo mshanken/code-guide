@@ -10,7 +10,7 @@
         <label class="control-label" for="selectlistIllustrationInput">Fruits</label>
         <div class="input-group">
 
-          <div class="btn-group selectlist" data-resize="auto" id="selectlistIllustration" data-initialize="selectlist">
+          <div class="btn-group selectlist" id="selectlistIllustration" data-resize="auto" data-initialize="selectlist">
             <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
               <span class="selected-label">&nbsp;</span>
               <span class="caret"></span>
@@ -35,7 +35,7 @@
 
   <h3 id="selectlist-usage-javascript">Via JavaScript</h3>
   <p>Call the selectlist control via JavaScript:</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist();</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist();</code></pre></figure>
 
   <h3 id="selectlist-usage-data-attributes">Via data-attributes</h3>
 
@@ -44,8 +44,8 @@
 
   <h3 id="selectlist-usage-markup">Markup</h3>
   <p>Wrap <code>class="selectlist"</code> around an input and a button within a <code>class="fuelux"</code> container.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-&lt;div class=&quot;btn-group selectlist&quot; data-resize=&quot;auto&quot; id=&quot;mySelectlist&quot; data-initialize=&quot;selectlist&quot;&gt;
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;btn-group selectlist&quot; id=&quot;mySelectlist&quot; data-resize=&quot;auto&quot; data-initialize=&quot;selectlist&quot;&gt;
   &lt;button class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; type=&quot;button&quot;&gt;
     &lt;span class=&quot;selected-label&quot;&gt;&amp;nbsp;&lt;&#x2F;span&gt;
     &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
@@ -76,25 +76,25 @@
     <dt id="selectlist-usage-methods-selectByIndex">.selectlist('selectByIndex')</dt>
     <dd>
       Set the selected item based on its index in the list (zero-based index). Convenience method for <code>.selectBySelector('li:eq({index})')</code>
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectByIndex', 1);</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectByIndex', 1);</code></pre></figure>
     </dd>
 
     <dt id="selectlist-usage-methods-selectByText">.selectlist('selectByText')</dt>
     <dd>
       Set the selected item based on its text value
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectByText', 'Four');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectByText', 'Four');</code></pre></figure>
     </dd>
 
     <dt id="selectlist-usage-methods-selectBySelector">.selectlist('selectBySelector')</dt>
     <dd>
       Set the selected item based on a selector
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
     </dd>
 
     <dt id="selectlist-usage-methods-selectByValue">.selectlist('selectByValue')</dt>
     <dd>
       Set the selected item based on its <code>data-value</code> attribute value. Convenience method for <code>.selectBySelector('data-value={value}')</code>.
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectByValue', 'foo');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectByValue', 'foo');</code></pre></figure>
     </dd>
   </dl>
 
@@ -116,7 +116,7 @@
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All selectlist events are fired on the <code>.selectlist</code> classed element.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#mySelectlist').on('changed.fu.selectlist', function () {
   // do something
 });
@@ -129,7 +129,7 @@ $('#mySelectlist').on('changed.fu.selectlist', function () {
       <label class="control-label" for="mySelectlistHiddenInput">With auto-resize</label>
       <div class="input-group">
 
-        <div class="btn-group selectlist" data-resize="auto" id="mySelectlist" data-initialize="selectlist">
+        <div class="btn-group selectlist" id="mySelectlist" data-resize="auto" data-initialize="selectlist">
           <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
             <span class="selected-label">&nbsp;</span>
             <span class="caret"></span>

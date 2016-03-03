@@ -19,10 +19,10 @@
 
   <div class="bs-example">
     <p>
-      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <a class="btn btn-primary" data-toggle="collapse" role="button" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Link with href
       </a>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" type="button" aria-expanded="false" aria-controls="collapseExample">
         Button with data-target
       </button>
     </p>
@@ -32,11 +32,11 @@
       </div>
     </div>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-&lt;a class=&quot;btn btn-primary&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; href=&quot;#collapseExample&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseExample&quot;&gt;
+<figure class="highlight"><pre><code class="html">
+&lt;a class=&quot;btn btn-primary&quot; data-toggle=&quot;collapse&quot; role=&quot;button&quot; href=&quot;#collapseExample&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseExample&quot;&gt;
   Link with href
 &lt;&#x2F;a&gt;
-&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapseExample&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseExample&quot;&gt;
+&lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapseExample&quot; type=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseExample&quot;&gt;
   Button with data-target
 &lt;&#x2F;button&gt;
 &lt;div class=&quot;collapse&quot; id=&quot;collapseExample&quot;&gt;
@@ -54,7 +54,7 @@
       <div class="panel panel-default">
         <div class="panel-heading" id="headingOne" role="tab">
           <h4 class="panel-title">
-            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <a data-toggle="collapse" data-parent="#accordion" role="button" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               Collapsible Group Item #1
             </a>
           </h4>
@@ -68,7 +68,7 @@
       <div class="panel panel-default">
         <div class="panel-heading" id="headingTwo" role="tab">
           <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" role="button" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               Collapsible Group Item #2
             </a>
           </h4>
@@ -82,7 +82,7 @@
       <div class="panel panel-default">
         <div class="panel-heading" id="headingThree" role="tab">
           <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" role="button" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               Collapsible Group Item #3
             </a>
           </h4>
@@ -95,12 +95,12 @@
       </div>
     </div>
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot; role=&quot;tablist&quot; aria-multiselectable=&quot;true&quot;&gt;
   &lt;div class=&quot;panel panel-default&quot;&gt;
     &lt;div class=&quot;panel-heading&quot; id=&quot;headingOne&quot; role=&quot;tab&quot;&gt;
       &lt;h4 class=&quot;panel-title&quot;&gt;
-        &lt;a role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot; aria-expanded=&quot;true&quot; aria-controls=&quot;collapseOne&quot;&gt;
+        &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; role=&quot;button&quot; href=&quot;#collapseOne&quot; aria-expanded=&quot;true&quot; aria-controls=&quot;collapseOne&quot;&gt;
           Collapsible Group Item #1
         &lt;&#x2F;a&gt;
       &lt;&#x2F;h4&gt;
@@ -114,7 +114,7 @@
   &lt;div class=&quot;panel panel-default&quot;&gt;
     &lt;div class=&quot;panel-heading&quot; id=&quot;headingTwo&quot; role=&quot;tab&quot;&gt;
       &lt;h4 class=&quot;panel-title&quot;&gt;
-        &lt;a class=&quot;collapsed&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;
+        &lt;a class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; role=&quot;button&quot; href=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;
           Collapsible Group Item #2
         &lt;&#x2F;a&gt;
       &lt;&#x2F;h4&gt;
@@ -128,7 +128,7 @@
   &lt;div class=&quot;panel panel-default&quot;&gt;
     &lt;div class=&quot;panel-heading&quot; id=&quot;headingThree&quot; role=&quot;tab&quot;&gt;
       &lt;h4 class=&quot;panel-title&quot;&gt;
-        &lt;a class=&quot;collapsed&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseThree&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseThree&quot;&gt;
+        &lt;a class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; role=&quot;button&quot; href=&quot;#collapseThree&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseThree&quot;&gt;
           Collapsible Group Item #3
         &lt;&#x2F;a&gt;
       &lt;&#x2F;h4&gt;
@@ -148,7 +148,7 @@
     <div class="panel panel-default">
       <div class="panel-heading" id="collapseListGroupHeading1" role="tab">
         <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="false" aria-controls="collapseListGroup1">
+          <a class="collapsed" data-toggle="collapse" role="button" href="#collapseListGroup1" aria-expanded="false" aria-controls="collapseListGroup1">
             Collapsible list group
           </a>
         </h4>
@@ -185,7 +185,7 @@
 
   <h3>Via JavaScript</h3>
   <p>Enable manually with:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('.collapse').collapse()
 </code></pre></figure>
 
@@ -222,7 +222,7 @@ $('.collapse').collapse()
 
   <h4><code>.collapse(options)</code></h4>
   <p>Activates your content as a collapsible element. Accepts an optional options <code>object</code>.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myCollapsible').collapse({
   toggle: false
 })
@@ -269,7 +269,7 @@ $('#myCollapsible').collapse({
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myCollapsible').on('hidden.bs.collapse', function () {
   // do something…
 })

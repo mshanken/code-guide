@@ -21,11 +21,35 @@ module.exports = {
     },
     files: [
       {
-        /* bootstrap 3 */
+        /* Bootstrap 3 */
         expand: true,
-        cwd: 'assets/docs-src',
-        src: ['**/**/*.html'],
-        dest: 'assets/docs',
+        cwd: 'assets/docs-src/bootstrap',
+        src: ['**/*.html','!assets/*.html'],
+        dest: '_site/public/docs',
+        ext: '.ejs'
+      },
+      {
+        /* Font Awesome */
+        expand: true,
+        cwd: 'assets/docs-src/fontawesome',
+        src: ['**/*.html','!assets/*.html'],
+        dest: '_site/public/docs',
+        ext: '.ejs'
+      },
+      {
+        /* FuelUX 3 */
+        expand: true,
+        cwd: 'assets/docs-src/fuelux',
+        src: ['**/*.html','!assets/**/*.html'],
+        dest: '_site/public/docs',
+        ext: '.ejs'
+      },
+      {
+        /* Jasny 3 */
+        expand: true,
+        cwd: 'assets/docs-src/jasny',
+        src: ['**/*.html','!assets/*.html'],
+        dest: '_site/public/docs',
         ext: '.ejs'
       }
     ]

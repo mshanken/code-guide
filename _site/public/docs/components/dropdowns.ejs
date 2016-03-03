@@ -7,7 +7,7 @@
   <p>Wrap the dropdown's trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then add the menu's HTML.</p>
   <div class="bs-example" data-example-id="static-dropdown">
     <div class="dropdown clearfix">
-      <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="true">
         Dropdown
         <span class="caret"></span>
       </button>
@@ -18,9 +18,9 @@
       </ul>
     </div>
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;dropdown&quot;&gt;
-  &lt;button class=&quot;btn btn-default dropdown-toggle&quot; id=&quot;dropdownMenu1&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;true&quot;&gt;
+  &lt;button class=&quot;btn btn-default dropdown-toggle&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot; type=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;true&quot;&gt;
     Dropdown
     &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
   &lt;&#x2F;button&gt;
@@ -37,7 +37,7 @@
   <p>Dropdown menus can be changed to expand upwards (instead of downwards) by adding <code>.dropup</code> to the parent.</p>
   <div class="bs-example" data-example-id="static-dropup">
     <div class="dropup clearfix">
-      <button class="btn btn-default dropdown-toggle" id="dropdownMenu2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn btn-default dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
         Dropup
         <span class="caret"></span>
       </button>
@@ -48,9 +48,9 @@
       </ul>
     </div>
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;dropup&quot;&gt;
-  &lt;button class=&quot;btn btn-default dropdown-toggle&quot; id=&quot;dropdownMenu2&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+  &lt;button class=&quot;btn btn-default dropdown-toggle&quot; id=&quot;dropdownMenu2&quot; data-toggle=&quot;dropdown&quot; type=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
     Dropup
     &lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;
   &lt;&#x2F;button&gt;
@@ -74,7 +74,7 @@
     <h4>Deprecated <code>.pull-right</code> alignment</h4>
     <p>As of v3.1.0, we've deprecated <code>.pull-right</code> on dropdown menus. To right-align a menu, use <code>.dropdown-menu-right</code>. Right-aligned nav components in the navbar use a mixin version of this class to automatically align the menu. To override it, use <code>.dropdown-menu-left</code>.</p>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot; aria-labelledby=&quot;dLabel&quot;&gt;
   ...
 &lt;&#x2F;ul&gt;
@@ -84,7 +84,7 @@
   <p>Add a header to label sections of actions in any dropdown menu.</p>
   <div class="bs-example">
     <div class="dropdown clearfix">
-      <button class="btn btn-default dropdown-toggle" id="dropdownMenu3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <button class="btn btn-default dropdown-toggle" id="dropdownMenu3" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="true">
         Dropdown
         <span class="caret"></span>
       </button>
@@ -98,7 +98,7 @@
       </ul>
     </div>
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenu3&quot;&gt;
   ...
   &lt;li class=&quot;dropdown-header&quot;&gt;Dropdown header&lt;&#x2F;li&gt;
@@ -110,7 +110,7 @@
   <p>Add a divider to separate series of links in a dropdown menu.</p>
   <div class="bs-example">
     <div class="dropdown clearfix">
-      <button class="btn btn-default dropdown-toggle" id="dropdownMenuDivider" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <button class="btn btn-default dropdown-toggle" id="dropdownMenuDivider" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="true">
         Dropdown
         <span class="caret"></span>
       </button>
@@ -123,7 +123,7 @@
       </ul>
     </div>
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenuDivider&quot;&gt;
   ...
   &lt;li class=&quot;divider&quot; role=&quot;separator&quot;&gt;&lt;&#x2F;li&gt;
@@ -135,7 +135,7 @@
   <p>Add <code>.disabled</code> to a <code>&lt;li&gt;</code> in the dropdown to disable the link.</p>
   <div class="bs-example">
     <div class="dropdown clearfix">
-      <button class="btn btn-default dropdown-toggle" id="dropdownMenu4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <button class="btn btn-default dropdown-toggle" id="dropdownMenu4" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="true">
         Dropdown
         <span class="caret"></span>
       </button>
@@ -146,7 +146,7 @@
       </ul>
     </div>
   </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenu4&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Regular link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
   &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;Disabled link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;

@@ -4,8 +4,8 @@
   <h1 class="page-header" id="scheduler">Scheduler <a href="{{ site.repo }}/blob/{{ site.current_version }}/js/scheduler.js"><small>scheduler.js</small></a></h1>
 
   <p>Control which allows users to choose <code>startDateTime</code>, <code>timeZone</code>, and iCal-compatible <code>recurrencePattern</code>. As of 3.11.5, when the user changes the start date, the <a href="#scheduler-usage-options-start-date-changed">end date will attempt to intelligently re-set itself if the start date is set to later than the end date</a>.</p>
-  <div class="form-horizontal container-fluid scheduler" data-initialize="scheduler" id="schedulerIllustration" role="form">
-  <%- partial("scheduler-example") %>
+  <div class="form-horizontal container-fluid scheduler" id="schedulerIllustration" data-initialize="scheduler" role="form">
+  <%- partial("_examples/scheduler-example") %>
   </div>
 
 
@@ -13,9 +13,9 @@
 
   <h3 id="scheduler-usage-javascript">Via JavaScript</h3>
   <p>Instantiate the scheduler control via JavaScript:</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler();</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler();</code></pre></figure>
   <p>The scheduler also accepts optional options params during initialization, one for each start and end date:</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler({
+  <figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler({
     startDateOptions: {
       allowPastDates: true
     },
@@ -31,9 +31,9 @@
   <p>Place all of the following markup within any "fuelux" classed container (typically the html element). Scheduler consists of a specific arrangement of <a href="#datepicker">Datepickers</a>, <a href="#combobox">Comboboxes</a>, <a href="#radio">Radios</a>, <a href="#selectlist">Selectlists</a>, and <a href="#spinbox">Spinboxes</a>.</p>
 
   <div class="truncate-highlight">
-    <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-&lt;div class=&quot;form-horizontal container-fluid scheduler&quot; data-initialize=&quot;scheduler&quot; id=&quot;myScheduler&quot; role=&quot;form&quot;&gt;
-    {% include js&#x2F;scheduler-example.html %}
+    <figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;form-horizontal container-fluid scheduler&quot; id=&quot;myScheduler&quot; data-initialize=&quot;scheduler&quot; role=&quot;form&quot;&gt;
+    <%= partial("_examples/scheduler-example") %>
 &lt;&#x2F;div&gt;
     </code></pre></figure>
   </div>
@@ -93,8 +93,8 @@
 
     <dt id="scheduler-usage-methods-value">.scheduler('value')</dt>
     <dd>Gets or sets the current scheduler form field information
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler('value');</code></pre></figure>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler('value', {
+  <figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler('value');</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler('value', {
   startDateTime: '2014-03-31T03:23+02:00',
   timeZone: {
     offset: '+02:00'
@@ -147,7 +147,7 @@
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All scheduler event listeners should be attached to the element containing the <code>scheduler</code> class. Given the above <a href="#scheduler-usage-markup">example markup</a>, you would attach event listeners thusly:</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myScheduler').on('changed.fu.scheduler', function () {
+  <figure class="highlight"><pre><code class="js">$('#myScheduler').on('changed.fu.scheduler', function () {
   // do something
 });</code></pre></figure>
 
@@ -165,14 +165,14 @@
   <p>The following static scheduler displays all components simultaneously (start date and time, timezone, and all recurrence and recurrence end options) for illustration purposes only.</p>
   <div class="fu-example fu-example-scheduler">
     <fieldset class="form-horizontal container-fluid scheduler" id="mySchedulerStatic" role="form">
-    <%- partial("scheduler-example") %>
+    <%- partial("_examples/scheduler-example") %>
     </fieldset>
   </div><!-- /example -->
 
   <h3 id="scheduler-examples-live-demo">Live demo</h3>
   <div class="fu-example section">
-    <div class="form-horizontal container-fluid scheduler" data-initialize="scheduler" id="myScheduler" role="form">
-    <%- partial("scheduler-example") %>
+    <div class="form-horizontal container-fluid scheduler" id="myScheduler" data-initialize="scheduler" role="form">
+    <%- partial("_examples/scheduler-example") %>
     </div>
 
     <br/>
@@ -187,9 +187,9 @@
 
   </div><!-- /example -->
   <div class="truncate-highlight">
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-&lt;div class=&quot;form-horizontal container-fluid scheduler&quot; data-initialize=&quot;scheduler&quot; id=&quot;myScheduler&quot; role=&quot;form&quot;&gt;
-{% include js&#x2F;scheduler-example.html %}
+  <figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;form-horizontal container-fluid scheduler&quot; id=&quot;myScheduler&quot; data-initialize=&quot;scheduler&quot; role=&quot;form&quot;&gt;
+<%= partial("_examples/scheduler-example") %>
 &lt;&#x2F;div&gt;
   </code></pre></figure>
   </div>

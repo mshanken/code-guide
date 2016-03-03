@@ -1,5 +1,5 @@
 
-.fuelux {
+
 
 	 .combobox {
 		&.disabled {
@@ -14,4 +14,4 @@
 		}
 	}
 
-}
+

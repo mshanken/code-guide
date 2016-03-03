@@ -21,23 +21,23 @@
     <p>You can use all Jasny Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first-class API and should be your first consideration when using a plugin.</p>
 
     <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the document namespaced with <code>data-api</code>. This looks like this:
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $(document).off('.data-api')
 </code></pre></figure>
 
     <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $(document).off('.alert.data-api')
 </code></pre></figure>
 
     <h3 id="js-programmatic-api">Programmatic API</h3>
     <p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $(".fileinput").fileinput().addClass("fat")
 </code></pre></figure>
 
     <p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $("#myMenu").offcanvas()                      // initialized with defaults
 $("#myMenu").offcanvas({ autohide: false })   // initialized with no autohide
 $("#myMenu").offcanvas('show')                // initializes and invokes show immediately</p>
@@ -47,7 +47,7 @@ $("#myMenu").offcanvas('show')                // initializes and invokes show im
 
     <h3 id="js-noconflict">No conflict</h3>
     <p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
 $.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Bootstrap functionality
 </code></pre></figure>
@@ -56,7 +56,7 @@ $.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Boot
     <p>Bootstrap provides custom events for most plugin's unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is trigger on the completion of an action.</p>
     <p>As of 3.1.2, all Bootstrap events are namespaced.</p>
     <p>All infinitive events provide <code>preventDefault</code> functionality. This provides the ability to stop the execution of an action before it starts.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myMenu').on('show.bs.offcanvas', function (e) {
   if (!data) return e.preventDefault() // stops menu from being shown
 })
@@ -84,7 +84,7 @@ $('#myMenu').on('show.bs.offcanvas', function (e) {
           </ul>
         </nav>
         <div class="navbar navbar-default navbar-fixed-top">
-          <button class="navbar-toggle" data-toggle="offcanvas" type="button" data-target="#myNavmenu" data-canvas="#myNavmenuCanvas" data-placement="left">
+          <button class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="#myNavmenuCanvas" data-placement="left" type="button">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -93,7 +93,7 @@ $('#myMenu').on('show.bs.offcanvas', function (e) {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in aliquet nisl. Praesent sed leo congue, fringilla eros eu, tempus metus. Nam mollis odio ipsum, non vehicula ipsum accumsan sodales. Morbi varius vitae elit euismod cursus. Donec a dapibus justo, in facilisis nisi. Suspendisse ut turpis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui risus, tincidunt at odio ut, ultrices dignissim ipsum. Cras ultrices erat nec leo luctus varius. Nulla sollicitudin tincidunt nulla, ut porta mauris volutpat vitae. Suspendisse ornare dolor sit amet massa venenatis pulvinar.</p>
       </div>
     </div><!-- /example -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;nav class=&quot;navmenu navmenu-default navmenu-fixed-left offcanvas&quot; id=&quot;myNavmenu&quot; role=&quot;navigation&quot;&gt;
   &lt;a class=&quot;navmenu-brand&quot; href=&quot;#&quot;&gt;Brand&lt;&#x2F;a&gt;
   &lt;ul class=&quot;nav navmenu-nav&quot;&gt;
@@ -103,7 +103,7 @@ $('#myMenu').on('show.bs.offcanvas', function (e) {
   &lt;&#x2F;ul&gt;
 &lt;&#x2F;nav&gt;
 &lt;div class=&quot;navbar navbar-default navbar-fixed-top&quot;&gt;
-  &lt;button class=&quot;navbar-toggle&quot; data-toggle=&quot;offcanvas&quot; type=&quot;button&quot; data-target=&quot;#myNavmenu&quot; data-canvas=&quot;body&quot;&gt;
+  &lt;button class=&quot;navbar-toggle&quot; data-toggle=&quot;offcanvas&quot; data-target=&quot;#myNavmenu&quot; data-canvas=&quot;body&quot; type=&quot;button&quot;&gt;
     &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
     &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
     &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
@@ -129,7 +129,7 @@ $('#myMenu').on('show.bs.offcanvas', function (e) {
 
     <h3>Via JavaScript</h3>
     <p>Call the input mask via javascript:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('.navmenu').offcanvas()
 </code></pre></figure>
 
@@ -248,7 +248,7 @@ $('.navmenu').offcanvas()
         <tbody class="rowlink" data-link="row">
           <tr><td><a href="#inputmask">Input mask</a></td><td>Input masks can be used to force the user to enter data conform a specific format.</td><td class="rowlink-skip"><a href="#">Action</a></td></tr>
           <tr><td><a href="http://www.jasny.net/" target="_blank">jasny.net</a></td><td>Shared knowledge of Arnold Daniels aka Jasny.</td><td class="rowlink-skip"><a href="#">Action</a></td></tr>
-          <tr><td><a href="#rowlinkModal" data-toggle="modal">Launch modal</a></td><td>Toggle a modal via JavaScript by clicking this row.</td><td class="rowlink-skip"><a href="#">Action</a></td></tr>
+          <tr><td><a data-toggle="modal" href="#rowlinkModal">Launch modal</a></td><td>Toggle a modal via JavaScript by clicking this row.</td><td class="rowlink-skip"><a href="#">Action</a></td></tr>
         </tbody>
       </table>
     </div>
@@ -265,7 +265,7 @@ $('.navmenu').offcanvas()
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;table class=&quot;table table-striped table-bordered table-hover&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;&lt;th&gt;Name&lt;&#x2F;th&gt;&lt;th&gt;Description&lt;&#x2F;th&gt;&lt;th&gt;Actions&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;
@@ -273,7 +273,7 @@ $('.navmenu').offcanvas()
   &lt;tbody class=&quot;rowlink&quot; data-link=&quot;row&quot;&gt;
     &lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#inputmask&quot;&gt;Input mask&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Input masks can be used to force the user to enter data conform a specific format.&lt;&#x2F;td&gt;&lt;td class=&quot;rowlink-skip&quot;&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
     &lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.jasny.net&#x2F;&quot; target=&quot;_blank&quot;&gt;jasny.net&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Shared knowledge of Arnold Daniels aka Jasny.&lt;&#x2F;td&gt;&lt;td class=&quot;rowlink-skip&quot;&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#rowlinkModal&quot; data-toggle=&quot;modal&quot;&gt;Launch modal&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Toggle a modal via JavaScript by clicking this row.&lt;&#x2F;td&gt;&lt;td class=&quot;rowlink-skip&quot;&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;a data-toggle=&quot;modal&quot; href=&quot;#rowlinkModal&quot;&gt;Launch modal&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Toggle a modal via JavaScript by clicking this row.&lt;&#x2F;td&gt;&lt;td class=&quot;rowlink-skip&quot;&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
   &lt;&#x2F;tbody&gt;
 &lt;&#x2F;table&gt;
 </code></pre></figure>
@@ -287,7 +287,7 @@ $('.navmenu').offcanvas()
 
     <h3>Via JavaScript</h3>
     <p>Call the input mask via javascript:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('tbody.rowlink').rowlink()
 </code></pre></figure>
 
@@ -330,7 +330,7 @@ $('tbody.rowlink').rowlink()
     <div class="bs-example">
       <input class="form-control" data-mask="999-99-999-9999-9" type="text" placeholder="ISBN">
     </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;input class=&quot;form-control&quot; data-mask=&quot;999-99-999-9999-9&quot; type=&quot;text&quot; placeholder=&quot;ISBN&quot;&gt;
 </code></pre></figure>
 
@@ -343,7 +343,7 @@ $('tbody.rowlink').rowlink()
 
     <h3>Via JavaScript</h3>
     <p>Call the input mask via javascript:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('.inputmask').inputmask({
   mask: '999-99-999-9999-9'
 })
@@ -423,7 +423,7 @@ $('.inputmask').inputmask({
         <a class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput" href="#">Remove</a>
       </div>
     </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;fileinput fileinput-new input-group&quot; data-provides=&quot;fileinput&quot;&gt;
   &lt;div class=&quot;form-control&quot; data-trigger=&quot;fileinput&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-file fileinput-exists&quot;&gt;&lt;&#x2F;i&gt; &lt;span class=&quot;fileinput-filename&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;div&gt;
   &lt;span class=&quot;input-group-addon btn btn-default btn-file&quot;&gt;&lt;span class=&quot;fileinput-new&quot;&gt;Select file&lt;&#x2F;span&gt;&lt;span class=&quot;fileinput-exists&quot;&gt;Change&lt;&#x2F;span&gt;&lt;input type=&quot;file&quot; name=&quot;...&quot;&gt;&lt;&#x2F;span&gt;
@@ -438,7 +438,7 @@ $('.inputmask').inputmask({
         <a class="close fileinput-exists" data-dismiss="fileinput" href="#" style="float: none">&times;</a>
       </div>
     </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;fileinput fileinput-new&quot; data-provides=&quot;fileinput&quot;&gt;
   &lt;span class=&quot;btn btn-default btn-file&quot;&gt;&lt;span class=&quot;fileinput-new&quot;&gt;Select file&lt;&#x2F;span&gt;&lt;span class=&quot;fileinput-exists&quot;&gt;Change&lt;&#x2F;span&gt;&lt;input type=&quot;file&quot; name=&quot;...&quot;&gt;&lt;&#x2F;span&gt;
   &lt;span class=&quot;fileinput-filename&quot;&gt;&lt;&#x2F;span&gt;
@@ -457,7 +457,7 @@ $('.inputmask').inputmask({
         </div>
       </div>
     </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;fileinput fileinput-new&quot; data-provides=&quot;fileinput&quot;&gt;
   &lt;div class=&quot;fileinput-preview thumbnail&quot; data-trigger=&quot;fileinput&quot; style=&quot;width: 200px; height: 150px;&quot;&gt;&lt;&#x2F;div&gt;
   &lt;div&gt;
@@ -479,7 +479,7 @@ $('.inputmask').inputmask({
         </div>
       </div>
     </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;fileinput fileinput-new&quot; data-provides=&quot;fileinput&quot;&gt;
   &lt;div class=&quot;fileinput-new thumbnail&quot; style=&quot;width: 200px; height: 150px;&quot;&gt;
     &lt;img data-src=&quot;holder.js&quot; src=&quot;https:&#x2F;&#x2F;placehold.it&#x2F;100x100&quot; alt=&quot;...&quot;&gt;

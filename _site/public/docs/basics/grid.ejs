@@ -20,7 +20,7 @@
 
   <h2 id="grid-media-queries">Media queries</h2>
   <p>We use the following media queries in our Less files to create the key breakpoints in our grid system.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="scss">
+<figure class="highlight"><pre><code class="scss">
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -34,7 +34,7 @@
 @media (min-width: @screen-lg-min) { ... }
 </code></pre></figure>
   <p>We occasionally expand on these media queries to include a <code>max-width</code> to limit CSS to a narrower set of devices.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="scss">
+<figure class="highlight"><pre><code class="scss">
 @media (max-width: @screen-xs-max) { ... }
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
@@ -146,7 +146,7 @@
     <div class="col-md-6">.col-md-6</div>
     <div class="col-md-6">.col-md-6</div>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;&#x2F;div&gt;
   &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;&#x2F;div&gt;
@@ -178,7 +178,7 @@
 
   <h2 id="grid-example-fluid">Example: Fluid container</h2>
   <p>Turn any fixed-width grid layout into a full-width layout by changing your outermost <code>.container</code> to <code>.container-fluid</code>.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;container-fluid&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
     ...
@@ -201,7 +201,7 @@
     <div class="col-xs-6">.col-xs-6</div>
     <div class="col-xs-6">.col-xs-6</div>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-xs-12 col-md-8&quot;&gt;.col-xs-12 .col-md-8&lt;&#x2F;div&gt;
@@ -235,7 +235,7 @@
     <div class="clearfix visible-xs-block"></div>
     <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-xs-12 col-sm-6 col-md-8&quot;&gt;.col-xs-12 .col-sm-6 .col-md-8&lt;&#x2F;div&gt;
   &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;&#x2F;div&gt;
@@ -256,7 +256,7 @@
     <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
     <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-xs-9&quot;&gt;.col-xs-9&lt;&#x2F;div&gt;
   &lt;div class=&quot;col-xs-4&quot;&gt;.col-xs-4&lt;br&gt;Since 9 + 4 = 13 &amp;gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.&lt;&#x2F;div&gt;
@@ -280,7 +280,7 @@
     <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
     <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;.col-xs-6 .col-sm-3&lt;&#x2F;div&gt;
   &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;.col-xs-6 .col-sm-3&lt;&#x2F;div&gt;
@@ -293,7 +293,7 @@
 &lt;&#x2F;div&gt;
 </code></pre></figure>
   <p>In addition to column clearing at responsive breakpoints, you may need to <strong>reset offsets, pushes, or pulls</strong>. See this in action in <a href="../examples/grid/">the grid example</a>.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-sm-5 col-md-6&quot;&gt;.col-sm-5 .col-md-6&lt;&#x2F;div&gt;
   &lt;div class=&quot;col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0&quot;&gt;.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0&lt;&#x2F;div&gt;
@@ -319,7 +319,7 @@
   <div class="row show-grid">
     <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;&#x2F;div&gt;
   &lt;div class=&quot;col-md-4 col-md-offset-4&quot;&gt;.col-md-4 .col-md-offset-4&lt;&#x2F;div&gt;
@@ -334,7 +334,7 @@
 </code></pre></figure>
 
   <p>You can also override offsets from lower grid tiers with <code>.col-*-offset-0</code> classes.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;
   &lt;&#x2F;div&gt;
@@ -360,7 +360,7 @@
       </div>
     </div>
   </div>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-sm-9&quot;&gt;
     Level 1: .col-sm-9
@@ -383,7 +383,7 @@
     <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
   </div>
 
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-md-9 col-md-push-3&quot;&gt;.col-md-9 .col-md-push-3&lt;&#x2F;div&gt;
   &lt;div class=&quot;col-md-3 col-md-pull-9&quot;&gt;.col-md-3 .col-md-pull-9&lt;&#x2F;div&gt;
@@ -395,7 +395,7 @@
 
   <h3>Variables</h3>
   <p>Variables determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="scss">
+<figure class="highlight"><pre><code class="scss">
 @grid-columns:              12;
 @grid-gutter-width:         30px;
 @grid-float-breakpoint:     768px;
@@ -403,7 +403,7 @@
 
   <h3>Mixins</h3>
   <p>Mixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="scss">
+<figure class="highlight"><pre><code class="scss">
 // Creates a wrapper for a series of columns
 .make-row(@gutter: @grid-gutter-width) {
   // Then clear the floated columns
@@ -539,7 +539,7 @@
 
   <h3>Example usage</h3>
   <p>You can modify the variables to your own custom values, or just use the mixins with their default values. Here's an example of using the default settings to create a two-column layout with a gap between.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="scss">
+<figure class="highlight"><pre><code class="scss">
 .wrapper {
   .make-row();
 }
@@ -551,7 +551,7 @@
   .make-lg-column-offset(1);
 }
 </code></pre></figure>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
+<figure class="highlight"><pre><code class="html">
 &lt;div class=&quot;wrapper&quot;&gt;
   &lt;div class=&quot;content-main&quot;&gt;...&lt;&#x2F;div&gt;
   &lt;div class=&quot;content-secondary&quot;&gt;...&lt;&#x2F;div&gt;

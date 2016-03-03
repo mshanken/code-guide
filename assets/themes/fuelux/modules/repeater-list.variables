@@ -1,0 +1,24 @@
+
+@mutli-select-enabled-width: 37px;
+.selectable() {
+	&.selectable {
+		&:hover td, &.hovered td {
+			background: @selectable-hover;
+			cursor: pointer;
+		}
+		.checkbox-custom:before {
+			margin-top: -4px;
+			top: 0
+		}
+	}
+	&.selected {
+		td {
+			background: @selected;
+			color: @gray20;
+
+			&:first-child {
+				padding-left: 30px;
+			}
+		}
+	}
+}

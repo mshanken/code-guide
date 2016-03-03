@@ -9,7 +9,7 @@
       <label class="col-sm-2 control-label" for="datepickerIllustration">Date</label>
       <div class="col-sm-10">
         <div class="datepicker" id="datepickerIllustration" data-initialize="datepicker">
-          <%- partial("datepicker-example") %>
+          <%- partial("_examples/datepicker-example") %>
         </div>
       </div>
     </div>
@@ -23,10 +23,10 @@
 
   <h3 id="datepicker-usage-javascript">Via JavaScript</h3>
   <p>Initialize the <code>datepicker()</code> via JavaScript (accepting <a href="#datepicker-usage-options ">default options</a>):</p>
-  <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker();</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker();</code></pre></figure>
 
   <p>Initialize the <code>datepicker()</code> via JavaScript specifying your own <a href="#datepicker-usage-options ">options</a>:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myDatepicker').datepicker({
   allowPastDates: true
 });
@@ -41,8 +41,8 @@ $('#myDatepicker').datepicker({
   <h3 id="datepicker-usage-markup">Markup</h3>
   <p>The <code>datepicker()</code> markup is complex and specific. On initialization, the <code>datepicker()</code> plugin searches inside of the specified element for the components used to build the control. For your convenience, we have written the <span class="text-danger">required</span> markup for you. Writing custom <code>datepicker()</code> markup is not recommended; if you choose to do so, understanding the <a href="{{ site.repo }}/blob/{{ site.current_version }}/js/datepicker.js">datepicker.js</a> code will be necessary.</p>
   <div class="truncate-highlight">
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="html">
-{% include js&#x2F;datepicker-example.html %}
+<figure class="highlight"><pre><code class="html">
+<%= partial("_examples/datepicker-example") %>
 </code></pre></figure>
   </div>
 
@@ -150,7 +150,7 @@ $('#myDatepicker').datepicker({
     <dt id="datepicker-usage-methods-set-date">.datepicker('setDate')</dt>
     <dd>
       Sets <code>datepicker()</code> to date provided. Date provided must be a valid Date object or date string.
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setDate', new Date());</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setDate', new Date());</code></pre></figure>
     </dd>
 
 
@@ -160,7 +160,7 @@ $('#myDatepicker').datepicker({
     <dt id="datepicker-usage-methods-set-culture">.datepicker('setCulture')</dt>
     <dd>
       Updates the culture the <code>datepicker()</code> uses. <em>Only available using <code>moment.js</code> with langs</em>
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setCulture', 'fr');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setCulture', 'fr');</code></pre></figure>
     </dd>
 
 
@@ -170,7 +170,7 @@ $('#myDatepicker').datepicker({
     <dt id="datepicker-usage-methods-set-format">.datepicker('setFormat')</dt>
     <dd>
       Updates the format the <code>datepicker()</code> uses. <em>Only available using <code>moment.js</code> with langs</em>
-      <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setFormat', 'L');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setFormat', 'L');</code></pre></figure>
     </dd>
   </dl>
 
@@ -207,21 +207,21 @@ $('#myDatepicker').datepicker({
 
   </div><!-- ./fu-table-responsive -->
   <p>All <code>datepicker()</code> events are fired on the <code>.datepicker</code> classed element.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myDatepicker').on('changed.fu.datepicker', function (evt, date) {
   // do something…
 });
 </code></pre></figure>
 
   <p>To listen for changes on the <code>Date()</code> object, you will need to combine two listeners (as shown below). The reason for this is to keep double events firing when a date is clicked (previously when a date was clicked <code>dateClicked</code> and <code>changed</code> would both fire, which was confusing to many people.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myDatepicker').on('changed.fu.datepicker dateClicked.fu.datepicker', function (evt, date) {
   // do something…
 });
 </code></pre></figure>
 
   <p>To listen for all changes to the <code>datepicker</code>'s input value, including setting the date to <code>invalid</code> values, you will need to combine two listeners:</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myDatepicker').on('change dateClicked.fu.datepicker', function (evt, date) {
   // do something…
 });
@@ -239,7 +239,7 @@ $('#myDatepicker').on('change dateClicked.fu.datepicker', function (evt, date) {
           <label class="col-sm-4 control-label" for="datepickerIllustration" for="myDatepickerInput">Choose a date (default)</label>
           <div class="col-sm-8">
             <div class="datepicker" id="myDatepicker" data-initialize="datepicker">
-              <%- partial("datepicker-example") %>
+              <%- partial("_examples/datepicker-example") %>
             </div>
           </div>
         </div>

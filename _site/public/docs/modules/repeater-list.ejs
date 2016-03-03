@@ -214,7 +214,7 @@
 							</ul>
 						</li>
 					</ul>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 list_actions:  {
   width: 37,
   items: [{
@@ -338,18 +338,18 @@ list_actions:  {
 
 <h4>.repeater('list_clearSelectedItems');</h4>
 <p>Clears any currently selected row items. You can use selectable row items only by enabling the <code>list_selectable</code> option.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('list_clearSelectedItems');</code></pre></figure>
+<figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('list_clearSelectedItems');</code></pre></figure>
 
 <h4>.repeater('list_getSelectedItems');</h4>
 <p>Returns the currently selected row items in an array. You can use selectable row items only by enabling the <code>list_selectable</code> option.
 </p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#element').repeater('list_getSelectedItems');</code></pre></figure>
+<figure class="highlight"><pre><code class="js">$('#element').repeater('list_getSelectedItems');</code></pre></figure>
 
 <h4>.repeater('list_setSelectedItems');</h4>
 <p>Set the selected row items for the current displayed data. This function accepts an array of <code>items</code> objects and
 	<code>force</code> boolean as arguments.
 </p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('list_setSelectedItems', [ {...}, ...]);</code></pre></figure>
+<figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('list_setSelectedItems', [ {...}, ...]);</code></pre></figure>
 
 <div class="table-responsive">
 	<table class="table table-bordered table-striped">
@@ -404,7 +404,7 @@ list_actions:  {
 	</table>
 </div><!-- ./fu-table-responsive -->
 <p>All repeater-list events are fired on the <code>.repeater</code> classed element.</p>
-<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="js">
 $('#myRepeater').on('selected.fu.repeaterList', function () {
     // do something…
 });

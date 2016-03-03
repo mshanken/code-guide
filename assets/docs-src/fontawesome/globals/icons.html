@@ -1,0 +1,30 @@
+<div class="bs-docs-section">
+  <h1 id="glyphicons" class="page-header">Glyphicons</h1>
+
+  <h2 id="glyphicons-glyphs">Available icons from Font Awesome</h2>
+   <p class="lead">
+    After you get up and running, you can place Font Awesome icons just about
+    anywhere with the <code>&lt;i&gt;</code> or <code>&lt;i&gt;</code> tag.
+    Some examples appreciatively re-used from the Bootstrap documentation.
+  </p>
+  <div class="bs-glyphicons">
+    <ul class="bs-glyphicons-list">
+      {% for iconClassName in site.data.glyphicons %}
+        <li>
+          <span class="fa fa-{{ iconClassName }}" aria-hidden="true"></span>
+          <span class="glyphicon-class">fa fa-{{ iconClassName }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% include examples/basic.html %}
+  {% include examples/larger.html %}
+  {% include examples/fixed-width.html %}
+  {% include examples/list.html %}
+  {% include examples/bordered-pulled.html %}
+  {% include examples/animated.html %}
+  {% include examples/rotated-flipped.html %}
+  {% include examples/stacked.html %}
+  {% include examples/bootstrap.html %}
+  {% include examples/custom.html %}
+</div>
