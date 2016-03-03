@@ -14,7 +14,7 @@ Clone/Fork this project, cd into it then run `harp server _site`, use your brows
 
 # New
 1. A theme builder, create your own css file with this tool using less.
-2. Patterns, you now can see and show your theme working this this HTML patterns
+2. Patterns, you now can see and show your theme working by using this HTML patterns documentation
 
 #What's next?
 Documentation on how to work with this.
