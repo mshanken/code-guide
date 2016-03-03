@@ -1,19 +1,9 @@
 'use strict';
 
 module.exports = {
-  basic: {
+  build: {
     files: {
-      "_site/public/css/main.css": "assets/style.less"
-    }
-  },
-  framework: {
-  	files: {
-  		"_site/public/css/main.css": "assets/framework.less"
-  	}
-  },
-  extended: {
-    files: {
-      "_site/public/css/main.css": "assets/extended.less"
+      "_site/public/css/main.css": "theme-builder/style.less"
     }
   }
 };

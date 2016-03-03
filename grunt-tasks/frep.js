@@ -23,7 +23,7 @@ module.exports = {
       {
         /* Bootstrap 3 */
         expand: true,
-        cwd: 'assets/docs-src/bootstrap',
+        cwd: 'docs-assets/docs-src/bootstrap',
         src: ['**/*.html','!assets/*.html'],
         dest: '_site/public/docs',
         ext: '.ejs'
@@ -31,7 +31,7 @@ module.exports = {
       {
         /* Font Awesome */
         expand: true,
-        cwd: 'assets/docs-src/fontawesome',
+        cwd: 'docs-assets/docs-src/fontawesome',
         src: ['**/*.html','!assets/*.html'],
         dest: '_site/public/docs',
         ext: '.ejs'
@@ -39,7 +39,7 @@ module.exports = {
       {
         /* FuelUX 3 */
         expand: true,
-        cwd: 'assets/docs-src/fuelux',
+        cwd: 'docs-assets/docs-src/fuelux',
         src: ['**/*.html','!assets/**/*.html'],
         dest: '_site/public/docs',
         ext: '.ejs'
@@ -47,7 +47,7 @@ module.exports = {
       {
         /* Jasny 3 */
         expand: true,
-        cwd: 'assets/docs-src/jasny',
+        cwd: 'docs-assets/docs-src/jasny',
         src: ['**/*.html','!assets/*.html'],
         dest: '_site/public/docs',
         ext: '.ejs'
@@ -62,24 +62,9 @@ module.exports = {
       {
         /* bootstrap 3 */
         expand: true,
-        cwd: 'assets/docs-src',
+        cwd: 'docs-assets/docs-src',
         src: ['**/**/*.less','!**/bootstrap.less','!**/theme.less','!**/mixins.less','!**/mixins/*.less','!**/fuelux*.less','!**/jasny*.less','!**/skeleton.less'],
-        dest: 'assets/themes',
-        ext: '.overrides'
-      }
-    ]
-  },
-  fuelux: {
-    options: {
-      replacements: '<%= config.replacements.fuelux %>'
-    },
-    files: [
-      {
-        /* Bootstrap 4 */
-        expand: true,
-        cwd: 'assets/themes/fuelux/',
-        src: ['**/*.less'],
-        dest: 'assets/themes/fuelux/',
+        dest: 'theme-builder/themes',
         ext: '.overrides'
       }
     ]
