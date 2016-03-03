@@ -22,7 +22,7 @@ module.exports = {
       '<%= config.prod.style %>/main.css',
       '<%= config.prod.style %>/vendor/docs.css',
       '<%= config.prod.style %>/vendor/default.css',
-      '<%= config.prod.style %>/codeguide.css',
+      '<%= config.prod.style %>/code-guide.css',
     ],
     dest: '<%= config.prod.style %>/build.min.css'
   }
