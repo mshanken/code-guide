@@ -12,4 +12,9 @@ This should be kept as a simple static site therefore the site is build using [h
 
 Clone/Fork this project, cd into it then run `harp server _site`, use your browser to preview the site [localhost:9000](http://localhost:9000) dig in the _site/public/ and read the index file to add/delete/update
 
+# New
+1. A theme builder, create your own css file with this tool using less.
+2. Patterns, you now can see and show your theme working this this HTML patterns
+
 #What's next?
+Documentation on how to work with this.
