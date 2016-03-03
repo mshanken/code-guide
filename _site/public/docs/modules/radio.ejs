@@ -1,0 +1,234 @@
+<!-- radio
+================================================== -->
+<div class="fu-docs-section">
+  <h1 class="page-header" id="radio">Radio <a href="{{ site.repo }}/blob/{{ site.current_version }}/js/radio.js"><small>radio.js</small></a></h1>
+
+  <p>The radio control provides a customized look and feel that can be standardized across all browsers.</p>
+  <div class="fu-example section">
+
+    <div class="radio" id="radioIllustration">
+      <label class="radio-custom" data-initialize="radio">
+        <input class="sr-only" name="radioEx1" type="radio" value="option1"> Browser-independent radio 1
+      </label>
+      <label class="radio-custom" data-initialize="radio">
+        <input class="sr-only" name="radioEx1" type="radio" value="option2"> Browser-independent radio 2
+      </label>
+      <label class="radio-custom" data-initialize="radio">
+        <input class="sr-only" name="radioEx1" type="radio" value="option3"> Browser-independent radio 3
+      </label>
+    </div>
+  </div>
+
+  <h2 id="radio-usage">Usage</h2>
+
+  <h3 id="radio-usage-javascript">Via JavaScript</h3>
+  <p>Call the radio control via JavaScript on the <code>label</code>. The <code>div.radio</code> container is only present for block level stying:</p>
+  <figure class="highlight"><pre><code class="js">$('#myRadioLabel').radio();</code></pre></figure>
+
+  <h3 id="radio-usage-data-attributes">Via data-attributes</h3>
+  <p>The radio will automatically instantiate any radios with <code>data-initialize="radio"</code> located on the <code>&lt;label&gt;</code>. If you add the control markup <em>after page load</em> with <code>data-initialize="radio"</code>, this control initializes on <code>mouseover</code>.
+
+  <div class="fu-callout fu-callout-warning">
+    <h4 id="deprecated-radio-markup">Deprecated radio button markup</h4>
+    <p>Before v3.7.0, the radio control could be bound with <code>$().radio();</code> or <code>data-initialize="radio"</code> to the <code>div.radio</code> or the <code>input</code> elements. This is no longer supported. Please update your markup and JavaScript to be bound to the <code>label</code> only.</p>
+  </div>
+
+  <h3 id="radio-usage-methods">Methods</h3>
+  <dl>
+    <dt id="radio-usage-methods-check">.radio('check')</dt>
+    <dd>Ensures the radio is checked</dd>
+
+    <dt id="radio-usage-methods-destroy">.radio('destroy')</dt>
+    <dd>Removes all functionality, jQuery data, and the markup from the DOM. Returns string of control markup.</dd>
+
+    <dt id="radio-usage-methods-disable">.radio('disable')</dt>
+    <dd>Ensures the radio is disabled</dd>
+
+    <dt id="radio-usage-methods-enable">.radio('enable')</dt>
+    <dd>Ensures the radio is enabled</dd>
+
+    <dt id="radio-usage-methods-is-checked">.radio('isChecked')</dt>
+    <dd>Returns <code>true</code> or <code>false</code> indicating the radio's checked state</dd>
+
+    <dt id="radio-usage-methods-uncheck">.radio('uncheck')</dt>
+    <dd>Ensures the radio is not checked</dd>
+  </dl>
+
+  <h2 id="radio-examples">Examples</h2>
+  <p>Customized look and feel for radio button element</p>
+
+  <h4 id="radio-examples-default">Default (stacked)</h4>
+  <div class="fu-example section">
+
+    <div class="radio">
+      <label class="radio-custom" data-initialize="radio">
+        <input class="sr-only" name="radioEx1" type="radio" value="option1">
+        Browser-independent radio unchecked on page load
+      </label>
+    </div>
+
+    <div class="radio checked">
+      <label class="radio-custom" data-initialize="radio">
+        <input class="sr-only" name="radioEx1" checked="checked" type="radio" value="option2">
+        Browser-independent radio checked on page load
+      </label>
+    </div>
+
+    <div class="radio checked">
+      <label class="radio-custom" id="lbl3" data-initialize="radio">
+        <input class="sr-only" id="radio3" name="radio1b" checked="checked" disabled="disabled" type="radio">
+        <span class="radio-label">Disabled custom appearance radio selected on page load</span>
+      </label>
+    </div>
+
+    <div class="radio">
+      <label class="radio-custom" data-initialize="radio">
+        <input class="sr-only" name="radioEx2" disabled="disabled" type="radio" value="option3">
+        Disabled browser-independent radio unchecked on page load
+      </label>
+    </div>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;radio&quot;&gt;
+  &lt;label class=&quot;radio-custom&quot; id=&quot;myCustomRadioLabel&quot; data-initialize=&quot;radio&quot;&gt;
+    &lt;input class=&quot;sr-only&quot; name=&quot;radioEx1&quot; type=&quot;radio&quot; value=&quot;option1&quot;&gt;
+    Browser-independent radio unchecked on page load
+  &lt;&#x2F;label&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;radio checked&quot;&gt;
+  &lt;label class=&quot;radio-custom&quot; id=&quot;myCustomRadioLabel2&quot; data-initialize=&quot;radio&quot;&gt;
+    &lt;input class=&quot;sr-only&quot; name=&quot;radioEx1&quot; checked=&quot;checked&quot; type=&quot;radio&quot; value=&quot;option2&quot;&gt;
+    Browser-independent radio checked on page load
+  &lt;&#x2F;label&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;radio checked&quot;&gt;
+  &lt;label class=&quot;radio-custom disabled&quot; id=&quot;myCustomRadioLabel3&quot; data-initialize=&quot;radio&quot;&gt;
+    &lt;input class=&quot;sr-only&quot; name=&quot;radio1b&quot; checked=&quot;checked&quot; disabled=&quot;disabled&quot; type=&quot;radio&quot;&gt;
+    &lt;span class=&quot;radio-label&quot;&gt;Disabled custom appearance radio selected on page load&lt;&#x2F;span&gt;
+  &lt;&#x2F;label&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;radio&quot;&gt;
+  &lt;label class=&quot;radio-custom disabled&quot; id=&quot;myCustomRadioLabel4&quot; data-initialize=&quot;radio&quot;&gt;
+    &lt;input class=&quot;sr-only&quot; name=&quot;radioEx2&quot; disabled=&quot;disabled&quot; type=&quot;radio&quot; value=&quot;option3&quot;&gt;
+    Disabled browser-independent radio unchecked on page load
+  &lt;&#x2F;label&gt;
+&lt;&#x2F;div&gt;
+</code></pre></figure>
+
+  <h4 id="radio-examples-inline">Inline radio</h4>
+  <p>Use the <code>.radio-inline</code> classes on radios for controls that appear on the same line.</p>
+  <div class="fu-example section">
+    <label class="radio-custom radio-inline" data-initialize="radio">
+      <input  class="sr-only" name="radioEx2" type="radio" value="option1"> 1
+    </label>
+    <label class="radio-custom radio-inline" data-initialize="radio">
+      <input class="sr-only" name="radioEx2" checked="checked" type="radio" value="option2"> 2
+    </label>
+    <label class="radio-custom radio-inline disabled" data-initialize="radio">
+      <input class="sr-only" name="radioEx2" disabled="disabled" type="radio" value="option3"> 3
+    </label>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;label class=&quot;radio-custom radio-inline&quot; id=&quot;myCustomRadioLabel5&quot; data-initialize=&quot;radio&quot;&gt;
+  &lt;input class=&quot;sr-only&quot; name=&quot;radioEx2&quot; type=&quot;radio&quot; value=&quot;option1&quot;&gt; 1
+&lt;&#x2F;label&gt;
+&lt;label class=&quot;radio-custom radio-inline&quot; id=&quot;myCustomRadioLabel6&quot; data-initialize=&quot;radio&quot;&gt;
+  &lt;input class=&quot;sr-only&quot; name=&quot;radioEx2&quot; checked=&quot;checked&quot; type=&quot;radio&quot; value=&quot;option2&quot;&gt; 2
+&lt;&#x2F;label&gt;
+&lt;label class=&quot;radio-custom radio-inline disabled&quot; id=&quot;myCustomRadioLabel7&quot; data-initialize=&quot;radio&quot;&gt;
+  &lt;input class=&quot;sr-only&quot; name=&quot;radioEx2&quot; disabled=&quot;disabled&quot; type=&quot;radio&quot; value=&quot;option3&quot;&gt; 3
+&lt;&#x2F;label&gt;
+</code></pre></figure>
+
+  <div class="fuelux-mctheme-do-not-use">
+
+  <h4 id="radio-examples-addon">Addon radios</h4>
+  <p>Place any radio option within an input group's addon instead of text.</p>
+  <div class="fu-example section">
+    <div class="input-group">
+      <label class="input-group-addon radio-custom radio-inline" data-initialize="radio">
+        <input class="sr-only" type="radio" value="option1">
+      </label>
+      <input class="form-control" type="text">
+    </div>
+  </div>
+<figure class="highlight"><pre><code class="html">
+  &lt;div class=&quot;input-group&quot;&gt;
+    &lt;label class=&quot;input-group-addon radio-custom radio-inline&quot; data-initialize=&quot;radio&quot;&gt;
+      &lt;input class=&quot;sr-only&quot; type=&quot;radio&quot; value=&quot;option1&quot;&gt;
+    &lt;&#x2F;label&gt;
+    &lt;input class=&quot;form-control&quot; type=&quot;text&quot;&gt;
+  &lt;&#x2F;div&gt;
+</code></pre></figure>
+
+  </div>
+
+
+  <h4 id="radio-examples-element-toggling">Element toggling radios</h4>
+  <p>Use the <code>data-toggle="{{selector}}"</code> to automatically show or hide elements matching the selector within the body upon check or uncheck. This function works with any <a href="http://api.jquery.com/category/selectors/">jQuery selector</a>.
+  </p>
+  <div class="fu-example section">
+    <div class="radio">
+      <label class="radio-custom" data-initialize="radio">
+        <input class="sr-only" name="radioEx3" data-toggle="#radioToggleID" type="radio" value="option1">
+        Toggles element with matching ID
+      </label>
+    </div>
+    <label class="radio-custom radio-inline" data-initialize="radio">
+      <input class="sr-only" name="radioEx3" data-toggle=".radioToggleCLASS" type="radio" value="option1">
+      Toggles elements with matching class.
+    </label>
+
+    <div class="alert bg-info hide" id="radioToggleID">ID-toggling container</div>
+    <div class="alert bg-success hide radioToggleCLASS">Class-toggling container</div>
+    <div class="alert bg-success hide radioToggleCLASS">Class-toggling container</div>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;radio&quot;&gt;
+  &lt;label class=&quot;radio-custom&quot; id=&quot;myCustomRadioLabel8&quot; data-initialize=&quot;radio&quot;&gt;
+    &lt;input class=&quot;sr-only&quot; name=&quot;radioEx3&quot; data-toggle=&quot;#radioToggleID&quot; type=&quot;radio&quot; value=&quot;option1&quot;&gt;
+    Toggles element with matching ID
+  &lt;&#x2F;label&gt;
+&lt;&#x2F;div&gt;
+&lt;label class=&quot;radio-custom radio-inline&quot; id=&quot;myCustomRadioLabel9&quot; data-initialize=&quot;radio&quot;&gt;
+  &lt;input class=&quot;sr-only&quot; name=&quot;radioEx3&quot; data-toggle=&quot;.radioToggleCLASS&quot; type=&quot;radio&quot; value=&quot;option1&quot;&gt;
+  Toggles elements with matching class
+&lt;&#x2F;label&gt;
+
+
+&lt;div class=&quot;alert bg-info&quot; id=&quot;radioToggleID&quot;&gt;ID-toggling container&lt;&#x2F;div&gt;
+&lt;div class=&quot;alert bg-success radioToggleCLASS&quot;&gt;Class-toggling container&lt;&#x2F;div&gt;
+&lt;div class=&quot;alert bg-success radioToggleCLASS&quot;&gt;Class-toggling container&lt;&#x2F;div&gt;
+</code></pre></figure>
+
+  <h4 id="radio-examples-highlighting">Highlighting radios</h4>
+  <p>Use the <code>.highlight</code> class to add a background highlight upon check.
+  </p>
+  <div class="fu-example section">
+    <div class="radio highlight">
+      <label class="radio-custom highlight" data-initialize="radio">
+        <input class="sr-only" name="radioEx4" type="radio" value="option1">
+        This block-level radio will highlight on check.
+      </label>
+    </div>
+    <label class="radio-custom radio-inline highlight" data-initialize="radio">
+      <input class="sr-only" name="radioEx4" type="radio" value="option2">
+      This inline radio will highlight on check.
+    </label>
+  </div>
+  <figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;radio highlight&quot; id=&quot;myCustomRadioLabel10&quot;&gt;
+  &lt;label class=&quot;radio-custom highlight&quot; data-initialize=&quot;radio&quot;&gt;
+    &lt;input class=&quot;sr-only&quot; name=&quot;radioEx4&quot; type=&quot;radio&quot; value=&quot;option1&quot;&gt;
+    This block-level radio will highlight on check.
+  &lt;&#x2F;label&gt;
+&lt;&#x2F;div&gt;
+&lt;label class=&quot;radio-custom radio-inline highlight&quot; id=&quot;myCustomRadio11&quot; data-initialize=&quot;radio&quot;&gt;
+  &lt;input class=&quot;sr-only&quot; name=&quot;radioEx4&quot; type=&quot;radio&quot; value=&quot;option2&quot;&gt;
+  This inline radio will highlight on check.
+&lt;&#x2F;label&gt;
+  </code></pre></figure>
+</div>

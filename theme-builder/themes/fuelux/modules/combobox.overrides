@@ -1,0 +1,17 @@
+
+
+
+	 .combobox {
+		&.disabled {
+			.input-group-btn {
+				cursor: not-allowed;
+			}
+		}
+		input {
+			&::-ms-clear {
+				display:none;
+			}
+		}
+	}
+
+

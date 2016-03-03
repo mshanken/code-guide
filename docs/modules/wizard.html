@@ -1,0 +1,646 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+        <meta name="description" content="A wizard indicates a possible user action">
+        <meta name="keywords" content="your, tags">
+        <meta name="subject" content="your website's subject">
+        <meta name="copyright" content="M. Shanken Communications, Inc.">
+        <meta name='robots' content='index,follow'>
+
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="apple-mobile-web-app-title" content="Wizard"><!-- New in iOS6 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width; width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=yes; target-densitydpi=160dpi">
+
+        <meta name="application-name" content="Wizard" /><!-- For Windows 8 -->
+        <meta name="msapplication-tooltip" content="A wizard indicates a possible user action">
+        <meta name="msapplication-TileColor" content=" #009900" />
+        <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
+        <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
+        <meta name="msapplication-wide310x150logo" content="images/widetile.png" />
+        <meta name="msapplication-square310x310logo" content="images/largetile.png" />
+        <meta name="msapplication-notification" content="frequency=30; polling-uri=notifications/contoso1.xml;polling-uri2=notifications/contoso2.xml; polling-uri3=notifications/contoso3.xml" />
+
+        <meta property="og:title" content="Wizard"><!-- facebook openGraph -->
+        <meta property="og:description" content="A wizard indicates a possible user action">
+        <meta property="og:image" content="">
+
+        <meta name="twitter:card" content="summary"><!-- twitter openGraph -->
+        <meta name="twitter:site" content="@site_account">
+        <meta name="twitter:creator" content="@individual_account">
+        <meta name="twitter:url" content="http://www.yoursite.com">
+        <meta name="twitter:title" content="Wizard">
+        <meta name="twitter:description" content="A wizard indicates a possible user action">
+        <meta name="twitter:image" content="">
+
+        <link href="apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
+        <link href="touch-icon-ipad.png" rel="apple-touch-icon" sizes="72x72">
+        <link href="touch-icon-iphone4.png" rel="apple-touch-icon" sizes="114x114">
+        <link href="startup.png" rel="apple-touch-startup-image">
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+        
+        <title>Wizard</title>
+        <!-- Place favicon.ico in the root directory -->
+
+    	
+	  	<link rel="stylesheet" type="text/css" href="/css/build.min.css">
+	
+
+    		<!-- Google Analytics -->
+	    <script>
+	        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	        // Change "addyoursite" the name of your web site
+	        ga('create', 'you-UA-code-here', 'addyoursite');
+	        ga('send', {"hitType":"pageview","page":"wizard", "section":"docs"});
+	    </script>
+	    <!-- End Google Analytics -->
+  
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.js"></script>
+        <script src="/js/vendor/respond.src.js"></script>
+      <![endif]-->
+    <script src="/js/vendor/modernizr.js"></script>
+    
+  </head>
+  
+  <body class="fuelux">
+    <!--[if (lt IE 8)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--[if (gt IEMobile 8)|(IEMobile)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    
+		<header id="header" class="container header jumbotron" role="header">
+			<h1>Wizard</h1>
+			<h2>Code Guide</h2>
+		</header>
+     		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<div>
+		<ul class="nav navbar-nav">
+	
+	
+				<li class=""><a href="/docs/globals">Globals</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/basics">Basics</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/components">Components</a></li>
+			
+		
+	
+				<li class="active"><a href="/docs/modules">Modules</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/views">Views</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/pages">Pages</a></li>
+			
+		
+	
+		</ul>
+	</div>
+</nav>
+
+
+    <main id="main" class="container main" role="main">
+      <div class="row wrapper">
+        <article id="article" class="article" role="main-article">
+
+          <!-- wizard
+================================================== -->
+<div class="fu-docs-section">
+	<h1 class="page-header" id="wizard">
+		Wizard <a href="{{ site.repo }}/blob/{{ site.current_version }}/js/wizard.js"><small>wizard.js</small></a>
+	</h1>
+
+	<p>A wizard divides a complex goal into multiple steps by separating sub-tasks or content into panes. You can add or remove panes. Completed steps remain clickable.</p>
+
+	<div class="wizard fuelux" id="wizardIllustration" data-initialize="wizard">
+		<div class="steps-container">
+	<ul class="steps">
+		<li class="active" data-step="1" data-name="campaign">
+			<span class="badge">1</span>Campaign
+			<span class="chevron"></span>
+		</li>
+		<li data-step="2">
+			<span class="badge">2</span>Recipients
+			<span class="chevron"></span>
+		</li>
+		<li data-step="3" data-name="template">
+			<span class="badge">3</span>Template
+			<span class="chevron"></span>
+		</li>
+	</ul>
+</div>
+<div class="actions">
+	<button class="btn btn-default btn-prev" type="button">
+		<span class="glyphicon glyphicon-arrow-left"></span>Prev</button>
+	<button class="btn btn-primary btn-next" data-last="Complete" type="button">Next
+		<span class="glyphicon glyphicon-arrow-right"></span>
+	</button>
+</div>
+<div class="step-content">
+	<div class="step-pane active sample-pane alert" data-step="1">
+		<h4>Setup Campaign</h4>
+		<p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
+	</div>
+	<div class="step-pane sample-pane bg-info alert" data-step="2">
+		<h4>Choose Recipients</h4>
+		<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
+	</div>
+	<div class="step-pane sample-pane bg-danger alert" data-step="3">
+		<h4>Design Template</h4>
+		<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify. </p>
+	</div>
+</div>
+
+
+	</div>
+
+	<h2 id="wizard-usage">Usage</h2>
+	<h3 id="wizard-usage-javascript">Via JavaScript</h3>
+	<figure class="highlight"><pre><code class="js">$('#myWizard').wizard();</code></pre></figure>
+
+	<h3 id="wizard-usage-data-attributes">Via data-attributes</h3>
+	<p>The wizard will automatically instantiate any wizards with <code>data-initialize="wizard"</code>. If you add control markup <em>after page load</em> with <code>data-initialize="wizard"</code>, this control initializes on <code>mouseover</code>.
+
+	<h3 id="wizard-usage-markup">Markup</h3>
+
+	<div class="fu-callout fu-callout-warning">
+		<h4 id="deprecated-wizard-markup">Deprecated wizard markup</h4>
+		<p>Before v3.8.0, the wizard control did not have a <code>.steps-container</code> element.
+	</div>
+
+	<p>Wrap <code>class="wizard"</code> around a list of steps, navigation, and content within a <code>class="fuelux"</code> container.</p>
+	
+	<div class="truncate-highlight">
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;wizard&quot; id=&quot;myWizard&quot; data-initialize=&quot;wizard&quot;&gt;
+&lt;div class=&quot;steps-container&quot;&gt;
+	&lt;ul class=&quot;steps&quot;&gt;
+		&lt;li class=&quot;active&quot; data-step=&quot;1&quot; data-name=&quot;campaign&quot;&gt;
+			&lt;span class=&quot;badge&quot;&gt;1&lt;/span&gt;Campaign
+			&lt;span class=&quot;chevron&quot;&gt;&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li data-step=&quot;2&quot;&gt;
+			&lt;span class=&quot;badge&quot;&gt;2&lt;/span&gt;Recipients
+			&lt;span class=&quot;chevron&quot;&gt;&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li data-step=&quot;3&quot; data-name=&quot;template&quot;&gt;
+			&lt;span class=&quot;badge&quot;&gt;3&lt;/span&gt;Template
+			&lt;span class=&quot;chevron&quot;&gt;&lt;/span&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;actions&quot;&gt;
+	&lt;button class=&quot;btn btn-default btn-prev&quot; type=&quot;button&quot;&gt;
+		&lt;span class=&quot;glyphicon glyphicon-arrow-left&quot;&gt;&lt;/span&gt;Prev&lt;/button&gt;
+	&lt;button class=&quot;btn btn-primary btn-next&quot; data-last=&quot;Complete&quot; type=&quot;button&quot;&gt;Next
+		&lt;span class=&quot;glyphicon glyphicon-arrow-right&quot;&gt;&lt;/span&gt;
+	&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;step-content&quot;&gt;
+	&lt;div class=&quot;step-pane active sample-pane alert&quot; data-step=&quot;1&quot;&gt;
+		&lt;h4&gt;Setup Campaign&lt;/h4&gt;
+		&lt;p&gt;Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;step-pane sample-pane bg-info alert&quot; data-step=&quot;2&quot;&gt;
+		&lt;h4&gt;Choose Recipients&lt;/h4&gt;
+		&lt;p&gt;Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. &lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;step-pane sample-pane bg-danger alert&quot; data-step=&quot;3&quot;&gt;
+		&lt;h4&gt;Design Template&lt;/h4&gt;
+		&lt;p&gt;Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify. &lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;&#x2F;div&gt;
+</code></pre></figure>
+	</div>
+
+	<h3 id="wizard-usage-data-attributes">Data Attribute Options</h3>
+	<p>For data attributes, append the option name to data-, as in data-restrict="".</p>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th style="width: 150px;">Attribute</th>
+					<th style="width: 50px;">Value</th>
+					<th>Description</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>restrict</td>
+					<td>previous</td>
+					<td>Prevents the user from navigating to a previous step</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>step</td>
+					<td>1</td>
+					<td>Sets the current wizard step. Replace the value with a number of the wizard step to load on.</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div><!-- ./fu-table-responsive -->
+
+	<h3 id="wizard-usage-options">Options</h3>
+	<p>You can pass options via Javascript upon initialization.</p>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped">
+			<thead>
+			<tr>
+				<th style="width: 100px;">Name</th>
+				<th style="width: 100px;">Type</th>
+				<th style="width: 200px;">Default</th>
+				<th>Description</th>
+				<th></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>disablePreviousStep</td>
+				<td>boolean</td>
+				<td>false</td>
+				<td>Dictates whether the wizard should make the previous step button disabled. Setting this value to <code>true</code> will make the previous step button disabled</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>selectedItem</td>
+				<td>object</td>
+				<td>{ step: -1 }</td>
+				<td>
+					By default <code>{ step: -1 }</code> means it will attempt to look for "active" class in order to set the
+					step. Changing the step number would set the step that is loaded by default when the wizard loads.
+				</td>
+				<td></td>
+			</tr>
+			</tbody>
+		</table>
+	</div><!-- ./fu-table-responsive -->
+
+	<h3 id="wizard-usage-methods">Methods</h3>
+	<dl>
+		<dt id="wizard-usage-methods-destroy">.wizard('destroy')</dt>
+		<dd>Removes all functionality, jQuery data, and the markup from the DOM. Returns string of control markup</dd>
+
+		<dt id="wizard-usage-methods-previous">.wizard('previous')</dt>
+		<dd>Moves to the previous step</dd>
+
+		<dt id="wizard-usage-methods-next">.wizard('next')</dt>
+		<dd>Moves to the next step</dd>
+
+		<dt id="wizard-usage-methods-selectedItem">.wizard('selectedItem')</dt>
+		<dd>Returns the current step index.
+			<figure class="highlight"><pre><code class="js">$('#myWizard').wizard('selectedItem');</code></pre></figure>
+		</dd>
+
+		<dt id="wizard-usage-methods-selectedItem">.wizard('selectedItem', 3)</dt>
+		<dd>Moves to passed in step. This can be either an integer or the `data-name` of a step.
+	<figure class="highlight"><pre><code class="js">$('#myWizard').wizard('selectedItem', {
+	step: 3
+});
+
+$('#myWizard').wizard('selectedItem', {
+	step: "named item"
+});</code></pre></figure>
+		</dd>
+
+		<dt id="wizard-usage-methods-addSteps">.wizard('addSteps')</dt>
+		<dd>Add a pane or an array of panes to a wizard. Wrap this markup with <code>&lt;div class=&quot;step-pane&quot;&gt;&lt;/div&gt;</code>
+	<figure class="highlight"><pre><code class="js">$('#myWizard').wizard('addSteps', index, [
+	{
+		badge: 'badge-customicon',
+		label: 'A Step Label',
+		pane: '<div>Content</div>'
+	}
+]);</code></pre></figure>
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th style="width: 150px;">Parameter</th>
+							<th>Description</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>index</td>
+							<td><em>Required.</em> Identifies the position used to start inserting pane(s). First pane exists at position 1. If you use -1, the item will append to end of the list of panes.</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>[item1, ..., itemX] <br/> item1, ..., itemX</em></td>
+							<td>Identifies an array or list of content pane objects to add at the <code>index</code>. Each pane can contain three strings:
+								<ul>
+									<li>a <code>badge</code> class to be appended to the <code>class</code> attribute of the step in order to override the default number</li>
+									<li>a <code>label</code> for the name of the step</li>
+									<li>the <code>pane</code> of HTML content</li>
+								</ul>
+							</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!-- ./fu-table-responsive -->
+		</dd>
+
+		<dt id="wizard-usage-methods-removeSteps">.wizard('removeSteps')</dt>
+		<dd>Remove a pane or multiple panes from a wizard
+	<figure class="highlight"><pre><code class="js">$('#myWizard').wizard('removeSteps', index, howMany);</code></pre></figure>
+
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th style="width: 150px;">Parameter</th>
+							<th>Description</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>index</td>
+							<td><em>Required.</em> Identifies the position where to begin removing pane(s). First pane exists at position 1.</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>howMany</td>
+							<td><em>Optional.</em> Specifies the number of panes to removed. Defaults to 1.</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!-- ./fu-table-responsive -->
+		</dd>
+	</dl>
+
+	<h3 id="wizard-usage-events">Events</h3>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th style="width: 150px;">Event Type</th>
+					<th>Description</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>actionclicked.fu.wizard</td>
+					<td>This event fires immediately when the step changes, but before the wizard shows the new step. Use <code>event.preventDefault()</code> to cancel the event.  Arguments include <code>event, data</code> where data is an object <code>{ step:1, direction:'next' }</code>.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>changed.fu.wizard</td>
+					<td>This event fires when the step changes and displays to the user.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>finished.fu.wizard</td>
+					<td>This event fires when the user clicks the next button on the last step of the wizard.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>stepclicked.fu.wizard</td>
+					<td>This event fires when the user clicks a completed step. Use <code>event.preventDefault</code> to cancel the event.</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div><!-- ./fu-table-responsive -->
+
+	<p>All wizard events are fired on the <code>.wizard</code> classed element.</p>
+<figure class="highlight"><pre><code class="js">
+$('#myWizard').on('actionclicked.fu.wizard', function (evt, data) {
+	// do something
+});
+</code></pre></figure>
+
+	<h2 id="wizard-examples">Examples</h2>
+	<p>Wrap the input and wizard button within <code>.fuelux .wizard</code></p>
+	<div class="fu-example section">
+		<div class="wizard" id="myWizard" data-initialize="wizard">
+			<div class="steps-container">
+	<ul class="steps">
+		<li class="active" data-step="1" data-name="campaign">
+			<span class="badge">1</span>Campaign
+			<span class="chevron"></span>
+		</li>
+		<li data-step="2">
+			<span class="badge">2</span>Recipients
+			<span class="chevron"></span>
+		</li>
+		<li data-step="3" data-name="template">
+			<span class="badge">3</span>Template
+			<span class="chevron"></span>
+		</li>
+	</ul>
+</div>
+<div class="actions">
+	<button class="btn btn-default btn-prev" type="button">
+		<span class="glyphicon glyphicon-arrow-left"></span>Prev</button>
+	<button class="btn btn-primary btn-next" data-last="Complete" type="button">Next
+		<span class="glyphicon glyphicon-arrow-right"></span>
+	</button>
+</div>
+<div class="step-content">
+	<div class="step-pane active sample-pane alert" data-step="1">
+		<h4>Setup Campaign</h4>
+		<p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
+	</div>
+	<div class="step-pane sample-pane bg-info alert" data-step="2">
+		<h4>Choose Recipients</h4>
+		<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
+	</div>
+	<div class="step-pane sample-pane bg-danger alert" data-step="3">
+		<h4>Design Template</h4>
+		<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify. </p>
+	</div>
+</div>
+
+
+		</div>
+
+		<h5 id="wizard-examples-sample-methods">Sample Methods</h5>
+		<div class="btn-group">
+			<button class="btn btn-default" id="btnWizardPrev" type="button">previous</button>
+			<button class="btn btn-default" id="btnWizardNext" type="button">next</button>
+			<button class="btn btn-default" id="btnWizardStep" type="button">log current step index</button>
+			<button class="btn btn-default" id="btnWizardSetStep" type="button">jump to step 3</button>
+			<button class="btn btn-default" id="btnWizardSetStepByName" type="button">jump to named step (Template)</button>
+		</div>
+	<div class="btn-group">
+			<button class="btn btn-default" id="btnWizardAddSteps" type="button">add step at index 2</button>
+		<button class="btn btn-default" id="btnWizardRemoveStep" type="button">remove step 1</button>
+		<button class="btn btn-default" id="btnWizardDestroy" type="button">destroy and append</button>
+	</div>
+
+	</div><!-- /example -->
+</div><!-- end docs-section -->
+
+          
+          <!-- For debuging: <pre>< %- JSON.stringify(public.docs, null, '\t') %></pre> -->
+          <!-- For debuging: <pre>< %- JSON.stringify(current, null, '\t') %></pre> -->
+
+        </article>
+        <aside id="aside" class="aside" role="sidebar">
+          
+             		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<ul class="nav nav-pills nav-stacked">
+	
+			<li class=""><a href="/docs/modules/index">Home</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/overview">overview</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/affix">affix</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/alerts">alerts</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/buttons">buttons</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/carousel">carousel</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/checkbox">checkbox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/collapse">collapse</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/combobox">combobox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/datepicker">datepicker</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/dropdown-autoflip">dropdown-autoflip</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/dropdowns">dropdowns</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/extended">extended</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/infinite-scroll">infinite-scroll</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/javascript-overview">javascript-overview</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/loader">loader</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/modal">modal</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/pillbox">pillbox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/placard">placard</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/popovers">popovers</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/radio">radio</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/repeater-list">repeater-list</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/repeater-thumbnail">repeater-thumbnail</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/repeater">repeater</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/scheduler">scheduler</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/scrollspy">scrollspy</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/search">search</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/selectlist">selectlist</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/spinbox">spinbox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/tabs">tabs</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/tooltips">tooltips</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/transitions">transitions</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/tree">tree</a></li>
+		
+	
+			<li class="active"><a href="/docs/modules/wizard">wizard</a></li>
+		
+	
+	</ul>
+</nav>
+          
+        </aside>
+      </div>
+    </main>
+    
+    		
+		<footer id="footer" class="container footer" role="footer">
+			<p>&copy; 2016 M. Shanken Communications, Inc.</p>
+		</footer>
+		<!-- 
+			* TODO: You may also add all your script tags here
+			* For site performance it's suugested you all all your script tags here
+		 -->
+    	
+  		<script src="/js/build.min.js"></script>
+	
+
+  </body>
+</html>
+      

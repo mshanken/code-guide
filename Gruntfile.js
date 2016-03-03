@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         style: './_site/public/css',
         images: './_site/public/images',
         script: './_site/public/js',
-        font: './_site/public/fonts'
+        font: './_site/public/font'
       },
       prod: {
         root: 'www',
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('start', [
     'bower',
-    'frep',
+    'frep:less',
     'harp:server'
   ]);
   grunt.registerTask('lint', [

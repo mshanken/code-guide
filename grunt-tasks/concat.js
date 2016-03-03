@@ -14,8 +14,10 @@ module.exports = {
   },
   css: {
     src: [
-      '<%= config.prod.style %>/vendor/bootstrap.css',
-      '<%= config.prod.style %>/theme.css'
+      '<%= config.prod.style %>/vendor/main.css',
+      '<%= config.prod.style %>/codeguide.css',
+      '<%= config.prod.style %>/vendor/docs.css',
+      '<%= config.prod.style %>/vendor/default.css',
     ],
     dest: '<%= config.prod.style %>/build.min.css'
   }

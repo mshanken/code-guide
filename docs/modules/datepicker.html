@@ -1,0 +1,758 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+        <meta name="description" content="A datepicker indicates a possible user action">
+        <meta name="keywords" content="your, tags">
+        <meta name="subject" content="your website's subject">
+        <meta name="copyright" content="M. Shanken Communications, Inc.">
+        <meta name='robots' content='index,follow'>
+
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="apple-mobile-web-app-title" content="Datepicker"><!-- New in iOS6 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width; width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=yes; target-densitydpi=160dpi">
+
+        <meta name="application-name" content="Datepicker" /><!-- For Windows 8 -->
+        <meta name="msapplication-tooltip" content="A datepicker indicates a possible user action">
+        <meta name="msapplication-TileColor" content=" #009900" />
+        <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
+        <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
+        <meta name="msapplication-wide310x150logo" content="images/widetile.png" />
+        <meta name="msapplication-square310x310logo" content="images/largetile.png" />
+        <meta name="msapplication-notification" content="frequency=30; polling-uri=notifications/contoso1.xml;polling-uri2=notifications/contoso2.xml; polling-uri3=notifications/contoso3.xml" />
+
+        <meta property="og:title" content="Datepicker"><!-- facebook openGraph -->
+        <meta property="og:description" content="A datepicker indicates a possible user action">
+        <meta property="og:image" content="">
+
+        <meta name="twitter:card" content="summary"><!-- twitter openGraph -->
+        <meta name="twitter:site" content="@site_account">
+        <meta name="twitter:creator" content="@individual_account">
+        <meta name="twitter:url" content="http://www.yoursite.com">
+        <meta name="twitter:title" content="Datepicker">
+        <meta name="twitter:description" content="A datepicker indicates a possible user action">
+        <meta name="twitter:image" content="">
+
+        <link href="apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
+        <link href="touch-icon-ipad.png" rel="apple-touch-icon" sizes="72x72">
+        <link href="touch-icon-iphone4.png" rel="apple-touch-icon" sizes="114x114">
+        <link href="startup.png" rel="apple-touch-startup-image">
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+        
+        <title>Datepicker</title>
+        <!-- Place favicon.ico in the root directory -->
+
+    	
+	  	<link rel="stylesheet" type="text/css" href="/css/build.min.css">
+	
+
+    		<!-- Google Analytics -->
+	    <script>
+	        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	        // Change "addyoursite" the name of your web site
+	        ga('create', 'you-UA-code-here', 'addyoursite');
+	        ga('send', {"hitType":"pageview","page":"datepicker", "section":"docs"});
+	    </script>
+	    <!-- End Google Analytics -->
+  
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.js"></script>
+        <script src="/js/vendor/respond.src.js"></script>
+      <![endif]-->
+    <script src="/js/vendor/modernizr.js"></script>
+    
+  </head>
+  
+  <body class="fuelux">
+    <!--[if (lt IE 8)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--[if (gt IEMobile 8)|(IEMobile)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    
+		<header id="header" class="container header jumbotron" role="header">
+			<h1>Datepicker</h1>
+			<h2>Code Guide</h2>
+		</header>
+     		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<div>
+		<ul class="nav navbar-nav">
+	
+	
+				<li class=""><a href="/docs/globals">Globals</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/basics">Basics</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/components">Components</a></li>
+			
+		
+	
+				<li class="active"><a href="/docs/modules">Modules</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/views">Views</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/pages">Pages</a></li>
+			
+		
+	
+		</ul>
+	</div>
+</nav>
+
+
+    <main id="main" class="container main" role="main">
+      <div class="row wrapper">
+        <article id="article" class="article" role="main-article">
+
+          <!-- datepicker
+================================================== -->
+<div class="fu-docs-section">
+  <h1 class="page-header" id="datepicker">Datepicker <a href="{{ site.repo }}/blob/{{ site.current_version }}/js/datepicker.js"><small>datepicker.js</small></a></h1>
+  <p>The <code>datepicker()</code> control provides the user with the ability to choose a date from a highly customizable calender. Datepicker also offers many <a href="#datepicker-usage-methods">methods</a> that allow you to programmatically manipulate it.</p>
+
+  <form class="form-horizontal" style="width: 300px;">
+    <div class="form-group">
+      <label class="col-sm-2 control-label" for="datepickerIllustration">Date</label>
+      <div class="col-sm-10">
+        <div class="datepicker" id="datepickerIllustration" data-initialize="datepicker">
+          <div class="input-group">
+  <input class="form-control" id="myDatepickerInput" type="text"/>
+  <div class="input-group-btn">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+      <span class="glyphicon glyphicon-calendar"></span>
+      <span class="sr-only">Toggle Calendar</span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
+      <div class="datepicker-calendar">
+        <div class="datepicker-calendar-header">
+          <button class="prev" type="button"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous Month</span></button>
+          <button class="next" type="button"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next Month</span></button>
+          <button class="title" type="button">
+              <span class="month">
+                <span data-month="0">January</span>
+                <span data-month="1">February</span>
+                <span data-month="2">March</span>
+                <span data-month="3">April</span>
+                <span data-month="4">May</span>
+                <span data-month="5">June</span>
+                <span data-month="6">July</span>
+                <span data-month="7">August</span>
+                <span data-month="8">September</span>
+                <span data-month="9">October</span>
+                <span data-month="10">November</span>
+                <span data-month="11">December</span>
+              </span> <span class="year"></span>
+          </button>
+        </div>
+        <table class="datepicker-calendar-days">
+          <thead>
+          <tr>
+            <th>Su</th>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+          </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div class="datepicker-calendar-footer">
+          <button class="datepicker-today" type="button">Today</button>
+        </div>
+      </div>
+      <div class="datepicker-wheels" aria-hidden="true">
+        <div class="datepicker-wheels-month">
+          <h2 class="header">Month</h2>
+          <ul>
+            <li data-month="0"><button type="button">Jan</button></li>
+            <li data-month="1"><button type="button">Feb</button></li>
+            <li data-month="2"><button type="button">Mar</button></li>
+            <li data-month="3"><button type="button">Apr</button></li>
+            <li data-month="4"><button type="button">May</button></li>
+            <li data-month="5"><button type="button">Jun</button></li>
+            <li data-month="6"><button type="button">Jul</button></li>
+            <li data-month="7"><button type="button">Aug</button></li>
+            <li data-month="8"><button type="button">Sep</button></li>
+            <li data-month="9"><button type="button">Oct</button></li>
+            <li data-month="10"><button type="button">Nov</button></li>
+            <li data-month="11"><button type="button">Dec</button></li>
+          </ul>
+        </div>
+        <div class="datepicker-wheels-year">
+          <h2 class="header">Year</h2>
+          <ul></ul>
+        </div>
+        <div class="datepicker-wheels-footer clearfix">
+          <button class="btn datepicker-wheels-back" type="button"><span class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span></button>
+          <button class="btn datepicker-wheels-select" type="button">Select <span class="sr-only">Month and Year</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+  <div style="width: 140px; margin-left: 150px;">
+  </div>
+
+  <h2 id="datepicker-usage">Usage</h2>
+
+  <h3 id="datepicker-usage-javascript">Via JavaScript</h3>
+  <p>Initialize the <code>datepicker()</code> via JavaScript (accepting <a href="#datepicker-usage-options ">default options</a>):</p>
+  <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker();</code></pre></figure>
+
+  <p>Initialize the <code>datepicker()</code> via JavaScript specifying your own <a href="#datepicker-usage-options ">options</a>:</p>
+<figure class="highlight"><pre><code class="js">
+$('#myDatepicker').datepicker({
+  allowPastDates: true
+});
+</code></pre></figure>
+
+  <h3 id="datepicker-usage-data-attributes">Via data-attributes</h3>
+  <ul>
+    <li>Datepicker controls that exist when <code>$().ready()</code> executes that have <code>data-initialize="datepicker"</code> on them will be initialized immediately</li>
+    <li>Datepicker controls that are created with <code>data-initialize="datepicker"</code> after <code>$.ready()</code> executes will initialize when a <code>mousedown</code> event occurs on them.</li>
+  </ul>
+
+  <h3 id="datepicker-usage-markup">Markup</h3>
+  <p>The <code>datepicker()</code> markup is complex and specific. On initialization, the <code>datepicker()</code> plugin searches inside of the specified element for the components used to build the control. For your convenience, we have written the <span class="text-danger">required</span> markup for you. Writing custom <code>datepicker()</code> markup is not recommended; if you choose to do so, understanding the <a href="{{ site.repo }}/blob/{{ site.current_version }}/js/datepicker.js">datepicker.js</a> code will be necessary.</p>
+  <div class="truncate-highlight">
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;input class=&quot;form-control&quot; id=&quot;myDatepickerInput&quot; type=&quot;text&quot;/&gt;
+  &lt;div class=&quot;input-group-btn&quot;&gt;
+    &lt;button class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; type=&quot;button&quot;&gt;
+      &lt;span class=&quot;glyphicon glyphicon-calendar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Toggle Calendar&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;dropdown-menu dropdown-menu-right datepicker-calendar-wrapper&quot; role=&quot;menu&quot;&gt;
+      &lt;div class=&quot;datepicker-calendar&quot;&gt;
+        &lt;div class=&quot;datepicker-calendar-header&quot;&gt;
+          &lt;button class=&quot;prev&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-left&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sr-only&quot;&gt;Previous Month&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;next&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sr-only&quot;&gt;Next Month&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;title&quot; type=&quot;button&quot;&gt;
+              &lt;span class=&quot;month&quot;&gt;
+                &lt;span data-month=&quot;0&quot;&gt;January&lt;/span&gt;
+                &lt;span data-month=&quot;1&quot;&gt;February&lt;/span&gt;
+                &lt;span data-month=&quot;2&quot;&gt;March&lt;/span&gt;
+                &lt;span data-month=&quot;3&quot;&gt;April&lt;/span&gt;
+                &lt;span data-month=&quot;4&quot;&gt;May&lt;/span&gt;
+                &lt;span data-month=&quot;5&quot;&gt;June&lt;/span&gt;
+                &lt;span data-month=&quot;6&quot;&gt;July&lt;/span&gt;
+                &lt;span data-month=&quot;7&quot;&gt;August&lt;/span&gt;
+                &lt;span data-month=&quot;8&quot;&gt;September&lt;/span&gt;
+                &lt;span data-month=&quot;9&quot;&gt;October&lt;/span&gt;
+                &lt;span data-month=&quot;10&quot;&gt;November&lt;/span&gt;
+                &lt;span data-month=&quot;11&quot;&gt;December&lt;/span&gt;
+              &lt;/span&gt; &lt;span class=&quot;year&quot;&gt;&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;table class=&quot;datepicker-calendar-days&quot;&gt;
+          &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Su&lt;/th&gt;
+            &lt;th&gt;Mo&lt;/th&gt;
+            &lt;th&gt;Tu&lt;/th&gt;
+            &lt;th&gt;We&lt;/th&gt;
+            &lt;th&gt;Th&lt;/th&gt;
+            &lt;th&gt;Fr&lt;/th&gt;
+            &lt;th&gt;Sa&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;&lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;div class=&quot;datepicker-calendar-footer&quot;&gt;
+          &lt;button class=&quot;datepicker-today&quot; type=&quot;button&quot;&gt;Today&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;datepicker-wheels&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;div class=&quot;datepicker-wheels-month&quot;&gt;
+          &lt;h2 class=&quot;header&quot;&gt;Month&lt;/h2&gt;
+          &lt;ul&gt;
+            &lt;li data-month=&quot;0&quot;&gt;&lt;button type=&quot;button&quot;&gt;Jan&lt;/button&gt;&lt;/li&gt;
+            &lt;li data-month=&quot;1&quot;&gt;&lt;button type=&quot;button&quot;&gt;Feb&lt;/button&gt;&lt;/li&gt;
+            &lt;li data-month=&quot;2&quot;&gt;&lt;button type=&quot;button&quot;&gt;Mar&lt;/button&gt;&lt;/li&gt;
+            &lt;li data-month=&quot;3&quot;&gt;&lt;button type=&quot;button&quot;&gt;Apr&lt;/button&gt;&lt;/li&gt;
+            &lt;li data-month=&quot;4&quot;&gt;&lt;button type=&quot;button&quot;&gt;May&lt;/button&gt;&lt;/li&gt;
+            &lt;li data-month=&quot;5&quot;&gt;&lt;button type=&quot;button&quot;&gt;Jun&lt;/button&gt;&lt;/li&gt;
+            &lt;li data-month=&quot;6&quot;&gt;&lt;button type=&quot;button&quot;&gt;Jul&lt;/button&gt;&lt;/li&gt;
+            &lt;li data-month=&quot;7&quot;&gt;&lt;button type=&quot;button&quot;&gt;Aug&lt;/button&gt;&lt;/li&gt;
+            &lt;li data-month=&quot;8&quot;&gt;&lt;button type=&quot;button&quot;&gt;Sep&lt;/button&gt;&lt;/li&gt;
+            &lt;li data-month=&quot;9&quot;&gt;&lt;button type=&quot;button&quot;&gt;Oct&lt;/button&gt;&lt;/li&gt;
+            &lt;li data-month=&quot;10&quot;&gt;&lt;button type=&quot;button&quot;&gt;Nov&lt;/button&gt;&lt;/li&gt;
+            &lt;li data-month=&quot;11&quot;&gt;&lt;button type=&quot;button&quot;&gt;Dec&lt;/button&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;datepicker-wheels-year&quot;&gt;
+          &lt;h2 class=&quot;header&quot;&gt;Year&lt;/h2&gt;
+          &lt;ul&gt;&lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;datepicker-wheels-footer clearfix&quot;&gt;
+          &lt;button class=&quot;btn datepicker-wheels-back&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-arrow-left&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sr-only&quot;&gt;Return to Calendar&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;btn datepicker-wheels-select&quot; type=&quot;button&quot;&gt;Select &lt;span class=&quot;sr-only&quot;&gt;Month and Year&lt;/span&gt;&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></figure>
+  </div>
+
+  <h3 id="datepicker-usage-options">Options</h3>
+  <p>If <a href="#datepicker-usage-javascript">initializing through JavaScript</a>, <code>datepicker()</code> allows you to specify options.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th style="width: 100px;">Name</th>
+          <th style="width: 100px;">type</th>
+          <th style="width: 115px;">default</th>
+          <th>description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>allowPastDates</td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Dictates whether past dates can be input or selected by the user.</td>
+        </tr>
+        <tr>
+          <td>date</td>
+          <td>Date object, string, or falsy value ('', null, or false)</td>
+          <td>new Date()</td>
+          <td>Specifies the date that is set upon initialization. If using a string, the format must be a
+          valid date string as supported by the browser or by moment.js if available. Falsy values will result
+          in no date being set upon initialization.</td>
+        </tr>
+        <tr>
+          <td>formatDate</td>
+          <td>function or null</td>
+          <td>null</td>
+          <td>Function that is called for formatting a valid date object. Should only be overriden if the
+          datepicker's default formatDate method is not sufficient for your needs. The formatDate function takes
+          a date object as an argument, and should return a string.</td>
+        </tr>
+        <tr>
+          <td>momentConfig</td>
+          <td>object</td>
+          <td>{<br/>&nbsp;&nbsp;&nbsp;&nbsp;culture: 'en',<br/>&nbsp;&nbsp;&nbsp;&nbsp;format: 'L'<br/>}</td>
+          <td>Settings used to configure moment.js, if available. Both <code>culture</code> and <code>format</code>
+          attributes must be present for moment features to be utilized. The <code>culture</code> attribute is a string
+          representing the desired <code>datepicker()</code> language. The <code>format</code> attribute is a string representing the
+          desired date format that appears in the input upon date selection. Consult the <a href="http://momentjs.com/docs/">moment.js</a>
+          docs for more information on supported cultures and formats.</td>
+        </tr>
+        <tr>
+          <td>parseDate</td>
+          <td>function or null</td>
+          <td>null</td>
+          <td>Function that is called for parsing date strings input by the user. Should only be overriden if the
+          datepicker's default parseDate method is not sufficient for your needs. The parseDate function takes a
+          date object, string, or falsy value as an argument, and should return either a valid date object representing
+          the successfully parsed value or invalid date object (<code>new Date(NaN)</code>)</td>
+        </tr>
+        <tr>
+          <td>restricted</td>
+          <td>array</td>
+          <td>[]</td>
+          <td>Specifies dates that are restricted from user input and selection. Uses an array of objects to provide
+          the ranges. Each of the object must have the following format: <code>{ from: '03/31/2015', to: '03/31/2016' }</code>, but multiple ranges are supported. The <code>from</code> attribute represents the start date of the restricted range, and the <code>to</code> attribute represents the end date of the range, inclusively. Both attributes can be set to either a valid date
+          string or a date object. <code>-Infinity</code> and <code>Infinity</code> are valid delimiters. View this gist to see <a href="https://gist.github.com/interactivellama/eee7795377b2914ca1c4">how to set the datepicker to only allow dates from the past 365 days</a>.</td>
+        </tr>
+        <tr>
+          <td>sameYearOnly</td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Prevents the user from selecting dates outside the current year if true.</td>
+        </tr>
+        <tr>
+          <td>twoDigitYearProtection</td>
+          <td>boolean</td>
+          <td>true</td>
+          <td>Attempts to accommodate for people entering two digit years. Only works if moment is being used to parse date. Otherwise browser parsing is used (which is inconsistent)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- ./fu-table-responsive -->
+
+  <h3 id="datepicker-usage-moment">Date Parsing and MomentJS</h3>
+
+  <p><a href="http://momentjs.com/docs/">MomentJS</a> parsing is the <b>same format</b> for the API as the output within the <code>input</code> element. Datepicker's default MomentJS locale is regionalistic (American). If you are using MomentJS (and it is recommended that you do), option strings such as those within restricted date ranges expect the format that you provide within <code>momentConfig</code>. Locales and formats are available in the <a href="http://momentjs.com/docs/#/customization/long-date-formats/">MomentJS documentation</a>. The default locale configuration is <code>momentConfig: { culture: 'en', format: 'L' }</code></p>
+
+  <p>Therefore if you do not specify your own locale and format, <code>restricted</code> will be expecting an array of objects of the<code>'MM/DD/YYYY'</code> format--that is the <code>'L'</code> MomentJS format. An example of this would be <code>restricted: [{ from: '08/10/2014', to: '08/15/2014' }]</code></p>
+
+  <h3 id="datepicker-usage-methods">Methods</h3>
+  <dl>
+    <dt>.datepicker('destroy')</dt>
+    <dd>Removes all functionality, jQuery data, and the markup from the DOM. Returns string of control markup.</dd>
+
+    <dt id="datepicker-usage-methods-disable">.datepicker('disable')</dt>
+    <dd>Ensures the component is disabled</dd>
+
+    <dt id="datepicker-usage-methods-enable">.datepicker('enable')</dt>
+    <dd>Ensures the component is enabled</dd>
+
+    <dt id="datepicker-usage-methods-get-date">.datepicker('getDate')</dt>
+    <dd>Returns the selected date (not formatted)</dd>
+
+    <dt id="datepicker-usage-methods-get-formatted-date">.datepicker('getFormattedDate')</dt>
+    <dd>Returns the selected formatted date</dd>
+
+    <dt id="datepicker-usage-methods-set-date">.datepicker('setDate')</dt>
+    <dd>
+      Sets <code>datepicker()</code> to date provided. Date provided must be a valid Date object or date string.
+      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setDate', new Date());</code></pre></figure>
+    </dd>
+
+
+    <dt id="datepicker-usage-methods-get-culture">.datepicker('getCulture')</dt>
+    <dd>Returns the culture the <code>datepicker()</code> is currently using. <em>Only available using <code>moment.js</code> with langs</em></dd>
+
+    <dt id="datepicker-usage-methods-set-culture">.datepicker('setCulture')</dt>
+    <dd>
+      Updates the culture the <code>datepicker()</code> uses. <em>Only available using <code>moment.js</code> with langs</em>
+      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setCulture', 'fr');</code></pre></figure>
+    </dd>
+
+
+    <dt id="datepicker-usage-methods-get-format">.datepicker('getFormat')</dt>
+    <dd>Returns the format the <code>datepicker()</code> is currently using. <em>Only available using <code>moment.js</code> with langs</em></dd>
+
+    <dt id="datepicker-usage-methods-set-format">.datepicker('setFormat')</dt>
+    <dd>
+      Updates the format the <code>datepicker()</code> uses. <em>Only available using <code>moment.js</code> with langs</em>
+      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setFormat', 'L');</code></pre></figure>
+    </dd>
+  </dl>
+
+
+  <h3 id="datepicker-usage-events">Events</h3>
+  <div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th style="width: 150px;">Event Type</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>changed.fu.datepicker</td>
+        <td>This event is fired when the date value has been changed by the user inputing text into the input box. <em>Choosing the date by clicking in the datepicker will not fire this event</em>. Arguments include <code>event, date</code> where date is a JavaScript <code>Date</code> object.</td>
+      </tr>
+      <tr>
+        <td>dateClicked.fu.datepicker</td>
+        <td>This event is fired when a day has been selected on the calendar. Arguments include <code>event, date</code> where date is a JavaScript <code>Date</code> object.</td>
+      </tr>
+      <tr>
+        <td>inputParsingFailed.fu.datepicker</td>
+        <td>This event is fired when an invalid date is parsed on blur of the datepicker. Arguments include <code>event, date</code> where date is a JavaScript <code>Date</code> object.</td>
+      </tr>
+      <tr>
+        <td>inputRestrictedDate.fu.datepicker</td>
+        <td>This event is fired when an restricted date is parsed on blur of the datepicker. Arguments include <code>event, date</code> where date is a JavaScript <code>Date</code> object.</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  </div><!-- ./fu-table-responsive -->
+  <p>All <code>datepicker()</code> events are fired on the <code>.datepicker</code> classed element.</p>
+<figure class="highlight"><pre><code class="js">
+$('#myDatepicker').on('changed.fu.datepicker', function (evt, date) {
+  // do something…
+});
+</code></pre></figure>
+
+  <p>To listen for changes on the <code>Date()</code> object, you will need to combine two listeners (as shown below). The reason for this is to keep double events firing when a date is clicked (previously when a date was clicked <code>dateClicked</code> and <code>changed</code> would both fire, which was confusing to many people.</p>
+<figure class="highlight"><pre><code class="js">
+$('#myDatepicker').on('changed.fu.datepicker dateClicked.fu.datepicker', function (evt, date) {
+  // do something…
+});
+</code></pre></figure>
+
+  <p>To listen for all changes to the <code>datepicker</code>'s input value, including setting the date to <code>invalid</code> values, you will need to combine two listeners:</p>
+<figure class="highlight"><pre><code class="js">
+$('#myDatepicker').on('change dateClicked.fu.datepicker', function (evt, date) {
+  // do something…
+});
+</code></pre></figure>
+
+  <h2 id="datepicker-examples">Examples</h2>
+  <p>Choose a date from a calendar dropdown, with input parsing and formatting. Works with moment.js for extended functionality.</p>
+
+  <p>To support various date formats around the world, <code>datepicker()</code> has an optional dependency on <a href="http://momentjs.com/">moment.js</a>. <a href="https://github.com/moment/moment/tree/master/min">Download moment.js (with locales).</a></p>
+
+  <div class="fu-example section">
+    <div id="myDatepickerContainer">
+      <form class="form-horizontal" style="width: 600px;">
+        <div class="form-group">
+          <label class="col-sm-4 control-label" for="datepickerIllustration" for="myDatepickerInput">Choose a date (default)</label>
+          <div class="col-sm-8">
+            <div class="datepicker" id="myDatepicker" data-initialize="datepicker">
+              <div class="input-group">
+  <input class="form-control" id="myDatepickerInput" type="text"/>
+  <div class="input-group-btn">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+      <span class="glyphicon glyphicon-calendar"></span>
+      <span class="sr-only">Toggle Calendar</span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
+      <div class="datepicker-calendar">
+        <div class="datepicker-calendar-header">
+          <button class="prev" type="button"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous Month</span></button>
+          <button class="next" type="button"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next Month</span></button>
+          <button class="title" type="button">
+              <span class="month">
+                <span data-month="0">January</span>
+                <span data-month="1">February</span>
+                <span data-month="2">March</span>
+                <span data-month="3">April</span>
+                <span data-month="4">May</span>
+                <span data-month="5">June</span>
+                <span data-month="6">July</span>
+                <span data-month="7">August</span>
+                <span data-month="8">September</span>
+                <span data-month="9">October</span>
+                <span data-month="10">November</span>
+                <span data-month="11">December</span>
+              </span> <span class="year"></span>
+          </button>
+        </div>
+        <table class="datepicker-calendar-days">
+          <thead>
+          <tr>
+            <th>Su</th>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+          </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div class="datepicker-calendar-footer">
+          <button class="datepicker-today" type="button">Today</button>
+        </div>
+      </div>
+      <div class="datepicker-wheels" aria-hidden="true">
+        <div class="datepicker-wheels-month">
+          <h2 class="header">Month</h2>
+          <ul>
+            <li data-month="0"><button type="button">Jan</button></li>
+            <li data-month="1"><button type="button">Feb</button></li>
+            <li data-month="2"><button type="button">Mar</button></li>
+            <li data-month="3"><button type="button">Apr</button></li>
+            <li data-month="4"><button type="button">May</button></li>
+            <li data-month="5"><button type="button">Jun</button></li>
+            <li data-month="6"><button type="button">Jul</button></li>
+            <li data-month="7"><button type="button">Aug</button></li>
+            <li data-month="8"><button type="button">Sep</button></li>
+            <li data-month="9"><button type="button">Oct</button></li>
+            <li data-month="10"><button type="button">Nov</button></li>
+            <li data-month="11"><button type="button">Dec</button></li>
+          </ul>
+        </div>
+        <div class="datepicker-wheels-year">
+          <h2 class="header">Year</h2>
+          <ul></ul>
+        </div>
+        <div class="datepicker-wheels-footer clearfix">
+          <button class="btn datepicker-wheels-back" type="button"><span class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span></button>
+          <button class="btn datepicker-wheels-select" type="button">Select <span class="sr-only">Month and Year</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <h5 id="datepicker-examples-sample-methods">Sample Methods</h5>
+    <div class="btn-group">
+      <button class="btn btn-default" id="btnDatepickerEnable" type="button">enable</button>
+      <button class="btn btn-default" id="btnDatepickerDisable" type="button">disable</button>
+      <button class="btn btn-default" id="btnDatepickerLogFormattedDate" type="button">log formatted date</button>
+      <button class="btn btn-default" id="btnDatepickerLogDateObj" type="button">log date object</button>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-default" id="btnDatepickerSetDate" type="button">set date 7 days ahead (will log new value)</button>
+      <button class="btn btn-default" id="btnDatepickerDestroy" type="button">destroy and append</button>
+    </div>
+  </div>
+
+
+</div>
+          
+          <!-- For debuging: <pre>< %- JSON.stringify(public.docs, null, '\t') %></pre> -->
+          <!-- For debuging: <pre>< %- JSON.stringify(current, null, '\t') %></pre> -->
+
+        </article>
+        <aside id="aside" class="aside" role="sidebar">
+          
+             		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<ul class="nav nav-pills nav-stacked">
+	
+			<li class=""><a href="/docs/modules/index">Home</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/overview">overview</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/affix">affix</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/alerts">alerts</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/buttons">buttons</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/carousel">carousel</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/checkbox">checkbox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/collapse">collapse</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/combobox">combobox</a></li>
+		
+	
+			<li class="active"><a href="/docs/modules/datepicker">datepicker</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/dropdown-autoflip">dropdown-autoflip</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/dropdowns">dropdowns</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/extended">extended</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/infinite-scroll">infinite-scroll</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/javascript-overview">javascript-overview</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/loader">loader</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/modal">modal</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/pillbox">pillbox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/placard">placard</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/popovers">popovers</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/radio">radio</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/repeater-list">repeater-list</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/repeater-thumbnail">repeater-thumbnail</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/repeater">repeater</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/scheduler">scheduler</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/scrollspy">scrollspy</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/search">search</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/selectlist">selectlist</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/spinbox">spinbox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/tabs">tabs</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/tooltips">tooltips</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/transitions">transitions</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/tree">tree</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/wizard">wizard</a></li>
+		
+	
+	</ul>
+</nav>
+          
+        </aside>
+      </div>
+    </main>
+    
+    		
+		<footer id="footer" class="container footer" role="footer">
+			<p>&copy; 2016 M. Shanken Communications, Inc.</p>
+		</footer>
+		<!-- 
+			* TODO: You may also add all your script tags here
+			* For site performance it's suugested you all all your script tags here
+		 -->
+    	
+  		<script src="/js/build.min.js"></script>
+	
+
+  </body>
+</html>
+      

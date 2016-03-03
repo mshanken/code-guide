@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
-        <meta name="description" content="Standards for developing flexible, durable, and sustainable HTML and CSS.">
+        <meta name="description" content="">
         <meta name="keywords" content="your, tags">
         <meta name="subject" content="your website's subject">
         <meta name="copyright" content="M. Shanken Communications, Inc.">
@@ -16,7 +16,7 @@
 
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="apple-mobile-web-app-title" content=""><!-- New in iOS6 -->
+        <meta name="apple-mobile-web-app-title" content="Code Guide - Patterns"><!-- New in iOS6 -->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-touch-fullscreen" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -24,8 +24,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width; width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=yes; target-densitydpi=160dpi">
 
-        <meta name="application-name" content="" /><!-- For Windows 8 -->
-        <meta name="msapplication-tooltip" content="Standards for developing flexible, durable, and sustainable HTML and CSS.">
+        <meta name="application-name" content="Code Guide - Patterns" /><!-- For Windows 8 -->
+        <meta name="msapplication-tooltip" content="">
         <meta name="msapplication-TileColor" content=" #009900" />
         <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
         <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
@@ -33,16 +33,16 @@
         <meta name="msapplication-square310x310logo" content="images/largetile.png" />
         <meta name="msapplication-notification" content="frequency=30; polling-uri=notifications/contoso1.xml;polling-uri2=notifications/contoso2.xml; polling-uri3=notifications/contoso3.xml" />
 
-        <meta property="og:title" content=""><!-- facebook openGraph -->
-        <meta property="og:description" content="Standards for developing flexible, durable, and sustainable HTML and CSS.">
+        <meta property="og:title" content="Code Guide - Patterns"><!-- facebook openGraph -->
+        <meta property="og:description" content="">
         <meta property="og:image" content="">
 
         <meta name="twitter:card" content="summary"><!-- twitter openGraph -->
         <meta name="twitter:site" content="@site_account">
         <meta name="twitter:creator" content="@individual_account">
         <meta name="twitter:url" content="http://www.yoursite.com">
-        <meta name="twitter:title" content="">
-        <meta name="twitter:description" content="Standards for developing flexible, durable, and sustainable HTML and CSS.">
+        <meta name="twitter:title" content="Code Guide - Patterns">
+        <meta name="twitter:description" content="">
         <meta name="twitter:image" content="">
 
         <link href="apple-touch-icon.png" rel="apple-touch-icon">
@@ -52,7 +52,7 @@
         <link href="startup.png" rel="apple-touch-startup-image">
         <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
         
-        <title></title>
+        <title>Code Guide - Patterns</title>
         <!-- Place favicon.ico in the root directory -->
 
     	
@@ -79,7 +79,7 @@
     
   </head>
   
-  <body>
+  <body class="fuelux">
     <!--[if (lt IE 8)]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -89,191 +89,106 @@
 
     
 		<header id="header" class="container header jumbotron" role="header">
-			<h1></h1>
-			<h2></h2>
+			<h1>Code Guide - Patterns</h1>
+			<h2>Code Guide</h2>
 		</header>
-    		
-		<nav id="menu" class="navbar navbar-default" role="main-menu">
-			<div>
-				<ul class="nav navbar-nav">
+     		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<div>
+		<ul class="nav navbar-nav">
+	
+	
+				<li class=""><a href="/docs/globals">Globals</a></li>
 			
-					<li class=""><a href="/docs/index">Home</a></li>
-				
+		
+	
+				<li class=""><a href="/docs/basics">Basics</a></li>
 			
-					<li class=""><a href="/docs/behaviors">Behaviors</a></li>
-				
+		
+	
+				<li class=""><a href="/docs/components">Components</a></li>
 			
-					<li class=""><a href="/docs/collections">Collections</a></li>
-				
+		
+	
+				<li class=""><a href="/docs/modules">Modules</a></li>
 			
-					<li class=""><a href="/docs/elements">Elements</a></li>
-				
+		
+	
+				<li class="active"><a href="/docs/views">Views</a></li>
 			
-					<li class=""><a href="/docs/globals">Globals</a></li>
-				
+		
+	
+				<li class=""><a href="/docs/pages">Pages</a></li>
 			
-					<li class=""><a href="/docs/modules">Modules</a></li>
-				
-			
-					<li class="active"><a href="/docs/views">Views</a></li>
-				
-			
-				</ul>
-			</div>
-		</nav>
+		
+	
+		</ul>
+	</div>
+</nav>
+
 
     <main id="main" class="container main" role="main">
-      <div class="row wrapper">
+      <div class="row">
         <article id="article" class="article" role="main-article">
-
-          <div class="panel panel-default">
-            <!-- Default panel contents -->
-            <div class="panel-heading">
-              
-            </div>
-            <div class="panel-body">
-              Views.
-            </div>
-            <div class="panel-footer">
-              Code:
-              <pre><code>Views.</code></pre>
-            </div>
-          </div>
           
-          <!-- For debuging: <pre>{
-	"_contents": [
-		"index.html"
-	],
-	"_data": {
-		"index": {
-			"title": "Code Guide - Patterns",
-			"name": "Start"
-		},
-		"behaviors": {
-			"title": "Your website title 3",
-			"name": "Style Guide Patterns"
-		},
-		"collections": {
-			"title": "Your website title 3",
-			"name": "Style Guide Patterns"
-		},
-		"elements": {
-			"title": "Your website title 3",
-			"name": "Style Guide Patterns"
-		},
-		"globals": {
-			"title": "Your website title 3",
-			"name": "Style Guide Patterns"
-		},
-		"modules": {
-			"title": "Your website title 3",
-			"name": "Style Guide Patterns"
-		},
-		"views": {
-			"title": "Your website title 3",
-			"name": "Style Guide Patterns"
-		}
-	},
-	"behaviors": {
-		"_contents": [
-			"index.html"
-		],
-		"_data": {
-			"index": {
-				"title": "",
-				"name": ""
-			}
-		}
-	},
-	"collections": {
-		"_contents": [
-			"index.html"
-		],
-		"_data": {
-			"index": {
-				"title": "",
-				"name": ""
-			}
-		}
-	},
-	"elements": {
-		"_contents": [
-			"headings.html",
-			"index.html"
-		],
-		"_data": {
-			"index": {
-				"title": "Code Guide - Patterns",
-				"name": "Start",
-				"layout": "_layoutAll"
-			},
-			"headings": {
-				"title": "headings",
-				"name": ""
-			}
-		}
-	},
-	"globals": {
-		"_contents": [
-			"index.html"
-		],
-		"_data": {
-			"index": {
-				"title": "",
-				"name": ""
-			}
-		}
-	},
-	"modules": {
-		"_contents": [
-			"index.html"
-		],
-		"_data": {
-			"index": {
-				"title": "",
-				"name": ""
-			}
-		}
-	},
-	"views": {
-		"_contents": [
-			"index.html"
-		],
-		"_data": {
-			"index": {
-				"title": "",
-				"name": ""
-			}
-		}
-	}
-}</pre> -->
-          <!-- For debuging: <pre>{
-	"source": "index",
-	"path": [
-		"docs",
-		"views",
-		"index"
-	]
-}</pre> -->
+            
+          
+            
+              <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">views</li>
+                <li><a href="jumbotron">Jumbotron</a></li>
+              </ol>
+              
+              <div class="bs-docs-section">
+  <h1 class="page-header" id="jumbotron">Jumbotron</h1>
+
+  <p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
+  <div class="bs-example" data-example-id="simple-jumbotron">
+    <div class="jumbotron">
+      <h1>Hello, world!</h1>
+      <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;jumbotron&quot;&gt;
+  &lt;h1&gt;Hello, world!&lt;&#x2F;h1&gt;
+  &lt;p&gt;...&lt;&#x2F;p&gt;
+  &lt;p&gt;&lt;a class=&quot;btn btn-primary btn-lg&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn more&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</code></pre></figure>
+  <p>To make the jumbotron full width, and without rounded corners, place it outside all <code>.container</code>s and instead add a <code>.container</code> within.</p>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;jumbotron&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    ...
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre></figure>
+</div>
+
+
+            
+          
+
+          <!-- For debuging: <pre>< %- JSON.stringify(public.docs, null, '\t') %></pre> -->
+          <!-- For debuging: <pre>< %- JSON.stringify(current, null, '\t') %></pre> -->
 
         </article>
         <aside id="aside" class="aside " role="sidebar">
-          
-             		
-		<nav id="menu" class="navbar navbar-default" role="main-menu">
-			<div>
-				<ul class="nav nav-pills nav-stacked">
-			
-					<li class="active"><a href="/docs/index">Home</a></li>
-				
-			
-					<li class=""><a href="/docs/headings">headings</a></li>
-				
-			
-				</ul>
-			</div>
-		</nav>
-          
+          		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<ul class="nav nav-pills nav-stacked">
+	
+			<li class="active"><a href="#index">Home</a></li>
+		
+	
+			<li class=""><a href="#jumbotron">jumbotron</a></li>
+		
+	
+	</ul>
+</nav>
         </aside>
       </div>
     </main>

@@ -1,0 +1,490 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+        <meta name="description" content="A combobox indicates a possible user action">
+        <meta name="keywords" content="your, tags">
+        <meta name="subject" content="your website's subject">
+        <meta name="copyright" content="M. Shanken Communications, Inc.">
+        <meta name='robots' content='index,follow'>
+
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="apple-mobile-web-app-title" content="Combobox"><!-- New in iOS6 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width; width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=yes; target-densitydpi=160dpi">
+
+        <meta name="application-name" content="Combobox" /><!-- For Windows 8 -->
+        <meta name="msapplication-tooltip" content="A combobox indicates a possible user action">
+        <meta name="msapplication-TileColor" content=" #009900" />
+        <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
+        <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
+        <meta name="msapplication-wide310x150logo" content="images/widetile.png" />
+        <meta name="msapplication-square310x310logo" content="images/largetile.png" />
+        <meta name="msapplication-notification" content="frequency=30; polling-uri=notifications/contoso1.xml;polling-uri2=notifications/contoso2.xml; polling-uri3=notifications/contoso3.xml" />
+
+        <meta property="og:title" content="Combobox"><!-- facebook openGraph -->
+        <meta property="og:description" content="A combobox indicates a possible user action">
+        <meta property="og:image" content="">
+
+        <meta name="twitter:card" content="summary"><!-- twitter openGraph -->
+        <meta name="twitter:site" content="@site_account">
+        <meta name="twitter:creator" content="@individual_account">
+        <meta name="twitter:url" content="http://www.yoursite.com">
+        <meta name="twitter:title" content="Combobox">
+        <meta name="twitter:description" content="A combobox indicates a possible user action">
+        <meta name="twitter:image" content="">
+
+        <link href="apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
+        <link href="touch-icon-ipad.png" rel="apple-touch-icon" sizes="72x72">
+        <link href="touch-icon-iphone4.png" rel="apple-touch-icon" sizes="114x114">
+        <link href="startup.png" rel="apple-touch-startup-image">
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+        
+        <title>Combobox</title>
+        <!-- Place favicon.ico in the root directory -->
+
+    	
+	  	<link rel="stylesheet" type="text/css" href="/css/build.min.css">
+	
+
+    		<!-- Google Analytics -->
+	    <script>
+	        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	        // Change "addyoursite" the name of your web site
+	        ga('create', 'you-UA-code-here', 'addyoursite');
+	        ga('send', {"hitType":"pageview","page":"combobox", "section":"docs"});
+	    </script>
+	    <!-- End Google Analytics -->
+  
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.js"></script>
+        <script src="/js/vendor/respond.src.js"></script>
+      <![endif]-->
+    <script src="/js/vendor/modernizr.js"></script>
+    
+  </head>
+  
+  <body class="fuelux">
+    <!--[if (lt IE 8)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--[if (gt IEMobile 8)|(IEMobile)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    
+		<header id="header" class="container header jumbotron" role="header">
+			<h1>Combobox</h1>
+			<h2>Code Guide</h2>
+		</header>
+     		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<div>
+		<ul class="nav navbar-nav">
+	
+	
+				<li class=""><a href="/docs/globals">Globals</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/basics">Basics</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/components">Components</a></li>
+			
+		
+	
+				<li class="active"><a href="/docs/modules">Modules</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/views">Views</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/pages">Pages</a></li>
+			
+		
+	
+		</ul>
+	</div>
+</nav>
+
+
+    <main id="main" class="container main" role="main">
+      <div class="row wrapper">
+        <article id="article" class="article" role="main-article">
+
+          <!-- combobox
+================================================== -->
+<div class="fu-docs-section">
+  <h1 class="page-header" id="combobox">Combobox <a href="{{ site.repo }}/blob/{{ site.current_version }}/js/combobox.js"><small>combobox.js</small></a></h1>
+  <p>The combobox control combines an input and a drop-down for easy and flexible data selection. Combobox also offers many <a href="#combobox-usage-methods">methods</a> that allow you to programmatically manipulate it.</p>
+  <div class="input-group input-append dropdown combobox col-sm-4" id="comboboxIllustration" data-initialize="combobox">
+    <input class="form-control" type="text">
+    <div class="input-group-btn">
+      <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+      <ul class="dropdown-menu dropdown-menu-right">
+        <li data-value="1"><a href="#">One</a></li>
+        <li data-value="2"><a href="#">Two</a></li>
+        <li data-value="3"><a href="#">Three</a></li>
+        <li data-value="4"><a href="#">Four</a></li>
+        <li data-value="5"><a href="#">Five</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 id="combobox-usage">Usage</h2>
+
+  <h3 id="combobox-usage-javascript">Via JavaScript</h3>
+  <p>Call the combobox control via JavaScript:</p>
+  <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox();</code></pre></figure>
+
+  <p>The combobox also accepts an optional options param during initialization:</p>
+  <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox({autoResizeMenu: false});</code></pre></figure>
+
+  <h3 id="combobox-usage-data-attributes">Via data-attributes</h3>
+
+  <p>Add <code>data-initialize="combobox"</code> to the <code>.combobox</code> element that you wish to initialize on <code>$.ready()</code>. Any combobox that is programmatically generated after the initial page load will initialize when the <code>mousedown</code> event is fired on it if it has <code>data-initialize="combobox"</code>.</p>
+
+
+  <h3 id="combobox-usage-markup">Markup</h3>
+  <p>A combobox consists of an input group containing a text <code>input</code> with a <code><a href="#selectlist">selectlist</a></code> appended to it.</code>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;input-group input-append dropdown combobox&quot; id=&quot;myCombobox&quot; data-initialize=&quot;combobox&quot;&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot;&gt;
+  &lt;div class=&quot;input-group-btn&quot;&gt;
+    &lt;button class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+    &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+      &lt;li data-value=&quot;1&quot;&gt;&lt;a href=&quot;#&quot;&gt;One&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      ...
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre></figure>
+
+
+
+  <h3 id="combobox-usage-markup-options">Markup options</h3>
+  <p>The following options are applicable to the <code>li</code> elements of the <code><a href="#selectlist">selectlist</a></code>. Append the option name to <code>data-</code>, as in <code>data-selected="true"</code>.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+       <tr>
+         <th style="width: 100px;">Name</th>
+         <th style="width: 100px;">type</th>
+         <th style="width: 50px;">default</th>
+         <th>description</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+         <td>selected</td>
+         <td>boolean</td>
+         <td>false</td>
+         <td>Indicates element should be selected by default.</td>
+       </tr>
+      </tbody>
+    </table>
+  </div><!-- ./fu-table-responsive -->
+
+  <h3 id="combobox-usage-programmatic-options">Programmatic options</h3>
+  <p>Should be passed in as an <code>object</code> (eg. <code>{name: value}</code>) on intialization. <a href="#combobox-usage-javascript">Javascript initialization</a> is required (you can't initialize through data-attributes) if you would like to use this.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+       <tr>
+         <th style="width: 100px;">Name</th>
+         <th style="width: 100px;">type</th>
+         <th style="width: 50px;">default</th>
+         <th>description</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+         <td>autoResizeMenu</td>
+         <td>boolean</td>
+         <td>true</td>
+         <td>Resizes the drop-down menu to the width of the combobox</td>
+       </tr>
+      </tbody>
+    </table>
+  </div><!-- ./fu-table-responsive -->
+
+  <h3 id="combobox-usage-methods">Methods</h3>
+  <p>Once your combobox is <a href="#combobox-usage">initialized</a>, you can execute any of the following methods on it:</p>
+
+  <dl>
+    <dt id="combobox-usage-methods-destroy">.combobox('destroy')</dt>
+    <dd>Remove all functionality, jQuery data, and the markup from the DOM. Returns string of control markup.</dd>
+
+    <dt id="combobox-usage-methods-disable">.combobox('disable')</dt>
+    <dd>Disable the combobox</dd>
+
+    <dt id="combobox-usage-methods-enable">.combobox('enable')</dt>
+    <dd>Enable the combobox</dd>
+
+    <dt id="combobox-usage-methods-selected-item">.combobox('selectedItem')</dt>
+    <dd>Returns an object containing a <code>text</code> property with the visible text of the selected item as well as the results of a <a href="http://api.jquery.com/data/#data2">jQuery <code>.data()</code></a> call on the selected item (which will map the contents of any <code>data-*</code> attributes into the returned object).</dd>
+
+    <dt id="combobox-usage-methods-select-by-index">.combobox('selectByIndex')</dt>
+    <dd>
+      Set the selected item based on its index in the list (zero-based index). <span class="text-muted">Convenience method for <a href="#combobox-usage-methods-select-by-selector"><code>.selectBySelector('li:eq({index})')</code></a></span>
+      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByIndex', '1');</code></pre></figure>
+    </dd>
+
+    <dt id="combobox-usage-methods-select-by-text">.combobox('selectByText')</dt>
+    <dd>
+      Set the selected item based on its text value.
+      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByText', 'Four');</code></pre></figure>
+    </dd>
+
+    <dt id="combobox-usage-methods-select-by-selector">.combobox('selectBySelector')</dt>
+    <dd>
+      Set the selected item based on a selector.
+      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
+    </dd>
+
+    <dt id="combobox-usage-methods-select-by-value">.combobox('selectByValue')</dt>
+    <dd>
+      Set the selected item based on its value. Convenience method for <code>.selectBySelector('data-value={value}')</code> that requires the item to include a <code>.data-value="{value}"</code> attribute
+      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByValue', '1');</code></pre></figure>
+    </dd>
+  </dl>
+
+  <h3 id="combobox-usage-events">Events</h3>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th style="width: 150px;">Event Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>changed.fu.combobox</td>
+          <td>This event fires when the value changes (either by selecting an item from the list or updating the input value directly). Arguments include <code>event, data</code> where data represents the same object structure returned by the <a href="#combobox-usage-methods-selected-item"><code>selectedItem</code></a> method.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- ./fu-table-responsive -->
+  <p>All combobox event listeners should be attached to the element containing the <code>combobox</code> class; given the following HTML:</p>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;input-group input-append dropdown combobox&quot; id=&quot;myCombobox&quot; data-initialize=&quot;combobox&quot;&gt;..&lt;&#x2F;div&gt;
+</code></pre></figure>
+<p>You would attach your event listener thusly:</p>
+<figure class="highlight"><pre><code class="js">
+$('#myCombobox').on('changed.fu.combobox', function (evt, data) {
+  // do something…
+});
+</code></pre></figure>
+
+  <h2 id="combobox-examples">Examples</h2>
+  <div class="fu-example section">
+	<div class="fu-example-narrowize">
+		<form>
+			<div class="input-group input-append dropdown combobox" id="myCombobox" data-initialize="combobox">
+				<input class="form-control" type="text">
+				<div class="input-group-btn">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li data-value="1"><a href="#">One</a></li>
+						<li data-value="2"><a href="#">Two</a></li>
+						<li data-value="3"><a href="#">Three</a></li>
+						<li data-value="4" ><a href="#">Four</a></li>
+						<li data-value="Item Five" data-foo="bar" data-fizz="buzz"><a href="#">Item Five</a></li>
+					</ul>
+				</div>
+			</div>
+		</form>
+		
+	</div>
+	<br/>
+	<h5 id="combobox-examples-sample-methods">Sample Methods</h5>
+	<div class="btn-group clearfix">
+		<button class="btn btn-default" id="btnComboboxGetSelectedItem" type="button">log item</button>
+		<button class="btn btn-default" id="btnComboboxSelectByValue" type="button">set by value (1)</button>
+		<button class="btn btn-default" id="btnComboboxSelectByIndex" type="button">set by element index (1)</button>
+		<button class="btn btn-default" id="btnComboboxSelectByText" type="button">set by text (Four)</button>
+	</div>
+	<div class="btn-group clearfix">
+		<button class="btn btn-default" id="btnComboboxSelectBySelector" type="button">set by CSS selector li[data-fizz=buzz] (6)</button>
+		<button class="btn btn-default" id="btnComboboxDisable" type="button">disable</button>
+		<button class="btn btn-default" id="btnComboboxEnable" type="button">enable</button>
+		<button class="btn btn-default" id="btnComboboxDestroy" type="button">destroy and append</button>
+	</div>
+</div><!-- /example -->
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;input-group input-append dropdown combobox&quot; id=&quot;myCombobox&quot; data-initialize=&quot;combobox&quot;&gt;
+	&lt;input class=&quot;form-control&quot; type=&quot;text&quot;&gt;
+	&lt;div class=&quot;input-group-btn&quot;&gt;
+		&lt;button class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;caret&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;button&gt;
+		&lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+			&lt;li data-value=&quot;1&quot;&gt;&lt;a href=&quot;#&quot;&gt;One&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+			&lt;li data-value=&quot;2&quot;&gt;&lt;a href=&quot;#&quot;&gt;Two&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+			&lt;li data-value=&quot;3&quot;&gt;&lt;a href=&quot;#&quot;&gt;Three&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+			&lt;li data-value=&quot;4&quot; &gt;&lt;a href=&quot;#&quot;&gt;Four&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+			&lt;li data-value=&quot;Item Five&quot; data-foo=&quot;bar&quot; data-fizz=&quot;buzz&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item Five&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;&#x2F;ul&gt;
+	&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre></figure>
+
+
+  <h3 id="comboboxes-alignment">Alignment</h3>
+  <p>The <code>dropdown-menu-right</code> class on the <code>ul</code> in the example markup causes the drop-down menu to appear directly underneath the dropdown, its right side appearing flush with the right side of the triggering element. If you wish the dropdown menu's left side to align with the left side of the triggering button's left side, exclude the <code>dropdown-menu-right</code> class on the <code>ul</code>.</p>
+
+</div>
+
+          
+          <!-- For debuging: <pre>< %- JSON.stringify(public.docs, null, '\t') %></pre> -->
+          <!-- For debuging: <pre>< %- JSON.stringify(current, null, '\t') %></pre> -->
+
+        </article>
+        <aside id="aside" class="aside" role="sidebar">
+          
+             		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<ul class="nav nav-pills nav-stacked">
+	
+			<li class=""><a href="/docs/modules/index">Home</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/overview">overview</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/affix">affix</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/alerts">alerts</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/buttons">buttons</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/carousel">carousel</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/checkbox">checkbox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/collapse">collapse</a></li>
+		
+	
+			<li class="active"><a href="/docs/modules/combobox">combobox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/datepicker">datepicker</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/dropdown-autoflip">dropdown-autoflip</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/dropdowns">dropdowns</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/extended">extended</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/infinite-scroll">infinite-scroll</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/javascript-overview">javascript-overview</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/loader">loader</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/modal">modal</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/pillbox">pillbox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/placard">placard</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/popovers">popovers</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/radio">radio</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/repeater-list">repeater-list</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/repeater-thumbnail">repeater-thumbnail</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/repeater">repeater</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/scheduler">scheduler</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/scrollspy">scrollspy</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/search">search</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/selectlist">selectlist</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/spinbox">spinbox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/tabs">tabs</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/tooltips">tooltips</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/transitions">transitions</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/tree">tree</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/wizard">wizard</a></li>
+		
+	
+	</ul>
+</nav>
+          
+        </aside>
+      </div>
+    </main>
+    
+    		
+		<footer id="footer" class="container footer" role="footer">
+			<p>&copy; 2016 M. Shanken Communications, Inc.</p>
+		</footer>
+		<!-- 
+			* TODO: You may also add all your script tags here
+			* For site performance it's suugested you all all your script tags here
+		 -->
+    	
+  		<script src="/js/build.min.js"></script>
+	
+
+  </body>
+</html>
+      

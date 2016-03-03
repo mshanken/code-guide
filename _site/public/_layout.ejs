@@ -1,29 +1,44 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-
-    <title>
-      <%= name %>
-    </title>
-
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Mono&subset=latin,cyrillic">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
-    <link rel="stylesheet" href="css/code-guide.css">
+    <%- partial("_themes/default/partials/_headingtags") %>
+    <%- partial("_themes/default/partials/_styles") %>
+    <%- partial("_themes/default/partials/_ga") %>
+  
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.js"></script>
+        <script src="/js/vendor/respond.src.js"></script>
+      <![endif]-->
+    
+    <link rel="stylesheet" href="/css/code-guide.css">
+    <script src="/js/vendor/modernizr.js"></script>
     
   </head>
-  <body>
+  
+  <body class="fuelux">
+    <!--[if (lt IE 8)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--[if (gt IEMobile 8)|(IEMobile)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
     <%- partial("_themes/codestyle/_header") %>
+
+    <main id="main" class="container-fluid main" role="main">
+      
+          <%- yield %>
+          
+          <!-- For debuging: <pre>< %- JSON.stringify(public.docs, null, '\t') %></pre> -->
+          <!-- For debuging: <pre>< %- JSON.stringify(current, null, '\t') %></pre> -->
+
+    </main>
     
-    <%- yield %>
-
     <%- partial("_themes/codestyle/_footer") %>
-
-    <%- partial("_themes/codestyle/_js") %>
-
+    <%- partial("_themes/default/partials/_scripts") %>
   </body>
 </html>
+      

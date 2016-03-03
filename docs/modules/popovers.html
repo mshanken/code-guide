@@ -1,0 +1,578 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+        <meta name="description" content="A popovers indicates a possible user action">
+        <meta name="keywords" content="your, tags">
+        <meta name="subject" content="your website's subject">
+        <meta name="copyright" content="M. Shanken Communications, Inc.">
+        <meta name='robots' content='index,follow'>
+
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="apple-mobile-web-app-title" content="Popovers"><!-- New in iOS6 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width; width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=yes; target-densitydpi=160dpi">
+
+        <meta name="application-name" content="Popovers" /><!-- For Windows 8 -->
+        <meta name="msapplication-tooltip" content="A popovers indicates a possible user action">
+        <meta name="msapplication-TileColor" content=" #009900" />
+        <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
+        <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
+        <meta name="msapplication-wide310x150logo" content="images/widetile.png" />
+        <meta name="msapplication-square310x310logo" content="images/largetile.png" />
+        <meta name="msapplication-notification" content="frequency=30; polling-uri=notifications/contoso1.xml;polling-uri2=notifications/contoso2.xml; polling-uri3=notifications/contoso3.xml" />
+
+        <meta property="og:title" content="Popovers"><!-- facebook openGraph -->
+        <meta property="og:description" content="A popovers indicates a possible user action">
+        <meta property="og:image" content="">
+
+        <meta name="twitter:card" content="summary"><!-- twitter openGraph -->
+        <meta name="twitter:site" content="@site_account">
+        <meta name="twitter:creator" content="@individual_account">
+        <meta name="twitter:url" content="http://www.yoursite.com">
+        <meta name="twitter:title" content="Popovers">
+        <meta name="twitter:description" content="A popovers indicates a possible user action">
+        <meta name="twitter:image" content="">
+
+        <link href="apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
+        <link href="touch-icon-ipad.png" rel="apple-touch-icon" sizes="72x72">
+        <link href="touch-icon-iphone4.png" rel="apple-touch-icon" sizes="114x114">
+        <link href="startup.png" rel="apple-touch-startup-image">
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+        
+        <title>Popovers</title>
+        <!-- Place favicon.ico in the root directory -->
+
+    	
+	  	<link rel="stylesheet" type="text/css" href="/css/build.min.css">
+	
+
+    		<!-- Google Analytics -->
+	    <script>
+	        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	        // Change "addyoursite" the name of your web site
+	        ga('create', 'you-UA-code-here', 'addyoursite');
+	        ga('send', {"hitType":"pageview","page":"popovers", "section":"docs"});
+	    </script>
+	    <!-- End Google Analytics -->
+  
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.js"></script>
+        <script src="/js/vendor/respond.src.js"></script>
+      <![endif]-->
+    <script src="/js/vendor/modernizr.js"></script>
+    
+  </head>
+  
+  <body class="fuelux">
+    <!--[if (lt IE 8)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--[if (gt IEMobile 8)|(IEMobile)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    
+		<header id="header" class="container header jumbotron" role="header">
+			<h1>Popovers</h1>
+			<h2>Code Guide</h2>
+		</header>
+     		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<div>
+		<ul class="nav navbar-nav">
+	
+	
+				<li class=""><a href="/docs/globals">Globals</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/basics">Basics</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/components">Components</a></li>
+			
+		
+	
+				<li class="active"><a href="/docs/modules">Modules</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/views">Views</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/pages">Pages</a></li>
+			
+		
+	
+		</ul>
+	</div>
+</nav>
+
+
+    <main id="main" class="container main" role="main">
+      <div class="row wrapper">
+        <article id="article" class="article" role="main-article">
+
+          <div class="bs-docs-section">
+  <h1 class="page-header" id="popovers">Popovers <small>popover.js</small></h1>
+
+  <p>Add small overlays of content, like those on the iPad, to any element for housing secondary information.</p>
+  <p>Popovers whose both title and content are zero-length are never displayed.</p>
+
+  <div class="bs-callout bs-callout-danger" id="callout-popover-needs-tooltip">
+    <h4>Plugin dependency</h4>
+    <p>Popovers require the <a href="#tooltips">tooltip plugin</a> to be included in your version of Bootstrap.</p>
+  </div>
+  <div class="bs-callout bs-callout-danger" id="callout-popover-opt-in">
+    <h4>Opt-in functionality</h4>
+    <p>For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning <strong>you must initialize them yourself</strong>.</p>
+    <p>One way to initialize all popovers on a page would be to select them by their <code>data-toggle</code> attribute:</p>
+<figure class="highlight"><pre><code class="js">
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</code></pre></figure>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-popover-groups">
+    <h4>Popovers in button groups, input groups, and tables require special setting</h4>
+    <p>When using popovers on elements within a <code>.btn-group</code> or an <code>.input-group</code>, or on table-related elements (<code>&lt;td&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>), you'll have to specify the option <code>container: 'body'</code> (documented below) to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the popover is triggered).</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-popover-hidden">
+    <h4>Don't try to show popovers on hidden elements</h4>
+    <p>Invoking <code>$(...).popover('show')</code> when the target element is <code>display: none;</code> will cause the popover to be incorrectly positioned.</p>
+  </div>
+  <div class="bs-callout bs-callout-info" id="callout-popover-disabled">
+    <h4>Popovers on disabled elements require wrapper elements</h4>
+    <p>To add a popover to a <code>disabled</code> or <code>.disabled</code> element, put the element inside of a <code>&lt;div&gt;</code> and apply the popover to that <code>&lt;div&gt;</code> instead.</p>
+  </div>
+  <div class="bs-callout bs-callout-info" id="callout-popover-multiline">
+    <h4>Multiple-line links</h4>
+    <p>Sometimes you want to add a popover to a hyperlink that wraps multiple lines. The default behavior of the popover plugin is to center it horizontally and vertically. Add <code>white-space: nowrap;</code> to your anchors to avoid this.</p>
+  </div>
+
+  <h2 id="popovers-examples">Examples</h2>
+  <h3>Static popover</h3>
+  <p>Four options are available: top, right, bottom, and left aligned.</p>
+  <div class="bs-example bs-example-popover" data-example-id="static-popovers">
+    <div class="popover top">
+      <div class="arrow"></div>
+      <h3 class="popover-title">Popover top</h3>
+      <div class="popover-content">
+        <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      </div>
+    </div>
+
+    <div class="popover right">
+      <div class="arrow"></div>
+      <h3 class="popover-title">Popover right</h3>
+      <div class="popover-content">
+        <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      </div>
+    </div>
+
+    <div class="popover bottom">
+      <div class="arrow"></div>
+      <h3 class="popover-title">Popover bottom</h3>
+
+      <div class="popover-content">
+        <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      </div>
+    </div>
+
+    <div class="popover left">
+      <div class="arrow"></div>
+      <h3 class="popover-title">Popover left</h3>
+      <div class="popover-content">
+        <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+  </div>
+
+  <h3>Live demo</h3>
+  <div class="bs-example bs-example-padded-bottom">
+    <button class="btn btn-lg btn-danger bs-docs-popover" data-toggle="popover" type="button" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;button class=&quot;btn btn-lg btn-danger&quot; data-toggle=&quot;popover&quot; type=&quot;button&quot; title=&quot;Popover title&quot; data-content=&quot;And here&#39;s some amazing content. It&#39;s very engaging. Right?&quot;&gt;Click to toggle popover&lt;&#x2F;button&gt;
+</code></pre></figure>
+
+  <h4>Four directions</h4>
+  <div class="bs-example popover-demo">
+    <div class="bs-example-popovers">
+      <button class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." type="button">
+        Popover on right
+      </button>
+      <button class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." type="button">
+        Popover on top
+      </button>
+      <button class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." type="button">
+        Popover on bottom
+      </button>
+      <button class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." type="button">
+        Popover on left
+      </button>
+    </div>
+  </div><!-- /example -->
+<figure class="highlight"><pre><code class="html">
+&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot; type=&quot;button&quot;&gt;
+  Popover on left
+&lt;&#x2F;button&gt;
+
+&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot; type=&quot;button&quot;&gt;
+  Popover on top
+&lt;&#x2F;button&gt;
+
+&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.&quot; type=&quot;button&quot;&gt;
+  Popover on bottom
+&lt;&#x2F;button&gt;
+
+&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot; type=&quot;button&quot;&gt;
+  Popover on right
+&lt;&#x2F;button&gt;
+</code></pre></figure>
+
+  <h4>Dismiss on next click</h4>
+  <p>Use the <code>focus</code> trigger to dismiss popovers on the next click that the user makes.</p>
+  <div class="bs-callout bs-callout-danger" id="callout-popover-dismiss-click">
+    <h4>Specific markup required for dismiss-on-next-click</h4>
+    <p>For proper cross-browser and cross-platform behavior, you must use the <code>&lt;a&gt;</code> tag, <i>not</i> the <code>&lt;button&gt;</code> tag, and you also must include the <code>role="button"</code> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#tabindex"><code>tabindex</code></a> attributes.</p>
+  </div>
+  <div class="bs-example bs-example-padded-bottom">
+    <a class="btn btn-lg btn-danger bs-docs-popover" data-toggle="popover" data-trigger="focus" tabindex="0" role="button" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;a class=&quot;btn btn-lg btn-danger&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;focus&quot; tabindex=&quot;0&quot; role=&quot;button&quot; title=&quot;Dismissible popover&quot; data-content=&quot;And here&#39;s some amazing content. It&#39;s very engaging. Right?&quot;&gt;Dismissible popover&lt;&#x2F;a&gt;
+</code></pre></figure>
+
+
+  <h2 id="popovers-usage">Usage</h2>
+  <p>Enable popovers via JavaScript:</p>
+  <figure class="highlight"><pre><code class="js">$('#example').popover(options)</code></pre></figure>
+
+  <h3 id="popovers-options">Options</h3>
+  <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped js-options-table js-options-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>animation</td>
+          <td>boolean</td>
+          <td>true</td>
+          <td>Apply a CSS fade transition to the popover</td>
+        </tr>
+        <tr>
+          <td>container</td>
+          <td>string | false</td>
+          <td>false</td>
+          <td>
+            <p>Appends the popover to a specific element. Example: <code>container: 'body'</code>. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element - which will prevent the popover from floating away from the triggering element during a window resize.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>content</td>
+          <td>string | function</td>
+          <td>''</td>
+          <td>
+            <p>Default content value if <code>data-content</code> attribute isn't present.</p>
+            <p>If a function is given, it will be called with its <code>this</code> reference set to the element that the popover is attached to.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>delay</td>
+          <td>number | object</td>
+          <td>0</td>
+          <td>
+           <p>Delay showing and hiding the popover (ms) - does not apply to manual trigger type</p>
+           <p>If a number is supplied, delay is applied to both hide/show</p>
+           <p>Object structure is: <code>delay: { "show": 500, "hide": 100 }</code></p>
+          </td>
+        </tr>
+        <tr>
+          <td>html</td>
+          <td>boolean</td>
+          <td>false</td>
+          <td>Insert HTML into the popover. If false, jQuery's <code>text</code> method will be used to insert content into the DOM. Use text if you're worried about XSS attacks.</td>
+        </tr>
+        <tr>
+          <td>placement</td>
+          <td>string | function</td>
+          <td>'right'</td>
+          <td>
+            <p>How to position the popover - top | bottom | left | right | auto.<br>When "auto" is specified, it will dynamically reorient the popover. For example, if placement is "auto left", the popover will display to the left when possible, otherwise it will display right.</p>
+            <p>When a function is used to determine the placement, it is called with the popover DOM node as its first argument and the triggering element DOM node as its second. The <code>this</code> context is set to the popover instance.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>selector</td>
+          <td>string</td>
+          <td>false</td>
+          <td>If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See <a href="https://github.com/twbs/bootstrap/issues/4215">this</a> and <a href="http://jsbin.com/zopod/1/edit">an informative example</a>.</td>
+        </tr>
+        <tr>
+          <td>template</td>
+          <td>string</td>
+          <td><code>'&lt;div class="popover" role="tooltip"&gt;&lt;div class="arrow"&gt;&lt;/div&gt;&lt;h3 class="popover-title"&gt;&lt;/h3&gt;&lt;div class="popover-content"&gt;&lt;/div&gt;&lt;/div&gt;'</code></td>
+          <td>
+            <p>Base HTML to use when creating the popover.</p>
+            <p>The popover's <code>title</code> will be injected into the <code>.popover-title</code>.</p>
+            <p>The popover's <code>content</code> will be injected into the <code>.popover-content</code>.</p>
+            <p><code>.arrow</code> will become the popover's arrow.</p>
+            <p>The outermost wrapper element should have the <code>.popover</code> class.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>title</td>
+          <td>string | function</td>
+          <td>''</td>
+          <td>
+            <p>Default title value if <code>title</code> attribute isn't present.</p>
+            <p>If a function is given, it will be called with its <code>this</code> reference set to the element that the popover is attached to.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>trigger</td>
+          <td>string</td>
+          <td>'click'</td>
+          <td>How popover is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space. <code>manual</code> cannot be combined with any other trigger.</td>
+        </tr>
+        <tr>
+          <td>viewport</td>
+          <td>string | object | function</td>
+          <td>{ selector: 'body', padding: 0 }</td>
+          <td>
+            <p>Keeps the popover within the bounds of this element. Example: <code>viewport: '#viewport'</code> or <code>{ "selector": "#viewport", "padding": 0 }</code></p>
+            <p>If a function is given, it is called with the triggering element DOM node as its only argument. The <code>this</code> context is set to the popover instance.</p>
+          </td>
+       </tr>
+      </tbody>
+    </table>
+  </div><!-- /.table-responsive -->
+  <div class="bs-callout bs-callout-info" id="callout-popover-data">
+    <h4>Data attributes for individual popovers</h4>
+    <p>Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.</p>
+  </div>
+
+  <h3 id="popovers-methods">Methods</h3>
+  <h4><code>$().popover(options)</code></h4>
+  <p>Initializes popovers for an element collection.</p>
+
+  <h4><code>.popover('show')</code></h4>
+  <p>Reveals an element's popover. <strong>Returns to the caller before the popover has actually been shown</strong> (i.e. before the <code>shown.bs.popover</code> event occurs). This is considered a "manual" triggering of the popover. Popovers whose both title and content are zero-length are never displayed.</p>
+  <figure class="highlight"><pre><code class="js">$('#element').popover('show')</code></pre></figure>
+
+  <h4><code>.popover('hide')</code></h4>
+  <p>Hides an element's popover. <strong>Returns to the caller before the popover has actually been hidden</strong> (i.e. before the <code>hidden.bs.popover</code> event occurs). This is considered a "manual" triggering of the popover.</p>
+  <figure class="highlight"><pre><code class="js">$('#element').popover('hide')</code></pre></figure>
+
+  <h4><code>.popover('toggle')</code></h4>
+  <p>Toggles an element's popover. <strong>Returns to the caller before the popover has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.popover</code> or <code>hidden.bs.popover</code> event occurs). This is considered a "manual" triggering of the popover.</p>
+  <figure class="highlight"><pre><code class="js">$('#element').popover('toggle')</code></pre></figure>
+
+  <h4><code>.popover('destroy')</code></h4>
+  <p>Hides and destroys an element's popover. Popovers that use delegation (which are created using <a href="#popovers-options">the <code>selector</code> option</a>) cannot be individually destroyed on descendant trigger elements.</p>
+  <figure class="highlight"><pre><code class="js">$('#element').popover('destroy')</code></pre></figure>
+
+  <h3 id="popovers-events">Events</h3>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped bs-events-table">
+      <thead>
+        <tr>
+          <th>Event Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>show.bs.popover</td>
+          <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+        </tr>
+        <tr>
+          <td>shown.bs.popover</td>
+          <td>This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete).</td>
+        </tr>
+        <tr>
+          <td>hide.bs.popover</td>
+          <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+        </tr>
+        <tr>
+          <td>hidden.bs.popover</td>
+          <td>This event is fired when the popover has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+        </tr>
+        <tr>
+          <td>inserted.bs.popover</td>
+          <td>This event is fired after the <code>show.bs.popover</code> event when the popover template has been added to the DOM.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /.table-responsive -->
+<figure class="highlight"><pre><code class="js">
+$('#myPopover').on('hidden.bs.popover', function () {
+  // do something…
+})
+</code></pre></figure>
+</div>
+
+          
+          <!-- For debuging: <pre>< %- JSON.stringify(public.docs, null, '\t') %></pre> -->
+          <!-- For debuging: <pre>< %- JSON.stringify(current, null, '\t') %></pre> -->
+
+        </article>
+        <aside id="aside" class="aside" role="sidebar">
+          
+             		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<ul class="nav nav-pills nav-stacked">
+	
+			<li class=""><a href="/docs/modules/index">Home</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/overview">overview</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/affix">affix</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/alerts">alerts</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/buttons">buttons</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/carousel">carousel</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/checkbox">checkbox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/collapse">collapse</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/combobox">combobox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/datepicker">datepicker</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/dropdown-autoflip">dropdown-autoflip</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/dropdowns">dropdowns</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/extended">extended</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/infinite-scroll">infinite-scroll</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/javascript-overview">javascript-overview</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/loader">loader</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/modal">modal</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/pillbox">pillbox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/placard">placard</a></li>
+		
+	
+			<li class="active"><a href="/docs/modules/popovers">popovers</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/radio">radio</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/repeater-list">repeater-list</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/repeater-thumbnail">repeater-thumbnail</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/repeater">repeater</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/scheduler">scheduler</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/scrollspy">scrollspy</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/search">search</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/selectlist">selectlist</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/spinbox">spinbox</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/tabs">tabs</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/tooltips">tooltips</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/transitions">transitions</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/tree">tree</a></li>
+		
+	
+			<li class=""><a href="/docs/modules/wizard">wizard</a></li>
+		
+	
+	</ul>
+</nav>
+          
+        </aside>
+      </div>
+    </main>
+    
+    		
+		<footer id="footer" class="container footer" role="footer">
+			<p>&copy; 2016 M. Shanken Communications, Inc.</p>
+		</footer>
+		<!-- 
+			* TODO: You may also add all your script tags here
+			* For site performance it's suugested you all all your script tags here
+		 -->
+    	
+  		<script src="/js/build.min.js"></script>
+	
+
+  </body>
+</html>
+      

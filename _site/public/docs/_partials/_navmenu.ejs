@@ -1,12 +1,10 @@
 		
-		<nav id="menu" class="navbar navbar-default" role="main-menu">
-			<div>
-				<ul class="nav nav-pills nav-stacked">
-			<% for(var nav in navItems){ 
-				if (nav !== 'sitemap') { %>
-					<li class="<%- current.source == nav ? 'active' : '' %>"><a href="/docs/<%= nav %>"><%- nav === 'index' ? 'Home' : nav %></a></li>
-				<% }; %>
-			<% }; %>
-				</ul>
-			</div>
-		</nav>
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<ul class="nav nav-pills nav-stacked">
+	<% for(var nav in navItems){ 
+		if (nav !== 'sitemap') { %>
+			<li class="<%- current.source == nav ? 'active' : '' %>"><a href="<%= (current.source === 'index')? '#'+nav : '/docs/'+current.path[1]+'/'+nav %>"><%- nav === 'index' ? 'Home' : nav %></a></li>
+		<% }; %>
+	<% }; %>
+	</ul>
+</nav>

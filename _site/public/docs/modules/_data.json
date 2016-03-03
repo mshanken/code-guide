@@ -1,6 +1,343 @@
 {
 	"index": {
-		"title": "",
-		"name": ""
+		"css"         : "",
+		"standalone"  : true,
+		"element"     : "",
+		"elementType" : "module",
+		"title"       : "Code Guide - Patterns",
+		"description" : "",
+		"type"        : "UI Module",
+		"layout"	  : "_layoutAll"
+
+	},
+	"overview": {
+		"css"         : "overview",
+		"element"     : "overview",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Overview",
+		"description" : "A overview indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"affix": {
+		"css"         : "affix",
+		"element"     : "affix",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Affix",
+		"description" : "A affix indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"alerts": {
+		"css"         : "alerts",
+		"element"     : "alerts",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Alerts",
+		"description" : "A alerts indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"buttons": {
+		"css"         : "buttons",
+		"element"     : "buttons",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "buttons",
+		"description" : "A buttons indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"carousel": {
+		"css"         : "carousel",
+		"element"     : "carousel",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Carousel",
+		"description" : "A carousel indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"checkbox": {
+		"css"         : "checkbox",
+		"element"     : "checkbox",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Checkbox",
+		"description" : "A checkbox indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"collapse": {
+		"css"         : "collapse",
+		"element"     : "collapse",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Collapse",
+		"description" : "A collapse indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"combobox": {
+		"css"         : "combobox",
+		"element"     : "combobox",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Combobox",
+		"description" : "A combobox indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"datepicker": {
+		"css"         : "datepicker",
+		"element"     : "datepicker",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Datepicker",
+		"description" : "A datepicker indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"dropdown-autoflip": {
+		"css"         : "dropdown-autoflip",
+		"element"     : "dropdown-autoflip",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Dropdown-autoflip",
+		"description" : "A dropdown-autoflip indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"dropdowns": {
+		"css"         : "dropdowns",
+		"element"     : "dropdowns",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Dropdowns",
+		"description" : "A dropdowns indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"extended": {
+		"css"         : "extended",
+		"element"     : "extended",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Extended",
+		"description" : "A extended indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"infinite-scroll": {
+		"css"         : "infinite-scroll",
+		"element"     : "infinite-scroll",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Infinite-scroll",
+		"description" : "A infinite-scroll indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"javascript-overview": {
+		"css"         : "javascript-overview",
+		"element"     : "javascript-overview",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Fuel-UX overview",
+		"description" : "A javascript-overview indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"loader": {
+		"css"         : "loader",
+		"element"     : "loader",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Loader",
+		"description" : "A loader indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"modal": {
+		"css"         : "modal",
+		"element"     : "modal",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Modal",
+		"description" : "A modal indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"pillbox": {
+		"css"         : "pillbox",
+		"element"     : "pillbox",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Pillbox",
+		"description" : "A pillbox indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"placard": {
+		"css"         : "placard",
+		"element"     : "placard",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Placard",
+		"description" : "A placard indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"popovers": {
+		"css"         : "popovers",
+		"element"     : "popovers",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Popovers",
+		"description" : "A popovers indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"radio": {
+		"css"         : "radio",
+		"element"     : "radio",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Radio",
+		"description" : "A radio indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"repeater-list": {
+		"css"         : "repeater-list",
+		"element"     : "repeater-list",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Repeater-list",
+		"description" : "A repeater-list indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"repeater-thumbnail": {
+		"css"         : "repeater-thumbnail",
+		"element"     : "repeater-thumbnail",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Repeater-thumbnail",
+		"description" : "A repeater-thumbnail indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"repeater": {
+		"css"         : "repeater",
+		"element"     : "repeater",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Repeater",
+		"description" : "A repeater indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"scheduler": {
+		"css"         : "scheduler",
+		"element"     : "scheduler",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "scheduler",
+		"description" : "A scheduler indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"scrollspy": {
+		"css"         : "scrollspy",
+		"element"     : "scrollspy",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Scrollspy",
+		"description" : "A scrollspy indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"search": {
+		"css"         : "search",
+		"element"     : "search",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Search",
+		"description" : "A search indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"selectlist": {
+		"css"         : "selectlist",
+		"element"     : "selectlist",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Selectlist",
+		"description" : "A selectlist indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"spinbox": {
+		"css"         : "spinbox",
+		"element"     : "spinbox",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Spinbox",
+		"description" : "A spinbox indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"tabs": {
+		"css"         : "tabs",
+		"element"     : "tabs",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Tabs",
+		"description" : "A tabs indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"tooltips": {
+		"css"         : "tooltips",
+		"element"     : "tooltips",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Tooltips",
+		"description" : "A tooltips indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"transitions": {
+		"css"         : "transitions",
+		"element"     : "transitions",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Transitions",
+		"description" : "A transitions indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"tree": {
+		"css"         : "tree",
+		"element"     : "tree",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Tree",
+		"description" : "A tree indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
+	},
+	"wizard": {
+		"css"         : "wizard",
+		"element"     : "wizard",
+		"elementType" : "module",
+		"standalone"  : true,
+		"title"       : "Wizard",
+		"description" : "A wizard indicates a possible user action",
+		"type"        : "UI Module",
+		"tabs"        : ""
 	}
 }

@@ -1,0 +1,509 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+        <meta name="description" content="A panels is used to show hierarchy between content">
+        <meta name="keywords" content="your, tags">
+        <meta name="subject" content="your website's subject">
+        <meta name="copyright" content="M. Shanken Communications, Inc.">
+        <meta name='robots' content='index,follow'>
+
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="apple-mobile-web-app-title" content="Panels"><!-- New in iOS6 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width; width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=yes; target-densitydpi=160dpi">
+
+        <meta name="application-name" content="Panels" /><!-- For Windows 8 -->
+        <meta name="msapplication-tooltip" content="A panels is used to show hierarchy between content">
+        <meta name="msapplication-TileColor" content=" #009900" />
+        <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
+        <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
+        <meta name="msapplication-wide310x150logo" content="images/widetile.png" />
+        <meta name="msapplication-square310x310logo" content="images/largetile.png" />
+        <meta name="msapplication-notification" content="frequency=30; polling-uri=notifications/contoso1.xml;polling-uri2=notifications/contoso2.xml; polling-uri3=notifications/contoso3.xml" />
+
+        <meta property="og:title" content="Panels"><!-- facebook openGraph -->
+        <meta property="og:description" content="A panels is used to show hierarchy between content">
+        <meta property="og:image" content="">
+
+        <meta name="twitter:card" content="summary"><!-- twitter openGraph -->
+        <meta name="twitter:site" content="@site_account">
+        <meta name="twitter:creator" content="@individual_account">
+        <meta name="twitter:url" content="http://www.yoursite.com">
+        <meta name="twitter:title" content="Panels">
+        <meta name="twitter:description" content="A panels is used to show hierarchy between content">
+        <meta name="twitter:image" content="">
+
+        <link href="apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
+        <link href="touch-icon-ipad.png" rel="apple-touch-icon" sizes="72x72">
+        <link href="touch-icon-iphone4.png" rel="apple-touch-icon" sizes="114x114">
+        <link href="startup.png" rel="apple-touch-startup-image">
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+        
+        <title>Panels</title>
+        <!-- Place favicon.ico in the root directory -->
+
+    	
+	  	<link rel="stylesheet" type="text/css" href="/css/build.min.css">
+	
+
+    		<!-- Google Analytics -->
+	    <script>
+	        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	        // Change "addyoursite" the name of your web site
+	        ga('create', 'you-UA-code-here', 'addyoursite');
+	        ga('send', {"hitType":"pageview","page":"panels", "section":"docs"});
+	    </script>
+	    <!-- End Google Analytics -->
+  
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.js"></script>
+        <script src="/js/vendor/respond.src.js"></script>
+      <![endif]-->
+    <script src="/js/vendor/modernizr.js"></script>
+    
+  </head>
+  
+  <body class="fuelux">
+    <!--[if (lt IE 8)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--[if (gt IEMobile 8)|(IEMobile)]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    
+		<header id="header" class="container header jumbotron" role="header">
+			<h1>Panels</h1>
+			<h2>Code Guide</h2>
+		</header>
+     		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<div>
+		<ul class="nav navbar-nav">
+	
+	
+				<li class=""><a href="/docs/globals">Globals</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/basics">Basics</a></li>
+			
+		
+	
+				<li class="active"><a href="/docs/components">Components</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/modules">Modules</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/views">Views</a></li>
+			
+		
+	
+				<li class=""><a href="/docs/pages">Pages</a></li>
+			
+		
+	
+		</ul>
+	</div>
+</nav>
+
+
+    <main id="main" class="container main" role="main">
+      <div class="row wrapper">
+        <article id="article" class="article" role="main-article">
+
+          <div class="bs-docs-section">
+  <h1 class="page-header" id="panels">Panels</h1>
+
+  <p class="lead">While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.</p>
+
+  <h2 id="panels-basic">Basic example</h2>
+  <p>By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
+  <div class="bs-example" data-example-id="simple-panel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        Basic panel example
+      </div>
+    </div>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Basic panel example
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre></figure>
+
+  <h2 id="panels-heading">Panel with heading</h2>
+  <p>Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> with a <code>.panel-title</code> class to add a pre-styled heading. However, the font sizes of <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> are overridden by <code>.panel-heading</code>.</p>
+  <p>For proper link coloring, be sure to place links in headings within <code>.panel-title</code>.</p>
+  <div class="bs-example" data-example-id="panel-with-heading">
+    <div class="panel panel-default">
+      <div class="panel-heading">Panel heading without title</div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading without title&lt;&#x2F;div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;
+    &lt;h3 class=&quot;panel-title&quot;&gt;Panel title&lt;&#x2F;h3&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre></figure>
+
+  <h2 id="panels-footer">Panel with footer</h2>
+  <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note that panel footers <strong>do not</strong> inherit colors and borders when using contextual variations as they are not meant to be in the foreground.</p>
+  <div class="bs-example" data-example-id="panel-with-footer">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        Panel content
+      </div>
+      <div class="panel-footer">Panel footer</div>
+    </div>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;&#x2F;div&gt;
+  &lt;div class=&quot;panel-footer&quot;&gt;Panel footer&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+</code></pre></figure>
+
+  <h2 id="panels-alternatives">Contextual alternatives</h2>
+  <p>Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</p>
+  <div class="bs-example" data-example-id="contextual-panels">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+    <div class="panel panel-warning">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;panel panel-primary&quot;&gt;...&lt;&#x2F;div&gt;
+&lt;div class=&quot;panel panel-success&quot;&gt;...&lt;&#x2F;div&gt;
+&lt;div class=&quot;panel panel-info&quot;&gt;...&lt;&#x2F;div&gt;
+&lt;div class=&quot;panel panel-warning&quot;&gt;...&lt;&#x2F;div&gt;
+&lt;div class=&quot;panel panel-danger&quot;&gt;...&lt;&#x2F;div&gt;
+</code></pre></figure>
+
+  <h2 id="panels-tables">With tables</h2>
+  <p>Add any non-bordered <code>.table</code> within a panel for a seamless design. If there is a <code>.panel-body</code>, we add an extra border to the top of the table for separation.</p>
+  <div class="bs-example" data-example-id="table-within-panel">
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;!-- Default panel contents --&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;&#x2F;div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    &lt;p&gt;...&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;!-- Table --&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    ...
+  &lt;&#x2F;table&gt;
+&lt;&#x2F;div&gt;
+</code></pre></figure>
+
+  <p>If there is no panel body, the component moves from panel header to table without interruption.</p>
+  <div class="bs-example" data-example-id="panel-without-body-with-table">
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;!-- Default panel contents --&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;&#x2F;div&gt;
+
+  &lt;!-- Table --&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    ...
+  &lt;&#x2F;table&gt;
+&lt;&#x2F;div&gt;
+</code></pre></figure>
+
+
+  <h2 id="panels-list-group">With list groups</h2>
+  <p>Easily include full-width <a href="#list-group">list groups</a> within any panel.</p>
+  <div class="bs-example" data-example-id="panel-with-list-group">
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+
+      <!-- List group -->
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
+  </div>
+<figure class="highlight"><pre><code class="html">
+&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;!-- Default panel contents --&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;&#x2F;div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    &lt;p&gt;...&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;!-- List group --&gt;
+  &lt;ul class=&quot;list-group&quot;&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;&#x2F;li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;&#x2F;li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;&#x2F;li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;&#x2F;li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+</code></pre></figure>
+</div>
+
+          
+          <!-- For debuging: <pre>< %- JSON.stringify(public.docs, null, '\t') %></pre> -->
+          <!-- For debuging: <pre>< %- JSON.stringify(current, null, '\t') %></pre> -->
+
+        </article>
+        <aside id="aside" class="aside" role="sidebar">
+          
+             		
+<nav id="menu" class="navbar navbar-default" role="main-menu">
+	<ul class="nav nav-pills nav-stacked">
+	
+			<li class=""><a href="/docs/components/index">Home</a></li>
+		
+	
+			<li class=""><a href="/docs/components/alerts">alerts</a></li>
+		
+	
+			<li class=""><a href="/docs/components/badges">badges</a></li>
+		
+	
+			<li class=""><a href="/docs/components/breadcrumbs">breadcrumbs</a></li>
+		
+	
+			<li class=""><a href="/docs/components/button-dropdown">button-dropdown</a></li>
+		
+	
+			<li class=""><a href="/docs/components/button-groups">button-groups</a></li>
+		
+	
+			<li class=""><a href="/docs/components/dropdowns">dropdowns</a></li>
+		
+	
+			<li class=""><a href="/docs/components/input-groups">input-groups</a></li>
+		
+	
+			<li class=""><a href="/docs/components/labels">labels</a></li>
+		
+	
+			<li class=""><a href="/docs/components/list-group">list-group</a></li>
+		
+	
+			<li class=""><a href="/docs/components/media">media</a></li>
+		
+	
+			<li class=""><a href="/docs/components/navbar">navbar</a></li>
+		
+	
+			<li class=""><a href="/docs/components/navmenu-alerts">navmenu-alerts</a></li>
+		
+	
+			<li class=""><a href="/docs/components/navs">navs</a></li>
+		
+	
+			<li class=""><a href="/docs/components/page-header">page-header</a></li>
+		
+	
+			<li class=""><a href="/docs/components/pagination">pagination</a></li>
+		
+	
+			<li class="active"><a href="/docs/components/panels">panels</a></li>
+		
+	
+			<li class=""><a href="/docs/components/progress-bars">progress-bars</a></li>
+		
+	
+			<li class=""><a href="/docs/components/responsive-embed">responsive-embed</a></li>
+		
+	
+			<li class=""><a href="/docs/components/thumbnails">thumbnails</a></li>
+		
+	
+			<li class=""><a href="/docs/components/wells">wells</a></li>
+		
+	
+	</ul>
+</nav>
+          
+        </aside>
+      </div>
+    </main>
+    
+    		
+		<footer id="footer" class="container footer" role="footer">
+			<p>&copy; 2016 M. Shanken Communications, Inc.</p>
+		</footer>
+		<!-- 
+			* TODO: You may also add all your script tags here
+			* For site performance it's suugested you all all your script tags here
+		 -->
+    	
+  		<script src="/js/build.min.js"></script>
+	
+
+  </body>
+</html>
+      

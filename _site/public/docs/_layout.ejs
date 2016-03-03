@@ -16,7 +16,7 @@
     
   </head>
   
-  <body>
+  <body class="fuelux">
     <!--[if (lt IE 8)]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -31,27 +31,15 @@
       <div class="row wrapper">
         <article id="article" class="article" role="main-article">
 
-          <div class="panel panel-default">
-            <!-- Default panel contents -->
-            <div class="panel-heading">
-              <%- title %>
-            </div>
-            <div class="panel-body">
-              <%- yield %>
-            </div>
-            <div class="panel-footer">
-              Code:
-              <pre><code><%= yield %></code></pre>
-            </div>
-          </div>
+          <%- yield %>
           
-          <!-- For debuging: <pre><%- JSON.stringify(public.docs, null, '\t') %></pre> -->
-          <!-- For debuging: <pre><%- JSON.stringify(current, null, '\t') %></pre> -->
+          <!-- For debuging: <pre>< %- JSON.stringify(public.docs, null, '\t') %></pre> -->
+          <!-- For debuging: <pre>< %- JSON.stringify(current, null, '\t') %></pre> -->
 
         </article>
-        <aside id="aside" class="aside " role="sidebar">
+        <aside id="aside" class="aside" role="sidebar">
           <% if (current.path.length > 2) { %>
-             <%- partial("_partials/_navmenu", { navItems: public.docs.elements._data }) %>
+             <%- partial("_partials/_navmenu", { navItems: public.docs[current.path[1]]._data }) %>
           <% }; %>
         </aside>
       </div>

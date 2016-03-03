@@ -1,0 +1,3 @@
+const dtj = require('../node_modules/directory-to-json')
+ 
+dtj('www', 'outfile.json', (err) => console.log(err))

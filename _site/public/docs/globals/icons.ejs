@@ -1,0 +1,31 @@
+<div class="bs-docs-section">
+  <h1 class="page-header" id="glyphicons">Icons</h1>
+
+  <h2 id="glyphicons-glyphs">Available icons from Font Awesome</h2>
+   <p class="lead">
+    After you get up and running, you can place Font Awesome icons just about
+    anywhere with the <code>&lt;i&gt;</code> or <code>&lt;i&gt;</code> tag.
+    Some examples appreciatively re-used from the Bootstrap documentation.
+  </p>
+  <div class="bs-glyphicons">
+    <ul class="bs-glyphicons-list">
+      <% for(var i in public.docs.globals._data.icons.icons){
+				var iconClassName = public.docs.globals._data.icons.icons[i].id %>
+        <li>
+          <span class="fa fa-<%= iconClassName %>" aria-hidden="true"></span>
+          <span class="glyphicon-class">fa fa-<%= iconClassName %></span>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+  <%- partial("_examples/basic") %>
+  <%- partial("_examples/larger") %>
+  <%- partial("_examples/fixed-width") %>
+  <%- partial("_examples/list") %>
+  <%- partial("_examples/bordered-pulled") %>
+  <%- partial("_examples/animated") %>
+  <%- partial("_examples/rotated-flipped") %>
+  <%- partial("_examples/stacked") %>
+  <%- partial("_examples/bootstrap") %>
+  <!-- <%- partial("_examples/custom") %> -->
+</div>

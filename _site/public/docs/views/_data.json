@@ -1,6 +1,23 @@
 {
 	"index": {
-		"title": "",
-		"name": ""
+		"css"         : "",
+		"standalone"  : true,
+		"element"     : "",
+		"elementType" : "view",
+		"title"       : "Code Guide - Patterns",
+		"description" : "",
+		"type"        : "UI Element",
+		"layout"	  : "_layoutAll"
+
+	},
+	"jumbotron": {
+		"css"         : "jumbotron",
+		"element"     : "jumbotron",
+		"elementType" : "view",
+		"standalone"  : true,
+		"title"       : "Jumbotron",
+		"description" : "A jumbotron indicates a possible user action",
+		"type"        : "UI Element",
+		"tabs"        : ""
 	}
 }
