@@ -1,7 +1,9 @@
 /*******************************
          Grid Overrides
 *******************************/
-
+.heading, .section{
+	.make-row();
+}
 #main article{
   .make-md-column(10);
   .make-md-column-push(2);
@@ -9,4 +11,7 @@
 #main aside{
   .make-md-column(2);
   .make-md-column-pull(10);
+}
+.col{
+	.make-md-column(6);
 }
