@@ -98,27 +98,27 @@
 		<ul class="nav navbar-nav">
 	
 	
-				<li class=""><a href="../globals">Globals</a></li>
+				<li class=""><a href="/docs/globals">Globals</a></li>
 			
 		
 	
-				<li class=""><a href="../basics">Basics</a></li>
+				<li class=""><a href="/docs/basics">Basics</a></li>
 			
 		
 	
-				<li class=""><a href="../components">Components</a></li>
+				<li class=""><a href="/docs/components">Components</a></li>
 			
 		
 	
-				<li class="active"><a href="../modules">Modules</a></li>
+				<li class="active"><a href="/docs/modules">Modules</a></li>
 			
 		
 	
-				<li class=""><a href="../views">Views</a></li>
+				<li class=""><a href="/docs/views">Views</a></li>
 			
 		
 	
-				<li class=""><a href="../pages">Pages</a></li>
+				<li class=""><a href="/docs/pages">Pages</a></li>
 			
 		
 	
@@ -232,10 +232,10 @@
 
   <h3 id="datepicker-usage-javascript">Via JavaScript</h3>
   <p>Initialize the <code>datepicker()</code> via JavaScript (accepting <a href="#datepicker-usage-options ">default options</a>):</p>
-  <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myDatepicker').datepicker();</code></pre></figure>
 
   <p>Initialize the <code>datepicker()</code> via JavaScript specifying your own <a href="#datepicker-usage-options ">options</a>:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myDatepicker').datepicker({
   allowPastDates: true
 });
@@ -435,7 +435,7 @@ $('#myDatepicker').datepicker({
     <dt id="datepicker-usage-methods-set-date">.datepicker('setDate')</dt>
     <dd>
       Sets <code>datepicker()</code> to date provided. Date provided must be a valid Date object or date string.
-      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setDate', new Date());</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myDatepicker').datepicker('setDate', new Date());</code></pre></figure>
     </dd>
 
 
@@ -445,7 +445,7 @@ $('#myDatepicker').datepicker({
     <dt id="datepicker-usage-methods-set-culture">.datepicker('setCulture')</dt>
     <dd>
       Updates the culture the <code>datepicker()</code> uses. <em>Only available using <code>moment.js</code> with langs</em>
-      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setCulture', 'fr');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myDatepicker').datepicker('setCulture', 'fr');</code></pre></figure>
     </dd>
 
 
@@ -455,7 +455,7 @@ $('#myDatepicker').datepicker({
     <dt id="datepicker-usage-methods-set-format">.datepicker('setFormat')</dt>
     <dd>
       Updates the format the <code>datepicker()</code> uses. <em>Only available using <code>moment.js</code> with langs</em>
-      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setFormat', 'L');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myDatepicker').datepicker('setFormat', 'L');</code></pre></figure>
     </dd>
   </dl>
 
@@ -492,21 +492,21 @@ $('#myDatepicker').datepicker({
 
   </div><!-- ./fu-table-responsive -->
   <p>All <code>datepicker()</code> events are fired on the <code>.datepicker</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myDatepicker').on('changed.fu.datepicker', function (evt, date) {
   // do something…
 });
 </code></pre></figure>
 
   <p>To listen for changes on the <code>Date()</code> object, you will need to combine two listeners (as shown below). The reason for this is to keep double events firing when a date is clicked (previously when a date was clicked <code>dateClicked</code> and <code>changed</code> would both fire, which was confusing to many people.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myDatepicker').on('changed.fu.datepicker dateClicked.fu.datepicker', function (evt, date) {
   // do something…
 });
 </code></pre></figure>
 
   <p>To listen for all changes to the <code>datepicker</code>'s input value, including setting the date to <code>invalid</code> values, you will need to combine two listeners:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myDatepicker').on('change dateClicked.fu.datepicker', function (evt, date) {
   // do something…
 });
@@ -632,106 +632,106 @@ $('#myDatepicker').on('change dateClicked.fu.datepicker', function (evt, date) {
 <nav id="menu" class="navbar navbar-default" role="main-menu">
 	<ul class="nav nav-pills nav-stacked">
 	
-			<li class=""><a href="../modules/index">Home</a></li>
+			<li class=""><a href="/docs/modules/index">Home</a></li>
 		
 	
-			<li class=""><a href="../modules/overview">overview</a></li>
+			<li class=""><a href="/docs/modules/overview">overview</a></li>
 		
 	
-			<li class=""><a href="../modules/affix">affix</a></li>
+			<li class=""><a href="/docs/modules/affix">affix</a></li>
 		
 	
-			<li class=""><a href="../modules/alerts">alerts</a></li>
+			<li class=""><a href="/docs/modules/alerts">alerts</a></li>
 		
 	
-			<li class=""><a href="../modules/buttons">buttons</a></li>
+			<li class=""><a href="/docs/modules/buttons">buttons</a></li>
 		
 	
-			<li class=""><a href="../modules/carousel">carousel</a></li>
+			<li class=""><a href="/docs/modules/carousel">carousel</a></li>
 		
 	
-			<li class=""><a href="../modules/checkbox">checkbox</a></li>
+			<li class=""><a href="/docs/modules/checkbox">checkbox</a></li>
 		
 	
-			<li class=""><a href="../modules/collapse">collapse</a></li>
+			<li class=""><a href="/docs/modules/collapse">collapse</a></li>
 		
 	
-			<li class=""><a href="../modules/combobox">combobox</a></li>
+			<li class=""><a href="/docs/modules/combobox">combobox</a></li>
 		
 	
-			<li class="active"><a href="../modules/datepicker">datepicker</a></li>
+			<li class="active"><a href="/docs/modules/datepicker">datepicker</a></li>
 		
 	
-			<li class=""><a href="../modules/dropdown-autoflip">dropdown-autoflip</a></li>
+			<li class=""><a href="/docs/modules/dropdown-autoflip">dropdown-autoflip</a></li>
 		
 	
-			<li class=""><a href="../modules/dropdowns">dropdowns</a></li>
+			<li class=""><a href="/docs/modules/dropdowns">dropdowns</a></li>
 		
 	
-			<li class=""><a href="../modules/extended">extended</a></li>
+			<li class=""><a href="/docs/modules/extended">extended</a></li>
 		
 	
-			<li class=""><a href="../modules/infinite-scroll">infinite-scroll</a></li>
+			<li class=""><a href="/docs/modules/infinite-scroll">infinite-scroll</a></li>
 		
 	
-			<li class=""><a href="../modules/javascript-overview">javascript-overview</a></li>
+			<li class=""><a href="/docs/modules/javascript-overview">javascript-overview</a></li>
 		
 	
-			<li class=""><a href="../modules/loader">loader</a></li>
+			<li class=""><a href="/docs/modules/loader">loader</a></li>
 		
 	
-			<li class=""><a href="../modules/modal">modal</a></li>
+			<li class=""><a href="/docs/modules/modal">modal</a></li>
 		
 	
-			<li class=""><a href="../modules/pillbox">pillbox</a></li>
+			<li class=""><a href="/docs/modules/pillbox">pillbox</a></li>
 		
 	
-			<li class=""><a href="../modules/placard">placard</a></li>
+			<li class=""><a href="/docs/modules/placard">placard</a></li>
 		
 	
-			<li class=""><a href="../modules/popovers">popovers</a></li>
+			<li class=""><a href="/docs/modules/popovers">popovers</a></li>
 		
 	
-			<li class=""><a href="../modules/radio">radio</a></li>
+			<li class=""><a href="/docs/modules/radio">radio</a></li>
 		
 	
-			<li class=""><a href="../modules/repeater-list">repeater-list</a></li>
+			<li class=""><a href="/docs/modules/repeater-list">repeater-list</a></li>
 		
 	
-			<li class=""><a href="../modules/repeater-thumbnail">repeater-thumbnail</a></li>
+			<li class=""><a href="/docs/modules/repeater-thumbnail">repeater-thumbnail</a></li>
 		
 	
-			<li class=""><a href="../modules/repeater">repeater</a></li>
+			<li class=""><a href="/docs/modules/repeater">repeater</a></li>
 		
 	
-			<li class=""><a href="../modules/scheduler">scheduler</a></li>
+			<li class=""><a href="/docs/modules/scheduler">scheduler</a></li>
 		
 	
-			<li class=""><a href="../modules/scrollspy">scrollspy</a></li>
+			<li class=""><a href="/docs/modules/scrollspy">scrollspy</a></li>
 		
 	
-			<li class=""><a href="../modules/search">search</a></li>
+			<li class=""><a href="/docs/modules/search">search</a></li>
 		
 	
-			<li class=""><a href="../modules/selectlist">selectlist</a></li>
+			<li class=""><a href="/docs/modules/selectlist">selectlist</a></li>
 		
 	
-			<li class=""><a href="../modules/spinbox">spinbox</a></li>
+			<li class=""><a href="/docs/modules/spinbox">spinbox</a></li>
 		
 	
-			<li class=""><a href="../modules/tabs">tabs</a></li>
+			<li class=""><a href="/docs/modules/tabs">tabs</a></li>
 		
 	
-			<li class=""><a href="../modules/tooltips">tooltips</a></li>
+			<li class=""><a href="/docs/modules/tooltips">tooltips</a></li>
 		
 	
-			<li class=""><a href="../modules/transitions">transitions</a></li>
+			<li class=""><a href="/docs/modules/transitions">transitions</a></li>
 		
 	
-			<li class=""><a href="../modules/tree">tree</a></li>
+			<li class=""><a href="/docs/modules/tree">tree</a></li>
 		
 	
-			<li class=""><a href="../modules/wizard">wizard</a></li>
+			<li class=""><a href="/docs/modules/wizard">wizard</a></li>
 		
 	
 	</ul>
