@@ -56,7 +56,7 @@
 					span {
 						display: block;
 
-						border-radius: @base-border-radius;
+						border-radius: @border-radius-base;
 
 						&:hover {
 							background: @selectable-hover;
@@ -73,13 +73,13 @@
 					&.last-month, &.next-month {
 						background: darken(@selected, 10%);
 						&.first {
-							border-top-left-radius: @base-border-radius;
-							border-bottom-left-radius: @base-border-radius;
+							border-top-left-radius: @border-radius-base;
+							border-bottom-left-radius: @border-radius-base;
 							padding-left: 1px;
 						}
 						&.last {
-							border-top-right-radius: @base-border-radius;
-							border-bottom-right-radius: @base-border-radius;
+							border-top-right-radius: @border-radius-base;
+							border-bottom-right-radius: @border-radius-base;
 							padding-right: 1px;
 						}
 					}
@@ -96,7 +96,7 @@
 							position: relative;
 
 							&:before {
-								border-top: 1px solid darken(@btn-danger-background, 10%);
+								border-top: 1px solid darken(@btn-danger-bg, 10%);
 								bottom: 0;
 								content: " ";
 								display: block;
@@ -329,7 +329,7 @@
 							text-decoration: none;
 
 							&:hover {
-								background: @info-background;
+								background: @state-info-bg;
 								text-decoration: none;
 							}
 						}

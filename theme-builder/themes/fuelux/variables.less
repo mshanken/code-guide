@@ -1,0 +1,351 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Global values
+// --------------------------------------------------
+
+@true-black:        #000;
+@true-white:        #FFF;
+
+// Grays
+// -------------------------
+@gray07:            lighten(@true-black, 7%);      // #111
+@gray13:            lighten(@true-black, 13.5%);   // #222
+@gray15:            lighten(@true-black, 15%);     // #252525
+@gray20:            lighten(@true-black, 20%);     // #333
+@gray27:            lighten(@true-black, 27%);     // #444
+@gray33:            lighten(@true-black, 33.5%);   // #555
+@gray40:            lighten(@true-black, 40%);     // #666
+@gray46:            lighten(@true-black, 46%);     // #757575
+//@gray47:            lighten(@true-black, 46.7%); // #777
+@gray53:            lighten(@true-black, 53%);   // #888
+@gray60:            lighten(@true-black, 60%);     // #999
+@gray67:            lighten(@true-black, 66.5%);   // #AAA
+@gray74:            lighten(@true-black, 73.5%); // #BBB
+//@gray75:            lighten(@true-black, 75%);   // #4b4b4b
+@gray80:            lighten(@true-black, 80%);     // #CCC
+@gray87:            lighten(@true-black, 86.5%);   // #DDD
+@gray90:            lighten(@true-black, 90%);     // #E5E5E5
+@gray93:            lighten(@true-black, 93.5%);   // #EEE
+@gray96:            lighten(@true-black, 96%);     // #F5F5F5
+@gray98:            lighten(@true-black, 98%);     // #f9f9f9
+@gray99:            lighten(@true-black, 99%);     // #FCFCFC
+
+@black:                 @true-black;
+@gray-darker:            @gray13;
+@gray-dark:              @gray20;
+@gray:                  @gray33;
+@gray-light:             @gray60;
+@gray-lighter:           @gray93;
+@white:                 @true-white;
+
+
+// Accent colors
+// -------------------------
+@blue:                  #049cdb;
+@blue-dark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+// Text Colors
+// -------------------------
+@text-primary:         #428bca;
+@text-success:         #3c763d;
+@text-info:            #31708f;
+@text-warning:         #8a6d3b;
+@text-danger:          #a94442;
+@text-dimmed:          @gray40;
+@text-muted:           @gray60;
+
+// Scaffolding
+// -------------------------
+@body-bg:        @white;
+@text-color:             @gray-dark;
+@focus-color:            #5B9DD9;
+
+// Links
+// -------------------------
+@link-color:             #0088cc;
+@link-color-hover:        darken(@link-color, 15%);
+
+
+// Typography
+// -------------------------
+@sans-font-family:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serif-font-family:       Georgia, "Times New Roman", Times, serif;
+@mono-font-family:        Monaco, Menlo, Consolas, "Courier New", monospace;
+
+@base-font-size:          @font-size-base;
+@base-font-family:        @font-family-base;
+@base-line-height:        @line-height-base;
+@alt-font-family:         @font-family-serif;
+
+
+// Component sizing
+// -------------------------
+// Based on 14px font-size and 20px line-height
+
+@font-size-large:         @base-font-size * 1.25; // ~18px
+@font-size-small:         @base-font-size * 0.85; // ~12px
+@font-size-mini:          @base-font-size * 0.75; // ~11px
+
+@padding-large:          11px 19px; // 44px
+@padding-small:          2px 10px;  // 26px
+@padding-mini:           0 6px;   // 22px
+
+@border-radius-base:      @border-radius-base;
+
+
+// Tables
+// -------------------------
+@table-bg:                   @table-bg; // overall background-color
+@table-bg-accent:            @table-bg-accent; // for striping
+@table-bg-hover:             @table-bg-hover; // for hover
+@table-border:                       @table-border-color; // table and cell border
+
+// Buttons
+// -------------------------
+@btn-bg:                     @btn-default-bg;
+@btn-bg-highlight:           @btn-default-color;
+@btn-border:                         @btn-default-border;
+
+@btn-primary-bg:             @btn-primary-bg;
+@btn-primary-bg-highlight:   @btn-primary-color;
+
+@btn-info-bg:                @btn-info-bg;
+@btn-info-bg-highlight:      @btn-info-color;
+
+@btn-success-bg:             @btn-success-bg;
+@btn-success-bg-highlight:   @btn-success-color;
+
+@btn-warning-bg:             @btn-warning-bg;
+@btn-warning-bg-highlight:   @btn-warning-color;
+
+@btn-danger-bg:              @btn-danger-bg;
+@btn-danger-bg-highlight:    @btn-danger-color;
+
+@btn-inverse-bg:             @gray27;
+@btn-inverse-bg-highlight:   @gray-darker;
+
+@btn-padding-vertical:               6px;
+@btn-padding-horizontal:             12px;
+
+
+// Forms
+// -------------------------
+@input-bg:               	@input-bg;
+@input-disabled-bg:      	@input-bg-disabled;
+@form-actions-bg:         	@gray96;
+@input-height:                   	@input-height-base; // base line-height + 8px vertical padding + 2px top/bottom border
+
+
+// Dropdowns
+// -------------------------
+@dropdown-bg:            	@dropdown-bg;
+@dropdown-divider-top:           	@gray90;
+@dropdown-divider-bottom:        	@white;
+
+@dropdown-link-bg-active:  	@link-color;
+@dropdown-link-bg-hover:   	@dropdown-link-bg-active;
+
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+@zindex-fixed-navbar:       		@zindex-navbar-fixed;
+@zindex-modal-backdrop:     		@zindex-modal-bg;
+
+
+//Selectable Hover, Selected, Selected Hover
+// -------------------------
+@selectable-hover: 					@gray96;
+@selected: 							@gray93;
+@selected-hover: 					@gray87;
+
+
+
+// Sprite icons path
+// -------------------------
+@icon-sprite-path:          		"../img/glyphicons-halflings.png";
+@icon-white-sprite-path:     		"../img/glyphicons-halflings-white.png";
+
+
+// Input placeholder text color
+// -------------------------
+@placeholder-text:         			@input-color-placeholder;
+
+
+// Horizontal forms & lists
+// -------------------------
+@horizontal-component-offset:       @component-offset-horizontal;
+
+
+// Wells
+// -------------------------
+@well-bg:                  @well-bg;
+
+
+// Navbar
+// -------------------------
+@navbar-collapse-width:             979px;
+@navbar-collapse-desktop-width:     @navbar-collapse-width + 1;
+
+@navbar-height:                    40px;
+@navbar-bg-highlight:      @navbar-default-color;
+@navbar-bg:                @navbar-default-bg;
+@navbar-border:                    @navbar-default-border;
+
+@navbar-text:                      @gray40;
+@navbar-link-color:                @navbar-default-link-color;
+@navbar-link-color-hover:          @navbar-default-link-hover-color;
+@navbar-link-color-active:         @navbar-default-link-active-color;
+@navbar-link-bg-hover:     @navbar-default-link-hover-bg;
+@navbar-link-bg-active:    @navbar-default-link-active-bg;
+
+@navbar-brand-color:               @navbar-default-brand-color;
+
+// Inverted navbar
+@navbar-inverse-bg:                	@gray07;
+@navbar-inverse-bg-highlight:       @gray13;
+@navbar-inverse-border:                    	@gray15;
+
+@navbar-inverse-text:                      	@gray60;
+@navbar-inverse-link-color:                 @gray60;
+@navbar-inverse-link-color-hover:           @white;
+@navbar-inverse-link-color-active:          @navbar-inverse-link-color-hover;
+@navbar-inverse-link-bg-hover:      transparent;
+@navbar-inverse-link-bg-active:     @navbar-inverse-bg;
+
+@navbar-inverse-search-bg:          lighten(@navbar-inverse-bg, 25%);
+@navbar-inverse-search-bg-focus:    @white;
+@navbar-inverse-search-border:              @navbar-inverse-bg;
+@navbar-inverse-search-placeholder-color:   @gray80;
+
+@navbar-inverse-brand-color:                @navbar-inverse-link-color;
+
+
+// Pagination
+// -------------------------
+@pagination-bg:                	@pagination-bg;
+@pagination-active-bg:          @pagination-active-bg;
+
+
+// Hero unit
+// -------------------------
+@hero-unit-bg:              	@jumbotron-bg;
+@hero-unit-heading-color:            	@jumbotron-heading-color;
+@hero-unit-lead-color:               	inherit;
+
+
+// Form states and alerts
+// -------------------------
+@warning-text:             	@state-warning-text;
+@warning-bg:       	@state-warning-bg;
+@warning-border:           	@state-warning-border;
+
+@error-text:               	@state-danger-text;
+@error-bg:         	@state-danger-bg;
+@error-border:             	@state-danger-border;
+
+@success-text:             	@state-success-text;
+@success-bg:       	@state-success-bg;
+@success-border:           	@state-success-border;
+
+@info-text:                	@state-info-text;
+@info-bg:          	@state-info-bg;
+@info-border:              	@state-info-border;
+
+
+// Tooltips and popovers
+// -------------------------
+@tooltip-bg:       	@tooltip-bg;
+
+@popover-bg:       	@popover-bg;
+@popover-title-bg:  @popover-title-bg;
+
+
+
+// GRID
+// --------------------------------------------------
+
+
+// Default 940px grid
+// -------------------------
+@grid-column-width:         60px;
+@grid-row-width:            (@grid-columns * @grid-column-width) + (@grid-gutter-width * (@grid-columns - 1));
+
+// 1200px min
+@grid-column-width1200:     70px;
+@grid-gutter-width1200:     30px;
+@grid-row-width1200:        (@grid-columns * @grid-column-width1200) + (@grid-gutter-width1200 * (@grid-columns - 1));
+
+// 768px-979px
+@grid-column-width768:      42px;
+@grid-gutter-width768:      20px;
+@grid-row-width768:         (@grid-columns * @grid-column-width768) + (@grid-gutter-width768 * (@grid-columns - 1));
+
+
+// Fluid grid
+// -------------------------
+@fluid-grid-column-width:    percentage(@grid-column-width/@grid-row-width);
+@fluid-grid-gutter-width:    percentage(@grid-gutter-width/@grid-row-width);
+
+// 1200px min
+@fluid-grid-column-width1200:     percentage(@grid-column-width1200/@grid-row-width1200);
+@fluid-grid-gutter-width1200:     percentage(@grid-gutter-width1200/@grid-row-width1200);
+
+// 768px-979px
+@fluid-grid-column-width768:      percentage(@grid-column-width768/@grid-row-width768);
+@fluid-grid-gutter-width768:      percentage(@grid-gutter-width768/@grid-row-width768);
+
+
+// Controls
+// --------------------------------------------------
+
+// Checkbox
+// -------------------------
+@checkbox-primary-color:                 #39b3d7;
+
+// Datepicker
+// -------------------------
+@datepicker-hover:      #0f5f9f;
+@datepicker-hover-alt:   #1b75bb;
+
+// Tree
+// -------------------------
+@tree-hover-text: @gray60;
+@tree-select-bg: @selected;
+
+
+// Icons
+// -------------------------
+@fuelux-font-path: @icon-font-path;
+
+
+
+// --------------------------------------------------
+// Padding / Margin
+// --------------------------------------------------
+@padding-xs: 5px;
+@padding-sm: 10px;
+@padding-md: 15px;
+@padding-lg: 20px;
+
+@margin-xs: 5px;
+@margin-sm: 10px;
+@margin-md: 15px;
+@margin-lg: 20px;
+
+

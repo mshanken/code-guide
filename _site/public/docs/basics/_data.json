@@ -72,6 +72,16 @@
     "type"        : "UI Collection",
     "tabs"        : ""
   },
+  "buttons": {
+    "css"         : "buttons",
+    "element"     : "buttons",
+    "elementType" : "basic",
+    "standalone"  : true,
+    "title"       : "Buttons",
+    "description" : "A buttons indicates a possible user action",
+    "type"        : "UI Element",
+    "tabs"        : ""
+  },
   "buttons-labels": {
     "css"         : "buttons-labels",
     "element"     : "buttons-labels",
@@ -81,16 +91,6 @@
     "description" : "A buttons-labels is is used to represent a political state",
     "type"        : "UI Element"
   },
-	"buttons": {
-		"css"         : "buttons",
-		"element"     : "buttons",
-		"elementType" : "basic",
-		"standalone"  : true,
-		"title"       : "Buttons",
-		"description" : "A buttons indicates a possible user action",
-		"type"        : "UI Element",
-		"tabs"        : ""
-	},
   "images": {
     "css"         : "images",
     "standalone"  : true,

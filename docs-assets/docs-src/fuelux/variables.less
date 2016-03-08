@@ -65,7 +65,7 @@
 
 // Scaffolding
 // -------------------------
-@body-background:        @white;
+@body-bg:        @white;
 @text-color:             @gray-dark;
 @focus-color:            #5B9DD9;
 
@@ -99,39 +99,39 @@
 @padding-small:          2px 10px;  // 26px
 @padding-mini:           0 6px;   // 22px
 
-@base-border-radius:      @border-radius-base;
+@border-radius-base:      @border-radius-base;
 
 
 // Tables
 // -------------------------
-@table-background:                   @table-bg; // overall background-color
-@table-background-accent:            @table-bg-accent; // for striping
-@table-background-hover:             @table-bg-hover; // for hover
+@table-bg:                   @table-bg; // overall background-color
+@table-bg-accent:            @table-bg-accent; // for striping
+@table-bg-hover:             @table-bg-hover; // for hover
 @table-border:                       @table-border-color; // table and cell border
 
 // Buttons
 // -------------------------
-@btn-background:                     @btn-default-bg;
-@btn-background-highlight:           @btn-default-color;
+@btn-bg:                     @btn-default-bg;
+@btn-bg-highlight:           @btn-default-color;
 @btn-border:                         @btn-default-border;
 
-@btn-primary-background:             @btn-primary-bg;
-@btn-primary-background-highlight:   @btn-primary-color;
+@btn-primary-bg:             @btn-primary-bg;
+@btn-primary-bg-highlight:   @btn-primary-color;
 
-@btn-info-background:                @btn-info-bg;
-@btn-info-background-highlight:      @btn-info-color;
+@btn-info-bg:                @btn-info-bg;
+@btn-info-bg-highlight:      @btn-info-color;
 
-@btn-success-background:             @btn-success-bg;
-@btn-success-background-highlight:   @btn-success-color;
+@btn-success-bg:             @btn-success-bg;
+@btn-success-bg-highlight:   @btn-success-color;
 
-@btn-warning-background:             @btn-warning-bg;
-@btn-warning-background-highlight:   @btn-warning-color;
+@btn-warning-bg:             @btn-warning-bg;
+@btn-warning-bg-highlight:   @btn-warning-color;
 
-@btn-danger-background:              @btn-danger-bg;
-@btn-danger-background-highlight:    @btn-danger-color;
+@btn-danger-bg:              @btn-danger-bg;
+@btn-danger-bg-highlight:    @btn-danger-color;
 
-@btn-inverse-background:             @gray27;
-@btn-inverse-background-highlight:   @gray-darker;
+@btn-inverse-bg:             @gray27;
+@btn-inverse-bg-highlight:   @gray-darker;
 
 @btn-padding-vertical:               6px;
 @btn-padding-horizontal:             12px;
@@ -139,20 +139,20 @@
 
 // Forms
 // -------------------------
-@input-background:               	@input-bg;
-@input-disabled-background:      	@input-bg-disabled;
-@form-actions-background:         	@gray96;
+@input-bg:               	@input-bg;
+@input-disabled-bg:      	@input-bg-disabled;
+@form-actions-bg:         	@gray96;
 @input-height:                   	@input-height-base; // base line-height + 8px vertical padding + 2px top/bottom border
 
 
 // Dropdowns
 // -------------------------
-@dropdown-background:            	@dropdown-bg;
+@dropdown-bg:            	@dropdown-bg;
 @dropdown-divider-top:           	@gray90;
 @dropdown-divider-bottom:        	@white;
 
-@dropdown-link-background-active:  	@link-color;
-@dropdown-link-background-hover:   	@dropdown-link-background-active;
+@dropdown-link-bg-active:  	@link-color;
+@dropdown-link-bg-hover:   	@dropdown-link-bg-active;
 
 
 
@@ -165,7 +165,7 @@
 // Used for a bird's eye view of components dependent on the z-axis
 // Try to avoid customizing these :)
 @zindex-fixed-navbar:       		@zindex-navbar-fixed;
-@zindex-modal-backdrop:     		@zindex-modal-background;
+@zindex-modal-backdrop:     		@zindex-modal-bg;
 
 
 //Selectable Hover, Selected, Selected Hover
@@ -194,7 +194,7 @@
 
 // Wells
 // -------------------------
-@well-background:                  @well-bg;
+@well-bg:                  @well-bg;
 
 
 // Navbar
@@ -203,34 +203,34 @@
 @navbar-collapse-desktop-width:     @navbar-collapse-width + 1;
 
 @navbar-height:                    40px;
-@navbar-background-highlight:      @navbar-default-color;
-@navbar-background:                @navbar-default-bg;
-@navbar-border:                    @navbar-default-border;
+@navbar-default-bg-highlight:      @navbar-default-color;
+@navbar-default-bg:                @navbar-default-bg;
+@navbar-default-border:                    @navbar-default-border;
 
-@navbar-text:                      @gray40;
-@navbar-link-color:                @navbar-default-link-color;
-@navbar-link-color-hover:          @navbar-default-link-hover-color;
-@navbar-link-color-active:         @navbar-default-link-active-color;
-@navbar-link-background-hover:     @navbar-default-link-hover-bg;
-@navbar-link-background-active:    @navbar-default-link-active-bg;
+@navbar-default-color:                      @gray40;
+@navbar-default-link-color:                @navbar-default-link-color;
+@navbar-default-link-color-hover:          @navbar-default-link-hover-color;
+@navbar-default-link-color-active:         @navbar-default-link-active-color;
+@navbar-default-link-bg-hover:     @navbar-default-link-hover-bg;
+@navbar-default-link-bg-active:    @navbar-default-link-active-bg;
 
 @navbar-brand-color:               @navbar-default-brand-color;
 
 // Inverted navbar
-@navbar-inverse-background:                	@gray07;
-@navbar-inverse-background-highlight:       @gray13;
+@navbar-inverse-bg:                	@gray07;
+@navbar-inverse-bg-highlight:       @gray13;
 @navbar-inverse-border:                    	@gray15;
 
 @navbar-inverse-text:                      	@gray60;
 @navbar-inverse-link-color:                 @gray60;
 @navbar-inverse-link-color-hover:           @white;
 @navbar-inverse-link-color-active:          @navbar-inverse-link-color-hover;
-@navbar-inverse-link-background-hover:      transparent;
-@navbar-inverse-link-background-active:     @navbar-inverse-background;
+@navbar-inverse-link-bg-hover:      transparent;
+@navbar-inverse-link-bg-active:     @navbar-inverse-bg;
 
-@navbar-inverse-search-background:          lighten(@navbar-inverse-background, 25%);
-@navbar-inverse-search-background-focus:    @white;
-@navbar-inverse-search-border:              @navbar-inverse-background;
+@navbar-inverse-search-bg:          lighten(@navbar-inverse-bg, 25%);
+@navbar-inverse-search-bg-focus:    @white;
+@navbar-inverse-search-border:              @navbar-inverse-bg;
 @navbar-inverse-search-placeholder-color:   @gray80;
 
 @navbar-inverse-brand-color:                @navbar-inverse-link-color;
@@ -238,42 +238,42 @@
 
 // Pagination
 // -------------------------
-@pagination-background:                	@pagination-bg;
-@pagination-active-background:          @pagination-active-bg;
+@pagination-bg:                	@pagination-bg;
+@pagination-active-bg:          @pagination-active-bg;
 
 
 // Hero unit
 // -------------------------
-@hero-unit-background:              	@jumbotron-bg;
+@hero-unit-bg:              	@jumbotron-bg;
 @hero-unit-heading-color:            	@jumbotron-heading-color;
 @hero-unit-lead-color:               	inherit;
 
 
 // Form states and alerts
 // -------------------------
-@warning-text:             	@state-warning-text;
-@warning-background:       	@state-warning-bg;
-@warning-border:           	@state-warning-border;
+@state-warning-text:             	@state-warning-text;
+@state-warning-bg:       	@state-warning-bg;
+@state-warning-border:           	@state-warning-border;
 
-@error-text:               	@state-danger-text;
-@error-background:         	@state-danger-bg;
-@error-border:             	@state-danger-border;
+@state-danger-text:               	@state-danger-text;
+@state-danger-bg:         	@state-danger-bg;
+@state-danger-border:             	@state-danger-border;
 
-@error-text:             	@state-success-text;
-@success-background:       	@state-success-bg;
-@success-border:           	@state-success-border;
+@state-danger-text:             	@state-success-text;
+@state-success-bg:       	@state-success-bg;
+@state-success-border:           	@state-success-border;
 
-@info-text:                	@state-info-text;
-@info-background:          	@state-info-bg;
-@info-border:              	@state-info-border;
+@state-info-text:                	@state-info-text;
+@state-info-bg:          	@state-info-bg;
+@state-info-border:              	@state-info-border;
 
 
 // Tooltips and popovers
 // -------------------------
-@tooltip-background:       	@tooltip-bg;
+@tooltip-bg:       	@tooltip-bg;
 
-@popover-background:       	@popover-bg;
-@popover-title-background:  @popover-title-bg;
+@popover-bg:       	@popover-bg;
+@popover-title-bg:  @popover-title-bg;
 
 
 
@@ -326,7 +326,7 @@
 // Tree
 // -------------------------
 @tree-hover-text: @gray60;
-@tree-select-background: @selected;
+@tree-select-bg: @selected;
 
 
 // Icons
