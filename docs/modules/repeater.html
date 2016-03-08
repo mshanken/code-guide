@@ -56,7 +56,7 @@
         <!-- Place favicon.ico in the root directory -->
 
     	
-	  	<link rel="stylesheet" type="text/css" href="../../css/build.min.css">
+	  	<link rel="stylesheet" type="text/css" href="../../cssbuild.min.css">
 	
 
     		<!-- Google Analytics -->
@@ -79,7 +79,7 @@
     
   </head>
   
-  <body class="fuelux">
+  <body>
     <!--[if (lt IE 8)]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -254,7 +254,7 @@
 
   <h2 id="repeater-usage">Usage</h2>
   <p>Because of its reliance upon a <code>dataSource</code>, you must initialize a <code>repeater()</code> via JavaScript:</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
   dataSource = function(options, callback){
     //...
   };
@@ -446,7 +446,7 @@
           following the syntax <code>[viewType].[viewName]</code> (Ex: "list.view1") Then, within the <code>views</code>
           option object, add these view names as attributes. Each attribute can be an object, with it's own view plugin / repeater
           configuration. This configuration will then be honored by the repeater per view. Example:
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('#myRepeater').repeater({
   views: {
     'list.view1': {
@@ -473,8 +473,8 @@ $('#myRepeater').repeater({
   <dl>
     <dt id="repeater-usage-methods-clear">.repeater('clear');</dt>
     <dd>Clears the repeater of current data. Accepts an <em>optional</em> <code>options</code> object.
-    <figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('clear');</code></pre></figure>
-    <figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('clear', {preserve: true});</code></pre></figure>
+    <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('clear');</code></pre></figure>
+    <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('clear', {preserve: true});</code></pre></figure>
 
       <div class="table-responsive">
         <table class="table table-bordered table-striped">
@@ -506,8 +506,8 @@ $('#myRepeater').repeater({
 
     <dt id="repeater-usage-methods-infinite-scrolling">.repeater('infiniteScrolling');</dt>
     <dd>Enables or disabled infinite scrolling within the repeater. Used primarily by view extensions. Accepts an <em>optional</em> <code>options</code> object.
-      <figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('infiniteScrolling');</code></pre></figure>
-      <figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('infinitescrolling', true, {hybrid: true, percentage: 60});</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('infiniteScrolling');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('infinitescrolling', true, {hybrid: true, percentage: 60});</code></pre></figure>
 
       <div class="table-responsive">
         <table class="table table-bordered table-striped">
@@ -539,8 +539,8 @@ $('#myRepeater').repeater({
 
     <dt id="repeater-usage-methods-render">.repeater('render');</dt>
     <dd>Calls the <a href="#repeater-dataSource">dataSource</a> and renders the repeater data. Accepts an <em>optional</em> <code>options</code> object.
-      <figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('render');</code></pre></figure>
-      <figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('render', {'changeView': 'widescreen', 'preserve': true});</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('render');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('render', {'changeView': 'widescreen', 'preserve': true});</code></pre></figure>
 
       <div class="table-responsive">
         <table class="table table-bordered table-striped">
@@ -756,7 +756,7 @@ $('#myRepeater').repeater({
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All repeater events are fired on the <code>.repeater</code> classed element.</p>
-  <figure class="highlight"><pre><code class="../../js">
+  <figure class="highlight"><pre><code class="js">
   $('#myRepeater').on('resized.fu.repeater', function () {
   // do something…
   });

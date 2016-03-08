@@ -56,7 +56,7 @@
         <!-- Place favicon.ico in the root directory -->
 
     	
-	  	<link rel="stylesheet" type="text/css" href="../../css/build.min.css">
+	  	<link rel="stylesheet" type="text/css" href="../../cssbuild.min.css">
 	
 
     		<!-- Google Analytics -->
@@ -79,7 +79,7 @@
     
   </head>
   
-  <body class="fuelux">
+  <body>
     <!--[if (lt IE 8)]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -154,10 +154,10 @@
 
   <h3 id="combobox-usage-javascript">Via JavaScript</h3>
   <p>Call the combobox control via JavaScript:</p>
-  <figure class="highlight"><pre><code class="../../js">$('#myCombobox').combobox();</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox();</code></pre></figure>
 
   <p>The combobox also accepts an optional options param during initialization:</p>
-  <figure class="highlight"><pre><code class="../../js">$('#myCombobox').combobox({autoResizeMenu: false});</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox({autoResizeMenu: false});</code></pre></figure>
 
   <h3 id="combobox-usage-data-attributes">Via data-attributes</h3>
 
@@ -246,25 +246,25 @@
     <dt id="combobox-usage-methods-select-by-index">.combobox('selectByIndex')</dt>
     <dd>
       Set the selected item based on its index in the list (zero-based index). <span class="text-muted">Convenience method for <a href="#combobox-usage-methods-select-by-selector"><code>.selectBySelector('li:eq({index})')</code></a></span>
-      <figure class="highlight"><pre><code class="../../js">$('#myCombobox').combobox('selectByIndex', '1');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByIndex', '1');</code></pre></figure>
     </dd>
 
     <dt id="combobox-usage-methods-select-by-text">.combobox('selectByText')</dt>
     <dd>
       Set the selected item based on its text value.
-      <figure class="highlight"><pre><code class="../../js">$('#myCombobox').combobox('selectByText', 'Four');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByText', 'Four');</code></pre></figure>
     </dd>
 
     <dt id="combobox-usage-methods-select-by-selector">.combobox('selectBySelector')</dt>
     <dd>
       Set the selected item based on a selector.
-      <figure class="highlight"><pre><code class="../../js">$('#myCombobox').combobox('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
     </dd>
 
     <dt id="combobox-usage-methods-select-by-value">.combobox('selectByValue')</dt>
     <dd>
       Set the selected item based on its value. Convenience method for <code>.selectBySelector('data-value={value}')</code> that requires the item to include a <code>.data-value="{value}"</code> attribute
-      <figure class="highlight"><pre><code class="../../js">$('#myCombobox').combobox('selectByValue', '1');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByValue', '1');</code></pre></figure>
     </dd>
   </dl>
 
@@ -290,7 +290,7 @@
 &lt;div class=&quot;input-group input-append dropdown combobox&quot; id=&quot;myCombobox&quot; data-initialize=&quot;combobox&quot;&gt;..&lt;&#x2F;div&gt;
 </code></pre></figure>
 <p>You would attach your event listener thusly:</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('#myCombobox').on('changed.fu.combobox', function (evt, data) {
   // do something…
 });

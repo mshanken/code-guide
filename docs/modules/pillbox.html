@@ -56,7 +56,7 @@
         <!-- Place favicon.ico in the root directory -->
 
     	
-	  	<link rel="stylesheet" type="text/css" href="../../css/build.min.css">
+	  	<link rel="stylesheet" type="text/css" href="../../cssbuild.min.css">
 	
 
     		<!-- Google Analytics -->
@@ -79,7 +79,7 @@
     
   </head>
   
-  <body class="fuelux">
+  <body>
     <!--[if (lt IE 8)]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -188,7 +188,7 @@
 
   <h3 id="pillbox-usage-javascript">Via JavaScript</h3>
   <p>Call the Pillbox via JavaScript:</p>
-  <figure class="highlight"><pre><code class="../../js">$('#myPillbox').pillbox();</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myPillbox').pillbox();</code></pre></figure>
 
   <h3 id="pillbox-usage-data-attributes">Via data-attributes</h3>
   <p>The pillbox will automatically instantiate any pillboxes with <code>data-initialize="pillbox"</code>. If the control markup is added <em>after page load</em> with <code>data-initialize="pillbox"</code>, this control will be initialized on <code>mousedown</code>.
@@ -226,7 +226,7 @@
   <dl>
     <dt id="pillbox-usage-methods-add-items">.pillbox('addItems')</dt>
     <dd>Adds Items to the pillbox programmatically.
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('#myPillbox').pillbox('addItems', index, [{ text: '', value: '', attr: {}, data: {} }]);
 </code></pre></figure>
 
@@ -299,10 +299,10 @@ $('#myPillbox').pillbox('addItems', index, [{ text: '', value: '', attr: {}, dat
     <dt id="pillbox-usage-methods-remove-items">.pillbox('removeItems')</dt>
     <dd>
     Removes all items from the pillbox.
-<figure class="highlight"><pre><code class="../../js">$('#myPillbox').pillbox('removeItems');</code></pre></figure>
+<figure class="highlight"><pre><code class="js">$('#myPillbox').pillbox('removeItems');</code></pre></figure>
 
 Remove one or more items at a specific position in the pillbox by passing optional parameters. The first parameter is a <code>1</code> based index that represent the location of the first element to be removed. The second parameter is the number of items that will be removed.
-<figure class="highlight"><pre><code class="../../js">$('#myPillbox').pillbox('removeItems', index, count);</code></pre></figure>
+<figure class="highlight"><pre><code class="js">$('#myPillbox').pillbox('removeItems', index, count);</code></pre></figure>
     </dd>
 
     <dt id="pillbox-usage-methods-items">.pillbox('items')</dt>
@@ -317,19 +317,19 @@ Remove one or more items at a specific position in the pillbox by passing option
     <dt id="pillbox-usage-methods-remove-by-selector">.pillbox('removeBySelector')</dt>
     <dd>
       Removes an item based on a jQuery selector.
-<figure class="highlight"><pre><code class="../../js">$('#myPillbox').pillbox('removeBySelector', 'li[data-value=buzz]');</code></pre></figure>
+<figure class="highlight"><pre><code class="js">$('#myPillbox').pillbox('removeBySelector', 'li[data-value=buzz]');</code></pre></figure>
     </dd>
 
     <dt id="pillbox-usage-methods-removeByText">.pillbox('removeByText')</dt>
     <dd>
       Removes an item with contained text matching that of the provided <code>text</code> string parameter.
-<figure class="highlight"><pre><code class="../../js">$('#myPillbox').pillbox('removeByText', "Item 4");</code></pre></figure>
+<figure class="highlight"><pre><code class="js">$('#myPillbox').pillbox('removeByText', "Item 4");</code></pre></figure>
     </dd>
 
     <dt id="pillbox-usage-methods-removeByValue">.pillbox('removeByValue')</dt>
     <dd>
       Removes an item with value matching that of the provided <code>value</code> string parameter. <em>The item has to have a <code>.data-value="{value}"</code> attribute</em>
-<figure class="highlight"><pre><code class="../../js">$('#myPillbox').pillbox('removeByValue', '1');</code></pre></figure>
+<figure class="highlight"><pre><code class="js">$('#myPillbox').pillbox('removeByValue', '1');</code></pre></figure>
     </dd>
   </dl>
 
@@ -395,7 +395,7 @@ Remove one or more items at a specific position in the pillbox by passing option
             The <code>data</code> parameter contains an array of the elements being removed.
             The <code>callback</code> parameter is a function that provides asynchronous support for the typeahead functionality.
             The <code>callback</code> function must be run in order for the typeahead dropdown with values. Provided the <code>callback</code> with an array of items to display in the typeahead dropdown.
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 callback({data:[
   {
     text: '',
@@ -460,7 +460,7 @@ callback({data:[
   </div><!-- ./fu-table-responsive -->
 
   <p>All pillbox events are fired on the <code>.pillbox</code> classed element.</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('#myPillbox').on('clicked.fu.pillbox', function (evt, item) {
   // do something
 });

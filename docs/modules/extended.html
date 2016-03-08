@@ -56,7 +56,7 @@
         <!-- Place favicon.ico in the root directory -->
 
     	
-	  	<link rel="stylesheet" type="text/css" href="../../css/build.min.css">
+	  	<link rel="stylesheet" type="text/css" href="../../cssbuild.min.css">
 	
 
     		<!-- Google Analytics -->
@@ -79,7 +79,7 @@
     
   </head>
   
-  <body class="fuelux">
+  <body>
     <!--[if (lt IE 8)]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -138,10 +138,10 @@
   ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
-      <h1 id="../../js-overview">Overview</h1>
+      <h1 id="js-overview">Overview</h1>
     </div>
 
-    <h3 id="../../js-individual-compiled">Individual or compiled</h3>
+    <h3 id="js-individual-compiled">Individual or compiled</h3>
     <p>Plugins can be included individually (using Jasny Bootstrap's individual <code>*.js</code> files), or all at once (using <code>jasny-bootstrap.js</code> or the minified <code>jasny-bootstrap.min.js</code>).</p>
     <p>The Jasny Bootstrap plugins work with or without loading vanilla Bootstrap's <code>bootstrap.js</code>.</p>
     
@@ -150,27 +150,27 @@
       <p>Both <code>jasny-bootstrap.js</code> and <code>jasny-bootstrap.min.js</code> contain all plugins in a single file.</p>
     </div>
 
-    <h3 id="../../js-data-attrs">Data attributes</h3>
+    <h3 id="js-data-attrs">Data attributes</h3>
     <p>You can use all Jasny Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first-class API and should be your first consideration when using a plugin.</p>
 
     <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the document namespaced with <code>data-api</code>. This looks like this:
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $(document).off('.data-api')
 </code></pre></figure>
 
     <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $(document).off('.alert.data-api')
 </code></pre></figure>
 
-    <h3 id="../../js-programmatic-api">Programmatic API</h3>
+    <h3 id="js-programmatic-api">Programmatic API</h3>
     <p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $(".fileinput").fileinput().addClass("fat")
 </code></pre></figure>
 
     <p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $("#myMenu").offcanvas()                      // initialized with defaults
 $("#myMenu").offcanvas({ autohide: false })   // initialized with no autohide
 $("#myMenu").offcanvas('show')                // initializes and invokes show immediately</p>
@@ -178,18 +178,18 @@ $("#myMenu").offcanvas('show')                // initializes and invokes show im
 
     <p>Each plugin also exposes its raw constructor on a <code>Constructor</code> property: <code>$.fn.popover.Offcanvas</code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('.navmenu').data('offcanvas')</code>.</p>
 
-    <h3 id="../../js-noconflict">No conflict</h3>
+    <h3 id="js-noconflict">No conflict</h3>
     <p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
 $.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Bootstrap functionality
 </code></pre></figure>
 
-    <h3 id="../../js-events">Events</h3>
+    <h3 id="js-events">Events</h3>
     <p>Bootstrap provides custom events for most plugin's unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is trigger on the completion of an action.</p>
     <p>As of 3.1.2, all Bootstrap events are namespaced.</p>
     <p>All infinitive events provide <code>preventDefault</code> functionality. This provides the ability to stop the execution of an action before it starts.</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('#myMenu').on('show.bs.offcanvas', function (e) {
   if (!data) return e.preventDefault() // stops menu from being shown
 })
@@ -262,7 +262,7 @@ $('#myMenu').on('show.bs.offcanvas', function (e) {
 
     <h3>Via JavaScript</h3>
     <p>Call the input mask via javascript:</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('.navmenu').offcanvas()
 </code></pre></figure>
 
@@ -420,7 +420,7 @@ $('.navmenu').offcanvas()
 
     <h3>Via JavaScript</h3>
     <p>Call the input mask via javascript:</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('tbody.rowlink').rowlink()
 </code></pre></figure>
 
@@ -476,7 +476,7 @@ $('tbody.rowlink').rowlink()
 
     <h3>Via JavaScript</h3>
     <p>Call the input mask via javascript:</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('.inputmask').inputmask({
   mask: '999-99-999-9999-9'
 })

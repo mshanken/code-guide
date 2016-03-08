@@ -56,7 +56,7 @@
         <!-- Place favicon.ico in the root directory -->
 
     	
-	  	<link rel="stylesheet" type="text/css" href="../../css/build.min.css">
+	  	<link rel="stylesheet" type="text/css" href="../../cssbuild.min.css">
 	
 
     		<!-- Google Analytics -->
@@ -79,7 +79,7 @@
     
   </head>
   
-  <body class="fuelux">
+  <body>
     <!--[if (lt IE 8)]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -202,7 +202,7 @@
 
   <h3>Via data attributes</h3>
   <p>To easily add scrollspy behavior to your topbar navigation, add <code>data-spy="scroll"</code> to the element you want to spy on (most typically this would be the <code>&lt;body&gt;</code>). Then add the <code>data-target</code> attribute with the ID or class of the parent element of any Bootstrap <code>.nav</code> component.</p>
-<figure class="highlight"><pre><code class="../../css">
+<figure class="highlight"><pre><code class="css">
 body {
   position: relative;
 }
@@ -221,7 +221,7 @@ body {
 
   <h3>Via JavaScript</h3>
   <p>After adding <code>position: relative;</code> in your CSS, call the scrollspy via JavaScript:</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('body').scrollspy({ target: '#navbar-example' })
 </code></pre></figure>
 
@@ -229,7 +229,7 @@ $('body').scrollspy({ target: '#navbar-example' })
   <h3 id="scrollspy-methods">Methods</h3>
   <h4><code>.scrollspy('refresh')</code></h4>
   <p>When using scrollspy in conjunction with adding or removing of elements from the DOM, you'll need to call the refresh method like so:</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
 })
@@ -276,7 +276,7 @@ $('[data-spy="scroll"]').each(function () {
       </tbody>
     </table>
   </div><!-- ./bs-table-responsive -->
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('#myScrollspy').on('activate.bs.scrollspy', function () {
   // do something…
 })

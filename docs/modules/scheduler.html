@@ -56,7 +56,7 @@
         <!-- Place favicon.ico in the root directory -->
 
     	
-	  	<link rel="stylesheet" type="text/css" href="../../css/build.min.css">
+	  	<link rel="stylesheet" type="text/css" href="../../cssbuild.min.css">
 	
 
     		<!-- Google Analytics -->
@@ -79,7 +79,7 @@
     
   </head>
   
-  <body class="fuelux">
+  <body>
     <!--[if (lt IE 8)]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -820,9 +820,9 @@
 
   <h3 id="scheduler-usage-javascript">Via JavaScript</h3>
   <p>Instantiate the scheduler control via JavaScript:</p>
-  <figure class="highlight"><pre><code class="../../js">$('#myScheduler').scheduler();</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler();</code></pre></figure>
   <p>The scheduler also accepts optional options params during initialization, one for each start and end date:</p>
-  <figure class="highlight"><pre><code class="../../js">$('#myScheduler').scheduler({
+  <figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler({
     startDateOptions: {
       allowPastDates: true
     },
@@ -1574,8 +1574,8 @@
 
     <dt id="scheduler-usage-methods-value">.scheduler('value')</dt>
     <dd>Gets or sets the current scheduler form field information
-  <figure class="highlight"><pre><code class="../../js">$('#myScheduler').scheduler('value');</code></pre></figure>
-  <figure class="highlight"><pre><code class="../../js">$('#myScheduler').scheduler('value', {
+  <figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler('value');</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler('value', {
   startDateTime: '2014-03-31T03:23+02:00',
   timeZone: {
     offset: '+02:00'
@@ -1628,7 +1628,7 @@
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All scheduler event listeners should be attached to the element containing the <code>scheduler</code> class. Given the above <a href="#scheduler-usage-markup">example markup</a>, you would attach event listeners thusly:</p>
-  <figure class="highlight"><pre><code class="../../js">$('#myScheduler').on('changed.fu.scheduler', function () {
+  <figure class="highlight"><pre><code class="js">$('#myScheduler').on('changed.fu.scheduler', function () {
   // do something
 });</code></pre></figure>
 
