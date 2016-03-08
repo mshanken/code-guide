@@ -47,7 +47,7 @@
 				input[type="checkbox"]:not(.sr-only), input[type="radio"]:not(.sr-only) {
 				& ~ label {
 					padding: 4px;
-					border-radius: @base-border-radius;
+					border-radius: @border-radius-base;
 				}
 				&:checked ~ label {
 					background-color: @gray90;

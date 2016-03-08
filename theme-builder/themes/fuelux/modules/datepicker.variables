@@ -1,0 +1,9 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Datepicker
+// -------------------------
+@datepicker-hover:      #0f5f9f;
+@datepicker-hover-alt:   #1b75bb;

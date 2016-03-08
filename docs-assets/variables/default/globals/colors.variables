@@ -1,0 +1,62 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across
+@true-black:        #000;
+@true-white:        #FFF;
+
+// Grays
+// -------------------------
+@gray07:            lighten(@true-black, 7%);      	// #111
+@gray13:            lighten(@true-black, 13.5%);   	// #222
+@gray15:            lighten(@true-black, 15%);     	// #252525
+@gray20:            lighten(@true-black, 20%);     	// #333
+@gray27:            lighten(@true-black, 27%);     	// #444
+@gray33:            lighten(@true-black, 33.5%);   	// #555
+@gray40:            lighten(@true-black, 40%);     	// #666
+@gray46:            lighten(@true-black, 46%);     	// #757575
+@gray47:            lighten(@true-black, 46.7%); 	// #777
+@gray53:            lighten(@true-black, 53%);   	// #888
+@gray60:            lighten(@true-black, 60%);     	// #999
+@gray67:            lighten(@true-black, 66.5%);   	// #AAA
+@gray74:            lighten(@true-black, 73.5%); 	// #BBB
+//@gray75:            lighten(@true-black, 75%);   	// #4b4b4b
+@gray80:            lighten(@true-black, 80%);     	// #CCC
+@gray87:            lighten(@true-black, 86.5%);   	// #DDD
+@gray90:            lighten(@true-black, 90%);     	// #E5E5E5
+@gray93:            lighten(@true-black, 93.5%);   	// #EEE
+@gray96:            lighten(@true-black, 96%);     	// #F5F5F5
+@gray98:            lighten(@true-black, 98%);     	// #f9f9f9
+@gray99:            lighten(@true-black, 99%);     	// #FCFCFC
+
+
+// Accent colors
+// -------------------------
+@blue:              #5bc0de;
+@blue-dark:         #337ab7;
+@green:             #5cb85c;
+@red:               #d9534f;
+@yellow:            #ffc40d;
+@orange:            #f0ad4e;
+@pink:              #c3325f;
+@purple:            #7a43b6;
+
+@black:             @true-black;
+@white:             @true-white;
+@gray-base:         #000;
+@gray-darker:       @gray13; // lighten(@gray-base, 13.5%); // #222
+@gray-dark:         @gray20; // lighten(@gray-base, 20%);   // #333
+@gray:              @gray33; // lighten(@gray-base, 33.5%); // #555
+@gray-light:        @gray47; // lighten(@gray-base, 46.7%); // #777
+@gray-lighter:		@gray93; // lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:     @blue-dark; //darken(#428bca, 6.5%);  // #337ab7
+@brand-secondary: 	lighten(@gray-dark, 13.5%); // From Skeleton CSS
+@brand-success:     @green;
+@brand-info:        @blue;
+@brand-warning:     @orange;
+@brand-danger:      @red;

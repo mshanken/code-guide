@@ -5,9 +5,9 @@
 
 		.clearfix;
 
-		border: 1px solid @navbar-border;
-		border-radius: @base-border-radius;
-		background-color: @table-background-accent;
+		border: 1px solid @navbar-default-border;
+		border-radius: @border-radius-base;
+		background-color: @table-bg-accent;
 		position: relative;
 		min-height: 48px;
 
@@ -16,7 +16,7 @@
 		}
 
 		.steps-container {
-			border-radius: @base-border-radius @base-border-radius 0 0;
+			border-radius: @border-radius-base @border-radius-base 0 0;
 			overflow: hidden;
 
 		}
@@ -34,7 +34,7 @@
 
 						&:hover {
 							background: @gray96;
-							color: @success-text;
+							color: @state-success-text;
 							cursor: default;
 
 							.chevron:before {
@@ -59,7 +59,7 @@
 
 				.chevron {
 					border: 24px solid transparent;
-					border-left: 14px solid @navbar-border;
+					border-left: 14px solid @navbar-default-border;
 					border-right: 0;
 					display: block;
 					position: absolute;
@@ -81,14 +81,14 @@
 
 				&.complete {
 					background: @gray96;
-					color: @success-text;
+					color: @state-success-text;
 
 					&:hover {
-						background: desaturate(@info-background, 40%);
+						background: desaturate(@state-info-bg, 40%);
 						cursor: pointer;
 
 						.chevron:before {
-							border-left: 14px solid desaturate(@info-background, 40%);
+							border-left: 14px solid desaturate(@state-info-bg, 40%);
 						}
 					}
 
@@ -98,16 +98,16 @@
 				}
 
 				&.active {
-					background: lighten(@info-background, 5%);
-					color: @info-text;
+					background: lighten(@state-info-bg, 5%);
+					color: @state-info-text;
 					cursor: default;
 
 					.chevron:before {
-						border-left: 14px solid lighten(@info-background, 5%);
+						border-left: 14px solid lighten(@state-info-bg, 5%);
 					}
 
 					.badge {
-						background-color: @info-text;
+						background-color: @state-info-text;
 					}
 				}
 
@@ -116,7 +116,7 @@
 				}
 
 				.badge-success {
-					background-color: @success-text;
+					background-color: @state-success-text;
 				}
 			}
 
@@ -167,7 +167,7 @@
 					&.active {
 						.chevron {
 							&:before {
-								border-right: 14px solid lighten(@info-background, 5%);
+								border-right: 14px solid lighten(@state-info-bg, 5%);
 							}
 						}
 					}
@@ -182,7 +182,7 @@
 						&:hover {
 							.chevron {
 								&:before {
-									border-right: 14px solid desaturate(@info-background, 40%);
+									border-right: 14px solid desaturate(@state-info-bg, 40%);
 									border-left: none;
 								}
 							}
@@ -200,8 +200,8 @@
 				left: 0;
 				float: left;
 				border-left: none;
-				border-right: 1px solid @navbar-border;
-				border-radius: @base-border-radius 0 0 0;
+				border-right: 1px solid @navbar-default-border;
+				border-radius: @border-radius-base 0 0 0;
 
 				.btn-prev {
 					span {
@@ -230,8 +230,8 @@
 			padding-right: 15px;
 			vertical-align: middle;
 			background-color: @gray90;
-			border-left: 1px solid @navbar-border;
-			border-radius: 0 @base-border-radius 0 0;
+			border-left: 1px solid @navbar-default-border;
+			border-radius: 0 @border-radius-base 0 0;
 
 			a {
 				line-height: 45px;

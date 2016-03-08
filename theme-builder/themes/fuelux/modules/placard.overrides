@@ -65,7 +65,7 @@
 					background: none;
 
 					&:hover {
-						background: @info-background;
+						background: @state-info-bg;
 						cursor: pointer;
 					}
 				}
@@ -117,7 +117,7 @@
 		}
 
 		&-popup {
-			background: @info-background;
+			background: @state-info-bg;
 			background-clip: padding-box;
 			border: 1px solid @gray80;
 			border-radius: 4px;
@@ -136,7 +136,7 @@
 			box-shadow: none;
 
 			&:hover {
-				background: @info-background;
+				background: @state-info-bg;
 				border-color: @focus-color;
 				cursor: pointer;
 

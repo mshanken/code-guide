@@ -1,0 +1,389 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Global values
+// --------------------------------------------------
+
+@true-black:        #000;
+@true-white:        #FFF;
+
+// Grays
+// -------------------------
+@gray07:            lighten(@true-black, 7%);      // #111
+@gray13:            lighten(@true-black, 13.5%);   // #222
+@gray15:            lighten(@true-black, 15%);     // #252525
+@gray20:            lighten(@true-black, 20%);     // #333
+@gray27:            lighten(@true-black, 27%);     // #444
+@gray33:            lighten(@true-black, 33.5%);   // #555
+@gray40:            lighten(@true-black, 40%);     // #666
+@gray46:            lighten(@true-black, 46%);     // #757575
+// @gray47:            lighten(@true-black, 46.7%); // #777
+@gray53:            lighten(@true-black, 53%);   // #888
+@gray60:            lighten(@true-black, 60%);     // #999
+@gray67:            lighten(@true-black, 66.5%);   // #AAA
+@gray74:            lighten(@true-black, 73.5%); // #BBB
+// @gray75:            lighten(@true-black, 75%);   // #4b4b4b
+@gray80:            lighten(@true-black, 80%);     // #CCC
+@gray87:            lighten(@true-black, 86.5%);   // #DDD
+@gray90:            lighten(@true-black, 90%);     // #E5E5E5
+@gray93:            lighten(@true-black, 93.5%);   // #EEE
+@gray96:            lighten(@true-black, 96%);     // #F5F5F5
+@gray98:            lighten(@true-black, 98%);     // #f9f9f9
+@gray99:            lighten(@true-black, 99%);     // #FCFCFC
+
+@black:                 @true-black;
+@gray-darker:            @gray13;
+@gray-dark:              @gray20;
+@gray:                  @gray33;
+@gray-light:             @gray60;
+@gray-lighter:           @gray93;
+@white:                 @true-white;
+
+
+// Accent colors
+// -------------------------
+@blue:                  #049cdb;
+@blue-dark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+// Text Colors
+// -------------------------
+@text-primary:         #428bca;
+@text-success:         #3c763d;
+@text-info:            #31708f;
+@text-warning:         #8a6d3b;
+@text-danger:          #a94442;
+@text-dimmed:          @gray40;
+@text-muted:           @gray60;
+
+// Scaffolding
+// -------------------------
+@body-bg:        @white;
+@text-color:             @gray-dark;
+@focus-color:            #5B9DD9;
+
+// Links
+// -------------------------
+@link-color:             #0088cc;
+@link-hover-color:        darken(@link-color, 15%);
+
+
+// Typography
+// -------------------------
+@sans-font-family:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serif-font-family:       Georgia, "Times New Roman", Times, serif;
+@mono-font-family:        Monaco, Menlo, Consolas, "Courier New", monospace;
+
+@font-size-base:          14px;
+@font-family-base:        @sans-font-family;
+@line-height-base;:        20px;
+@alt-font-family:         @serif-font-family;
+
+@headings-font-family:    inherit; // empty to use BS default, @font-family-base
+@headings-font-weight:    bold;    // instead of browser default, bold
+@headings-color:         inherit; // empty to use BS default, @text-color
+
+
+// Component sizing
+// -------------------------
+// Based on 14px font-size and 20px line-height
+
+@font-size-large:         @font-size-base * 1.25; // ~18px
+@font-size-small:         @font-size-base * 0.85; // ~12px
+@font-size-mini:          @font-size-base * 0.75; // ~11px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12pxgr
+
+@padding-large:          11px 19px; // 44px
+@padding-small:          2px 10px;  // 26px
+@padding-mini:           0 6px;   // 22px
+
+@border-radius-base:      4px;
+@border-radius-large:     6px;
+@border-radius-small:     3px;
+
+/* 
+// Tables
+// -------------------------
+@table-bg:                   transparent; // overall background-color
+@table-bg-accent:             @gray98; // for striping
+@table-hover-bg:              @gray96; // for hover
+@table-border-color:                       @gray87; // table and cell border
+
+// Buttons
+// -------------------------
+@btn-default-bg:                     @white;
+@btn-default-color:            darken(@white, 10%);
+@btn-default-border:                         @gray80;
+
+@btn-primary-bg:              @link-color;
+@btn-primary-color:     spin(@btn-primary-bg, 20%);
+
+@btn-info-bg:                 #5bc0de;
+@btn-info-color:        #2f96b4;
+
+@btn-success-bg:              #62c462;
+@btn-success-color:     #51a351;
+
+@btn-warning-bg:              lighten(@orange, 15%);
+@btn-warning-color:     @orange;
+
+@btn-danger-bg:               #ee5f5b;
+@btn-danger-color:      #bd362f;
+
+@btn-inverse-bg:              @gray27;
+@btn-inverse-color:     @gray-darker;
+
+@btn-padding-vertical:                6px;
+@btn-padding-horizontal:              12px;
+
+
+// Forms
+// -------------------------
+@input-bg:               @white;
+@input-border:                   @gray80;
+@input-border-radius:             @border-radius-base;
+@input-disabled-bg:       @gray93;
+@form-actions-bg:         @gray96;
+@input-height-base:                   @line-height-base; + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+
+
+// Dropdowns
+// -------------------------
+@dropdown-bg:            @white;
+@dropdown-border:                rgba(0,0,0,.2);
+@dropdown-divider-top:            @gray90;
+@dropdown-divider-bottom:         @white;
+
+@dropdown-link-color:             @gray-dark;
+@dropdown-link-hover-color:        @white;
+@dropdown-link-active-color:       @white;
+
+@dropdown-link-active-bg:  @link-color;
+@dropdown-link-hover-bg:   @dropdown-link-active-bg;
+
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+@zindex-dropdown:          1000;
+@zindex-popover:           1010;
+@zindex-tooltip:           1030;
+@zindex-fixed-navbar:       1030;
+@zindex-modal-background:     1040;
+@zindex-modal:             1050; */
+
+//Selectable Hover, Selected, Selected Hover
+// -------------------------
+@selectable-hover: @gray96;
+@selected: @gray93;
+@selected-hover: @gray87;
+
+
+
+// Sprite icons path
+// -------------------------
+@icon-sprite-path:          "../img/glyphicons-halflings.png";
+@icon-white-sprite-path:     "../img/glyphicons-halflings-white.png";
+
+/*
+// Input placeholder text color
+// -------------------------
+@input-color-placeholder:         @gray60;
+
+
+// Hr border color
+// -------------------------
+@hr-border:                @gray93;
+
+
+// Horizontal forms & lists
+// -------------------------
+@horizontal-component-offset:       180px;
+
+
+// Wells
+// -------------------------
+@well-bg:                  @gray96;
+
+
+// Navbar
+// -------------------------
+@navbar-collapse-width:             979px;
+@navbar-collapse-desktop-width:      @navbar-collapse-width + 1;
+
+@navbar-height:                    40px;
+@navbar-color:       @true-white;
+@navbar-bg:                darken(@navbar-color, 5%);
+@navbar-border:                    darken(@navbar-bg, 12%);
+
+@navbar-text:                      @gray40;;
+@navbar-link-color:                 @gray40;;
+@navbar-link-hover-color:            @gray-dark;
+@navbar-link-active-color:           @gray;
+@navbar-link-hover-bg:       transparent;
+@navbar-link-active-bg:      darken(@navbar-bg, 5%);
+
+@navbar-brand-color:                @navbar-link-color;
+
+// Inverted navbar
+@navbar-inverse-bg:                @gray07;
+@navbar-inverse-color:       @gray13;
+@navbar-inverse-border:                    @gray15;
+
+@navbar-inverse-text:                      @gray60;
+@navbar-inverse-link-color:                 @gray60;
+@navbar-inverse-link-hover-color:            @white;
+@navbar-inverse-link-active-color:           @navbar-inverse-link-hover-color;
+@navbar-inverse-link-hover-bg:       transparent;
+@navbar-inverse-link-active-bg:      @navbar-inverse-bg;
+
+@navbar-inverse-search-bg:          lighten(@navbar-inverse-bg, 25%);
+@navbar-inverse-search-bg-focus:     @white;
+@navbar-inverse-search-border:              @navbar-inverse-bg;
+@navbar-inverse-search-placeholder-color:    @gray80;
+
+@navbar-inverse-brand-color:                @navbar-inverse-link-color;
+
+
+// Pagination
+// -------------------------
+@pagination-bg:                @true-white;
+@pagination-border:                    @gray87;
+@pagination-active-bg:          @gray96;
+
+
+// Hero unit
+// -------------------------
+@hero-unit-bg:              @gray93;
+@hero-unit-heading-color:            inherit;
+@hero-unit-lead-color:               inherit;
+
+
+// Form states and alerts
+// -------------------------
+@state-warning-text:             #c09853;
+@state-warning-bg:       #fcf8e3;
+@state-warning-border:           darken(spin(@state-warning-bg, -10), 3%);
+
+@state-danger-text:               #b94a48;
+@state-danger-bg:         #f2dede;
+@state-danger-border:             darken(spin(@state-danger-bg, -10), 3%);
+
+@state-@success-text:             #468847;
+@state-@success-bg:       #dff0d8;
+@state-@success-border:           darken(spin(@state-@success-bg, -10), 5%);
+
+@state-info-text:                #3a87ad;
+@state-info-bg:          #d9edf7;
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+
+// Tooltips and popovers
+// -------------------------
+@tooltip-color:            @true-white;
+@tooltip-bg:       @true-black;
+@tooltip-arrow-width:       5px;
+@tooltip-arrow-color:       @tooltip-bg;
+
+@popover-bg:       @true-white;
+@popover-arrow-width:       10px;
+@popover-arrow-color:       @true-white;
+@popover-title-bg:  darken(@popover-bg, 3%);
+
+// Special enhancement for popovers
+@popover-arrow-outer-width:  @popover-arrow-width + 1;
+@popover-arrow-outer-color:  rgba(0,0,0,.25);
+
+
+
+// GRID
+// --------------------------------------------------
+
+
+// Default 940px grid
+// -------------------------
+@grid-columns:             12;
+@grid-column-width:         60px;
+@grid-gutter-width:         20px;
+@grid-row-width:            (@grid-columns * @grid-column-width) + (@grid-gutter-width * (@grid-columns - 1));
+
+// 1200px min
+@grid-column-width1200:     70px;
+@grid-gutter-width1200:     30px;
+@grid-row-width1200:        (@grid-columns * @grid-column-width1200) + (@grid-gutter-width1200 * (@grid-columns - 1));
+
+// 768px-979px
+@grid-column-width768:      42px;
+@grid-gutter-width768:      20px;
+@grid-row-width768:         (@grid-columns * @grid-column-width768) + (@grid-gutter-width768 * (@grid-columns - 1));
+
+
+// Fluid grid
+// -------------------------
+@fluid-grid-column-width:    percentage(@grid-column-width/@grid-row-width);
+@fluid-grid-gutter-width:    percentage(@grid-gutter-width/@grid-row-width);
+
+// 1200px min
+@fluid-grid-column-width1200:     percentage(@grid-column-width1200/@grid-row-width1200);
+@fluid-grid-gutter-width1200:     percentage(@grid-gutter-width1200/@grid-row-width1200);
+
+// 768px-979px
+@fluid-grid-column-width768:      percentage(@grid-column-width768/@grid-row-width768);
+@fluid-grid-gutter-width768:      percentage(@grid-gutter-width768/@grid-row-width768);
+
+
+// Controls
+// --------------------------------------------------
+
+// Checkbox
+// -------------------------
+@checkbox-primary-color:                 #39b3d7;
+
+// Datepicker
+// -------------------------
+@datepicker-hover:      #0f5f9f;
+@datepicker-hover-alt:   #1b75bb;
+
+// Tree
+// -------------------------
+@tree-hover-text: @gray60;
+@tree-select-bg: @selected;
+
+
+// Icons
+// -------------------------
+@fuelux-font-path: "../fonts/";
+
+
+
+// --------------------------------------------------
+// Padding / Margin
+// --------------------------------------------------
+@padding-xs: 5px;
+@padding-sm: 10px;
+@padding-md: 15px;
+@padding-lg: 20px;
+
+@margin-xs: 5px;
+@margin-sm: 10px;
+@margin-md: 15px;
+@margin-lg: 20px; */

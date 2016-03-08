@@ -1,0 +1,11 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+@dropdown-divider-top:            @gray90;
+@dropdown-divider-bottom:         @white;
