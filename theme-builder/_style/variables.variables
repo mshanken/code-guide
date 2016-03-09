@@ -1,0 +1,34 @@
+//
+// Variables
+// --------------------------------------------------
+
+/*-------------------
+ Import Google Fonts
+--------------------*/
+
+@fontName          : 'Lato'; // Change it to your desirable google font
+@fontSmoothing     : antialiased;
+
+@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+@googleFontName    : @fontName;
+@importGoogleFonts : true;
+@googleFontSizes   : '400,700,400italic,700italic'; // Pick the size you need only, if need it
+@googleSubset      : 'latin';
+
+@googleProtocol    : 'https://';
+@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
+
+/*-------------------
+  Other Brand Colors
+--------------------*/
+
+@facebookColor   : #3B5998;
+@twitterColor    : #0084B4;
+@googlePlusColor : #DC4A38;
+@linkedInColor   : #1F88BE;
+@youtubeColor    : #CC181E;
+@instagramColor  : #49769C;
+@pinterestColor  : #00ACED;
+@vkColor         : #4D7198;
