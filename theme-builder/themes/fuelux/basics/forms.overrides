@@ -1,6 +1,6 @@
 
 
-.fuelux .radio, .fuelux .checkbox {
+.radio, .checkbox {
 
 	&-inline {
 		padding-left: 0;
