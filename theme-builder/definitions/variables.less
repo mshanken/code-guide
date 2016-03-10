@@ -5,114 +5,22 @@
 
 //== Colors
 //
-//## Gray and brand colors for use across
-@true-black:        #000;
-@true-white:        #FFF;
+//## Gray and brand colors for use across Bootstrap.
 
-// Grays
-// -------------------------
-@gray07:            lighten(@true-black, 7%);      	// #111
-@gray13:            lighten(@true-black, 13.5%);   	// #222
-@gray15:            lighten(@true-black, 15%);     	// #252525
-@gray20:            lighten(@true-black, 20%);     	// #333
-@gray27:            lighten(@true-black, 27%);     	// #444
-@gray33:            lighten(@true-black, 33.5%);   	// #555
-@gray40:            lighten(@true-black, 40%);     	// #666
-@gray46:            lighten(@true-black, 46%);     	// #757575
-@gray47:            lighten(@true-black, 46.7%); 	// #777
-@gray53:            lighten(@true-black, 53%);   	// #888
-@gray60:            lighten(@true-black, 60%);     	// #999
-@gray67:            lighten(@true-black, 66.5%);   	// #AAA
-@gray74:            lighten(@true-black, 73.5%); 	// #BBB
-//@gray75:            lighten(@true-black, 75%);   	// #4b4b4b
-@gray80:            lighten(@true-black, 80%);     	// #CCC
-@gray87:            lighten(@true-black, 86.5%);   	// #DDD
-@gray90:            lighten(@true-black, 90%);     	// #E5E5E5
-@gray93:            lighten(@true-black, 93.5%);   	// #EEE
-@gray96:            lighten(@true-black, 96%);     	// #F5F5F5
-@gray98:            lighten(@true-black, 98%);     	// #f9f9f9
-@gray99:            lighten(@true-black, 99%);     	// #FCFCFC
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
 
-// Accent colors
-// -------------------------
-@blue:              #428bca;
-@green:             #5cb85c;
-@red:               #d9534f;
-@orange:            #f0ad4e;
-@yellow:            yellow;	// #ffc40d;
-@pink:              pink; 	// #c3325f;
-@purple:            purple; // #7a43b6;
-@olive: 			olive; 	// #B5CC18;
-@teal: 				teal; 	// #00B5AD;
-@violet: 			violet; // #6435C9;
-@brown: 			brown; 	// #A5673F;
-
-@black:             @true-black;
-@white:             @true-white;
-@gray-base:         #000;
-@gray-darker:       @gray13; // lighten(@gray-base, 13.5%); // #222
-@gray-dark:         @gray20; // lighten(@gray-base, 20%);   // #333
-@gray:              @gray33; // lighten(@gray-base, 33.5%); // #555
-@gray-light:        @gray47; // lighten(@gray-base, 46.7%); // #777
-@gray-lighter:		@gray93; // lighten(@gray-base, 93.5%); // #eee
-
-
-/*---  Light Colors  ---*/
-@blue-light: 			lighten(@blue, 20%);
-@green-light: 			lighten(@green, 20%);
-@red-light: 			lighten(@red, 20%);
-@yellow-light: 			lighten(@yellow, 20%);
-@orange-light: 			lighten(@orange, 20%);
-@pink-light: 			lighten(@pink, 20%);
-@purple-light: 			lighten(@purple, 20%);
-@olive-light: 			lighten(@olive, 20%);
-@teal-light: 			lighten(@teal, 20%);
-@violet-light: 			lighten(@violet, 20%);
-@brown-light: 			lighten(@brown, 20%);
-
-/*---  Dark Colors  ---*/
-@blue-dark: 			darken(@blue, 6.5%); // #337ab7; // #0064cd;
-@green-dark: 			darken(@green, 20%);
-@red-dark: 				darken(@red, 20%);
-@yellow-dark: 			darken(@yellow, 20%);
-@orange-dark: 			darken(@orange, 20%);
-@pink-dark: 			darken(@pink, 20%);
-@purple-dark: 			darken(@purple, 20%);
-@olive-dark: 			darken(@olive, 20%);
-@teal-dark: 			darken(@teal, 20%);
-@violet-dark: 			darken(@violet, 20%);
-@brown-dark: 			darken(@brown, 20%);
-
-/*---   Neutrals  ---*/
-@darkwhite: 			darken(@white, 25%);
-@midwhite: 				lighten(@white, 50%);
-
-/*-------------------
-     Alpha Colors
---------------------*/
-
-@subtletransparentblack     : rgba(0, 0, 0, 0.03);
-@transparentblack           : rgba(0, 0, 0, 0.05);
-@strongtransparentblack     : rgba(0, 0, 0, 0.10);
-@verystrongtransparentblack : rgba(0, 0, 0, 0.15);
-
-@subtletransparentwhite     : rgba(255, 255, 255, 0.02);
-@transparentwhite           : rgba(255, 255, 255, 0.08);
-@strongtransparentwhite     : rgba(255, 255, 255, 0.15);
-
-@subtlegradient: linear-gradient(transparent, @transparentblack);
-
-/*-------------------
-     Brand Colors
---------------------*/
-@brand-primary:     @blue-dark; //darken(#428bca, 6.5%);  // #337ab7
-@brand-secondary: 	lighten(@gray-dark, 13.5%); // From Skeleton CSS
-@brand-success:     @green;
-@brand-info:        @blue;
-@brand-warning:     @orange;
-@brand-danger:      @red;
-
+@import "globals/_colors.less";
 
 //== Scaffolding
 //

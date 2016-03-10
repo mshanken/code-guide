@@ -1,0 +1,8 @@
+.alert {
+  border: none;
+
+  .alert-link {
+    text-decoration: underline;
+    color: #fff;
+  }
+}

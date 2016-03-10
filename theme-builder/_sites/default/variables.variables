@@ -1,0 +1,25 @@
+//
+// Variables
+// --------------------------------------------------
+
+@import "globals/_colors.less";
+
+/*-------------------
+ Import Google Fonts
+--------------------*/
+
+@fontName          : 'Lato'; // Change it to your desirable google font
+@fontSmoothing     : antialiased;
+
+@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+@googleFontName    : @fontName;
+@importGoogleFonts : true;
+@googleFontSizes   : '400,700,400italic,700italic'; // Pick the size you need only, if need it
+@googleSubset      : 'latin';
+
+@googleProtocol    : 'https://';
+@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
+
+

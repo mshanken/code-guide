@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         style: './_site/public/css',
         images: './_site/public/images',
         script: './_site/public/js',
-        font: './_site/public/font'
+        font: './_site/public/fonts'
       },
       prod: {
         root: 'www',
