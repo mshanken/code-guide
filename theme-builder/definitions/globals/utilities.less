@@ -4,65 +4,61 @@
 
 @import (multiple) '../../theme.config';
 
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+//
+// Utility classes
+// --------------------------------------------------
 
-button,
-.btn {
-  margin-bottom: 0;
+
+// Floats
+// -------------------------
+
+.clearfix {
+  .clearfix();
 }
-
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 0rem;
+.center-block {
+  .center-block();
 }
-
-pre,
-blockquote,
-dl,
-figure,
-table,
-p,
-ul,
-ol,
-form {
-  margin-bottom: @line-height-computed;
-}
-
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.full-width {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.max-full-width {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
 .pull-right {
-  float: right;
+  float: right !important;
 }
-
 .pull-left {
-  float: left;
+  float: left !important;
 }
 
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* Self Clearing Goodness */
+// Toggling content
+// -------------------------
 
-.container:after,
-.row:after,
-.u-cf {
-  content: "";
-  display: table;
-  clear: both;
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
 }
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  .text-hide();
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}
+
 
 .loadUIOverrides();

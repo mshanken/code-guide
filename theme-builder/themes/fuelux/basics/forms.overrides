@@ -1,4 +1,5 @@
-
+@import "_checkbox-no-js.less"; 	// Checkbox styles that are not dependant upon custom javascript controls.
+@import "_radio-no-js.less";  	// Radio styles that are not dependant upon custom javascript controls.
 
 .radio, .checkbox {
 

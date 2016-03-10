@@ -1,0 +1,16 @@
+// Navs =======================================================================
+
+.nav-pills {
+
+  & > li > a {
+    border-radius: 0;
+  }
+}
+
+.dropdown-menu {
+
+  & > li > a:hover,
+  & > li > a:focus {
+    background-image: none;
+  }
+}
