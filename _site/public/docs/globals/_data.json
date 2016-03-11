@@ -10,16 +10,6 @@
 		"layout"	  : "_layoutAll"
 
 	},
-  "colors": {
-    "css"         : "colors",
-    "element"     : "colors",
-    "elementType" : "global",
-    "standalone"  : true,
-    "title"       : "Colors",
-    "description" : "A colors indicates a possible user action",
-    "type"        : "UI Element",
-    "tabs"        : ""
-  },
 	"accessibility": {
 		"css"         : "accessibility",
 		"element"     : "accessibility",
@@ -50,6 +40,16 @@
 		"type"        : "UI Element",
 		"tabs"        : ""
 	},
+  "colors": {
+    "css"         : "colors",
+    "element"     : "colors",
+    "elementType" : "global",
+    "standalone"  : true,
+    "title"       : "Colors",
+    "description" : "A colors indicates a possible user action",
+    "type"        : "UI Element",
+    "tabs"        : ""
+  },
 	"glyphicons": {
 		"css"         : "glyphicons",
 		"standalone"  : true,
