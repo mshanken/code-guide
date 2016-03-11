@@ -141,9 +141,9 @@
               </ol>
               
               <div class="bs-docs-section">
-  <h1 class="page-header" id="js-overview">Overview</h1>
+  <h1 class="page-header" id="../../js-overview">Overview</h1>
 
-  <h2 id="js-individual-compiled">Individual or compiled</h2>
+  <h2 id="../../js-individual-compiled">Individual or compiled</h2>
   <p>Plugins can be included individually (using Bootstrap's individual <code>*.js</code> files), or all at once (using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code>).</p>
 
   <div class="bs-callout bs-callout-danger" id="callout-overview-not-both">
@@ -156,16 +156,16 @@
     <p>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs. Also note that all plugins depend on jQuery (this means jQuery must be included <strong>before</strong> the plugin files). <a href="{{ site.repo }}/blob/v{{ site.current_version }}/bower.json">Consult our <code>bower.json</code></a> to see which versions of jQuery are supported.</p>
   </div>
 
-  <h2 id="js-data-attrs">Data attributes</h2>
+  <h2 id="../../js-data-attrs">Data attributes</h2>
   <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first-class API and should be your first consideration when using a plugin.</p>
 
   <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the document namespaced with <code>data-api</code>. This looks like this:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $(document).off('.data-api')
 </code></pre></figure>
 
   <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $(document).off('.alert.data-api')
 </code></pre></figure>
 
@@ -174,14 +174,14 @@ $(document).off('.alert.data-api')
     <p>Don't use data attributes from multiple plugins on the same element. For example, a button cannot both have a tooltip and toggle a modal. To accomplish this, use a wrapping element.</p>
   </div>
 
-  <h2 id="js-programmatic-api">Programmatic API</h2>
+  <h2 id="../../js-programmatic-api">Programmatic API</h2>
   <p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('.btn.danger').button('toggle').addClass('fat')
 </code></pre></figure>
 
   <p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myModal').modal()                      // initialized with defaults
 $('#myModal').modal({ keyboard: false })   // initialized with no keyboard
 $('#myModal').modal('show')                // initializes and invokes show immediately
@@ -191,34 +191,34 @@ $('#myModal').modal('show')                // initializes and invokes show immed
 
   <h4>Default settings</h4>
   <p>You can change the default settings for a plugin by modifying the plugin's <code>Constructor.DEFAULTS</code> object:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $.fn.modal.Constructor.DEFAULTS.keyboard = false // changes default for the modal plugin's `keyboard` option to false
 </code></pre></figure>
 
-  <h2 id="js-noconflict">No conflict</h2>
+  <h2 id="../../js-noconflict">No conflict</h2>
   <p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
 $.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Bootstrap functionality
 </code></pre></figure>
 
-  <h2 id="js-events">Events</h2>
+  <h2 id="../../js-events">Events</h2>
   <p>Bootstrap provides custom events for most plugins' unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is triggered on the completion of an action.</p>
   <p>As of 3.0.0, all Bootstrap events are namespaced.</p>
   <p>All infinitive events provide <code>preventDefault</code> functionality. This provides the ability to stop the execution of an action before it starts.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myModal').on('show.bs.modal', function (e) {
   if (!data) return e.preventDefault() // stops modal from being shown
 })
 </code></pre></figure>
 
-  <h2 id="js-version-nums">Version numbers</h2>
+  <h2 id="../../js-version-nums">Version numbers</h2>
   <p>The version of each of Bootstrap's jQuery plugins can be accessed via the <code>VERSION</code> property of the plugin's constructor. For example, for the tooltip plugin:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $.fn.tooltip.Constructor.VERSION // => "{{ site.current_version }}"
 </code></pre></figure>
 
-  <h2 id="js-disabled">No special fallbacks when JavaScript is disabled</h2>
+  <h2 id="../../js-disabled">No special fallbacks when JavaScript is disabled</h2>
   <p>Bootstrap's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code>&lt;noscript&gt;</code></a> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.</p>
 
   <div class="bs-callout bs-callout-warning" id="callout-third-party-libs">
@@ -270,7 +270,7 @@ $.fn.tooltip.Constructor.VERSION // => "{{ site.current_version }}"
 
   <h3>Via JavaScript</h3>
   <p>Call the affix plugin via JavaScript:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myAffix').affix({
   offset: {
     top: 100,
@@ -317,7 +317,7 @@ $('#myAffix').affix({
 
   <h4><code>.affix(options)</code></h4>
   <p>Activates your content as affixed content. Accepts an optional options <code>object</code>.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myAffix').affix({
   offset: 15
 })
@@ -325,7 +325,7 @@ $('#myAffix').affix({
 
   <h4><code>.affix('checkPosition')</code></h4>
   <p>Recalculates the state of the affix based on the dimensions, position, and scroll position of the relevant elements. The <code>.affix</code>, <code>.affix-top</code>, and <code>.affix-bottom</code> classes are added to or removed from the affixed content according to the new state. This method needs to be called whenever the dimensions of the affixed content or the target element are changed, to ensure correct positioning of the affixed content.</p>
-  <figure class="highlight"><pre><code class="js">$('#myAffix').affix('checkPosition')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myAffix').affix('checkPosition')</code></pre></figure>
 
   <h3 id="affix-events">Events</h3>
   <p>Bootstrap's affix plugin exposes a few events for hooking into affix functionality.</p>
@@ -444,7 +444,7 @@ $('#myAffix').affix({
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myAlert').on('closed.bs.alert', function () {
   // do something…
 })
@@ -766,7 +766,7 @@ $('#myAlert').on('closed.bs.alert', function () {
 
   <h3>Via JavaScript</h3>
   <p>Call carousel manually with:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('.carousel').carousel()
 </code></pre></figure>
 
@@ -815,7 +815,7 @@ $('.carousel').carousel()
 
   <h4><code>.carousel(options)</code></h4>
   <p>Initializes the carousel with an optional options <code>object</code> and starts cycling through items.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('.carousel').carousel({
   interval: 2000
 })
@@ -865,7 +865,7 @@ $('.carousel').carousel({
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myCarousel').on('slide.bs.carousel', function () {
   // do something…
 })
@@ -895,7 +895,7 @@ $('#myCarousel').on('slide.bs.carousel', function () {
   <h2 id="checkbox-usage">Usage</h2>
   <h3 id="checkbox-usage-javascript">Via JavaScript</h3>
   <p>Initialize the checkbox control via JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#myCheckbox').checkbox();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myCheckbox').checkbox();</code></pre></figure>
 
   <h3 id="checkbox-usage-data-attributes">Via data-attributes</h3>
   <ul>
@@ -966,7 +966,7 @@ $('#myCarousel').on('slide.bs.carousel', function () {
   </div><!-- ./fu-table-responsive -->
 
   <p>All checkbox events are fired on the <code>.checkbox</code> classed element. However, unlike the majority of Fuel UX controls, it is recommended to listen to and check the state of the checkbox control by listening to the native checkbox with the <code>change</code> event and check its status with the presence of the <code>checked</code> attribute. For the sample markup provided, this would be:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('.checkbox input').on('change', function () {
   console.log( $(this).is(':checked') );
 });
@@ -1146,7 +1146,7 @@ $('.checkbox input').on('change', function () {
 
  <h3>Events</h3>
     <p>Unlike the majority of Fuel UX controls, it is recommended to listen to and check the state of the checkbox control by listening to the native checkbox with the <code>change</code> event and check its status with the presence of the <code>checked</code> attribute. For the sample markup provided, this would be:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('.checkbox input').on('change', function () {
   console.log( $(this).is(':checked') );
 });
@@ -1351,7 +1351,7 @@ $('.checkbox input').on('change', function () {
 
   <h3>Via JavaScript</h3>
   <p>Enable manually with:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('.collapse').collapse()
 </code></pre></figure>
 
@@ -1388,7 +1388,7 @@ $('.collapse').collapse()
 
   <h4><code>.collapse(options)</code></h4>
   <p>Activates your content as a collapsible element. Accepts an optional options <code>object</code>.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myCollapsible').collapse({
   toggle: false
 })
@@ -1435,7 +1435,7 @@ $('#myCollapsible').collapse({
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myCollapsible').on('hidden.bs.collapse', function () {
   // do something…
 })
@@ -1475,10 +1475,10 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
 
   <h3 id="combobox-usage-javascript">Via JavaScript</h3>
   <p>Call the combobox control via JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myCombobox').combobox();</code></pre></figure>
 
   <p>The combobox also accepts an optional options param during initialization:</p>
-  <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox({autoResizeMenu: false});</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myCombobox').combobox({autoResizeMenu: false});</code></pre></figure>
 
   <h3 id="combobox-usage-data-attributes">Via data-attributes</h3>
 
@@ -1567,25 +1567,25 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
     <dt id="combobox-usage-methods-select-by-index">.combobox('selectByIndex')</dt>
     <dd>
       Set the selected item based on its index in the list (zero-based index). <span class="text-muted">Convenience method for <a href="#combobox-usage-methods-select-by-selector"><code>.selectBySelector('li:eq({index})')</code></a></span>
-      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByIndex', '1');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myCombobox').combobox('selectByIndex', '1');</code></pre></figure>
     </dd>
 
     <dt id="combobox-usage-methods-select-by-text">.combobox('selectByText')</dt>
     <dd>
       Set the selected item based on its text value.
-      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByText', 'Four');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myCombobox').combobox('selectByText', 'Four');</code></pre></figure>
     </dd>
 
     <dt id="combobox-usage-methods-select-by-selector">.combobox('selectBySelector')</dt>
     <dd>
       Set the selected item based on a selector.
-      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myCombobox').combobox('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
     </dd>
 
     <dt id="combobox-usage-methods-select-by-value">.combobox('selectByValue')</dt>
     <dd>
       Set the selected item based on its value. Convenience method for <code>.selectBySelector('data-value={value}')</code> that requires the item to include a <code>.data-value="{value}"</code> attribute
-      <figure class="highlight"><pre><code class="js">$('#myCombobox').combobox('selectByValue', '1');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myCombobox').combobox('selectByValue', '1');</code></pre></figure>
     </dd>
   </dl>
 
@@ -1611,7 +1611,7 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
 &lt;div class=&quot;input-group input-append dropdown combobox&quot; id=&quot;myCombobox&quot; data-initialize=&quot;combobox&quot;&gt;..&lt;&#x2F;div&gt;
 </code></pre></figure>
 <p>You would attach your event listener thusly:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myCombobox').on('changed.fu.combobox', function (evt, data) {
   // do something…
 });
@@ -1785,10 +1785,10 @@ $('#myCombobox').on('changed.fu.combobox', function (evt, data) {
 
   <h3 id="datepicker-usage-javascript">Via JavaScript</h3>
   <p>Initialize the <code>datepicker()</code> via JavaScript (accepting <a href="#datepicker-usage-options ">default options</a>):</p>
-  <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myDatepicker').datepicker();</code></pre></figure>
 
   <p>Initialize the <code>datepicker()</code> via JavaScript specifying your own <a href="#datepicker-usage-options ">options</a>:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myDatepicker').datepicker({
   allowPastDates: true
 });
@@ -1988,7 +1988,7 @@ $('#myDatepicker').datepicker({
     <dt id="datepicker-usage-methods-set-date">.datepicker('setDate')</dt>
     <dd>
       Sets <code>datepicker()</code> to date provided. Date provided must be a valid Date object or date string.
-      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setDate', new Date());</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myDatepicker').datepicker('setDate', new Date());</code></pre></figure>
     </dd>
 
 
@@ -1998,7 +1998,7 @@ $('#myDatepicker').datepicker({
     <dt id="datepicker-usage-methods-set-culture">.datepicker('setCulture')</dt>
     <dd>
       Updates the culture the <code>datepicker()</code> uses. <em>Only available using <code>moment.js</code> with langs</em>
-      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setCulture', 'fr');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myDatepicker').datepicker('setCulture', 'fr');</code></pre></figure>
     </dd>
 
 
@@ -2008,7 +2008,7 @@ $('#myDatepicker').datepicker({
     <dt id="datepicker-usage-methods-set-format">.datepicker('setFormat')</dt>
     <dd>
       Updates the format the <code>datepicker()</code> uses. <em>Only available using <code>moment.js</code> with langs</em>
-      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setFormat', 'L');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myDatepicker').datepicker('setFormat', 'L');</code></pre></figure>
     </dd>
   </dl>
 
@@ -2045,21 +2045,21 @@ $('#myDatepicker').datepicker({
 
   </div><!-- ./fu-table-responsive -->
   <p>All <code>datepicker()</code> events are fired on the <code>.datepicker</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myDatepicker').on('changed.fu.datepicker', function (evt, date) {
   // do something…
 });
 </code></pre></figure>
 
   <p>To listen for changes on the <code>Date()</code> object, you will need to combine two listeners (as shown below). The reason for this is to keep double events firing when a date is clicked (previously when a date was clicked <code>dateClicked</code> and <code>changed</code> would both fire, which was confusing to many people.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myDatepicker').on('changed.fu.datepicker dateClicked.fu.datepicker', function (evt, date) {
   // do something…
 });
 </code></pre></figure>
 
   <p>To listen for all changes to the <code>datepicker</code>'s input value, including setting the date to <code>invalid</code> values, you will need to combine two listeners:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myDatepicker').on('change dateClicked.fu.datepicker', function (evt, date) {
   // do something…
 });
@@ -2432,7 +2432,7 @@ $('#myDatepicker').on('change dateClicked.fu.datepicker', function (evt, date) {
 
   <h3>Via JavaScript</h3>
   <p>Call the dropdowns via JavaScript:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('.dropdown-toggle').dropdown()
 </code></pre></figure>
   <div class="bs-callout bs-callout-info" id="callout-dropdowns-data-required">
@@ -2478,7 +2478,7 @@ $('.dropdown-toggle').dropdown()
       </tbody>
     </table>
   </div><!-- ./bs-table-responsive -->
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myDropdown').on('show.bs.dropdown', function () {
   // do something…
 })
@@ -2502,10 +2502,10 @@ $('#myDropdown').on('show.bs.dropdown', function () {
   ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
-      <h1 id="js-overview">Overview</h1>
+      <h1 id="../../js-overview">Overview</h1>
     </div>
 
-    <h3 id="js-individual-compiled">Individual or compiled</h3>
+    <h3 id="../../js-individual-compiled">Individual or compiled</h3>
     <p>Plugins can be included individually (using Jasny Bootstrap's individual <code>*.js</code> files), or all at once (using <code>jasny-bootstrap.js</code> or the minified <code>jasny-bootstrap.min.js</code>).</p>
     <p>The Jasny Bootstrap plugins work with or without loading vanilla Bootstrap's <code>bootstrap.js</code>.</p>
     
@@ -2514,27 +2514,27 @@ $('#myDropdown').on('show.bs.dropdown', function () {
       <p>Both <code>jasny-bootstrap.js</code> and <code>jasny-bootstrap.min.js</code> contain all plugins in a single file.</p>
     </div>
 
-    <h3 id="js-data-attrs">Data attributes</h3>
+    <h3 id="../../js-data-attrs">Data attributes</h3>
     <p>You can use all Jasny Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first-class API and should be your first consideration when using a plugin.</p>
 
     <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the document namespaced with <code>data-api</code>. This looks like this:
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $(document).off('.data-api')
 </code></pre></figure>
 
     <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $(document).off('.alert.data-api')
 </code></pre></figure>
 
-    <h3 id="js-programmatic-api">Programmatic API</h3>
+    <h3 id="../../js-programmatic-api">Programmatic API</h3>
     <p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $(".fileinput").fileinput().addClass("fat")
 </code></pre></figure>
 
     <p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $("#myMenu").offcanvas()                      // initialized with defaults
 $("#myMenu").offcanvas({ autohide: false })   // initialized with no autohide
 $("#myMenu").offcanvas('show')                // initializes and invokes show immediately</p>
@@ -2542,18 +2542,18 @@ $("#myMenu").offcanvas('show')                // initializes and invokes show im
 
     <p>Each plugin also exposes its raw constructor on a <code>Constructor</code> property: <code>$.fn.popover.Offcanvas</code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('.navmenu').data('offcanvas')</code>.</p>
 
-    <h3 id="js-noconflict">No conflict</h3>
+    <h3 id="../../js-noconflict">No conflict</h3>
     <p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
 $.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Bootstrap functionality
 </code></pre></figure>
 
-    <h3 id="js-events">Events</h3>
+    <h3 id="../../js-events">Events</h3>
     <p>Bootstrap provides custom events for most plugin's unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is trigger on the completion of an action.</p>
     <p>As of 3.1.2, all Bootstrap events are namespaced.</p>
     <p>All infinitive events provide <code>preventDefault</code> functionality. This provides the ability to stop the execution of an action before it starts.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myMenu').on('show.bs.offcanvas', function (e) {
   if (!data) return e.preventDefault() // stops menu from being shown
 })
@@ -2626,7 +2626,7 @@ $('#myMenu').on('show.bs.offcanvas', function (e) {
 
     <h3>Via JavaScript</h3>
     <p>Call the input mask via javascript:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('.navmenu').offcanvas()
 </code></pre></figure>
 
@@ -2784,7 +2784,7 @@ $('.navmenu').offcanvas()
 
     <h3>Via JavaScript</h3>
     <p>Call the input mask via javascript:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('tbody.rowlink').rowlink()
 </code></pre></figure>
 
@@ -2840,7 +2840,7 @@ $('tbody.rowlink').rowlink()
 
     <h3>Via JavaScript</h3>
     <p>Call the input mask via javascript:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('.inputmask').inputmask({
   mask: '999-99-999-9999-9'
 })
@@ -3085,7 +3085,7 @@ $('.inputmask').inputmask({
 
     <h2 id="infinite-scroll-usage">Usage</h2>
     <p>Because of its dependency on a <code>dataSource</code>, you must initialize an <code>infinitescroll()</code> component via JavaScript:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myInfiniteScroll').infinitescroll({
     //dataSource is required to append additional content
     dataSource: function(helpers, callback){
@@ -3137,8 +3137,8 @@ $('#myInfiniteScroll').infinitescroll({
         <dt id="infinite-scroll-usage-fetch-data">.infinitescroll('fetchData');</dt>
         <dd>
             Tells the infinite scrolling region to make a call to its <code>dataSource</code> for additional content.
-            <figure class="highlight"><pre><code class="js">$('#myInfiniteScroll').infinitescroll('fetchData');</code></pre></figure>
-            <figure class="highlight"><pre><code class="js">$('#myInfiniteScroll').infinitescroll('fetchData', {force: true});</code></pre></figure>
+            <figure class="highlight"><pre><code class="../../js">$('#myInfiniteScroll').infinitescroll('fetchData');</code></pre></figure>
+            <figure class="highlight"><pre><code class="../../js">$('#myInfiniteScroll').infinitescroll('fetchData', {force: true});</code></pre></figure>
 
             <div class="table-responsive">
                 <table class="table table-bordered table-striped">
@@ -3221,100 +3221,6 @@ $('#myInfiniteScroll').infinitescroll({
               <ol class="breadcrumb">
                 <li><a href="/">Home</a></li>
                 <li class="active">modules</li>
-                <li><a href="javascript-overview">Fuel-UX overview</a></li>
-              </ol>
-              
-              <!-- Overview
-================================================== -->
-<div class="bs-docs-section">
-  <h1 class="page-header" id="overview">Overview</h1>
-
-  <div class="fu-callout fu-callout-danger">
-    <h4 id="overview-plugin-dependencies">Plugin Dependencies</h4>
-    <p>Like Bootstrap, Fuel UX is a collection of jQuery plugins.</p>
-    <ul>
-      <li>All plugins depend on jQuery <i>and</i> Bootstrap; these must be loaded <strong>before</strong> Fuel UX.</li>
-      <li>Version requirements for jQuery/Bootstrap are documented in our <a href="{{ site.repo }}/blob/{{ site.current_version }}/bower.json"><code>bower.json</code></a> file.</li>
-      <li>Check dependencies if including controls individually <span class="text-muted">(console errors will indicate unmet dependencies). Some controls depend on others.</span></li>
-    </ul>
-  </div>
-
-  <div class="fu-callout fu-callout-danger">
-    <h4 id="overview-class-dependeny">Class Dependency</h4>
-    <p>In order for Fuel UX to work, you must have the <code>fuelux</code> class on the body of your document <span class="text-muted">(Or at least on a parent container of the fuelux elements on your page)</span></p>
-  </div>
-
-  <h3 id="overview-control-initialization">Control Initialization</h3>
-
-  <h4 id="overview-control-initialization-javascript">With JavaScript</h4>
-  <p>Initialize a component at any time via JavaScript:
-<figure class="highlight"><pre><code class="js">
-// initialized with no options specified (fuelux defaults get used)
-$("#myCombobox").combobox();
-
-// initialized with options specified
-$('#myCombobox').combobox('selectByIndex', '1');
-</code></pre></figure>
-</p>
-
-  <div class="fu-callout fu-callout-warning">
-    <h4 id="overview-destruction-and-reinitialization">Destruction and re-initialization</h4>
-    <p><em>Fuel UX controls cannot be re-initialized</em>. Passing new options to an already initialized control <em>will do effectively nothing</em>. Many controls have convenience methods that allow some internal variables to be changed; otherwise use Javascript to call the control's <code>destroy()</code> method and initialize again with the newly desired markup and options. The <code>destroy()</code> method will attempt to return the pre-initialization markup for the element being destroyed.</p>
-  </div>
-
-  <h4 id="overview-control-initialization-markup">With markup: data-attributes</h4>
-  <p class="bg-danger">The Fuel UX team recommends the precision and greater number of options provided by <a href="#overview-control-initialization-javascript">initializing manually via JavaScript</a>.</p>
-  <p>The following Fuel UX controls <em class="text-muted">(those that that do not require a data source)</em> can be initialized on page load using the <code>data-initialize</code> attribute:
-    <ul>
-      <li><a href="#checkbox">checkbox</a></li>
-      <li><a href="#combobox">combobox</a></li>
-      <li><a href="#datepicker">datepicker</a></li>
-      <li><a href="#loader">loader</a></li>
-      <li><a href="#pillbox">pillbox</a></li>
-      <li><a href="#placard">placard</a></li>
-      <li><a href="#radio">radio</a></li>
-      <li><a href="#scheduler">scheduler</a></li>
-      <li><a href="#search">search</a></li>
-      <li><a href="#selectlist">selectlist</a></li>
-      <li><a href="#spinbox">spinbox</a></li>
-      <li><a href="#wizard">wizard</a></li>
-    </ul>
-    <span class="text-muted">Attribute initialization is used in each section's examples when available.</span>
-  </p>
-
-  <p>If control is not present <cod>onready</cod>, it will be 'lazily' initialized when the user interacts with it (such as on <code>mouseover</code>).</p>
-
-  <p class="bg-danger">Currently there is a bug causing <code>changed</code> events to fire twice for some elements (such as <a href="#spinbox">spinbox</a>). The workaround is to disable this data-api, using <code>$.off('fu.data-api')</code></p>
-
-  <div class="fu-callout fu-callout-warning">
-    <h4 id="overview-manual-initialization">Requires Manual Initialization</h4>
-    <p>The following Fuel UX controls require a data source and must be initialized manually:
-      <ul>
-        <li><a href="#infinite-scroll">Infinite Scroll</a></li>
-        <li><a href="#repeater">Repeater</a></li>
-        <li><a href="#tree">Tree</a></li>
-      </ul>
-    </p>
-  </div>
-
-  <h3 id="overview-events">Events</h3>
-  <p>Fuel UX provides custom events for most components' actions. All events are namespaced with 'fu' and their control name (ex. <code>'changed.fu.checkbox'</code> ). All Fuel UX events are past tense so that they don't trigger standard and Bootstrap events (eg. <code>changed</code> vs. <code>change</code>). Listening for standard and Bootstrap supported events on an internal element is not tested, and therefore not recommended.</p>
-
-  <h3 id="overview-individual-compiled">Individual or compiled</h3>
-  <p>Include components either altogether or individually, <em class="text-danger">but never do both</em> (include either individual <code>*.js</code> files, or the unminified <code>fuelux.js</code>, or the minified <code>fuelux.min.js</code>).</p>
-
-  <h3 id="overview-accessibility">Accessibility</h3>
-
-  <p>ARIA support has been added when appropriate, and all inputs have labels even if they are "screen reader only." All controls are keyboard friendly and can be navigated by tabbing to display a keyboard-focus. Controls have been "fat-finger" tested on touch devices. <em>We care</em>; if you have accessibility issues with Fuel UX controls, please <a href="https://github.com/ExactTarget/fuelux/issues/new">create an issue on GitHub</a>.</p>
-
-</div>
-
-            
-          
-            
-              <ol class="breadcrumb">
-                <li><a href="/">Home</a></li>
-                <li class="active">modules</li>
                 <li><a href="loader">Loader</a></li>
               </ol>
               
@@ -3330,7 +3236,7 @@ $('#myCombobox').combobox('selectByIndex', '1');
 
   <h3 id="loader-usage-javascript">Via JavaScript</h3>
   <p>Call the loader control via JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#myLoader').loader();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myLoader').loader();</code></pre></figure>
 
   <h3 id="loader-usage-data-attributes">Via data-attributes</h3>
   <p>To enable the loader control without writing JavaScript, add <code>data-initialize="loader"</code> to the <code>.loader</code> element that you wish to initialize. Such elements that exist when <code>$.ready()</code> executes will be initialized.</p>
@@ -3429,7 +3335,7 @@ $('#myCombobox').combobox('selectByIndex', '1');
   </div>
 
   <p><strong class="text-danger">Due to how HTML5 defines its semantics, the <code>autofocus</code> HTML attribute has no effect in Bootstrap modals.</strong> To achieve the same effect, use some custom JavaScript:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').focus()
 })
@@ -3791,7 +3697,7 @@ $('#myModal').on('shown.bs.modal', function () {
   &lt;&#x2F;div&gt;
 &lt;&#x2F;div&gt;
 </code></pre></figure>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#exampleModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient = button.data('whatever') // Extract info from data-* attributes
@@ -3814,7 +3720,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 
   <h3>Via JavaScript</h3>
   <p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#myModal').modal(options)</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myModal').modal(options)</code></pre></figure>
 
   <h3 id="modals-options">Options</h3>
   <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
@@ -3867,7 +3773,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 
   <h4><code>.modal(options)</code></h4>
   <p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myModal').modal({
   keyboard: false
 })
@@ -3875,20 +3781,20 @@ $('#myModal').modal({
 
   <h4><code>.modal('toggle')</code></h4>
   <p>Manually toggles a modal. <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).</p>
-  <figure class="highlight"><pre><code class="js">$('#myModal').modal('toggle')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myModal').modal('toggle')</code></pre></figure>
 
   <h4><code>.modal('show')</code></h4>
   <p>Manually opens a modal. <strong>Returns to the caller before the modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event occurs).</p>
-  <figure class="highlight"><pre><code class="js">$('#myModal').modal('show')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myModal').modal('show')</code></pre></figure>
 
   <h4><code>.modal('hide')</code></h4>
   <p>Manually hides a modal. <strong>Returns to the caller before the modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event occurs).</p>
-  <figure class="highlight"><pre><code class="js">$('#myModal').modal('hide')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myModal').modal('hide')</code></pre></figure>
 
   <h4><code>.modal('handleUpdate')</code></h4>
   <p>Readjusts the modal's positioning to counter a scrollbar in case one should appear, which would make the modal jump to the left.</p>
   <p>Only needed when the height of the modal changes while it is open.</p>
-  <figure class="highlight"><pre><code class="js">$('#myModal').modal('handleUpdate')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myModal').modal('handleUpdate')</code></pre></figure>
 
   <h3 id="modals-events">Events</h3>
   <p>Bootstrap's modal class exposes a few events for hooking into modal functionality.</p>
@@ -3925,7 +3831,7 @@ $('#myModal').modal({
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myModal').on('hidden.bs.modal', function (e) {
   // do something...
 })
@@ -3999,7 +3905,7 @@ $('#myModal').on('hidden.bs.modal', function (e) {
 
   <h3 id="pillbox-usage-javascript">Via JavaScript</h3>
   <p>Call the Pillbox via JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#myPillbox').pillbox();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myPillbox').pillbox();</code></pre></figure>
 
   <h3 id="pillbox-usage-data-attributes">Via data-attributes</h3>
   <p>The pillbox will automatically instantiate any pillboxes with <code>data-initialize="pillbox"</code>. If the control markup is added <em>after page load</em> with <code>data-initialize="pillbox"</code>, this control will be initialized on <code>mousedown</code>.
@@ -4037,7 +3943,7 @@ $('#myModal').on('hidden.bs.modal', function (e) {
   <dl>
     <dt id="pillbox-usage-methods-add-items">.pillbox('addItems')</dt>
     <dd>Adds Items to the pillbox programmatically.
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myPillbox').pillbox('addItems', index, [{ text: '', value: '', attr: {}, data: {} }]);
 </code></pre></figure>
 
@@ -4110,10 +4016,10 @@ $('#myPillbox').pillbox('addItems', index, [{ text: '', value: '', attr: {}, dat
     <dt id="pillbox-usage-methods-remove-items">.pillbox('removeItems')</dt>
     <dd>
     Removes all items from the pillbox.
-<figure class="highlight"><pre><code class="js">$('#myPillbox').pillbox('removeItems');</code></pre></figure>
+<figure class="highlight"><pre><code class="../../js">$('#myPillbox').pillbox('removeItems');</code></pre></figure>
 
 Remove one or more items at a specific position in the pillbox by passing optional parameters. The first parameter is a <code>1</code> based index that represent the location of the first element to be removed. The second parameter is the number of items that will be removed.
-<figure class="highlight"><pre><code class="js">$('#myPillbox').pillbox('removeItems', index, count);</code></pre></figure>
+<figure class="highlight"><pre><code class="../../js">$('#myPillbox').pillbox('removeItems', index, count);</code></pre></figure>
     </dd>
 
     <dt id="pillbox-usage-methods-items">.pillbox('items')</dt>
@@ -4128,19 +4034,19 @@ Remove one or more items at a specific position in the pillbox by passing option
     <dt id="pillbox-usage-methods-remove-by-selector">.pillbox('removeBySelector')</dt>
     <dd>
       Removes an item based on a jQuery selector.
-<figure class="highlight"><pre><code class="js">$('#myPillbox').pillbox('removeBySelector', 'li[data-value=buzz]');</code></pre></figure>
+<figure class="highlight"><pre><code class="../../js">$('#myPillbox').pillbox('removeBySelector', 'li[data-value=buzz]');</code></pre></figure>
     </dd>
 
     <dt id="pillbox-usage-methods-removeByText">.pillbox('removeByText')</dt>
     <dd>
       Removes an item with contained text matching that of the provided <code>text</code> string parameter.
-<figure class="highlight"><pre><code class="js">$('#myPillbox').pillbox('removeByText', "Item 4");</code></pre></figure>
+<figure class="highlight"><pre><code class="../../js">$('#myPillbox').pillbox('removeByText', "Item 4");</code></pre></figure>
     </dd>
 
     <dt id="pillbox-usage-methods-removeByValue">.pillbox('removeByValue')</dt>
     <dd>
       Removes an item with value matching that of the provided <code>value</code> string parameter. <em>The item has to have a <code>.data-value="{value}"</code> attribute</em>
-<figure class="highlight"><pre><code class="js">$('#myPillbox').pillbox('removeByValue', '1');</code></pre></figure>
+<figure class="highlight"><pre><code class="../../js">$('#myPillbox').pillbox('removeByValue', '1');</code></pre></figure>
     </dd>
   </dl>
 
@@ -4206,7 +4112,7 @@ Remove one or more items at a specific position in the pillbox by passing option
             The <code>data</code> parameter contains an array of the elements being removed.
             The <code>callback</code> parameter is a function that provides asynchronous support for the typeahead functionality.
             The <code>callback</code> function must be run in order for the typeahead dropdown with values. Provided the <code>callback</code> with an array of items to display in the typeahead dropdown.
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 callback({data:[
   {
     text: '',
@@ -4271,7 +4177,7 @@ callback({data:[
   </div><!-- ./fu-table-responsive -->
 
   <p>All pillbox events are fired on the <code>.pillbox</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myPillbox').on('clicked.fu.pillbox', function (evt, item) {
   // do something
 });
@@ -4373,7 +4279,7 @@ $('#myPillbox').on('clicked.fu.pillbox', function (evt, item) {
 
   <h3 id="placard-usage-javascript">Via JavaScript</h3>
   <p>Call the placard control via JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#myPlacard').placard();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myPlacard').placard();</code></pre></figure>
 
   <h3 id="placard-usage-data-attributes">Via data-attributes</h3>
   <p>The placard will automatically instantiate any placard with <code>data-initialize="placard"</code>. If you add the control markup <em>after page load</em> with <code>data-initialize="placard"</code>, the control will initialize on <code>focus</code>.
@@ -4531,7 +4437,7 @@ $('#myPillbox').on('clicked.fu.pillbox', function (evt, item) {
     <dt id="placard-usage-methods-setValue">.placard('setValue');</dt>
     <dd>
       Sets the current actual placard value
-<figure class="highlight"><pre><code class="js">$('#myPlacard').placard('setValue', 'foxen');</code></pre></figure>
+<figure class="highlight"><pre><code class="../../js">$('#myPlacard').placard('setValue', 'foxen');</code></pre></figure>
 
       <div class="table-responsive">
         <table class="table table-bordered table-striped">
@@ -4585,7 +4491,7 @@ $('#myPillbox').on('clicked.fu.pillbox', function (evt, item) {
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All placard events are fired on the <code>.placard</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myPlacard').on('accepted.fu.placard', function () {
   // do something…
 });
@@ -4679,7 +4585,7 @@ $('#myPlacard').on('accepted.fu.placard', function () {
     <h4>Opt-in functionality</h4>
     <p>For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning <strong>you must initialize them yourself</strong>.</p>
     <p>One way to initialize all popovers on a page would be to select them by their <code>data-toggle</code> attribute:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
@@ -4802,7 +4708,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot; type=&quot;button&quot;&
 
   <h2 id="popovers-usage">Usage</h2>
   <p>Enable popovers via JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#example').popover(options)</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#example').popover(options)</code></pre></figure>
 
   <h3 id="popovers-options">Options</h3>
   <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
@@ -4921,19 +4827,19 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot; type=&quot;button&quot;&
 
   <h4><code>.popover('show')</code></h4>
   <p>Reveals an element's popover. <strong>Returns to the caller before the popover has actually been shown</strong> (i.e. before the <code>shown.bs.popover</code> event occurs). This is considered a "manual" triggering of the popover. Popovers whose both title and content are zero-length are never displayed.</p>
-  <figure class="highlight"><pre><code class="js">$('#element').popover('show')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#element').popover('show')</code></pre></figure>
 
   <h4><code>.popover('hide')</code></h4>
   <p>Hides an element's popover. <strong>Returns to the caller before the popover has actually been hidden</strong> (i.e. before the <code>hidden.bs.popover</code> event occurs). This is considered a "manual" triggering of the popover.</p>
-  <figure class="highlight"><pre><code class="js">$('#element').popover('hide')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#element').popover('hide')</code></pre></figure>
 
   <h4><code>.popover('toggle')</code></h4>
   <p>Toggles an element's popover. <strong>Returns to the caller before the popover has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.popover</code> or <code>hidden.bs.popover</code> event occurs). This is considered a "manual" triggering of the popover.</p>
-  <figure class="highlight"><pre><code class="js">$('#element').popover('toggle')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#element').popover('toggle')</code></pre></figure>
 
   <h4><code>.popover('destroy')</code></h4>
   <p>Hides and destroys an element's popover. Popovers that use delegation (which are created using <a href="#popovers-options">the <code>selector</code> option</a>) cannot be individually destroyed on descendant trigger elements.</p>
-  <figure class="highlight"><pre><code class="js">$('#element').popover('destroy')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#element').popover('destroy')</code></pre></figure>
 
   <h3 id="popovers-events">Events</h3>
   <div class="table-responsive">
@@ -4968,7 +4874,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot; type=&quot;button&quot;&
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myPopover').on('hidden.bs.popover', function () {
   // do something…
 })
@@ -5010,7 +4916,7 @@ $('#myPopover').on('hidden.bs.popover', function () {
 
   <h3 id="radio-usage-javascript">Via JavaScript</h3>
   <p>Call the radio control via JavaScript on the <code>label</code>. The <code>div.radio</code> container is only present for block level stying:</p>
-  <figure class="highlight"><pre><code class="js">$('#myRadioLabel').radio();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myRadioLabel').radio();</code></pre></figure>
 
   <h3 id="radio-usage-data-attributes">Via data-attributes</h3>
   <p>The radio will automatically instantiate any radios with <code>data-initialize="radio"</code> located on the <code>&lt;label&gt;</code>. If you add the control markup <em>after page load</em> with <code>data-initialize="radio"</code>, this control initializes on <code>mouseover</code>.
@@ -5446,7 +5352,7 @@ $('#myPopover').on('hidden.bs.popover', function () {
 							</ul>
 						</li>
 					</ul>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 list_actions:  {
   width: 37,
   items: [{
@@ -5570,18 +5476,18 @@ list_actions:  {
 
 <h4>.repeater('list_clearSelectedItems');</h4>
 <p>Clears any currently selected row items. You can use selectable row items only by enabling the <code>list_selectable</code> option.</p>
-<figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('list_clearSelectedItems');</code></pre></figure>
+<figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('list_clearSelectedItems');</code></pre></figure>
 
 <h4>.repeater('list_getSelectedItems');</h4>
 <p>Returns the currently selected row items in an array. You can use selectable row items only by enabling the <code>list_selectable</code> option.
 </p>
-<figure class="highlight"><pre><code class="js">$('#element').repeater('list_getSelectedItems');</code></pre></figure>
+<figure class="highlight"><pre><code class="../../js">$('#element').repeater('list_getSelectedItems');</code></pre></figure>
 
 <h4>.repeater('list_setSelectedItems');</h4>
 <p>Set the selected row items for the current displayed data. This function accepts an array of <code>items</code> objects and
 	<code>force</code> boolean as arguments.
 </p>
-<figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('list_setSelectedItems', [ {...}, ...]);</code></pre></figure>
+<figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('list_setSelectedItems', [ {...}, ...]);</code></pre></figure>
 
 <div class="table-responsive">
 	<table class="table table-bordered table-striped">
@@ -5636,7 +5542,7 @@ list_actions:  {
 	</table>
 </div><!-- ./fu-table-responsive -->
 <p>All repeater-list events are fired on the <code>.repeater</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myRepeater').on('selected.fu.repeaterList', function () {
     // do something…
 });
@@ -5863,18 +5769,18 @@ $('#myRepeater').on('selected.fu.repeaterList', function () {
 
 <h4>.repeater('thumbnail_clearSelectedItems');</h4>
 <p>Clears any currently selected thumbnail items. You can use selectable thumbnail items only by enabling the <code>thumbnail_selectable</code> option.</p>
-<figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('thumbnail_clearSelectedItems');</code></pre></figure>
+<figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('thumbnail_clearSelectedItems');</code></pre></figure>
 
 <h4>.repeater('thumbnail_getSelectedItems');</h4>
 <p>Returns the currently selected thumbnail items in an array. You can use selectable thumbnail items only by enabling the <code>thumbnail_selectable</code> option.
 </p>
-<figure class="highlight"><pre><code class="js">$('#element').repeater('thumbnail_getSelectedItems');</code></pre></figure>
+<figure class="highlight"><pre><code class="../../js">$('#element').repeater('thumbnail_getSelectedItems');</code></pre></figure>
 
 <h4>.repeater('thumbnail_setSelectedItems');</h4>
 <p>Set the selected thumbnail items for the current displayed data. This function accepts an array of <code>items</code> objects and
 	<code>force</code> boolean as arguments.
 </p>
-<figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('thumbnail_setSelectedItems', [ {...}, ...]);</code></pre></figure>
+<figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('thumbnail_setSelectedItems', [ {...}, ...]);</code></pre></figure>
 <div class="table-responsive">
 	<table class="table table-bordered table-striped">
 		<thead>
@@ -5932,7 +5838,7 @@ $('#myRepeater').on('selected.fu.repeaterList', function () {
 	</table>
 </div><!-- ./fu-table-responsive -->
 <p>All repeater-thumbnail events are fired on the <code>.repeater</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myRepeater').on('selected.fu.repeaterThumbnail', function () {
     // do something…
 });
@@ -6070,7 +5976,7 @@ $('#myRepeater').on('selected.fu.repeaterThumbnail', function () {
 
   <h2 id="repeater-usage">Usage</h2>
   <p>Because of its reliance upon a <code>dataSource</code>, you must initialize a <code>repeater()</code> via JavaScript:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
   dataSource = function(options, callback){
     //...
   };
@@ -6262,7 +6168,7 @@ $('#myRepeater').on('selected.fu.repeaterThumbnail', function () {
           following the syntax <code>[viewType].[viewName]</code> (Ex: "list.view1") Then, within the <code>views</code>
           option object, add these view names as attributes. Each attribute can be an object, with it's own view plugin / repeater
           configuration. This configuration will then be honored by the repeater per view. Example:
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myRepeater').repeater({
   views: {
     'list.view1': {
@@ -6289,8 +6195,8 @@ $('#myRepeater').repeater({
   <dl>
     <dt id="repeater-usage-methods-clear">.repeater('clear');</dt>
     <dd>Clears the repeater of current data. Accepts an <em>optional</em> <code>options</code> object.
-    <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('clear');</code></pre></figure>
-    <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('clear', {preserve: true});</code></pre></figure>
+    <figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('clear');</code></pre></figure>
+    <figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('clear', {preserve: true});</code></pre></figure>
 
       <div class="table-responsive">
         <table class="table table-bordered table-striped">
@@ -6322,8 +6228,8 @@ $('#myRepeater').repeater({
 
     <dt id="repeater-usage-methods-infinite-scrolling">.repeater('infiniteScrolling');</dt>
     <dd>Enables or disabled infinite scrolling within the repeater. Used primarily by view extensions. Accepts an <em>optional</em> <code>options</code> object.
-      <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('infiniteScrolling');</code></pre></figure>
-      <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('infinitescrolling', true, {hybrid: true, percentage: 60});</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('infiniteScrolling');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('infinitescrolling', true, {hybrid: true, percentage: 60});</code></pre></figure>
 
       <div class="table-responsive">
         <table class="table table-bordered table-striped">
@@ -6355,8 +6261,8 @@ $('#myRepeater').repeater({
 
     <dt id="repeater-usage-methods-render">.repeater('render');</dt>
     <dd>Calls the <a href="#repeater-dataSource">dataSource</a> and renders the repeater data. Accepts an <em>optional</em> <code>options</code> object.
-      <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('render');</code></pre></figure>
-      <figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('render', {'changeView': 'widescreen', 'preserve': true});</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('render');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('render', {'changeView': 'widescreen', 'preserve': true});</code></pre></figure>
 
       <div class="table-responsive">
         <table class="table table-bordered table-striped">
@@ -6572,7 +6478,7 @@ $('#myRepeater').repeater({
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All repeater events are fired on the <code>.repeater</code> classed element.</p>
-  <figure class="highlight"><pre><code class="js">
+  <figure class="highlight"><pre><code class="../../js">
   $('#myRepeater').on('resized.fu.repeater', function () {
   // do something…
   });
@@ -7551,9 +7457,9 @@ $('#myRepeater').repeater({
 
   <h3 id="scheduler-usage-javascript">Via JavaScript</h3>
   <p>Instantiate the scheduler control via JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myScheduler').scheduler();</code></pre></figure>
   <p>The scheduler also accepts optional options params during initialization, one for each start and end date:</p>
-  <figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler({
+  <figure class="highlight"><pre><code class="../../js">$('#myScheduler').scheduler({
     startDateOptions: {
       allowPastDates: true
     },
@@ -8305,8 +8211,8 @@ $('#myRepeater').repeater({
 
     <dt id="scheduler-usage-methods-value">.scheduler('value')</dt>
     <dd>Gets or sets the current scheduler form field information
-  <figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler('value');</code></pre></figure>
-  <figure class="highlight"><pre><code class="js">$('#myScheduler').scheduler('value', {
+  <figure class="highlight"><pre><code class="../../js">$('#myScheduler').scheduler('value');</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#myScheduler').scheduler('value', {
   startDateTime: '2014-03-31T03:23+02:00',
   timeZone: {
     offset: '+02:00'
@@ -8359,7 +8265,7 @@ $('#myRepeater').repeater({
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All scheduler event listeners should be attached to the element containing the <code>scheduler</code> class. Given the above <a href="#scheduler-usage-markup">example markup</a>, you would attach event listeners thusly:</p>
-  <figure class="highlight"><pre><code class="js">$('#myScheduler').on('changed.fu.scheduler', function () {
+  <figure class="highlight"><pre><code class="../../js">$('#myScheduler').on('changed.fu.scheduler', function () {
   // do something
 });</code></pre></figure>
 
@@ -10510,7 +10416,7 @@ $('#myRepeater').repeater({
 
   <h3>Via data attributes</h3>
   <p>To easily add scrollspy behavior to your topbar navigation, add <code>data-spy="scroll"</code> to the element you want to spy on (most typically this would be the <code>&lt;body&gt;</code>). Then add the <code>data-target</code> attribute with the ID or class of the parent element of any Bootstrap <code>.nav</code> component.</p>
-<figure class="highlight"><pre><code class="css">
+<figure class="highlight"><pre><code class="../../css">
 body {
   position: relative;
 }
@@ -10529,7 +10435,7 @@ body {
 
   <h3>Via JavaScript</h3>
   <p>After adding <code>position: relative;</code> in your CSS, call the scrollspy via JavaScript:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('body').scrollspy({ target: '#navbar-example' })
 </code></pre></figure>
 
@@ -10537,7 +10443,7 @@ $('body').scrollspy({ target: '#navbar-example' })
   <h3 id="scrollspy-methods">Methods</h3>
   <h4><code>.scrollspy('refresh')</code></h4>
   <p>When using scrollspy in conjunction with adding or removing of elements from the DOM, you'll need to call the refresh method like so:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
 })
@@ -10584,7 +10490,7 @@ $('[data-spy="scroll"]').each(function () {
       </tbody>
     </table>
   </div><!-- ./bs-table-responsive -->
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myScrollspy').on('activate.bs.scrollspy', function () {
   // do something…
 })
@@ -10622,7 +10528,7 @@ $('#myScrollspy').on('activate.bs.scrollspy', function () {
 
   <h3 id="search-usage-javascript">Via JavaScript:</h3>
   <p>Call the search control via JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#mySearch').search();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#mySearch').search();</code></pre></figure>
 
   <h3 id="search-usage-data-attributes">Via data-attributes</h3>
 
@@ -10676,7 +10582,7 @@ $('#myScrollspy').on('activate.bs.scrollspy', function () {
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All search events are fired on the <code>.search</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#mySearch').on('searched.fu.search', function () {
   // load search results
 });
@@ -10752,7 +10658,7 @@ $('#mySearch').on('searched.fu.search', function () {
 
   <h3 id="selectlist-usage-javascript">Via JavaScript</h3>
   <p>Call the selectlist control via JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#mySelectlist').selectlist();</code></pre></figure>
 
   <h3 id="selectlist-usage-data-attributes">Via data-attributes</h3>
 
@@ -10793,25 +10699,25 @@ $('#mySearch').on('searched.fu.search', function () {
     <dt id="selectlist-usage-methods-selectByIndex">.selectlist('selectByIndex')</dt>
     <dd>
       Set the selected item based on its index in the list (zero-based index). Convenience method for <code>.selectBySelector('li:eq({index})')</code>
-      <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectByIndex', 1);</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#mySelectlist').selectlist('selectByIndex', 1);</code></pre></figure>
     </dd>
 
     <dt id="selectlist-usage-methods-selectByText">.selectlist('selectByText')</dt>
     <dd>
       Set the selected item based on its text value
-      <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectByText', 'Four');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#mySelectlist').selectlist('selectByText', 'Four');</code></pre></figure>
     </dd>
 
     <dt id="selectlist-usage-methods-selectBySelector">.selectlist('selectBySelector')</dt>
     <dd>
       Set the selected item based on a selector
-      <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#mySelectlist').selectlist('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
     </dd>
 
     <dt id="selectlist-usage-methods-selectByValue">.selectlist('selectByValue')</dt>
     <dd>
       Set the selected item based on its <code>data-value</code> attribute value. Convenience method for <code>.selectBySelector('data-value={value}')</code>.
-      <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectByValue', 'foo');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#mySelectlist').selectlist('selectByValue', 'foo');</code></pre></figure>
     </dd>
   </dl>
 
@@ -10833,7 +10739,7 @@ $('#mySearch').on('searched.fu.search', function () {
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All selectlist events are fired on the <code>.selectlist</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#mySelectlist').on('changed.fu.selectlist', function () {
   // do something
 });
@@ -10933,7 +10839,7 @@ $('#mySelectlist').on('changed.fu.selectlist', function () {
 
   <h3 id="spinbox-usage-javascript">Via JavaScript</h3>
   <p>Call the selectlist control via JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#mySpinbox').spinbox();</code></pre></figure>
 
   <h3 id="spinbox-usage-data-attributes">Via data-attributes</h3>
   <p>To enable the spinbox control without writing JavaScript, add <code>data-initialize="spinbox"</code> to the <code>.spinbox</code> element that you wish to initialize. Such elements that exist when <code>$.ready()</code> executes will be initialized. Any spinbox markup that is programmatically created with <code>data-initialize="spinbox"</code> sometime after the initial page load will not immediately initialize. Rather, it will initialize when the <code>mousedown</code> event is fired on it.</p>
@@ -10960,7 +10866,7 @@ $('#mySelectlist').on('changed.fu.selectlist', function () {
   <dl>
     <dt id="spinbox-usage-methods-destroy">.spinbox('destroy')</dt>
     <dd>Removes all functionality, jQuery data, and the markup from the DOM. Returns string of control markup.
-    <figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox('destroy');</code></pre></figure></dd>
+    <figure class="highlight"><pre><code class="../../js">$('#mySpinbox').spinbox('destroy');</code></pre></figure></dd>
 
     <dt id="spinbox-usage-methods-getintvalue">.spinbox('getIntValue')</dt>
     <dd>
@@ -10980,8 +10886,8 @@ $('#mySelectlist').on('changed.fu.selectlist', function () {
     <dt id="spinbox-usage-methods-value">.spinbox('value')</dt>
     <dd>
       Sets or returns the spinner value
-      <figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox('value') </code></pre></figure>
-      <figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox('value', 11) </code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#mySpinbox').spinbox('value') </code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#mySpinbox').spinbox('value', 11) </code></pre></figure>
       <p>If value contains non-integers, the value returns as a string. Otherwise, the value returns as a number.</p>
     </dd>
   </dl>
@@ -11081,7 +10987,7 @@ $('#mySelectlist').on('changed.fu.selectlist', function () {
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All spinbox events are fired on the <code>.spinbox</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#mySpinbox').on('changed.fu.spinbox', function () {
   // do something
 })
@@ -11176,7 +11082,7 @@ $('#mySpinbox').on('changed.fu.spinbox', function () {
   <h2 id="tabs-usage">Usage</h2>
   <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
 
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myTabs a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
@@ -11185,7 +11091,7 @@ $('#myTabs a').click(function (e) {
 
   <p>You can activate individual tabs in several ways:</p>
 
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myTabs a[href="#profile"]').tab('show') // Select tab by name
 $('#myTabs a:first').tab('show') // Select first tab
 $('#myTabs a:last').tab('show') // Select last tab
@@ -11235,7 +11141,7 @@ $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
 
   <h4><code>.tab('show')</code></h4>
   <p>Selects the given tab and shows its associated content. Any other tab that was previously selected becomes unselected and its associated content is hidden. <strong>Returns to the caller before the tab pane has actually been shown</strong> (i.e. before the <code>shown.bs.tab</code> event occurs).</p>
-  <figure class="highlight"><pre><code class="js">$('#someTab').tab('show')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#someTab').tab('show')</code></pre></figure>
 
   <h3 id="tabs-events">Events</h3>
   <p>When showing a new tab, the events fire in the following order:</p>
@@ -11274,7 +11180,7 @@ $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   e.target // newly activated tab
   e.relatedTarget // previous active tab
@@ -11355,7 +11261,7 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
     <h4>Opt-in functionality</h4>
     <p>For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning <strong>you must initialize them yourself</strong>.</p>
     <p>One way to initialize all tooltips on a page would be to select them by their <code>data-toggle</code> attribute:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
@@ -11366,7 +11272,7 @@ $(function () {
   <h2 id="tooltips-usage">Usage</h2>
   <p>The tooltip plugin generates content and markup on demand, and by default places tooltips after their trigger element.</p>
   <p>Trigger the tooltip via JavaScript:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#example').tooltip(options)
 </code></pre></figure>
 
@@ -11515,19 +11421,19 @@ $('#example').tooltip(options)
 
   <h4><code>.tooltip('show')</code></h4>
   <p>Reveals an element's tooltip. <strong>Returns to the caller before the tooltip has actually been shown</strong> (i.e. before the <code>shown.bs.tooltip</code> event occurs). This is considered a "manual" triggering of the tooltip. Tooltips with zero-length titles are never displayed.</p>
-  <figure class="highlight"><pre><code class="js">$('#element').tooltip('show')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#element').tooltip('show')</code></pre></figure>
 
   <h4><code>.tooltip('hide')</code></h4>
   <p>Hides an element's tooltip. <strong>Returns to the caller before the tooltip has actually been hidden</strong> (i.e. before the <code>hidden.bs.tooltip</code> event occurs). This is considered a "manual" triggering of the tooltip.</p>
-  <figure class="highlight"><pre><code class="js">$('#element').tooltip('hide')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#element').tooltip('hide')</code></pre></figure>
 
   <h4><code>.tooltip('toggle')</code></h4>
   <p>Toggles an element's tooltip. <strong>Returns to the caller before the tooltip has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.tooltip</code> or <code>hidden.bs.tooltip</code> event occurs). This is considered a "manual" triggering of the tooltip.</p>
-  <figure class="highlight"><pre><code class="js">$('#element').tooltip('toggle')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#element').tooltip('toggle')</code></pre></figure>
 
   <h4><code>.tooltip('destroy')</code></h4>
   <p>Hides and destroys an element's tooltip. Tooltips that use delegation (which are created using <a href="#tooltips-options">the <code>selector</code> option</a>) cannot be individually destroyed on descendant trigger elements.</p>
-  <figure class="highlight"><pre><code class="js">$('#element').tooltip('destroy')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#element').tooltip('destroy')</code></pre></figure>
 
   <h3 id="tooltips-events">Events</h3>
   <div class="table-responsive">
@@ -11562,7 +11468,7 @@ $('#example').tooltip(options)
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myTooltip').on('hidden.bs.tooltip', function () {
   // do something…
 })
@@ -11590,7 +11496,7 @@ $('#myTooltip').on('hidden.bs.tooltip', function () {
 
   <h2>Disabling transitions</h2>
   <p>Transitions can be globally disabled using the following JavaScript snippet, which must come after <code>transition.js</code> (or <code>bootstrap.js</code> or <code>bootstrap.min.js</code>, as the case may be) has loaded:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $.support.transition = false
 </code></pre></figure>
 </div>
@@ -11638,7 +11544,7 @@ $.support.transition = false
 
   <h3 id="tree-usage-javascript">Via JavaScript</h3>
   <p>Call the tree control via JavaScript:</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 dataSource = function(parentData, callback){
   //...
 };
@@ -11858,7 +11764,7 @@ $('#myTree').tree({ dataSource: dataSource });
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All tree events are triggered from the <code>.tree</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myTree').on('selected.fu.tree', function (event, data) {
   // do something with data: { selected: [array], target: [object] }
 })
@@ -12036,7 +11942,7 @@ $('#myTree').on('selected.fu.tree', function (event, data) {
 
 	<h2 id="wizard-usage">Usage</h2>
 	<h3 id="wizard-usage-javascript">Via JavaScript</h3>
-	<figure class="highlight"><pre><code class="js">$('#myWizard').wizard();</code></pre></figure>
+	<figure class="highlight"><pre><code class="../../js">$('#myWizard').wizard();</code></pre></figure>
 
 	<h3 id="wizard-usage-data-attributes">Via data-attributes</h3>
 	<p>The wizard will automatically instantiate any wizards with <code>data-initialize="wizard"</code>. If you add control markup <em>after page load</em> with <code>data-initialize="wizard"</code>, this control initializes on <code>mouseover</code>.
@@ -12173,12 +12079,12 @@ $('#myTree').on('selected.fu.tree', function (event, data) {
 
 		<dt id="wizard-usage-methods-selectedItem">.wizard('selectedItem')</dt>
 		<dd>Returns the current step index.
-			<figure class="highlight"><pre><code class="js">$('#myWizard').wizard('selectedItem');</code></pre></figure>
+			<figure class="highlight"><pre><code class="../../js">$('#myWizard').wizard('selectedItem');</code></pre></figure>
 		</dd>
 
 		<dt id="wizard-usage-methods-selectedItem">.wizard('selectedItem', 3)</dt>
 		<dd>Moves to passed in step. This can be either an integer or the `data-name` of a step.
-	<figure class="highlight"><pre><code class="js">$('#myWizard').wizard('selectedItem', {
+	<figure class="highlight"><pre><code class="../../js">$('#myWizard').wizard('selectedItem', {
 	step: 3
 });
 
@@ -12189,7 +12095,7 @@ $('#myWizard').wizard('selectedItem', {
 
 		<dt id="wizard-usage-methods-addSteps">.wizard('addSteps')</dt>
 		<dd>Add a pane or an array of panes to a wizard. Wrap this markup with <code>&lt;div class=&quot;step-pane&quot;&gt;&lt;/div&gt;</code>
-	<figure class="highlight"><pre><code class="js">$('#myWizard').wizard('addSteps', index, [
+	<figure class="highlight"><pre><code class="../../js">$('#myWizard').wizard('addSteps', index, [
 	{
 		badge: 'badge-customicon',
 		label: 'A Step Label',
@@ -12229,7 +12135,7 @@ $('#myWizard').wizard('selectedItem', {
 
 		<dt id="wizard-usage-methods-removeSteps">.wizard('removeSteps')</dt>
 		<dd>Remove a pane or multiple panes from a wizard
-	<figure class="highlight"><pre><code class="js">$('#myWizard').wizard('removeSteps', index, howMany);</code></pre></figure>
+	<figure class="highlight"><pre><code class="../../js">$('#myWizard').wizard('removeSteps', index, howMany);</code></pre></figure>
 
 			<div class="table-responsive">
 				<table class="table table-bordered table-striped">
@@ -12293,7 +12199,7 @@ $('#myWizard').wizard('selectedItem', {
 	</div><!-- ./fu-table-responsive -->
 
 	<p>All wizard events are fired on the <code>.wizard</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myWizard').on('actionclicked.fu.wizard', function (evt, data) {
 	// do something
 });
@@ -12414,9 +12320,6 @@ $('#myWizard').on('actionclicked.fu.wizard', function (evt, data) {
 		
 	
 			<li class=""><a href="#infinite-scroll">infinite-scroll</a></li>
-		
-	
-			<li class=""><a href="#javascript-overview">javascript-overview</a></li>
 		
 	
 			<li class=""><a href="#loader">loader</a></li>

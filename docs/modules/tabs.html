@@ -173,7 +173,7 @@
   <h2 id="tabs-usage">Usage</h2>
   <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
 
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myTabs a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
@@ -182,7 +182,7 @@ $('#myTabs a').click(function (e) {
 
   <p>You can activate individual tabs in several ways:</p>
 
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#myTabs a[href="#profile"]').tab('show') // Select tab by name
 $('#myTabs a:first').tab('show') // Select first tab
 $('#myTabs a:last').tab('show') // Select last tab
@@ -232,7 +232,7 @@ $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
 
   <h4><code>.tab('show')</code></h4>
   <p>Selects the given tab and shows its associated content. Any other tab that was previously selected becomes unselected and its associated content is hidden. <strong>Returns to the caller before the tab pane has actually been shown</strong> (i.e. before the <code>shown.bs.tab</code> event occurs).</p>
-  <figure class="highlight"><pre><code class="js">$('#someTab').tab('show')</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#someTab').tab('show')</code></pre></figure>
 
   <h3 id="tabs-events">Events</h3>
   <p>When showing a new tab, the events fire in the following order:</p>
@@ -271,7 +271,7 @@ $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
       </tbody>
     </table>
   </div><!-- /.table-responsive -->
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   e.target // newly activated tab
   e.relatedTarget // previous active tab
@@ -330,9 +330,6 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 		
 	
 			<li class=""><a href="../modules/infinite-scroll">infinite-scroll</a></li>
-		
-	
-			<li class=""><a href="../modules/javascript-overview">javascript-overview</a></li>
 		
 	
 			<li class=""><a href="../modules/loader">loader</a></li>

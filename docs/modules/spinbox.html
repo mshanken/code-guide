@@ -165,7 +165,7 @@
 
   <h3 id="spinbox-usage-javascript">Via JavaScript</h3>
   <p>Call the selectlist control via JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#mySpinbox').spinbox();</code></pre></figure>
 
   <h3 id="spinbox-usage-data-attributes">Via data-attributes</h3>
   <p>To enable the spinbox control without writing JavaScript, add <code>data-initialize="spinbox"</code> to the <code>.spinbox</code> element that you wish to initialize. Such elements that exist when <code>$.ready()</code> executes will be initialized. Any spinbox markup that is programmatically created with <code>data-initialize="spinbox"</code> sometime after the initial page load will not immediately initialize. Rather, it will initialize when the <code>mousedown</code> event is fired on it.</p>
@@ -192,7 +192,7 @@
   <dl>
     <dt id="spinbox-usage-methods-destroy">.spinbox('destroy')</dt>
     <dd>Removes all functionality, jQuery data, and the markup from the DOM. Returns string of control markup.
-    <figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox('destroy');</code></pre></figure></dd>
+    <figure class="highlight"><pre><code class="../../js">$('#mySpinbox').spinbox('destroy');</code></pre></figure></dd>
 
     <dt id="spinbox-usage-methods-getintvalue">.spinbox('getIntValue')</dt>
     <dd>
@@ -212,8 +212,8 @@
     <dt id="spinbox-usage-methods-value">.spinbox('value')</dt>
     <dd>
       Sets or returns the spinner value
-      <figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox('value') </code></pre></figure>
-      <figure class="highlight"><pre><code class="js">$('#mySpinbox').spinbox('value', 11) </code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#mySpinbox').spinbox('value') </code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#mySpinbox').spinbox('value', 11) </code></pre></figure>
       <p>If value contains non-integers, the value returns as a string. Otherwise, the value returns as a number.</p>
     </dd>
   </dl>
@@ -313,7 +313,7 @@
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All spinbox events are fired on the <code>.spinbox</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#mySpinbox').on('changed.fu.spinbox', function () {
   // do something
 })
@@ -407,9 +407,6 @@ $('#mySpinbox').on('changed.fu.spinbox', function () {
 		
 	
 			<li class=""><a href="../modules/infinite-scroll">infinite-scroll</a></li>
-		
-	
-			<li class=""><a href="../modules/javascript-overview">javascript-overview</a></li>
 		
 	
 			<li class=""><a href="../modules/loader">loader</a></li>

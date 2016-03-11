@@ -168,7 +168,7 @@
 
   <h3 id="selectlist-usage-javascript">Via JavaScript</h3>
   <p>Call the selectlist control via JavaScript:</p>
-  <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist();</code></pre></figure>
+  <figure class="highlight"><pre><code class="../../js">$('#mySelectlist').selectlist();</code></pre></figure>
 
   <h3 id="selectlist-usage-data-attributes">Via data-attributes</h3>
 
@@ -209,25 +209,25 @@
     <dt id="selectlist-usage-methods-selectByIndex">.selectlist('selectByIndex')</dt>
     <dd>
       Set the selected item based on its index in the list (zero-based index). Convenience method for <code>.selectBySelector('li:eq({index})')</code>
-      <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectByIndex', 1);</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#mySelectlist').selectlist('selectByIndex', 1);</code></pre></figure>
     </dd>
 
     <dt id="selectlist-usage-methods-selectByText">.selectlist('selectByText')</dt>
     <dd>
       Set the selected item based on its text value
-      <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectByText', 'Four');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#mySelectlist').selectlist('selectByText', 'Four');</code></pre></figure>
     </dd>
 
     <dt id="selectlist-usage-methods-selectBySelector">.selectlist('selectBySelector')</dt>
     <dd>
       Set the selected item based on a selector
-      <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#mySelectlist').selectlist('selectBySelector', 'li[data-fizz=buzz]');</code></pre></figure>
     </dd>
 
     <dt id="selectlist-usage-methods-selectByValue">.selectlist('selectByValue')</dt>
     <dd>
       Set the selected item based on its <code>data-value</code> attribute value. Convenience method for <code>.selectBySelector('data-value={value}')</code>.
-      <figure class="highlight"><pre><code class="js">$('#mySelectlist').selectlist('selectByValue', 'foo');</code></pre></figure>
+      <figure class="highlight"><pre><code class="../../js">$('#mySelectlist').selectlist('selectByValue', 'foo');</code></pre></figure>
     </dd>
   </dl>
 
@@ -249,7 +249,7 @@
     </table>
   </div><!-- ./fu-table-responsive -->
   <p>All selectlist events are fired on the <code>.selectlist</code> classed element.</p>
-<figure class="highlight"><pre><code class="js">
+<figure class="highlight"><pre><code class="../../js">
 $('#mySelectlist').on('changed.fu.selectlist', function () {
   // do something
 });
@@ -356,9 +356,6 @@ $('#mySelectlist').on('changed.fu.selectlist', function () {
 		
 	
 			<li class=""><a href="../modules/infinite-scroll">infinite-scroll</a></li>
-		
-	
-			<li class=""><a href="../modules/javascript-overview">javascript-overview</a></li>
 		
 	
 			<li class=""><a href="../modules/loader">loader</a></li>
