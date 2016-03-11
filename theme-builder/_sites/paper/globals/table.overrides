@@ -1,0 +1,9 @@
+// Tables =====================================================================
+
+.table-hover {
+  > tbody > tr,
+  > tbody > tr > th,
+  > tbody > tr > td {
+    .transition(all 0.2s);
+  }
+}

@@ -9,10 +9,6 @@
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -43,8 +39,6 @@
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -255,10 +249,6 @@ th {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -289,8 +279,6 @@ th {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -393,10 +381,6 @@ th {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -427,8 +411,1480 @@ th {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
+/* Component's site.variables */
+/* Site theme site.variables */
+/*-------------------
+ Import Google Fonts
+--------------------*/
+/*-------------------
+ Component Variables
+---------------------*/
+/* Default */
+/* Packaged Theme */
+/* Site Theme */
+/*******************************
+    Mix-ins: Loading overrides
+*******************************/
+/*--------------------
+   Site Mixins
+---------------------*/
+/*------------------
+       Fonts
+-------------------*/
+/*------------------
+     Overrides
+-------------------*/
+/* End Config */
+.color-swatches {
+  margin: 0 -5px 20px;
+}
+.color-swatches:before,
+.color-swatches:after {
+  content: " ";
+  display: table;
+}
+.color-swatches:after {
+  clear: both;
+}
+.color-swatch {
+  float: left;
+  width: 19%;
+  height: 22px;
+  margin: 5px 2px;
+}
+.color-swatch.red-50 {
+  background-color: #ffebee;
+  color: #ffffff;
+}
+.color-swatch.red-100 {
+  background-color: #ffcdd2;
+  color: #ffffff;
+}
+.color-swatch.red-200 {
+  background-color: #ef9a9a;
+  color: #ffffff;
+}
+.color-swatch.red-300 {
+  background-color: #e57373;
+  color: #ffffff;
+}
+.color-swatch.red-400 {
+  background-color: #ef5350;
+  color: #ffffff;
+}
+.color-swatch.red-500 {
+  background-color: #f44336;
+  color: #ffffff;
+}
+.color-swatch.red-600 {
+  background-color: #e53935;
+  color: #ffffff;
+}
+.color-swatch.red-700 {
+  background-color: #d32f2f;
+  color: #ffffff;
+}
+.color-swatch.red-800 {
+  background-color: #c62828;
+  color: #ffffff;
+}
+.color-swatch.red-900 {
+  background-color: #b71c1c;
+  color: #ffffff;
+}
+.color-swatch.red-A100 {
+  background-color: #ff8a80;
+  color: #ffffff;
+}
+.color-swatch.red-A200 {
+  background-color: #ff5252;
+  color: #ffffff;
+}
+.color-swatch.red-A400 {
+  background-color: #ff1744;
+  color: #ffffff;
+}
+.color-swatch.red-A700 {
+  background-color: #d50000;
+  color: #ffffff;
+}
+.color-swatch.pink-50 {
+  background-color: #fce4ec;
+  color: #ffffff;
+}
+.color-swatch.pink-100 {
+  background-color: #f8bbd0;
+  color: #ffffff;
+}
+.color-swatch.pink-200 {
+  background-color: #f48fb1;
+  color: #ffffff;
+}
+.color-swatch.pink-300 {
+  background-color: #f06292;
+  color: #ffffff;
+}
+.color-swatch.pink-400 {
+  background-color: #ec407a;
+  color: #ffffff;
+}
+.color-swatch.pink-500 {
+  background-color: #e91e63;
+  color: #ffffff;
+}
+.color-swatch.pink-600 {
+  background-color: #d81b60;
+  color: #ffffff;
+}
+.color-swatch.pink-700 {
+  background-color: #c2185b;
+  color: #ffffff;
+}
+.color-swatch.pink-800 {
+  background-color: #ad1457;
+  color: #ffffff;
+}
+.color-swatch.pink-900 {
+  background-color: #880e4f;
+  color: #ffffff;
+}
+.color-swatch.pink-A100 {
+  background-color: #ff80ab;
+  color: #ffffff;
+}
+.color-swatch.pink-A200 {
+  background-color: #ff4081;
+  color: #ffffff;
+}
+.color-swatch.pink-A400 {
+  background-color: #f50057;
+  color: #ffffff;
+}
+.color-swatch.pink-A700 {
+  background-color: #c51162;
+  color: #ffffff;
+}
+.color-swatch.purple-50 {
+  background-color: #f3e5f5;
+  color: #ffffff;
+}
+.color-swatch.purple-100 {
+  background-color: #e1bee7;
+  color: #ffffff;
+}
+.color-swatch.purple-200 {
+  background-color: #ce93d8;
+  color: #ffffff;
+}
+.color-swatch.purple-300 {
+  background-color: #ba68c8;
+  color: #ffffff;
+}
+.color-swatch.purple-400 {
+  background-color: #ab47bc;
+  color: #ffffff;
+}
+.color-swatch.purple-500 {
+  background-color: #9c27b0;
+  color: #ffffff;
+}
+.color-swatch.purple-600 {
+  background-color: #8e24aa;
+  color: #ffffff;
+}
+.color-swatch.purple-700 {
+  background-color: #7b1fa2;
+  color: #ffffff;
+}
+.color-swatch.purple-800 {
+  background-color: #6a1b9a;
+  color: #ffffff;
+}
+.color-swatch.purple-900 {
+  background-color: #4a148c;
+  color: #ffffff;
+}
+.color-swatch.purple-A100 {
+  background-color: #ea80fc;
+  color: #ffffff;
+}
+.color-swatch.purple-A200 {
+  background-color: #e040fb;
+  color: #ffffff;
+}
+.color-swatch.purple-A400 {
+  background-color: #d500f9;
+  color: #ffffff;
+}
+.color-swatch.purple-A700 {
+  background-color: #aa00ff;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-50 {
+  background-color: #ede7f6;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-100 {
+  background-color: #d1c4e9;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-200 {
+  background-color: #b39ddb;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-300 {
+  background-color: #9575cd;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-400 {
+  background-color: #7e57c2;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-500 {
+  background-color: #673ab7;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-600 {
+  background-color: #5e35b1;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-700 {
+  background-color: #512da8;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-800 {
+  background-color: #4527a0;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-900 {
+  background-color: #311b92;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-A100 {
+  background-color: #b388ff;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-A200 {
+  background-color: #7c4dff;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-A400 {
+  background-color: #651fff;
+  color: #ffffff;
+}
+.color-swatch.deep-purple-A700 {
+  background-color: #6200ea;
+  color: #ffffff;
+}
+.color-swatch.indigo-50 {
+  background-color: #e8eaf6;
+  color: #ffffff;
+}
+.color-swatch.indigo-100 {
+  background-color: #c5cae9;
+  color: #ffffff;
+}
+.color-swatch.indigo-200 {
+  background-color: #9fa8da;
+  color: #ffffff;
+}
+.color-swatch.indigo-300 {
+  background-color: #7986cb;
+  color: #ffffff;
+}
+.color-swatch.indigo-400 {
+  background-color: #5c6bc0;
+  color: #ffffff;
+}
+.color-swatch.indigo-500 {
+  background-color: #3f51b5;
+  color: #ffffff;
+}
+.color-swatch.indigo-600 {
+  background-color: #3949ab;
+  color: #ffffff;
+}
+.color-swatch.indigo-700 {
+  background-color: #303f9f;
+  color: #ffffff;
+}
+.color-swatch.indigo-800 {
+  background-color: #283593;
+  color: #ffffff;
+}
+.color-swatch.indigo-900 {
+  background-color: #1a237e;
+  color: #ffffff;
+}
+.color-swatch.indigo-A100 {
+  background-color: #8c9eff;
+  color: #ffffff;
+}
+.color-swatch.indigo-A200 {
+  background-color: #536dfe;
+  color: #ffffff;
+}
+.color-swatch.indigo-A400 {
+  background-color: #3d5afe;
+  color: #ffffff;
+}
+.color-swatch.indigo-A700 {
+  background-color: #304ffe;
+  color: #ffffff;
+}
+.color-swatch.blue-50 {
+  background-color: #e3f2fd;
+  color: #ffffff;
+}
+.color-swatch.blue-100 {
+  background-color: #bbdefb;
+  color: #ffffff;
+}
+.color-swatch.blue-200 {
+  background-color: #90caf9;
+  color: #ffffff;
+}
+.color-swatch.blue-300 {
+  background-color: #64b5f6;
+  color: #ffffff;
+}
+.color-swatch.blue-400 {
+  background-color: #42a5f5;
+  color: #ffffff;
+}
+.color-swatch.blue-500 {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.color-swatch.blue-600 {
+  background-color: #1e88e5;
+  color: #ffffff;
+}
+.color-swatch.blue-700 {
+  background-color: #1976d2;
+  color: #ffffff;
+}
+.color-swatch.blue-800 {
+  background-color: #1565c0;
+  color: #ffffff;
+}
+.color-swatch.blue-900 {
+  background-color: #0d47a1;
+  color: #ffffff;
+}
+.color-swatch.blue-A100 {
+  background-color: #82b1ff;
+  color: #ffffff;
+}
+.color-swatch.blue-A200 {
+  background-color: #448aff;
+  color: #ffffff;
+}
+.color-swatch.blue-A400 {
+  background-color: #2979ff;
+  color: #ffffff;
+}
+.color-swatch.blue-A700 {
+  background-color: #2962ff;
+  color: #ffffff;
+}
+.color-swatch.light-blue-50 {
+  background-color: #e1f5fe;
+  color: #ffffff;
+}
+.color-swatch.light-blue-200 {
+  background-color: #b3e5fc;
+  color: #ffffff;
+}
+.color-swatch.light-blue-300 {
+  background-color: #81d4fa;
+  color: #ffffff;
+}
+.color-swatch.light-blue-400 {
+  background-color: #4fc3f7;
+  color: #ffffff;
+}
+.color-swatch.light-blue-500 {
+  background-color: #29b6f6;
+  color: #ffffff;
+}
+.color-swatch.light-blue-100 {
+  background-color: #03a9f4;
+  color: #ffffff;
+}
+.color-swatch.light-blue-600 {
+  background-color: #039be5;
+  color: #ffffff;
+}
+.color-swatch.light-blue-700 {
+  background-color: #0288d1;
+  color: #ffffff;
+}
+.color-swatch.light-blue-800 {
+  background-color: #0277bd;
+  color: #ffffff;
+}
+.color-swatch.light-blue-900 {
+  background-color: #01579b;
+  color: #ffffff;
+}
+.color-swatch.light-blue-A100 {
+  background-color: #80d8ff;
+  color: #ffffff;
+}
+.color-swatch.light-blue-A200 {
+  background-color: #40c4ff;
+  color: #ffffff;
+}
+.color-swatch.light-blue-A400 {
+  background-color: #00b0ff;
+  color: #ffffff;
+}
+.color-swatch.light-blue-A700 {
+  background-color: #0091ea;
+  color: #ffffff;
+}
+.color-swatch.cyan-50 {
+  background-color: #e0f7fa;
+  color: #ffffff;
+}
+.color-swatch.cyan-100 {
+  background-color: #b2ebf2;
+  color: #ffffff;
+}
+.color-swatch.cyan-200 {
+  background-color: #80deea;
+  color: #ffffff;
+}
+.color-swatch.cyan-300 {
+  background-color: #4dd0e1;
+  color: #ffffff;
+}
+.color-swatch.cyan-400 {
+  background-color: #26c6da;
+  color: #ffffff;
+}
+.color-swatch.cyan-500 {
+  background-color: #00bcd4;
+  color: #ffffff;
+}
+.color-swatch.cyan-600 {
+  background-color: #00acc1;
+  color: #ffffff;
+}
+.color-swatch.cyan-700 {
+  background-color: #0097a7;
+  color: #ffffff;
+}
+.color-swatch.cyan-800 {
+  background-color: #00838f;
+  color: #ffffff;
+}
+.color-swatch.cyan-900 {
+  background-color: #006064;
+  color: #ffffff;
+}
+.color-swatch.cyan-A100 {
+  background-color: #84ffff;
+  color: #ffffff;
+}
+.color-swatch.cyan-A200 {
+  background-color: #18ffff;
+  color: #ffffff;
+}
+.color-swatch.cyan-A400 {
+  background-color: #00e5ff;
+  color: #ffffff;
+}
+.color-swatch.cyan-A700 {
+  background-color: #00b8d4;
+  color: #ffffff;
+}
+.color-swatch.teal-50 {
+  background-color: #e0f2f1;
+  color: #ffffff;
+}
+.color-swatch.teal-100 {
+  background-color: #b2dfdb;
+  color: #ffffff;
+}
+.color-swatch.teal-200 {
+  background-color: #80cbc4;
+  color: #ffffff;
+}
+.color-swatch.teal-300 {
+  background-color: #4db6ac;
+  color: #ffffff;
+}
+.color-swatch.teal-400 {
+  background-color: #26a69a;
+  color: #ffffff;
+}
+.color-swatch.teal-500 {
+  background-color: #009688;
+  color: #ffffff;
+}
+.color-swatch.teal-600 {
+  background-color: #00897b;
+  color: #ffffff;
+}
+.color-swatch.teal-700 {
+  background-color: #00796b;
+  color: #ffffff;
+}
+.color-swatch.teal-800 {
+  background-color: #00695c;
+  color: #ffffff;
+}
+.color-swatch.teal-900 {
+  background-color: #004d40;
+  color: #ffffff;
+}
+.color-swatch.teal-A100 {
+  background-color: #a7ffeb;
+  color: #ffffff;
+}
+.color-swatch.teal-A200 {
+  background-color: #64ffda;
+  color: #ffffff;
+}
+.color-swatch.teal-A400 {
+  background-color: #1de9b6;
+  color: #ffffff;
+}
+.color-swatch.teal-A700 {
+  background-color: #00bfa5;
+  color: #ffffff;
+}
+.color-swatch.green-50 {
+  background-color: #e8f5e9;
+  color: #ffffff;
+}
+.color-swatch.green-100 {
+  background-color: #c8e6c9;
+  color: #ffffff;
+}
+.color-swatch.green-200 {
+  background-color: #a5d6a7;
+  color: #ffffff;
+}
+.color-swatch.green-300 {
+  background-color: #81c784;
+  color: #ffffff;
+}
+.color-swatch.green-400 {
+  background-color: #66bb6a;
+  color: #ffffff;
+}
+.color-swatch.green-500 {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+.color-swatch.green-600 {
+  background-color: #43a047;
+  color: #ffffff;
+}
+.color-swatch.green-700 {
+  background-color: #388e3c;
+  color: #ffffff;
+}
+.color-swatch.green-800 {
+  background-color: #2e7d32;
+  color: #ffffff;
+}
+.color-swatch.green-900 {
+  background-color: #1b5e20;
+  color: #ffffff;
+}
+.color-swatch.green-A100 {
+  background-color: #b9f6ca;
+  color: #ffffff;
+}
+.color-swatch.green-A200 {
+  background-color: #69f0ae;
+  color: #ffffff;
+}
+.color-swatch.green-A400 {
+  background-color: #00e676;
+  color: #ffffff;
+}
+.color-swatch.green-A700 {
+  background-color: #00c853;
+  color: #ffffff;
+}
+.color-swatch.green-A700 {
+  background-color: #00c853;
+  color: #ffffff;
+}
+.color-swatch.light-green-50 {
+  background-color: #f1f8e9;
+  color: #ffffff;
+}
+.color-swatch.light-green-100 {
+  background-color: #dcedc8;
+  color: #ffffff;
+}
+.color-swatch.light-green-200 {
+  background-color: #c5e1a5;
+  color: #ffffff;
+}
+.color-swatch.light-green-300 {
+  background-color: #aed581;
+  color: #ffffff;
+}
+.color-swatch.light-green-400 {
+  background-color: #9ccc65;
+  color: #ffffff;
+}
+.color-swatch.light-green-500 {
+  background-color: #8bc34a;
+  color: #ffffff;
+}
+.color-swatch.light-green-600 {
+  background-color: #7cb342;
+  color: #ffffff;
+}
+.color-swatch.light-green-700 {
+  background-color: #689f38;
+  color: #ffffff;
+}
+.color-swatch.light-green-800 {
+  background-color: #558b2f;
+  color: #ffffff;
+}
+.color-swatch.light-green-900 {
+  background-color: #33691e;
+  color: #ffffff;
+}
+.color-swatch.light-green-A100 {
+  background-color: #ccff90;
+  color: #ffffff;
+}
+.color-swatch.light-green-A200 {
+  background-color: #b2ff59;
+  color: #ffffff;
+}
+.color-swatch.light-green-A400 {
+  background-color: #76ff03;
+  color: #ffffff;
+}
+.color-swatch.light-green-A700 {
+  background-color: #64dd17;
+  color: #ffffff;
+}
+.color-swatch.lime-50 {
+  background-color: #f9fbe7;
+  color: #ffffff;
+}
+.color-swatch.lime-100 {
+  background-color: #f0f4c3;
+  color: #ffffff;
+}
+.color-swatch.lime-200 {
+  background-color: #e6ee9c;
+  color: #ffffff;
+}
+.color-swatch.lime-300 {
+  background-color: #dce775;
+  color: #ffffff;
+}
+.color-swatch.lime-400 {
+  background-color: #d4e157;
+  color: #ffffff;
+}
+.color-swatch.lime-500 {
+  background-color: #cddc39;
+  color: #ffffff;
+}
+.color-swatch.lime-600 {
+  background-color: #c0ca33;
+  color: #ffffff;
+}
+.color-swatch.lime-700 {
+  background-color: #afb42b;
+  color: #ffffff;
+}
+.color-swatch.lime-800 {
+  background-color: #9e9d24;
+  color: #ffffff;
+}
+.color-swatch.lime-900 {
+  background-color: #827717;
+  color: #ffffff;
+}
+.color-swatch.lime-A100 {
+  background-color: #f4ff81;
+  color: #ffffff;
+}
+.color-swatch.lime-A200 {
+  background-color: #eeff41;
+  color: #ffffff;
+}
+.color-swatch.lime-A400 {
+  background-color: #c6ff00;
+  color: #ffffff;
+}
+.color-swatch.lime-A700 {
+  background-color: #aeea00;
+  color: #ffffff;
+}
+.color-swatch.yellow-50 {
+  background-color: #fffde7;
+  color: #ffffff;
+}
+.color-swatch.yellow-100 {
+  background-color: #fff9c4;
+  color: #ffffff;
+}
+.color-swatch.yellow-200 {
+  background-color: #fff59d;
+  color: #ffffff;
+}
+.color-swatch.yellow-300 {
+  background-color: #fff176;
+  color: #ffffff;
+}
+.color-swatch.yellow-400 {
+  background-color: #ffee58;
+  color: #ffffff;
+}
+.color-swatch.yellow-500 {
+  background-color: #ffeb3b;
+  color: #ffffff;
+}
+.color-swatch.yellow-600 {
+  background-color: #fdd835;
+  color: #ffffff;
+}
+.color-swatch.yellow-700 {
+  background-color: #fbc02d;
+  color: #ffffff;
+}
+.color-swatch.yellow-800 {
+  background-color: #f9a825;
+  color: #ffffff;
+}
+.color-swatch.yellow-900 {
+  background-color: #f57f17;
+  color: #ffffff;
+}
+.color-swatch.yellow-A100 {
+  background-color: #ffff8d;
+  color: #ffffff;
+}
+.color-swatch.yellow-A200 {
+  background-color: #ffff00;
+  color: #ffffff;
+}
+.color-swatch.yellow-A400 {
+  background-color: #ffea00;
+  color: #ffffff;
+}
+.color-swatch.yellow-A700 {
+  background-color: #ffd600;
+  color: #ffffff;
+}
+.color-swatch.amber-50 {
+  background-color: #fff8e1;
+  color: #ffffff;
+}
+.color-swatch.amber-100 {
+  background-color: #ffecb3;
+  color: #ffffff;
+}
+.color-swatch.amber-200 {
+  background-color: #ffe082;
+  color: #ffffff;
+}
+.color-swatch.amber-300 {
+  background-color: #ffd54f;
+  color: #ffffff;
+}
+.color-swatch.amber-400 {
+  background-color: #ffca28;
+  color: #ffffff;
+}
+.color-swatch.amber-500 {
+  background-color: #ffc107;
+  color: #ffffff;
+}
+.color-swatch.amber-600 {
+  background-color: #ffb300;
+  color: #ffffff;
+}
+.color-swatch.amber-700 {
+  background-color: #ffa000;
+  color: #ffffff;
+}
+.color-swatch.amber-800 {
+  background-color: #ff8f00;
+  color: #ffffff;
+}
+.color-swatch.amber-900 {
+  background-color: #ff6f00;
+  color: #ffffff;
+}
+.color-swatch.amber-A100 {
+  background-color: #ffe57f;
+  color: #ffffff;
+}
+.color-swatch.amber-A200 {
+  background-color: #ffd740;
+  color: #ffffff;
+}
+.color-swatch.amber-A400 {
+  background-color: #ffc400;
+  color: #ffffff;
+}
+.color-swatch.amber-A700 {
+  background-color: #ffab00;
+  color: #ffffff;
+}
+.color-swatch.orange-50 {
+  background-color: #fff3e0;
+  color: #ffffff;
+}
+.color-swatch.orange-100 {
+  background-color: #ffe0b2;
+  color: #ffffff;
+}
+.color-swatch.orange-200 {
+  background-color: #ffcc80;
+  color: #ffffff;
+}
+.color-swatch.orange-300 {
+  background-color: #ffb74d;
+  color: #ffffff;
+}
+.color-swatch.orange-400 {
+  background-color: #ffa726;
+  color: #ffffff;
+}
+.color-swatch.orange-500 {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+.color-swatch.orange-600 {
+  background-color: #fb8c00;
+  color: #ffffff;
+}
+.color-swatch.orange-700 {
+  background-color: #f57c00;
+  color: #ffffff;
+}
+.color-swatch.orange-800 {
+  background-color: #ef6c00;
+  color: #ffffff;
+}
+.color-swatch.orange-900 {
+  background-color: #e65100;
+  color: #ffffff;
+}
+.color-swatch.orange-A100 {
+  background-color: #ffd180;
+  color: #ffffff;
+}
+.color-swatch.orange-A200 {
+  background-color: #ffab40;
+  color: #ffffff;
+}
+.color-swatch.orange-A400 {
+  background-color: #ff9100;
+  color: #ffffff;
+}
+.color-swatch.orange-A700 {
+  background-color: #ff6d00;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-50 {
+  background-color: #fbe9e7;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-100 {
+  background-color: #ffccbc;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-200 {
+  background-color: #ffab91;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-300 {
+  background-color: #ff8a65;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-400 {
+  background-color: #ff7043;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-500 {
+  background-color: #ff5722;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-600 {
+  background-color: #f4511e;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-700 {
+  background-color: #e64a19;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-800 {
+  background-color: #d84315;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-900 {
+  background-color: #bf360c;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-A100 {
+  background-color: #ff9e80;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-A200 {
+  background-color: #ff6e40;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-A400 {
+  background-color: #ff3d00;
+  color: #ffffff;
+}
+.color-swatch.deep-orange-A700 {
+  background-color: #dd2c00;
+  color: #ffffff;
+}
+.color-swatch.brown-50 {
+  background-color: #efebe9;
+  color: #ffffff;
+}
+.color-swatch.brown-100 {
+  background-color: #d7ccc8;
+  color: #ffffff;
+}
+.color-swatch.brown-200 {
+  background-color: #bcaaa4;
+  color: #ffffff;
+}
+.color-swatch.brown-300 {
+  background-color: #a1887f;
+  color: #ffffff;
+}
+.color-swatch.brown-400 {
+  background-color: #8d6e63;
+  color: #ffffff;
+}
+.color-swatch.brown-500 {
+  background-color: #795548;
+  color: #ffffff;
+}
+.color-swatch.brown-600 {
+  background-color: #6d4c41;
+  color: #ffffff;
+}
+.color-swatch.brown-700 {
+  background-color: #5d4037;
+  color: #ffffff;
+}
+.color-swatch.brown-800 {
+  background-color: #4e342e;
+  color: #ffffff;
+}
+.color-swatch.brown-900 {
+  background-color: #3e2723;
+  color: #ffffff;
+}
+.color-swatch.brown-A100 {
+  background-color: #d7ccc8;
+  color: #ffffff;
+}
+.color-swatch.brown-A200 {
+  background-color: #bcaaa4;
+  color: #ffffff;
+}
+.color-swatch.brown-A400 {
+  background-color: #8d6e63;
+  color: #ffffff;
+}
+.color-swatch.brown-A700 {
+  background-color: #5d4037;
+  color: #ffffff;
+}
+.color-swatch.grey-50 {
+  background-color: #fafafa;
+  color: #ffffff;
+}
+.color-swatch.grey-100 {
+  background-color: #f5f5f5;
+  color: #ffffff;
+}
+.color-swatch.grey-200 {
+  background-color: #eeeeee;
+  color: #ffffff;
+}
+.color-swatch.grey-300 {
+  background-color: #e0e0e0;
+  color: #ffffff;
+}
+.color-swatch.grey-400 {
+  background-color: #bdbdbd;
+  color: #ffffff;
+}
+.color-swatch.grey-500 {
+  background-color: #9e9e9e;
+  color: #ffffff;
+}
+.color-swatch.grey-600 {
+  background-color: #757575;
+  color: #ffffff;
+}
+.color-swatch.grey-700 {
+  background-color: #616161;
+  color: #ffffff;
+}
+.color-swatch.grey-800 {
+  background-color: #424242;
+  color: #ffffff;
+}
+.color-swatch.grey-900 {
+  background-color: #212121;
+  color: #ffffff;
+}
+.color-swatch.grey-A100 {
+  background-color: #f5f5f5;
+  color: #ffffff;
+}
+.color-swatch.grey-A200 {
+  background-color: #eeeeee;
+  color: #ffffff;
+}
+.color-swatch.grey-A400 {
+  background-color: #bdbdbd;
+  color: #ffffff;
+}
+.color-swatch.grey-A700 {
+  background-color: #616161;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-50 {
+  background-color: #eceff1;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-100 {
+  background-color: #cfd8dc;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-200 {
+  background-color: #b0bec5;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-300 {
+  background-color: #90a4ae;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-400 {
+  background-color: #78909c;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-500 {
+  background-color: #607d8b;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-600 {
+  background-color: #546e7a;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-700 {
+  background-color: #455a64;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-800 {
+  background-color: #37474f;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-900 {
+  background-color: #263238;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-A100 {
+  background-color: #cfd8dc;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-A200 {
+  background-color: #b0bec5;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-A400 {
+  background-color: #78909c;
+  color: #ffffff;
+}
+.color-swatch.blue-grey-A700 {
+  background-color: #455a64;
+  color: #ffffff;
+}
+.color-swatch.gray07 {
+  background-color: #121212;
+  color: #ffffff;
+}
+.color-swatch.gray13 {
+  background-color: #222222;
+  color: #ffffff;
+}
+.color-swatch.gray15 {
+  background-color: #262626;
+  color: #ffffff;
+}
+.color-swatch.gray20 {
+  background-color: #333333;
+  color: #ffffff;
+}
+.color-swatch.gray27 {
+  background-color: #454545;
+  color: #ffffff;
+}
+.color-swatch.gray33 {
+  background-color: #555555;
+  color: #ffffff;
+}
+.color-swatch.gray40 {
+  background-color: #666666;
+  color: #ffffff;
+}
+.color-swatch.gray46 {
+  background-color: #757575;
+  color: #ffffff;
+}
+.color-swatch.gray47 {
+  background-color: #777777;
+  color: #ffffff;
+}
+.color-swatch.gray53 {
+  background-color: #878787;
+  color: #ffffff;
+}
+.color-swatch.gray60 {
+  background-color: #999999;
+  color: #ffffff;
+}
+.color-swatch.gray67 {
+  background-color: #aaaaaa;
+  color: #ffffff;
+}
+.color-swatch.gray74 {
+  background-color: #bbbbbb;
+  color: #ffffff;
+}
+.color-swatch.gray80 {
+  background-color: #cccccc;
+  color: #ffffff;
+}
+.color-swatch.gray87 {
+  background-color: #dddddd;
+  color: #ffffff;
+}
+.color-swatch.gray90 {
+  background-color: #e6e6e6;
+  color: #ffffff;
+}
+.color-swatch.gray93 {
+  background-color: #eeeeee;
+  color: #ffffff;
+}
+.color-swatch.gray96 {
+  background-color: #f5f5f5;
+  color: #ffffff;
+}
+.color-swatch.gray98 {
+  background-color: #fafafa;
+  color: #ffffff;
+}
+.color-swatch.gray99 {
+  background-color: #fcfcfc;
+  color: #ffffff;
+}
+.color-swatch.black-10 {
+  background-color: #e6e6e6;
+  color: #ffffff;
+}
+.color-swatch.black-20 {
+  background-color: #cccccc;
+  color: #ffffff;
+}
+.color-swatch.black-30 {
+  background-color: #b3b3b3;
+  color: #ffffff;
+}
+.color-swatch.black-40 {
+  background-color: #999999;
+  color: #ffffff;
+}
+.color-swatch.black-50 {
+  background-color: #808080;
+  color: #ffffff;
+}
+.color-swatch.black-60 {
+  background-color: #666666;
+  color: #ffffff;
+}
+.color-swatch.black-70 {
+  background-color: #4d4d4d;
+  color: #ffffff;
+}
+.color-swatch.black-80 {
+  background-color: #333333;
+  color: #ffffff;
+}
+.color-swatch.black-90 {
+  background-color: #191919;
+  color: #ffffff;
+}
+.color-swatch.facebookColor {
+  background-color: #3B5998;
+  color: #ffffff;
+}
+.color-swatch.twitterColor {
+  background-color: #0084B4;
+  color: #ffffff;
+}
+.color-swatch.googlePlusColor {
+  background-color: #DC4A38;
+  color: #ffffff;
+}
+.color-swatch.linkedInColor {
+  background-color: #1F88BE;
+  color: #ffffff;
+}
+.color-swatch.youtubeColor {
+  background-color: #CC181E;
+  color: #ffffff;
+}
+.color-swatch.instagramColor {
+  background-color: #49769C;
+  color: #ffffff;
+}
+.color-swatch.pinterestColor {
+  background-color: #00ACED;
+  color: #ffffff;
+}
+.color-swatch.red {
+  background-color: #f44336;
+  color: #ffffff;
+}
+.color-swatch.pink {
+  background-color: #e91e63;
+  color: #ffffff;
+}
+.color-swatch.purple {
+  background-color: #9c27b0;
+  color: #ffffff;
+}
+.color-swatch.deep-purple {
+  background-color: #673ab7;
+  color: #ffffff;
+}
+.color-swatch.indigo {
+  background-color: #3f51b5;
+  color: #ffffff;
+}
+.color-swatch.blue {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.color-swatch.light-blue {
+  background-color: #03a9f4;
+  color: #ffffff;
+}
+.color-swatch.cyan {
+  background-color: #00bcd4;
+  color: #ffffff;
+}
+.color-swatch.teal {
+  background-color: #009688;
+  color: #ffffff;
+}
+.color-swatch.green {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+.color-swatch.lime {
+  background-color: #cddc39;
+  color: #ffffff;
+}
+.color-swatch.yellow {
+  background-color: #ffeb3b;
+  color: #ffffff;
+}
+.color-swatch.amber {
+  background-color: #ffc107;
+  color: #ffffff;
+}
+.color-swatch.orange {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+.color-swatch.deep-orange {
+  background-color: #ff5722;
+  color: #ffffff;
+}
+.color-swatch.brown {
+  background-color: #795548;
+  color: #ffffff;
+}
+.color-swatch.grey {
+  background-color: #9e9e9e;
+  color: #ffffff;
+}
+.color-swatch.blue-grey {
+  background-color: #607d8b;
+  color: #ffffff;
+}
+.color-swatch.black {
+  background-color: #000000;
+  color: #ffffff;
+}
+.color-swatch.white {
+  background-color: #ffffff;
+  color: #000000;
+}
+.color-swatch.olive {
+  background-color: olive;
+  color: #ffffff;
+}
+.color-swatch.violet {
+  background-color: violet;
+  color: #ffffff;
+}
+.color-swatch.gray-base {
+  background-color: #000;
+  color: #ffffff;
+}
+.color-swatch.gray-darker {
+  background-color: #222222;
+  color: #ffffff;
+}
+.color-swatch.gray-dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+.color-swatch.gray {
+  background-color: #555555;
+  color: #ffffff;
+}
+.color-swatch.gray-light {
+  background-color: #777777;
+  color: #ffffff;
+}
+.color-swatch.gray-lighter {
+  background-color: #eeeeee;
+  color: #000000;
+}
+.color-swatch.blue-light {
+  background-color: #03a9f4;
+  color: #ffffff;
+}
+.color-swatch.green-light {
+  background-color: #8bc34a;
+  color: #ffffff;
+}
+.color-swatch.olive-light {
+  background-color: #e6e600;
+  color: #ffffff;
+}
+.color-swatch.violet-light {
+  background-color: #fadcfa;
+  color: #ffffff;
+}
+.color-swatch.olive-dark {
+  background-color: #1a1a00;
+  color: #ffffff;
+}
+.color-swatch.violet-dark {
+  background-color: #e228e2;
+  color: #ffffff;
+}
+.color-swatch.subtletransparentblack {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.color-swatch.transparentblack {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.color-swatch.strongtransparentblack {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.color-swatch.verystrongtransparentblack {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.color-swatch.subtletransparentwhite {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+.color-swatch.transparentwhite {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.color-swatch.strongtransparentwhite {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.color-swatch.subtlegradient {
+  background-color: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+}
+.color-swatch.brand-primary {
+  background-color: #337ab7;
+  color: #ffffff;
+}
+.color-swatch.brand-secondary {
+  background-color: #555555;
+  color: #ffffff;
+}
+.color-swatch.brand-success {
+  background-color: #5cb85c;
+  color: #ffffff;
+}
+.color-swatch.brand-info {
+  background-color: #5bc0de;
+  color: #ffffff;
+}
+.color-swatch.brand-warning {
+  background-color: #f0ad4e;
+  color: #ffffff;
+}
+.color-swatch.brand-danger {
+  background-color: #d9534f;
+  color: #ffffff;
+}
+/*******************************
+        Theme Selection
+*******************************/
+/* To override a theme for an individual element
+   specify theme name below
+*/
+/* Default Theme */
+/*******************************
+            Folders
+*******************************/
+/* Path to theme packages */
+/* Path to site override folder */
+/*******************************
+         Import Theme
+*******************************/
+/*******************************
+        Import Directives
+*******************************/
+/*------------------
+       Theme
+-------------------*/
+/*--------------------
+   Site Variables
+---------------------*/
+/* Default site.variables */
+/*---  Light Colors  ---*/
+/*---  Dark Colors  ---*/
+/*---   Neutrals  ---*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+  Other Brand Colors
+--------------------*/
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -1256,1004 +2712,6 @@ th {
 .glyphicon-menu-up:before {
   content: "\e260";
 }
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.color-swatches .gray07 {
-  background-color: #121212;
-}
-.color-swatches .gray13 {
-  background-color: #222222;
-}
-.color-swatches .gray15 {
-  background-color: #262626;
-}
-.color-swatches .gray20 {
-  background-color: #333333;
-}
-.color-swatches .gray27 {
-  background-color: #454545;
-}
-.color-swatches .gray33 {
-  background-color: #555555;
-}
-.color-swatches .gray40 {
-  background-color: #666666;
-}
-.color-swatches .gray46 {
-  background-color: #757575;
-}
-.color-swatches .gray53 {
-  background-color: #878787;
-}
-.color-swatches .gray60 {
-  background-color: #999999;
-}
-.color-swatches .gray67 {
-  background-color: #aaaaaa;
-}
-.color-swatches .gray74 {
-  background-color: #bbbbbb;
-}
-.color-swatches .gray80 {
-  background-color: #cccccc;
-}
-.color-swatches .gray87 {
-  background-color: #dddddd;
-}
-.color-swatches .gray90 {
-  background-color: #e6e6e6;
-}
-.color-swatches .gray93 {
-  background-color: #eeeeee;
-}
-.color-swatches .gray96 {
-  background-color: #f5f5f5;
-}
-.color-swatches .gray98 {
-  background-color: #fafafa;
-}
-.color-swatches .gray99 {
-  background-color: #fcfcfc;
-}
-.color-swatches .gray {
-  background-color: #555555;
-}
-.color-swatches .gray-darker {
-  background-color: #222222;
-}
-.color-swatches .gray-dark {
-  background-color: #333333;
-}
-.color-swatches .gray-light {
-  background-color: #777777;
-}
-.color-swatches .gray-lighter {
-  background-color: #eeeeee;
-}
-.color-swatches .black {
-  background-color: #000;
-}
-.color-swatches .white {
-  background-color: #FFF;
-}
-.color-swatches .blue-dark {
-  background-color: #337ab7;
-}
-.color-swatches .blue {
-  background-color: #428bca;
-}
-.color-swatches .blue-light {
-  background-color: #92bce0;
-}
-.color-swatches .green-dark {
-  background-color: #357935;
-}
-.color-swatches .green {
-  background-color: #5cb85c;
-}
-.color-swatches .green-light {
-  background-color: #a3d7a3;
-}
-.color-swatches .red-dark {
-  background-color: #a02622;
-}
-.color-swatches .red {
-  background-color: #d9534f;
-}
-.color-swatches .red-light {
-  background-color: #eba5a3;
-}
-.color-swatches .yellow-dark {
-  background-color: #999900;
-}
-.color-swatches .yellow {
-  background-color: yellow;
-}
-.color-swatches .yellow-light {
-  background-color: #ffff66;
-}
-.color-swatches .orange {
-  background-color: #f0ad4e;
-}
-.color-swatches .orange-light {
-  background-color: #f8d9ac;
-}
-.color-swatches .pink-dark {
-  background-color: #ff5a77;
-}
-.color-swatches .pink {
-  background-color: pink;
-}
-.color-swatches .pink-light {
-  background-color: #ffffff;
-}
-.color-swatches .purple-dark {
-  background-color: #1a001a;
-}
-.color-swatches .purple {
-  background-color: purple;
-}
-.color-swatches .purple-light {
-  background-color: #e600e6;
-}
-.color-swatches .olive-dark {
-  background-color: #1a1a00;
-}
-.color-swatches .olive {
-  background-color: olive;
-}
-.color-swatches .olive-light {
-  background-color: #e6e600;
-}
-.color-swatches .teal-dark {
-  background-color: #001a1a;
-}
-.color-swatches .teal {
-  background-color: teal;
-}
-.color-swatches .teal-light {
-  background-color: #00e6e6;
-}
-.color-swatches .violet-dark {
-  background-color: #e228e2;
-}
-.color-swatches .violet {
-  background-color: violet;
-}
-.color-swatches .violet-light {
-  background-color: #fadcfa;
-}
-.color-swatches .brown-dark {
-  background-color: #541515;
-}
-.color-swatches .brown {
-  background-color: brown;
-}
-.color-swatches .brown-light {
-  background-color: #d65f5f;
-}
-.color-swatches .darkwhite {
-  background-color: #bfbfbf;
-}
-.color-swatches .midwhite {
-  background-color: #ffffff;
-}
-.color-swatches .subtletransparentblack {
-  background: rgba(0, 0, 0, 0.03);
-}
-.color-swatches .transparentblack {
-  background: rgba(255, 255, 255, 0.02);
-}
-.color-swatches .strongtransparentblack {
-  background: rgba(255, 255, 255, 0.02);
-}
-.color-swatches .verystrongtransparentblack {
-  background: rgba(255, 255, 255, 0.02);
-}
-.color-swatches .subtletransparentwhite {
-  background: rgba(255, 255, 255, 0.02);
-}
-.color-swatches .transparentwhite {
-  background: rgba(255, 255, 255, 0.08);
-}
-.color-swatches .strongtransparentwhite {
-  background: rgba(255, 255, 255, 0.15);
-}
-.color-swatches .subtlegradient {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html {
-  font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333333;
-  background-color: #fff;
-}
-input,
-button,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-a {
-  color: #337ab7;
-  text-decoration: none;
-}
-a:hover,
-a:focus {
-  color: #23527c;
-  text-decoration: underline;
-}
-a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-figure {
-  margin: 0;
-}
-img {
-  vertical-align: middle;
-}
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.img-rounded {
-  border-radius: 6px;
-}
-.img-thumbnail {
-  padding: 4px;
-  line-height: 1.42857143;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-}
-.img-circle {
-  border-radius: 50%;
-}
-hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid #eeeeee;
-}
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
-}
-[role="button"] {
-  cursor: pointer;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small,
-.h1 small,
-.h2 small,
-.h3 small,
-.h4 small,
-.h5 small,
-.h6 small,
-h1 .small,
-h2 .small,
-h3 .small,
-h4 .small,
-h5 .small,
-h6 .small,
-.h1 .small,
-.h2 .small,
-.h3 .small,
-.h4 .small,
-.h5 .small,
-.h6 .small {
-  font-weight: normal;
-  line-height: 1;
-  color: #777777;
-}
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-h1 small,
-.h1 small,
-h2 small,
-.h2 small,
-h3 small,
-.h3 small,
-h1 .small,
-.h1 .small,
-h2 .small,
-.h2 .small,
-h3 .small,
-.h3 .small {
-  font-size: 65%;
-}
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-h4 small,
-.h4 small,
-h5 small,
-.h5 small,
-h6 small,
-.h6 small,
-h4 .small,
-.h4 .small,
-h5 .small,
-.h5 .small,
-h6 .small,
-.h6 .small {
-  font-size: 75%;
-}
-h1,
-.h1 {
-  font-size: 36px;
-}
-h2,
-.h2 {
-  font-size: 30px;
-}
-h3,
-.h3 {
-  font-size: 24px;
-}
-h4,
-.h4 {
-  font-size: 18px;
-}
-h5,
-.h5 {
-  font-size: 14px;
-}
-h6,
-.h6 {
-  font-size: 12px;
-}
-p {
-  margin: 0 0 10px;
-}
-.lead {
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.4;
-}
-@media (min-width: 768px) {
-  .lead {
-    font-size: 21px;
-  }
-}
-small,
-.small {
-  font-size: 85%;
-}
-mark,
-.mark {
-  background-color: #fcf8e3;
-  padding: .2em;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-.text-center {
-  text-align: center;
-}
-.text-justify {
-  text-align: justify;
-}
-.text-nowrap {
-  white-space: nowrap;
-}
-.text-lowercase {
-  text-transform: lowercase;
-}
-.text-uppercase {
-  text-transform: uppercase;
-}
-.text-capitalize {
-  text-transform: capitalize;
-}
-.text-muted {
-  color: #777777;
-}
-.text-primary {
-  color: #337ab7;
-}
-a.text-primary:hover,
-a.text-primary:focus {
-  color: #286090;
-}
-.text-success {
-  color: #3c763d;
-}
-a.text-success:hover,
-a.text-success:focus {
-  color: #2b542c;
-}
-.text-info {
-  color: #31708f;
-}
-a.text-info:hover,
-a.text-info:focus {
-  color: #245269;
-}
-.text-warning {
-  color: #8a6d3b;
-}
-a.text-warning:hover,
-a.text-warning:focus {
-  color: #66512c;
-}
-.text-danger {
-  color: #a94442;
-}
-a.text-danger:hover,
-a.text-danger:focus {
-  color: #843534;
-}
-.bg-primary {
-  color: #fff;
-  background-color: #337ab7;
-}
-a.bg-primary:hover,
-a.bg-primary:focus {
-  background-color: #286090;
-}
-.bg-success {
-  background-color: #dff0d8;
-}
-a.bg-success:hover,
-a.bg-success:focus {
-  background-color: #c1e2b3;
-}
-.bg-info {
-  background-color: #d9edf7;
-}
-a.bg-info:hover,
-a.bg-info:focus {
-  background-color: #afd9ee;
-}
-.bg-warning {
-  background-color: #fcf8e3;
-}
-a.bg-warning:hover,
-a.bg-warning:focus {
-  background-color: #f7ecb5;
-}
-.bg-danger {
-  background-color: #f2dede;
-}
-a.bg-danger:hover,
-a.bg-danger:focus {
-  background-color: #e4b9b9;
-}
-.page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee;
-}
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin-bottom: 0;
-}
-.list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-.list-inline {
-  padding-left: 0;
-  list-style: none;
-  margin-left: -5px;
-}
-.list-inline > li {
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-dl {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-dt,
-dd {
-  line-height: 1.42857143;
-}
-dt {
-  font-weight: bold;
-}
-dd {
-  margin-left: 0;
-}
-@media (min-width: 768px) {
-  .dl-horizontal dt {
-    float: left;
-    width: 160px;
-    clear: left;
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .dl-horizontal dd {
-    margin-left: 180px;
-  }
-}
-abbr[title],
-abbr[data-original-title] {
-  cursor: help;
-  border-bottom: 1px dotted #777777;
-}
-.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
-blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
-  border-left: 5px solid #eeeeee;
-}
-blockquote p:last-child,
-blockquote ul:last-child,
-blockquote ol:last-child {
-  margin-bottom: 0;
-}
-blockquote footer,
-blockquote small,
-blockquote .small {
-  display: block;
-  font-size: 80%;
-  line-height: 1.42857143;
-  color: #777777;
-}
-blockquote footer:before,
-blockquote small:before,
-blockquote .small:before {
-  content: '\2014 \00A0';
-}
-.blockquote-reverse,
-blockquote.pull-right {
-  padding-right: 15px;
-  padding-left: 0;
-  border-right: 5px solid #eeeeee;
-  border-left: 0;
-  text-align: right;
-}
-.blockquote-reverse footer:before,
-blockquote.pull-right footer:before,
-.blockquote-reverse small:before,
-blockquote.pull-right small:before,
-.blockquote-reverse .small:before,
-blockquote.pull-right .small:before {
-  content: '';
-}
-.blockquote-reverse footer:after,
-blockquote.pull-right footer:after,
-.blockquote-reverse small:after,
-blockquote.pull-right small:after,
-.blockquote-reverse .small:after,
-blockquote.pull-right .small:after {
-  content: '\00A0 \2014';
-}
-address {
-  margin-bottom: 20px;
-  font-style: normal;
-  line-height: 1.42857143;
-}
-/*******************************
-         Type Overrides
-*******************************/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small,
-.h1 small,
-.h2 small,
-.h3 small,
-.h4 small,
-.h5 small,
-.h6 small,
-h1 .small,
-h2 .small,
-h3 .small,
-h4 .small,
-h5 .small,
-h6 .small,
-.h1 .small,
-.h2 .small,
-.h3 .small,
-.h4 .small,
-.h5 .small,
-.h6 .small {
-  font-weight: normal;
-  line-height: 1;
-  color: #777777;
-}
-h1,
-.h1 {
-  font-size: 4rem;
-}
-h2,
-.h2 {
-  font-size: 2.714rem;
-}
-h3,
-.h3 {
-  font-size: 2.28rem;
-}
-h4,
-.h4 {
-  font-size: 2.071rem;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
 /* FONT PATH
  * -------------------------- */
 @font-face {
@@ -2263,73 +2721,6 @@ h4,
   font-weight: normal;
   font-style: normal;
 }
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -2338,73 +2729,46 @@ h4,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.fa-ul > li {
+  position: relative;
+}
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
 .fa-glass:before {
@@ -4318,10 +4682,6 @@ h4,
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -4352,8 +4712,6 @@ h4,
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -4378,56 +4736,112 @@ h4,
      Overrides
 -------------------*/
 /* End Config */
-@font-face {
-  font-family: "fuelux";
-  src: url("/fonts/fuelux.eot");
-  src: url("/fonts/fuelux.eot?#iefix") format("embedded-opentype"), url(data:font-woff;base64,d09GRk9UVE8AAAUUAAsAAAAABuAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAABCAAAAegAAAIisWS2RkZGVE0AAALwAAAAGQAAABxvEtzhR0RFRgAAAwwAAAAdAAAAIAA4AARPUy8yAAADLAAAAEoAAABgL7lMbGNtYXAAAAN4AAAAPAAAAUrAGiK3aGVhZAAAA7QAAAAvAAAANgDSVuNoaGVhAAAD5AAAABwAAAAkBCkCA2htdHgAAAQAAAAAGgAAABoHmgL4bWF4cAAABBwAAAAGAAAABgALUABuYW1lAAAEJAAAAN0AAAF3kxoWmXBvc3QAAAUEAAAAEAAAACAAAwABeJw90M9rE0EUB/D30uzusLtuNTqiGIs/+gt6ifVHtgfRHqQHLTYumEsrpSSWRVNozNJc2t6S2K2bBATbS0tLe9jDUlJ6aS85hFT8H6SCFPwTZiCIbpnq6fMe8+Y7j0GIRgERlbdO9r1TBIwAwijvi/D+Ln4tuqqjq3e5erRHhetW7I/r/i90xfN4ndelOHztjgNcjMP3S3HQ41iIgX4WQ6AbrsJN6IUhGIYReApjMA6WM2c/SyQSgnuCYcF9wQPBQ8EjQVJgCkbEvudbA2AZK/gRV9DFVfyEHlaxBhpiJPlk7GX6TebdhxWDDfEb9JbaGezI9Laa74zTOyqTn9O7KosFtFdlg0ymfeE5e0X7VTZaogOqwXz+OOwM/pqbZz2vs+VwyGC/2YXwjsGWf4YBxrdfYZjhMT9M/veQwU7ZHD3MNianstmpyUb28KjROOox+OcrLnV1Nfysy0AQ6YD5Yjpf+jJxLB0Eza2WR0zFruSW5otEq7W2m3v7pJ2SFvKLubJNNPvAaVZa5ET27LXcxjzRkopVS29n9ki7Le0s+ItBmWjHE9KMnXasCjlRAs9f290gWskqpGczJNWWNnfW/WpAtB9Kq9Qs7M+SVErKb+bW7SrRgpmttGcRU64ES35xl2h/Ac9Ys4h4nGNgYGBkAILzccd+gelbXJ9hNABYswg7AAAAeJxjYGRgYOADYgkGEGBiYARCLiBmAfMYAAS4AD0AAAB4nGNgZmJgnMDAysDB6MOYxsDA4A6lvzJIMrQwMDAxsHIywIEAgskQkOaawuDwgOEBJ+OD/w8Y9Bj//v8LFGaEK1AAQkYALokNlwAAeJxjYGBgZoBgGQZGBhBwAfIYwXwWBg0gzQakGRmYGBgecP7/D1LwgAFEKzBC1QMBIxsDgjNCAQBlrAaweJxjYGRgYADiH2cX2sfz23xl4GZiAIHzt7g+w2lmBmbGv4x/gVwOBrA0AFSyC6wAeJxjYGRgYPzLwMCgx8QAAkA2IwMqYAIANwYCMQIAAAACAAADARUBhwGDAQ8AWAADAAMAXACnAAAAAFAAAAsAAHicbY49asNAEIU/2bJMsEmX1JsipYS0BAwuU/gAKdy7WAuDkPDagtzDkD5djpED5AQ5TZ7kKVJ4l9n59vHmB1jyQcJwEjLujSfMeTae8sTROJXn03jGgm/jTPdXziS9k7IcqwaeqOOD8ZRXcuNUnovxjEe+jDPpP+zpCTR632Hfh6ZXfpNUS2rYEfUNdd/sBBs6Ws5jjnIEHJ6CUnmt+N/sqnitsVJ4eSpe1KJrz5su1sH5onRrdx0p8Pkq92Uly82VtpIiJw7jCk7NhrFsQzwdutZVRXm78A9U7zY2AAAAeJxjYGZABowMaAAAAI4ABQ==) format("woff"), url("/fonts/fuelux.ttf") format("truetype"), url("/fonts/fuelux.svg#fuelux") format("svg");
-  font-weight: normal;
-  font-style: normal;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-[class^="fueluxicon-"]:before,
-[class*=" fueluxicon-"]:before {
-  font-family: "fuelux" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  line-height: 1;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.fueluxicon-loader-full:before {
-  content: "\e000";
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.fueluxicon-loader-1:before {
-  content: "\e001";
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #fff;
 }
-.fueluxicon-loader-2:before {
-  content: "\e002";
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
-.fueluxicon-loader-3:before {
-  content: "\e003";
+a {
+  color: #42a5f5;
+  text-decoration: none;
 }
-.fueluxicon-loader-4:before {
-  content: "\e004";
+a:hover,
+a:focus {
+  color: #0c80df;
+  text-decoration: underline;
 }
-.fueluxicon-loader-5:before {
-  content: "\e005";
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
-.fueluxicon-loader-6:before {
-  content: "\e006";
+figure {
+  margin: 0;
 }
-.fueluxicon-loader-7:before {
-  content: "\e007";
+img {
+  vertical-align: middle;
 }
-.fueluxicon-loader-8:before {
-  content: "\e008";
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-.fueluxicon-bullet:before {
-  content: "\e009";
+.img-rounded {
+  border-radius: 6px;
 }
-/* Basics */
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.img-circle {
+  border-radius: 50%;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+[role="button"] {
+  cursor: pointer;
+}
 /*******************************
         Theme Selection
 *******************************/
@@ -4435,10 +4849,6 @@ h4,
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -4469,8 +4879,491 @@ h4,
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
+/* Component's site.variables */
+/* Site theme site.variables */
+/*-------------------
+ Import Google Fonts
+--------------------*/
+/*-------------------
+ Component Variables
+---------------------*/
+/* Default */
+/* Packaged Theme */
+/* Site Theme */
+/*******************************
+    Mix-ins: Loading overrides
+*******************************/
+/*--------------------
+   Site Mixins
+---------------------*/
+/*------------------
+       Fonts
+-------------------*/
+/*------------------
+     Overrides
+-------------------*/
+/* End Config */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1 small,
+.h1 small,
+h2 small,
+.h2 small,
+h3 small,
+.h3 small,
+h1 .small,
+.h1 .small,
+h2 .small,
+.h2 .small,
+h3 .small,
+.h3 .small {
+  font-size: 65%;
+}
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small {
+  font-size: 75%;
+}
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+p {
+  margin: 0 0 10px;
+}
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .lead {
+    font-size: 21px;
+  }
+}
+small,
+.small {
+  font-size: 85%;
+}
+mark,
+.mark {
+  background-color: #fcf8e3;
+  padding: .2em;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-muted {
+  color: #777777;
+}
+.text-primary {
+  color: #42a5f5;
+}
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #128ef2;
+}
+.text-success {
+  color: #3c763d;
+}
+a.text-success:hover,
+a.text-success:focus {
+  color: #2b542c;
+}
+.text-info {
+  color: #31708f;
+}
+a.text-info:hover,
+a.text-info:focus {
+  color: #245269;
+}
+.text-warning {
+  color: #8a6d3b;
+}
+a.text-warning:hover,
+a.text-warning:focus {
+  color: #66512c;
+}
+.text-danger {
+  color: #a94442;
+}
+a.text-danger:hover,
+a.text-danger:focus {
+  color: #843534;
+}
+.bg-primary {
+  color: #fff;
+  background-color: #42a5f5;
+}
+a.bg-primary:hover,
+a.bg-primary:focus {
+  background-color: #128ef2;
+}
+.bg-success {
+  background-color: #dff0d8;
+}
+a.bg-success:hover,
+a.bg-success:focus {
+  background-color: #c1e2b3;
+}
+.bg-info {
+  background-color: #d9edf7;
+}
+a.bg-info:hover,
+a.bg-info:focus {
+  background-color: #afd9ee;
+}
+.bg-warning {
+  background-color: #fcf8e3;
+}
+a.bg-warning:hover,
+a.bg-warning:focus {
+  background-color: #f7ecb5;
+}
+.bg-danger {
+  background-color: #f2dede;
+}
+a.bg-danger:hover,
+a.bg-danger:focus {
+  background-color: #e4b9b9;
+}
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+dt,
+dd {
+  line-height: 1.42857143;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .dl-horizontal dd {
+    margin-left: 180px;
+  }
+}
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #777777;
+}
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eeeeee;
+}
+blockquote p:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+  margin-bottom: 0;
+}
+blockquote footer,
+blockquote small,
+blockquote .small {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: #777777;
+}
+blockquote footer:before,
+blockquote small:before,
+blockquote .small:before {
+  content: '\2014 \00A0';
+}
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+  text-align: right;
+}
+.blockquote-reverse footer:before,
+blockquote.pull-right footer:before,
+.blockquote-reverse small:before,
+blockquote.pull-right small:before,
+.blockquote-reverse .small:before,
+blockquote.pull-right .small:before {
+  content: '';
+}
+.blockquote-reverse footer:after,
+blockquote.pull-right footer:after,
+.blockquote-reverse small:after,
+blockquote.pull-right small:after,
+.blockquote-reverse .small:after,
+blockquote.pull-right .small:after {
+  content: '\00A0 \2014';
+}
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.42857143;
+}
+/*******************************
+         Type Overrides
+*******************************/
+/*******************************
+         Type Overrides
+*******************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+h1,
+.h1 {
+  font-size: 4rem;
+}
+h2,
+.h2 {
+  font-size: 2.714rem;
+}
+h3,
+.h3 {
+  font-size: 2.28rem;
+}
+h4,
+.h4 {
+  font-size: 2.071rem;
+}
+/* Basics */
+/*******************************
+        Theme Selection
+*******************************/
+/* To override a theme for an individual element
+   specify theme name below
+*/
+/* Default Theme */
+/*******************************
+            Folders
+*******************************/
+/* Path to theme packages */
+/* Path to site override folder */
+/*******************************
+         Import Theme
+*******************************/
+/*******************************
+        Import Directives
+*******************************/
+/*------------------
+       Theme
+-------------------*/
+/*--------------------
+   Site Variables
+---------------------*/
+/* Default site.variables */
+/*---  Light Colors  ---*/
+/*---  Dark Colors  ---*/
+/*---   Neutrals  ---*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+  Other Brand Colors
+--------------------*/
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -4554,10 +5447,6 @@ pre code {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -4588,8 +5477,6 @@ pre code {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -5342,10 +6229,6 @@ pre code {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -5376,168 +6259,6 @@ pre code {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.fa-ul {
-  padding-left: 0;
-  margin-left: 2.14285714em;
-  list-style-type: none;
-}
-.fa-ul > li {
-  position: relative;
-}
-.fa-li {
-  position: absolute;
-  left: -2.14285714em;
-  width: 2.14285714em;
-  top: 0.14285714em;
-  text-align: center;
-}
-.fa-li.fa-lg {
-  left: -1.85714286em;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.container-smooth {
-  max-width: 1170px;
-}
-@media (min-width: 1px) {
-  .container-smooth {
-    width: auto;
-  }
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -5809,10 +6530,6 @@ table th[class*="col-"] {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -5843,8 +6560,6 @@ table th[class*="col-"] {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -6382,377 +7097,6 @@ select[multiple].input-lg {
     font-size: 12px;
   }
 }
-.radio-inline,
-.checkbox-inline {
-  padding-left: 0;
-}
-.radio-inline.highlight,
-.checkbox-inline.highlight {
-  left: -8px;
-}
-.radio-inline label,
-.checkbox-inline label {
-  margin-bottom: 0;
-}
-label.radio:hover:before,
-label.checkbox:hover:before,
-label.radio-inline:hover:before,
-label.checkbox-inline:hover:before,
-.input-label.radio:hover:before,
-.input-label.checkbox:hover:before,
-.input-label.radio-inline:hover:before,
-.input-label.checkbox-inline:hover:before,
-.radio label:hover:before,
-.checkbox label:hover:before,
-.radio-inline label:hover:before,
-.checkbox-inline label:hover:before,
-.radio .input-label:hover:before,
-.checkbox .input-label:hover:before,
-.radio-inline .input-label:hover:before,
-.checkbox-inline .input-label:hover:before {
-  box-shadow: inset 0px 0px 2px 1px rgba(91, 157, 217, 0.7), 0px 0px 5px 0px rgba(91, 157, 217, 0.7);
-}
-.radio label,
-.checkbox label,
-.radio-inline label,
-.checkbox-inline label,
-.radio .input-label,
-.checkbox .input-label,
-.radio-inline .input-label,
-.checkbox-inline .input-label,
-label.radio,
-label.checkbox,
-label.radio-inline,
-label.checkbox-inline {
-  cursor: pointer;
-  font-weight: normal;
-}
-.radio.highlight input[type="checkbox"]:not(.sr-only) ~ label,
-.checkbox.highlight input[type="checkbox"]:not(.sr-only) ~ label,
-.radio-inline.highlight input[type="checkbox"]:not(.sr-only) ~ label,
-.checkbox-inline.highlight input[type="checkbox"]:not(.sr-only) ~ label,
-.radio.highlight input[type="radio"]:not(.sr-only) ~ label,
-.checkbox.highlight input[type="radio"]:not(.sr-only) ~ label,
-.radio-inline.highlight input[type="radio"]:not(.sr-only) ~ label,
-.checkbox-inline.highlight input[type="radio"]:not(.sr-only) ~ label {
-  padding: 4px;
-  border-radius: 4px;
-}
-.radio.highlight input[type="checkbox"]:not(.sr-only):checked ~ label,
-.checkbox.highlight input[type="checkbox"]:not(.sr-only):checked ~ label,
-.radio-inline.highlight input[type="checkbox"]:not(.sr-only):checked ~ label,
-.checkbox-inline.highlight input[type="checkbox"]:not(.sr-only):checked ~ label,
-.radio.highlight input[type="radio"]:not(.sr-only):checked ~ label,
-.checkbox.highlight input[type="radio"]:not(.sr-only):checked ~ label,
-.radio-inline.highlight input[type="radio"]:not(.sr-only):checked ~ label,
-.checkbox-inline.highlight input[type="radio"]:not(.sr-only):checked ~ label {
-  background-color: #e6e6e6;
-  opacity: 1;
-  z-index: 0;
-}
-.radio input[type="checkbox"]:not(.sr-only),
-.checkbox input[type="checkbox"]:not(.sr-only),
-.radio-inline input[type="checkbox"]:not(.sr-only),
-.checkbox-inline input[type="checkbox"]:not(.sr-only),
-.radio input[type="radio"]:not(.sr-only),
-.checkbox input[type="radio"]:not(.sr-only),
-.radio-inline input[type="radio"]:not(.sr-only),
-.checkbox-inline input[type="radio"]:not(.sr-only) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  /* for keyboard tabbing */
-}
-.radio input[type="checkbox"]:not(.sr-only) ~ label,
-.checkbox input[type="checkbox"]:not(.sr-only) ~ label,
-.radio-inline input[type="checkbox"]:not(.sr-only) ~ label,
-.checkbox-inline input[type="checkbox"]:not(.sr-only) ~ label,
-.radio input[type="radio"]:not(.sr-only) ~ label,
-.checkbox input[type="radio"]:not(.sr-only) ~ label,
-.radio-inline input[type="radio"]:not(.sr-only) ~ label,
-.checkbox-inline input[type="radio"]:not(.sr-only) ~ label {
-  padding-left: 0;
-}
-.radio input[type="checkbox"]:not(.sr-only) ~ label:before,
-.checkbox input[type="checkbox"]:not(.sr-only) ~ label:before,
-.radio-inline input[type="checkbox"]:not(.sr-only) ~ label:before,
-.checkbox-inline input[type="checkbox"]:not(.sr-only) ~ label:before,
-.radio input[type="radio"]:not(.sr-only) ~ label:before,
-.checkbox input[type="radio"]:not(.sr-only) ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only) ~ label:before,
-.checkbox-inline input[type="radio"]:not(.sr-only) ~ label:before {
-  font-family: "Glyphicons Halflings";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  speak: none;
-  border: 1px solid #aaaaaa;
-  color: #FFF;
-  font-size: 9px;
-  width: 14px;
-  height: 14px;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: -2px;
-  cursor: pointer;
-  display: inline-block;
-  text-align: left;
-  z-index: 2;
-  content: "";
-}
-.radio input[type="checkbox"]:not(.sr-only):active ~ label,
-.checkbox input[type="checkbox"]:not(.sr-only):active ~ label,
-.radio-inline input[type="checkbox"]:not(.sr-only):active ~ label,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):active ~ label,
-.radio input[type="radio"]:not(.sr-only):active ~ label,
-.checkbox input[type="radio"]:not(.sr-only):active ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):active ~ label,
-.checkbox-inline input[type="radio"]:not(.sr-only):active ~ label,
-.radio input[type="checkbox"]:not(.sr-only):focus ~ label,
-.checkbox input[type="checkbox"]:not(.sr-only):focus ~ label,
-.radio-inline input[type="checkbox"]:not(.sr-only):focus ~ label,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):focus ~ label,
-.radio input[type="radio"]:not(.sr-only):focus ~ label,
-.checkbox input[type="radio"]:not(.sr-only):focus ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):focus ~ label,
-.checkbox-inline input[type="radio"]:not(.sr-only):focus ~ label {
-  color: #333333;
-  color: #39b3d7;
-  cursor: pointer;
-}
-.radio input[type="checkbox"]:not(.sr-only):active ~ label:before,
-.checkbox input[type="checkbox"]:not(.sr-only):active ~ label:before,
-.radio-inline input[type="checkbox"]:not(.sr-only):active ~ label:before,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):active ~ label:before,
-.radio input[type="radio"]:not(.sr-only):active ~ label:before,
-.checkbox input[type="radio"]:not(.sr-only):active ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only):active ~ label:before,
-.checkbox-inline input[type="radio"]:not(.sr-only):active ~ label:before,
-.radio input[type="checkbox"]:not(.sr-only):focus ~ label:before,
-.checkbox input[type="checkbox"]:not(.sr-only):focus ~ label:before,
-.radio-inline input[type="checkbox"]:not(.sr-only):focus ~ label:before,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):focus ~ label:before,
-.radio input[type="radio"]:not(.sr-only):focus ~ label:before,
-.checkbox input[type="radio"]:not(.sr-only):focus ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only):focus ~ label:before,
-.checkbox-inline input[type="radio"]:not(.sr-only):focus ~ label:before {
-  box-shadow: inset 0px 0px 2px 1px #5b9dd9, 0px 0px 5px 0px #5b9dd9;
-  outline: none;
-}
-.radio input[type="checkbox"]:not(.sr-only):active ~ label,
-.checkbox input[type="checkbox"]:not(.sr-only):active ~ label,
-.radio-inline input[type="checkbox"]:not(.sr-only):active ~ label,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):active ~ label,
-.radio input[type="radio"]:not(.sr-only):active ~ label,
-.checkbox input[type="radio"]:not(.sr-only):active ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):active ~ label,
-.checkbox-inline input[type="radio"]:not(.sr-only):active ~ label,
-.radio input[type="checkbox"]:not(.sr-only):focus ~ label,
-.checkbox input[type="checkbox"]:not(.sr-only):focus ~ label,
-.radio-inline input[type="checkbox"]:not(.sr-only):focus ~ label,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):focus ~ label,
-.radio input[type="radio"]:not(.sr-only):focus ~ label,
-.checkbox input[type="radio"]:not(.sr-only):focus ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):focus ~ label,
-.checkbox-inline input[type="radio"]:not(.sr-only):focus ~ label,
-.radio input[type="checkbox"]:not(.sr-only):active ~ label:hover,
-.checkbox input[type="checkbox"]:not(.sr-only):active ~ label:hover,
-.radio-inline input[type="checkbox"]:not(.sr-only):active ~ label:hover,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):active ~ label:hover,
-.radio input[type="radio"]:not(.sr-only):active ~ label:hover,
-.checkbox input[type="radio"]:not(.sr-only):active ~ label:hover,
-.radio-inline input[type="radio"]:not(.sr-only):active ~ label:hover,
-.checkbox-inline input[type="radio"]:not(.sr-only):active ~ label:hover,
-.radio input[type="checkbox"]:not(.sr-only):focus ~ label:hover,
-.checkbox input[type="checkbox"]:not(.sr-only):focus ~ label:hover,
-.radio-inline input[type="checkbox"]:not(.sr-only):focus ~ label:hover,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):focus ~ label:hover,
-.radio input[type="radio"]:not(.sr-only):focus ~ label:hover,
-.checkbox input[type="radio"]:not(.sr-only):focus ~ label:hover,
-.radio-inline input[type="radio"]:not(.sr-only):focus ~ label:hover,
-.checkbox-inline input[type="radio"]:not(.sr-only):focus ~ label:hover {
-  color: #333333;
-  cursor: pointer;
-}
-.radio input[type="checkbox"]:not(.sr-only):active:hover ~ label,
-.checkbox input[type="checkbox"]:not(.sr-only):active:hover ~ label,
-.radio-inline input[type="checkbox"]:not(.sr-only):active:hover ~ label,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):active:hover ~ label,
-.radio input[type="radio"]:not(.sr-only):active:hover ~ label,
-.checkbox input[type="radio"]:not(.sr-only):active:hover ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):active:hover ~ label,
-.checkbox-inline input[type="radio"]:not(.sr-only):active:hover ~ label,
-.radio input[type="checkbox"]:not(.sr-only):focus:hover ~ label,
-.checkbox input[type="checkbox"]:not(.sr-only):focus:hover ~ label,
-.radio-inline input[type="checkbox"]:not(.sr-only):focus:hover ~ label,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):focus:hover ~ label,
-.radio input[type="radio"]:not(.sr-only):focus:hover ~ label,
-.checkbox input[type="radio"]:not(.sr-only):focus:hover ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):focus:hover ~ label,
-.checkbox-inline input[type="radio"]:not(.sr-only):focus:hover ~ label,
-.radio input[type="checkbox"]:not(.sr-only):focus:hover ~ label,
-.checkbox input[type="checkbox"]:not(.sr-only):focus:hover ~ label,
-.radio-inline input[type="checkbox"]:not(.sr-only):focus:hover ~ label,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):focus:hover ~ label,
-.radio input[type="radio"]:not(.sr-only):focus:hover ~ label,
-.checkbox input[type="radio"]:not(.sr-only):focus:hover ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):focus:hover ~ label,
-.checkbox-inline input[type="radio"]:not(.sr-only):focus:hover ~ label,
-.radio input[type="checkbox"]:not(.sr-only):checked:hover ~ label,
-.checkbox input[type="checkbox"]:not(.sr-only):checked:hover ~ label,
-.radio-inline input[type="checkbox"]:not(.sr-only):checked:hover ~ label,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):checked:hover ~ label,
-.radio input[type="radio"]:not(.sr-only):checked:hover ~ label,
-.checkbox input[type="radio"]:not(.sr-only):checked:hover ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):checked:hover ~ label,
-.checkbox-inline input[type="radio"]:not(.sr-only):checked:hover ~ label,
-.radio input[type="checkbox"]:not(.sr-only):active:hover ~ label:hover,
-.checkbox input[type="checkbox"]:not(.sr-only):active:hover ~ label:hover,
-.radio-inline input[type="checkbox"]:not(.sr-only):active:hover ~ label:hover,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):active:hover ~ label:hover,
-.radio input[type="radio"]:not(.sr-only):active:hover ~ label:hover,
-.checkbox input[type="radio"]:not(.sr-only):active:hover ~ label:hover,
-.radio-inline input[type="radio"]:not(.sr-only):active:hover ~ label:hover,
-.checkbox-inline input[type="radio"]:not(.sr-only):active:hover ~ label:hover,
-.radio input[type="checkbox"]:not(.sr-only):focus:hover ~ label:hover,
-.checkbox input[type="checkbox"]:not(.sr-only):focus:hover ~ label:hover,
-.radio-inline input[type="checkbox"]:not(.sr-only):focus:hover ~ label:hover,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):focus:hover ~ label:hover,
-.radio input[type="radio"]:not(.sr-only):focus:hover ~ label:hover,
-.checkbox input[type="radio"]:not(.sr-only):focus:hover ~ label:hover,
-.radio-inline input[type="radio"]:not(.sr-only):focus:hover ~ label:hover,
-.checkbox-inline input[type="radio"]:not(.sr-only):focus:hover ~ label:hover,
-.radio input[type="checkbox"]:not(.sr-only):focus:hover ~ label:hover,
-.checkbox input[type="checkbox"]:not(.sr-only):focus:hover ~ label:hover,
-.radio-inline input[type="checkbox"]:not(.sr-only):focus:hover ~ label:hover,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):focus:hover ~ label:hover,
-.radio input[type="radio"]:not(.sr-only):focus:hover ~ label:hover,
-.checkbox input[type="radio"]:not(.sr-only):focus:hover ~ label:hover,
-.radio-inline input[type="radio"]:not(.sr-only):focus:hover ~ label:hover,
-.checkbox-inline input[type="radio"]:not(.sr-only):focus:hover ~ label:hover,
-.radio input[type="checkbox"]:not(.sr-only):checked:hover ~ label:hover,
-.checkbox input[type="checkbox"]:not(.sr-only):checked:hover ~ label:hover,
-.radio-inline input[type="checkbox"]:not(.sr-only):checked:hover ~ label:hover,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):checked:hover ~ label:hover,
-.radio input[type="radio"]:not(.sr-only):checked:hover ~ label:hover,
-.checkbox input[type="radio"]:not(.sr-only):checked:hover ~ label:hover,
-.radio-inline input[type="radio"]:not(.sr-only):checked:hover ~ label:hover,
-.checkbox-inline input[type="radio"]:not(.sr-only):checked:hover ~ label:hover {
-  color: #333333;
-  cursor: pointer;
-}
-.radio input[type="checkbox"]:not(.sr-only)[disabled="disabled"] ~ label,
-.checkbox input[type="checkbox"]:not(.sr-only)[disabled="disabled"] ~ label,
-.radio-inline input[type="checkbox"]:not(.sr-only)[disabled="disabled"] ~ label,
-.checkbox-inline input[type="checkbox"]:not(.sr-only)[disabled="disabled"] ~ label,
-.radio input[type="radio"]:not(.sr-only)[disabled="disabled"] ~ label,
-.checkbox input[type="radio"]:not(.sr-only)[disabled="disabled"] ~ label,
-.radio-inline input[type="radio"]:not(.sr-only)[disabled="disabled"] ~ label,
-.checkbox-inline input[type="radio"]:not(.sr-only)[disabled="disabled"] ~ label,
-.radio input[type="checkbox"]:not(.sr-only)[disabled] ~ label,
-.checkbox input[type="checkbox"]:not(.sr-only)[disabled] ~ label,
-.radio-inline input[type="checkbox"]:not(.sr-only)[disabled] ~ label,
-.checkbox-inline input[type="checkbox"]:not(.sr-only)[disabled] ~ label,
-.radio input[type="radio"]:not(.sr-only)[disabled] ~ label,
-.checkbox input[type="radio"]:not(.sr-only)[disabled] ~ label,
-.radio-inline input[type="radio"]:not(.sr-only)[disabled] ~ label,
-.checkbox-inline input[type="radio"]:not(.sr-only)[disabled] ~ label,
-.radio input[type="checkbox"]:not(.sr-only):disabled ~ label,
-.checkbox input[type="checkbox"]:not(.sr-only):disabled ~ label,
-.radio-inline input[type="checkbox"]:not(.sr-only):disabled ~ label,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):disabled ~ label,
-.radio input[type="radio"]:not(.sr-only):disabled ~ label,
-.checkbox input[type="radio"]:not(.sr-only):disabled ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):disabled ~ label,
-.checkbox-inline input[type="radio"]:not(.sr-only):disabled ~ label,
-.radio input[type="checkbox"]:not(.sr-only)[disabled="disabled"] ~ label:before,
-.checkbox input[type="checkbox"]:not(.sr-only)[disabled="disabled"] ~ label:before,
-.radio-inline input[type="checkbox"]:not(.sr-only)[disabled="disabled"] ~ label:before,
-.checkbox-inline input[type="checkbox"]:not(.sr-only)[disabled="disabled"] ~ label:before,
-.radio input[type="radio"]:not(.sr-only)[disabled="disabled"] ~ label:before,
-.checkbox input[type="radio"]:not(.sr-only)[disabled="disabled"] ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only)[disabled="disabled"] ~ label:before,
-.checkbox-inline input[type="radio"]:not(.sr-only)[disabled="disabled"] ~ label:before,
-.radio input[type="checkbox"]:not(.sr-only)[disabled] ~ label:before,
-.checkbox input[type="checkbox"]:not(.sr-only)[disabled] ~ label:before,
-.radio-inline input[type="checkbox"]:not(.sr-only)[disabled] ~ label:before,
-.checkbox-inline input[type="checkbox"]:not(.sr-only)[disabled] ~ label:before,
-.radio input[type="radio"]:not(.sr-only)[disabled] ~ label:before,
-.checkbox input[type="radio"]:not(.sr-only)[disabled] ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only)[disabled] ~ label:before,
-.checkbox-inline input[type="radio"]:not(.sr-only)[disabled] ~ label:before,
-.radio input[type="checkbox"]:not(.sr-only):disabled ~ label:before,
-.checkbox input[type="checkbox"]:not(.sr-only):disabled ~ label:before,
-.radio-inline input[type="checkbox"]:not(.sr-only):disabled ~ label:before,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):disabled ~ label:before,
-.radio input[type="radio"]:not(.sr-only):disabled ~ label:before,
-.checkbox input[type="radio"]:not(.sr-only):disabled ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only):disabled ~ label:before,
-.checkbox-inline input[type="radio"]:not(.sr-only):disabled ~ label:before {
-  color: #333333;
-  opacity: .65;
-  cursor: not-allowed !important;
-  outline: none;
-  box-shadow: none;
-}
-.radio input[type="checkbox"]:not(.sr-only):checked ~ label:before,
-.checkbox input[type="checkbox"]:not(.sr-only):checked ~ label:before,
-.radio-inline input[type="checkbox"]:not(.sr-only):checked ~ label:before,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):checked ~ label:before,
-.radio input[type="radio"]:not(.sr-only):checked ~ label:before,
-.checkbox input[type="radio"]:not(.sr-only):checked ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only):checked ~ label:before,
-.checkbox-inline input[type="radio"]:not(.sr-only):checked ~ label:before {
-  background: #39b3d7;
-  border-color: #39b3d7;
-}
-.radio.highlight:before,
-.checkbox.highlight:before,
-.radio-inline.highlight:before,
-.checkbox-inline.highlight:before {
-  left: 4px;
-  top: 7px;
-}
-.radio.highlight input[type="checkbox"]:not(.sr-only) ~ label,
-.checkbox.highlight input[type="checkbox"]:not(.sr-only) ~ label,
-.radio.highlight input[type="radio"]:not(.sr-only) ~ label,
-.checkbox.highlight input[type="radio"]:not(.sr-only) ~ label {
-  left: -8px;
-  position: relative;
-}
-.radio-inline,
-.checkbox-inline {
-  padding-left: 0;
-}
-.radio-inline:before,
-.checkbox-inline:before {
-  left: 0;
-  top: 3px;
-}
-.checkbox.multiline,
-.radio.multiline {
-  float: left;
-  margin-left: 15px;
-}
-.checkbox.multiline ~ .control-label,
-.radio.multiline ~ .control-label {
-  float: left;
-  width: 80%;
-  margin-left: 10px;
-  text-align: left;
-}
-.checkbox.multiline ~ .control-label > label,
-.radio.multiline ~ .control-label > label {
-  font-weight: normal;
-  cursor: pointer;
-}
 /*******************************
         Theme Selection
 *******************************/
@@ -6760,10 +7104,6 @@ label.checkbox-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -6794,237 +7134,6 @@ label.checkbox-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.checkbox input[type="checkbox"]:not(.sr-only) ~ label:before,
-.checkbox-inline input[type="checkbox"]:not(.sr-only) ~ label:before {
-  border-radius: 4px;
-  z-index: 1;
-}
-.checkbox input[type="checkbox"]:not(.sr-only):checked ~ label:before,
-.checkbox-inline input[type="checkbox"]:not(.sr-only):checked ~ label:before {
-  color: white;
-  content: "\e013";
-  line-height: 1em;
-  padding-left: 1px;
-  font-size: 8px;
-  padding-top: 2px;
-}
-.checkbox.hightlight + .checkbox-inline.highlight,
-.checkbox-inline.hightlight + .checkbox-inline.highlight {
-  margin-left: -14px;
-}
-.checkbox.hightlight + .checkbox-inline.highlight.checkbox-custom,
-.checkbox-inline.hightlight + .checkbox-inline.highlight.checkbox-custom {
-  margin-left: 0px;
-}
-.checkbox.highlight input[type="checkbox"]:not(.sr-only) ~ label {
-  left: -4px;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.radio input[type="radio"]:not(.sr-only),
-.radio-inline input[type="radio"]:not(.sr-only) {
-  /* for keyboard tabbing */
-  /* for keyboard tabbing */
-}
-.radio input[type="radio"]:not(.sr-only) ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only) ~ label:before {
-  border-radius: 8px;
-  z-index: 1;
-}
-.radio input[type="radio"]:not(.sr-only):checked ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only):checked ~ label:before {
-  background: #39b3d7;
-  /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #FFF 0%, #FFF 40%, #39b3d7 41%, #39b3d7 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #FFF), color-stop(40%, #FFF), color-stop(41%, #39b3d7), color-stop(100%, #39b3d7));
-  /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, #FFF 0%, #FFF 40%, #39b3d7 41%, #39b3d7 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, #FFF 0%, #FFF 40%, #39b3d7 41%, #39b3d7 100%);
-  /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, #FFF 0%, #FFF 40%, #39b3d7 41%, #39b3d7 100%);
-  /* IE10+ */
-  background: radial-gradient(ellipse at center, #FFF 0%, #FFF 40%, #39b3d7 41%, #39b3d7 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#39b3d7', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-}
-.radio input[type="radio"]:not(.sr-only):hover ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only):hover ~ label:before,
-.radio input[type="radio"]:not(.sr-only):active ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only):active ~ label:before,
-.radio input[type="radio"]:not(.sr-only):focus ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only):focus ~ label:before {
-  box-shadow: inset 0px 0px 2px 1px #5b9dd9, 0px 0px 5px 0px #5b9dd9;
-}
-.radio input[type="radio"]:not(.sr-only):active:hover ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only):active:hover ~ label:before,
-.radio input[type="radio"]:not(.sr-only):focus:hover ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only):focus:hover ~ label:before,
-.radio input[type="radio"]:not(.sr-only):focus:hover ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only):focus:hover ~ label:before,
-.radio input[type="radio"]:not(.sr-only):checked:hover ~ label:before,
-.radio-inline input[type="radio"]:not(.sr-only):checked:hover ~ label:before {
-  outline-color: none;
-  outline-offset: 0;
-  outline-style: none;
-  outline-width: 0;
-  cursor: default;
-}
-.radio input[type="radio"]:not(.sr-only):active:hover ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):active:hover ~ label,
-.radio input[type="radio"]:not(.sr-only):focus:hover ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):focus:hover ~ label,
-.radio input[type="radio"]:not(.sr-only):focus:hover ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):focus:hover ~ label,
-.radio input[type="radio"]:not(.sr-only):checked:hover ~ label,
-.radio-inline input[type="radio"]:not(.sr-only):checked:hover ~ label,
-.radio input[type="radio"]:not(.sr-only):active:hover ~ label:hover,
-.radio-inline input[type="radio"]:not(.sr-only):active:hover ~ label:hover,
-.radio input[type="radio"]:not(.sr-only):focus:hover ~ label:hover,
-.radio-inline input[type="radio"]:not(.sr-only):focus:hover ~ label:hover,
-.radio input[type="radio"]:not(.sr-only):focus:hover ~ label:hover,
-.radio-inline input[type="radio"]:not(.sr-only):focus:hover ~ label:hover,
-.radio input[type="radio"]:not(.sr-only):checked:hover ~ label:hover,
-.radio-inline input[type="radio"]:not(.sr-only):checked:hover ~ label:hover {
-  color: #333333;
-  cursor: default;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -7164,26 +7273,26 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #42a5f5;
+  border-color: #2a99f4;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: #128ef2;
+  border-color: #085796;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #128ef2;
+  border-color: #0b7bd5;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #128ef2;
+  border-color: #0b7bd5;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -7195,8 +7304,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+  background-color: #0b7bd5;
+  border-color: #085796;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -7212,35 +7321,35 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #42a5f5;
+  border-color: #2a99f4;
 }
 .btn-primary .badge {
-  color: #337ab7;
+  color: #42a5f5;
   background-color: #fff;
 }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #4caf50;
+  border-color: #449d48;
 }
 .btn-success:focus,
 .btn-success.focus {
   color: #fff;
-  background-color: #449d44;
-  border-color: #255625;
+  background-color: #3d8b40;
+  border-color: #1e441f;
 }
 .btn-success:hover {
   color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  background-color: #3d8b40;
+  border-color: #327334;
 }
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  background-color: #3d8b40;
+  border-color: #327334;
 }
 .btn-success:active:hover,
 .btn-success.active:hover,
@@ -7252,8 +7361,8 @@ fieldset[disabled] .btn-primary.focus {
 .btn-success.active.focus,
 .open > .dropdown-toggle.btn-success.focus {
   color: #fff;
-  background-color: #398439;
-  border-color: #255625;
+  background-color: #327334;
+  border-color: #1e441f;
 }
 .btn-success:active,
 .btn-success.active,
@@ -7269,35 +7378,35 @@ fieldset[disabled] .btn-success:focus,
 .btn-success.disabled.focus,
 .btn-success[disabled].focus,
 fieldset[disabled] .btn-success.focus {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #4caf50;
+  border-color: #449d48;
 }
 .btn-success .badge {
-  color: #5cb85c;
+  color: #4caf50;
   background-color: #fff;
 }
 .btn-info {
   color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #2196f3;
+  border-color: #0d8aee;
 }
 .btn-info:focus,
 .btn-info.focus {
   color: #fff;
-  background-color: #3071a9;
-  border-color: #193c5a;
+  background-color: #0c7cd5;
+  border-color: #064475;
 }
 .btn-info:hover {
   color: #fff;
-  background-color: #3071a9;
-  border-color: #285e8e;
+  background-color: #0c7cd5;
+  border-color: #0a68b4;
 }
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #fff;
-  background-color: #3071a9;
-  border-color: #285e8e;
+  background-color: #0c7cd5;
+  border-color: #0a68b4;
 }
 .btn-info:active:hover,
 .btn-info.active:hover,
@@ -7309,8 +7418,8 @@ fieldset[disabled] .btn-success.focus {
 .btn-info.active.focus,
 .open > .dropdown-toggle.btn-info.focus {
   color: #fff;
-  background-color: #285e8e;
-  border-color: #193c5a;
+  background-color: #0a68b4;
+  border-color: #064475;
 }
 .btn-info:active,
 .btn-info.active,
@@ -7326,35 +7435,35 @@ fieldset[disabled] .btn-info:focus,
 .btn-info.disabled.focus,
 .btn-info[disabled].focus,
 fieldset[disabled] .btn-info.focus {
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #2196f3;
+  border-color: #0d8aee;
 }
 .btn-info .badge {
-  color: #428bca;
+  color: #2196f3;
   background-color: #fff;
 }
 .btn-warning {
   color: #fff;
-  background-color: #f0ad4e;
-  border-color: #eea236;
+  background-color: #ff9800;
+  border-color: #e68900;
 }
 .btn-warning:focus,
 .btn-warning.focus {
   color: #fff;
-  background-color: #ec971f;
-  border-color: #985f0d;
+  background-color: #cc7a00;
+  border-color: #663d00;
 }
 .btn-warning:hover {
   color: #fff;
-  background-color: #ec971f;
-  border-color: #d58512;
+  background-color: #cc7a00;
+  border-color: #a86400;
 }
 .btn-warning:active,
 .btn-warning.active,
 .open > .dropdown-toggle.btn-warning {
   color: #fff;
-  background-color: #ec971f;
-  border-color: #d58512;
+  background-color: #cc7a00;
+  border-color: #a86400;
 }
 .btn-warning:active:hover,
 .btn-warning.active:hover,
@@ -7366,8 +7475,8 @@ fieldset[disabled] .btn-info.focus {
 .btn-warning.active.focus,
 .open > .dropdown-toggle.btn-warning.focus {
   color: #fff;
-  background-color: #d58512;
-  border-color: #985f0d;
+  background-color: #a86400;
+  border-color: #663d00;
 }
 .btn-warning:active,
 .btn-warning.active,
@@ -7383,35 +7492,35 @@ fieldset[disabled] .btn-warning:focus,
 .btn-warning.disabled.focus,
 .btn-warning[disabled].focus,
 fieldset[disabled] .btn-warning.focus {
-  background-color: #f0ad4e;
-  border-color: #eea236;
+  background-color: #ff9800;
+  border-color: #e68900;
 }
 .btn-warning .badge {
-  color: #f0ad4e;
+  color: #ff9800;
   background-color: #fff;
 }
 .btn-danger {
   color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #f44336;
+  border-color: #f32c1e;
 }
 .btn-danger:focus,
 .btn-danger.focus {
   color: #fff;
-  background-color: #c9302c;
-  border-color: #761c19;
+  background-color: #ea1c0d;
+  border-color: #891008;
 }
 .btn-danger:hover {
   color: #fff;
-  background-color: #c9302c;
-  border-color: #ac2925;
+  background-color: #ea1c0d;
+  border-color: #c8180b;
 }
 .btn-danger:active,
 .btn-danger.active,
 .open > .dropdown-toggle.btn-danger {
   color: #fff;
-  background-color: #c9302c;
-  border-color: #ac2925;
+  background-color: #ea1c0d;
+  border-color: #c8180b;
 }
 .btn-danger:active:hover,
 .btn-danger.active:hover,
@@ -7423,8 +7532,8 @@ fieldset[disabled] .btn-warning.focus {
 .btn-danger.active.focus,
 .open > .dropdown-toggle.btn-danger.focus {
   color: #fff;
-  background-color: #ac2925;
-  border-color: #761c19;
+  background-color: #c8180b;
+  border-color: #891008;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -7440,15 +7549,15 @@ fieldset[disabled] .btn-danger:focus,
 .btn-danger.disabled.focus,
 .btn-danger[disabled].focus,
 fieldset[disabled] .btn-danger.focus {
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #f44336;
+  border-color: #f32c1e;
 }
 .btn-danger .badge {
-  color: #d9534f;
+  color: #f44336;
   background-color: #fff;
 }
 .btn-link {
-  color: #337ab7;
+  color: #42a5f5;
   font-weight: normal;
   border-radius: 0;
 }
@@ -7469,7 +7578,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #23527c;
+  color: #0c80df;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -7521,10 +7630,6 @@ input[type="button"].btn-block {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -7555,8 +7660,6 @@ input[type="button"].btn-block {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -7613,6 +7716,95 @@ tbody.collapse.in {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none;
+}
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.fa-stack-1x {
+  line-height: inherit;
+}
+.fa-stack-2x {
+  font-size: 2em;
+}
+.fa-inverse {
+  color: #fff;
+}
 /*******************************
         Theme Selection
 *******************************/
@@ -7620,10 +7812,6 @@ tbody.collapse.in {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -7654,8 +7842,67 @@ tbody.collapse.in {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
+/* Component's site.variables */
+/* Site theme site.variables */
+/*-------------------
+ Import Google Fonts
+--------------------*/
+/*-------------------
+ Component Variables
+---------------------*/
+/* Default */
+/* Packaged Theme */
+/* Site Theme */
+/*******************************
+    Mix-ins: Loading overrides
+*******************************/
+/*--------------------
+   Site Mixins
+---------------------*/
+/*------------------
+       Fonts
+-------------------*/
+/*------------------
+     Overrides
+-------------------*/
+/* End Config */
+/*******************************
+        Theme Selection
+*******************************/
+/* To override a theme for an individual element
+   specify theme name below
+*/
+/* Default Theme */
+/*******************************
+            Folders
+*******************************/
+/* Path to theme packages */
+/* Path to site override folder */
+/*******************************
+         Import Theme
+*******************************/
+/*******************************
+        Import Directives
+*******************************/
+/*------------------
+       Theme
+-------------------*/
+/*--------------------
+   Site Variables
+---------------------*/
+/* Default site.variables */
+/*---  Light Colors  ---*/
+/*---  Dark Colors  ---*/
+/*---   Neutrals  ---*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+  Other Brand Colors
+--------------------*/
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -7750,7 +7997,7 @@ tbody.collapse.in {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #337ab7;
+  background-color: #42a5f5;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -7829,10 +8076,6 @@ tbody.collapse.in {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -7863,8 +8106,6 @@ tbody.collapse.in {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -8067,10 +8308,6 @@ tbody.collapse.in {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -8101,8 +8338,6 @@ tbody.collapse.in {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -8325,10 +8560,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -8359,8 +8590,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -8418,7 +8647,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #337ab7;
+  border-color: #42a5f5;
 }
 .nav .nav-divider {
   height: 1px;
@@ -8511,7 +8740,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #42a5f5;
 }
 .nav-stacked > li {
   float: none;
@@ -8584,10 +8813,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -8618,8 +8843,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -9234,10 +9457,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -9268,8 +9487,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -9319,10 +9536,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -9353,8 +9566,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -9395,7 +9606,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #337ab7;
+  color: #42a5f5;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -9416,7 +9627,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #23527c;
+  color: #0c80df;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -9428,8 +9639,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > span:focus {
   z-index: 3;
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #42a5f5;
+  border-color: #42a5f5;
   cursor: default;
 }
 .pagination > .disabled > span,
@@ -9482,10 +9693,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -9516,8 +9723,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -9587,10 +9792,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -9621,8 +9822,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -9680,39 +9879,39 @@ a.label:focus {
   background-color: #5e5e5e;
 }
 .label-primary {
-  background-color: #337ab7;
+  background-color: #42a5f5;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #286090;
+  background-color: #128ef2;
 }
 .label-success {
-  background-color: #5cb85c;
+  background-color: #4caf50;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #449d44;
+  background-color: #3d8b40;
 }
 .label-info {
-  background-color: #428bca;
+  background-color: #2196f3;
 }
 .label-info[href]:hover,
 .label-info[href]:focus {
-  background-color: #3071a9;
+  background-color: #0c7cd5;
 }
 .label-warning {
-  background-color: #f0ad4e;
+  background-color: #ff9800;
 }
 .label-warning[href]:hover,
 .label-warning[href]:focus {
-  background-color: #ec971f;
+  background-color: #cc7a00;
 }
 .label-danger {
-  background-color: #d9534f;
+  background-color: #f44336;
 }
 .label-danger[href]:hover,
 .label-danger[href]:focus {
-  background-color: #c9302c;
+  background-color: #ea1c0d;
 }
 /*******************************
         Theme Selection
@@ -9721,10 +9920,6 @@ a.label:focus {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -9755,8 +9950,6 @@ a.label:focus {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -9815,7 +10008,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #337ab7;
+  color: #42a5f5;
   background-color: #fff;
 }
 .list-group-item > .badge {
@@ -9834,10 +10027,6 @@ a.badge:focus {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -9868,8 +10057,6 @@ a.badge:focus {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -9914,7 +10101,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #337ab7;
+  border-color: #42a5f5;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -9927,10 +10114,6 @@ a.thumbnail.active {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -9961,8 +10144,6 @@ a.thumbnail.active {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -10069,10 +10250,6 @@ a.thumbnail.active {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -10103,8 +10280,6 @@ a.thumbnail.active {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -10162,7 +10337,7 @@ a.thumbnail.active {
   line-height: 20px;
   color: #fff;
   text-align: center;
-  background-color: #337ab7;
+  background-color: #42a5f5;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
@@ -10183,7 +10358,7 @@ a.thumbnail.active {
   animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success {
-  background-color: #5cb85c;
+  background-color: #4caf50;
 }
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -10191,7 +10366,7 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-info {
-  background-color: #428bca;
+  background-color: #2196f3;
 }
 .progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -10199,7 +10374,7 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-warning {
-  background-color: #f0ad4e;
+  background-color: #ff9800;
 }
 .progress-striped .progress-bar-warning {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -10207,7 +10382,7 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-danger {
-  background-color: #d9534f;
+  background-color: #f44336;
 }
 .progress-striped .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -10221,10 +10396,6 @@ a.thumbnail.active {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -10255,8 +10426,6 @@ a.thumbnail.active {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -10336,10 +10505,6 @@ a.thumbnail.active {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -10370,8 +10535,6 @@ a.thumbnail.active {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -10459,8 +10622,8 @@ button.list-group-item {
 .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #42a5f5;
+  border-color: #42a5f5;
 }
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,
@@ -10476,7 +10639,7 @@ button.list-group-item {
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text {
-  color: #c7ddef;
+  color: #ffffff;
 }
 .list-group-item-success {
   color: #3c763d;
@@ -10609,10 +10772,6 @@ button.list-group-item-danger.active:focus {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -10643,8 +10802,6 @@ button.list-group-item-danger.active:focus {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -10923,22 +11080,22 @@ button.list-group-item-danger.active:focus {
   border-bottom-color: #ddd;
 }
 .panel-primary {
-  border-color: #337ab7;
+  border-color: #42a5f5;
 }
 .panel-primary > .panel-heading {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #42a5f5;
+  border-color: #42a5f5;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #337ab7;
+  border-top-color: #42a5f5;
 }
 .panel-primary > .panel-heading .badge {
-  color: #337ab7;
+  color: #42a5f5;
   background-color: #fff;
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #337ab7;
+  border-bottom-color: #42a5f5;
 }
 .panel-success {
   border-color: #d6e9c6;
@@ -11019,10 +11176,6 @@ button.list-group-item-danger.active:focus {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -11053,8 +11206,6 @@ button.list-group-item-danger.active:focus {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -11112,10 +11263,6 @@ button.list-group-item-danger.active:focus {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -11146,8 +11293,6 @@ button.list-group-item-danger.active:focus {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -11201,10 +11346,6 @@ button.list-group-item-danger.active:focus {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -11235,8 +11376,6 @@ button.list-group-item-danger.active:focus {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -11293,10 +11432,6 @@ button.close {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -11327,8 +11462,6 @@ button.close {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -11399,10 +11532,6 @@ button.close {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -11433,8 +11562,6 @@ button.close {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -11519,10 +11646,6 @@ button.close {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -11553,152 +11676,6 @@ button.close {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.nav-tabs-bottom {
-  border-bottom: 0;
-  border-top: 1px solid #ddd;
-}
-.nav-tabs-bottom > li {
-  margin-bottom: 0;
-  margin-top: -1px;
-}
-.nav-tabs-bottom > li > a {
-  border-radius: 0 0 4px 4px;
-}
-.nav-tabs-bottom > li > a:hover,
-.nav-tabs-bottom > li > a:focus,
-.nav-tabs-bottom > li.active > a,
-.nav-tabs-bottom > li.active > a:hover,
-.nav-tabs-bottom > li.active > a:focus {
-  border: 1px solid #ddd;
-  border-top-color: transparent;
-}
-.nav-tabs-left {
-  border-bottom: 0;
-  border-right: 1px solid #ddd;
-}
-.nav-tabs-left > li {
-  margin-bottom: 0;
-  margin-right: -1px;
-  float: none;
-}
-.nav-tabs-left > li > a {
-  border-radius: 4px 0 0 4px;
-  margin-right: 0;
-  margin-bottom: 2px;
-}
-.nav-tabs-left > li > a:hover,
-.nav-tabs-left > li > a:focus,
-.nav-tabs-left > li.active > a,
-.nav-tabs-left > li.active > a:hover,
-.nav-tabs-left > li.active > a:focus {
-  border: 1px solid #ddd;
-  border-right-color: transparent;
-}
-.row > .nav-tabs-left {
-  padding-right: 0;
-  padding-left: 15px;
-  margin-right: -1px;
-  position: relative;
-  z-index: 1;
-}
-.row > .nav-tabs-left + .tab-content {
-  border-left: 1px solid #ddd;
-}
-.nav-tabs-right {
-  border-bottom: 0;
-  border-left: 1px solid #ddd;
-}
-.nav-tabs-right > li {
-  margin-bottom: 0;
-  margin-left: -1px;
-  float: none;
-}
-.nav-tabs-right > li > a {
-  border-radius: 0 4px 4px 0;
-  margin-left: 0;
-  margin-bottom: 2px;
-}
-.nav-tabs-right > li > a:hover,
-.nav-tabs-right > li > a:focus,
-.nav-tabs-right > li.active > a,
-.nav-tabs-right > li.active > a:hover,
-.nav-tabs-right > li.active > a:focus {
-  border: 1px solid #ddd;
-  border-left-color: transparent;
-}
-.row > .nav-tabs-right {
-  padding-left: 0;
-  padding-right: 15px;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -12001,10 +11978,6 @@ button.close {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -12035,8 +12008,6 @@ button.close {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -12191,10 +12162,6 @@ button.close {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -12225,8 +12192,6 @@ button.close {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -12372,10 +12337,6 @@ button.close {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -12406,8 +12367,6 @@ button.close {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -12570,10 +12529,6 @@ button.close {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -12604,8 +12559,6 @@ button.close {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -12861,10 +12814,6 @@ button.close {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -12895,8 +12844,360 @@ button.close {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
+/* Component's site.variables */
+/* Site theme site.variables */
+/*-------------------
+ Import Google Fonts
+--------------------*/
+/*-------------------
+ Component Variables
+---------------------*/
+/* Default */
+/* Packaged Theme */
+/* Site Theme */
+/*******************************
+    Mix-ins: Loading overrides
+*******************************/
+/*--------------------
+   Site Mixins
+---------------------*/
+/*------------------
+       Fonts
+-------------------*/
+/*------------------
+     Overrides
+-------------------*/
+/* End Config */
+.btn-file {
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+}
+.btn-file > input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  font-size: 23px;
+  height: 100%;
+  width: 100%;
+  direction: ltr;
+  cursor: pointer;
+}
+.fileinput {
+  margin-bottom: 9px;
+  display: inline-block;
+}
+.fileinput .form-control {
+  padding-top: 7px;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  cursor: text;
+}
+.fileinput .thumbnail {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+.fileinput .thumbnail > img {
+  max-height: 100%;
+}
+.fileinput .btn {
+  vertical-align: middle;
+}
+.fileinput-exists .fileinput-new,
+.fileinput-new .fileinput-exists {
+  display: none;
+}
+.fileinput-inline .fileinput-controls {
+  display: inline;
+}
+.fileinput-filename {
+  vertical-align: middle;
+  display: inline-block;
+  overflow: hidden;
+}
+.form-control .fileinput-filename {
+  vertical-align: bottom;
+}
+.fileinput.input-group {
+  display: table;
+}
+.fileinput.input-group > * {
+  position: relative;
+  z-index: 2;
+}
+.fileinput.input-group > .btn-file {
+  z-index: 1;
+}
+.fileinput-new.input-group .btn-file,
+.fileinput-new .input-group .btn-file {
+  border-radius: 0 4px 4px 0;
+}
+.fileinput-new.input-group .btn-file.btn-xs,
+.fileinput-new .input-group .btn-file.btn-xs,
+.fileinput-new.input-group .btn-file.btn-sm,
+.fileinput-new .input-group .btn-file.btn-sm {
+  border-radius: 0 3px 3px 0;
+}
+.fileinput-new.input-group .btn-file.btn-lg,
+.fileinput-new .input-group .btn-file.btn-lg {
+  border-radius: 0 6px 6px 0;
+}
+.form-group.has-warning .fileinput .fileinput-preview {
+  color: #8a6d3b;
+}
+.form-group.has-warning .fileinput .thumbnail {
+  border-color: #faebcc;
+}
+.form-group.has-error .fileinput .fileinput-preview {
+  color: #a94442;
+}
+.form-group.has-error .fileinput .thumbnail {
+  border-color: #ebccd1;
+}
+.form-group.has-success .fileinput .fileinput-preview {
+  color: #3c763d;
+}
+.form-group.has-success .fileinput .thumbnail {
+  border-color: #d6e9c6;
+}
+.input-group-addon:not(:first-child) {
+  border-left: 0;
+}
+/*******************************
+        Theme Selection
+*******************************/
+/* To override a theme for an individual element
+   specify theme name below
+*/
+/* Default Theme */
+/*******************************
+            Folders
+*******************************/
+/* Path to theme packages */
+/* Path to site override folder */
+/*******************************
+         Import Theme
+*******************************/
+/*******************************
+        Import Directives
+*******************************/
+/*------------------
+       Theme
+-------------------*/
+/*--------------------
+   Site Variables
+---------------------*/
+/* Default site.variables */
+/*---  Light Colors  ---*/
+/*---  Dark Colors  ---*/
+/*---   Neutrals  ---*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+  Other Brand Colors
+--------------------*/
+/* Component's site.variables */
+/* Site theme site.variables */
+/*-------------------
+ Import Google Fonts
+--------------------*/
+/*-------------------
+ Component Variables
+---------------------*/
+/* Default */
+/* Packaged Theme */
+/* Site Theme */
+/*******************************
+    Mix-ins: Loading overrides
+*******************************/
+/*--------------------
+   Site Mixins
+---------------------*/
+/*------------------
+       Fonts
+-------------------*/
+/*------------------
+     Overrides
+-------------------*/
+/* End Config */
+.offcanvas {
+  display: none;
+}
+.offcanvas.in {
+  display: block;
+}
+@media (max-width: 767px) {
+  .offcanvas-xs {
+    display: none;
+  }
+  .offcanvas-xs.in {
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  .offcanvas-sm {
+    display: none;
+  }
+  .offcanvas-sm.in {
+    display: block;
+  }
+}
+@media (max-width: 1199px) {
+  .offcanvas-md {
+    display: none;
+  }
+  .offcanvas-md.in {
+    display: block;
+  }
+}
+.offcanvas-lg {
+  display: none;
+}
+.offcanvas-lg.in {
+  display: block;
+}
+.canvas-sliding {
+  -webkit-transition: top 0.35s, left 0.35s, bottom 0.35s, right 0.35s;
+  transition: top 0.35s, left 0.35s, bottom 0.35s, right 0.35s;
+}
+.offcanvas-clone {
+  height: 0px !important;
+  width: 0px !important;
+  overflow: hidden !important;
+  border: none !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  position: absolute !important;
+  top: auto !important;
+  left: auto !important;
+  bottom: 0px !important;
+  right: 0px !important;
+  opacity: 0 !important;
+}
+/*******************************
+        Theme Selection
+*******************************/
+/* To override a theme for an individual element
+   specify theme name below
+*/
+/* Default Theme */
+/*******************************
+            Folders
+*******************************/
+/* Path to theme packages */
+/* Path to site override folder */
+/*******************************
+         Import Theme
+*******************************/
+/*******************************
+        Import Directives
+*******************************/
+/*------------------
+       Theme
+-------------------*/
+/*--------------------
+   Site Variables
+---------------------*/
+/* Default site.variables */
+/*---  Light Colors  ---*/
+/*---  Dark Colors  ---*/
+/*---   Neutrals  ---*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+  Other Brand Colors
+--------------------*/
+/* Component's site.variables */
+/* Site theme site.variables */
+/*-------------------
+ Import Google Fonts
+--------------------*/
+/*-------------------
+ Component Variables
+---------------------*/
+/* Default */
+/* Packaged Theme */
+/* Site Theme */
+/*******************************
+    Mix-ins: Loading overrides
+*******************************/
+/*--------------------
+   Site Mixins
+---------------------*/
+/*------------------
+       Fonts
+-------------------*/
+/*------------------
+     Overrides
+-------------------*/
+/* End Config */
+.table.rowlink td:not(.rowlink-skip),
+.table .rowlink td:not(.rowlink-skip) {
+  cursor: pointer;
+}
+.table.rowlink td:not(.rowlink-skip) a,
+.table .rowlink td:not(.rowlink-skip) a {
+  color: inherit;
+  font: inherit;
+  text-decoration: inherit;
+}
+.table-hover.rowlink tr:hover td,
+.table-hover .rowlink tr:hover td {
+  background-color: #cfcfcf;
+}
+/*******************************
+        Theme Selection
+*******************************/
+/* To override a theme for an individual element
+   specify theme name below
+*/
+/* Default Theme */
+/*******************************
+            Folders
+*******************************/
+/* Path to theme packages */
+/* Path to site override folder */
+/*******************************
+         Import Theme
+*******************************/
+/*******************************
+        Import Directives
+*******************************/
+/*------------------
+       Theme
+-------------------*/
+/*--------------------
+   Site Variables
+---------------------*/
+/* Default site.variables */
+/*---  Light Colors  ---*/
+/*---  Dark Colors  ---*/
+/*---   Neutrals  ---*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+  Other Brand Colors
+--------------------*/
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -13040,10 +13341,6 @@ label.checkbox-custom.checkbox-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -13074,8 +13371,6 @@ label.checkbox-custom.checkbox-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -13231,10 +13526,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -13265,8 +13556,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -13304,10 +13593,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -13338,8 +13623,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -13447,7 +13730,7 @@ label.radio-custom.radio-inline {
 }
 .datepicker-calendar-days td.restricted b:before,
 .datepicker-calendar-days td.restricted button:before {
-  border-top: 1px solid #c9302c;
+  border-top: 1px solid #ea1c0d;
   bottom: 0;
   content: " ";
   display: block;
@@ -13704,10 +13987,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -13738,8 +14017,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -13794,10 +14071,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -13828,8 +14101,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -13867,10 +14138,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -13901,8 +14168,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -14416,10 +14681,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -14450,8 +14711,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -14603,10 +14862,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -14637,8 +14892,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -14820,10 +15073,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -14854,8 +15103,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -15016,10 +15263,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -15050,8 +15293,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -15459,10 +15700,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -15493,8 +15730,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -15622,10 +15857,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -15656,8 +15887,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -15751,10 +15980,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -15785,8 +16010,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -16041,10 +16264,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -16075,8 +16294,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -16114,10 +16331,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -16148,8 +16361,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -16224,10 +16435,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -16258,8 +16465,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -16430,10 +16635,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -16464,8 +16665,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -16621,10 +16820,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -16655,8 +16850,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -16917,378 +17110,6 @@ label.radio-custom.radio-inline {
 .wizard.complete > .actions .btn-next .glyphicon {
   display: none;
 }
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.btn-file {
-  overflow: hidden;
-  position: relative;
-  vertical-align: middle;
-}
-.btn-file > input {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  font-size: 23px;
-  height: 100%;
-  width: 100%;
-  direction: ltr;
-  cursor: pointer;
-}
-.fileinput {
-  margin-bottom: 9px;
-  display: inline-block;
-}
-.fileinput .form-control {
-  padding-top: 7px;
-  padding-bottom: 5px;
-  display: inline-block;
-  margin-bottom: 0px;
-  vertical-align: middle;
-  cursor: text;
-}
-.fileinput .thumbnail {
-  overflow: hidden;
-  display: inline-block;
-  margin-bottom: 5px;
-  vertical-align: middle;
-  text-align: center;
-}
-.fileinput .thumbnail > img {
-  max-height: 100%;
-}
-.fileinput .btn {
-  vertical-align: middle;
-}
-.fileinput-exists .fileinput-new,
-.fileinput-new .fileinput-exists {
-  display: none;
-}
-.fileinput-inline .fileinput-controls {
-  display: inline;
-}
-.fileinput-filename {
-  vertical-align: middle;
-  display: inline-block;
-  overflow: hidden;
-}
-.form-control .fileinput-filename {
-  vertical-align: bottom;
-}
-.fileinput.input-group {
-  display: table;
-}
-.fileinput.input-group > * {
-  position: relative;
-  z-index: 2;
-}
-.fileinput.input-group > .btn-file {
-  z-index: 1;
-}
-.fileinput-new.input-group .btn-file,
-.fileinput-new .input-group .btn-file {
-  border-radius: 0 4px 4px 0;
-}
-.fileinput-new.input-group .btn-file.btn-xs,
-.fileinput-new .input-group .btn-file.btn-xs,
-.fileinput-new.input-group .btn-file.btn-sm,
-.fileinput-new .input-group .btn-file.btn-sm {
-  border-radius: 0 3px 3px 0;
-}
-.fileinput-new.input-group .btn-file.btn-lg,
-.fileinput-new .input-group .btn-file.btn-lg {
-  border-radius: 0 6px 6px 0;
-}
-.form-group.has-warning .fileinput .fileinput-preview {
-  color: #8a6d3b;
-}
-.form-group.has-warning .fileinput .thumbnail {
-  border-color: #faebcc;
-}
-.form-group.has-error .fileinput .fileinput-preview {
-  color: #a94442;
-}
-.form-group.has-error .fileinput .thumbnail {
-  border-color: #ebccd1;
-}
-.form-group.has-success .fileinput .fileinput-preview {
-  color: #3c763d;
-}
-.form-group.has-success .fileinput .thumbnail {
-  border-color: #d6e9c6;
-}
-.input-group-addon:not(:first-child) {
-  border-left: 0;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.offcanvas {
-  display: none;
-}
-.offcanvas.in {
-  display: block;
-}
-@media (max-width: 767px) {
-  .offcanvas-xs {
-    display: none;
-  }
-  .offcanvas-xs.in {
-    display: block;
-  }
-}
-@media (max-width: 991px) {
-  .offcanvas-sm {
-    display: none;
-  }
-  .offcanvas-sm.in {
-    display: block;
-  }
-}
-@media (max-width: 1199px) {
-  .offcanvas-md {
-    display: none;
-  }
-  .offcanvas-md.in {
-    display: block;
-  }
-}
-.offcanvas-lg {
-  display: none;
-}
-.offcanvas-lg.in {
-  display: block;
-}
-.canvas-sliding {
-  -webkit-transition: top 0.35s, left 0.35s, bottom 0.35s, right 0.35s;
-  transition: top 0.35s, left 0.35s, bottom 0.35s, right 0.35s;
-}
-.offcanvas-clone {
-  height: 0px !important;
-  width: 0px !important;
-  overflow: hidden !important;
-  border: none !important;
-  margin: 0px !important;
-  padding: 0px !important;
-  position: absolute !important;
-  top: auto !important;
-  left: auto !important;
-  bottom: 0px !important;
-  right: 0px !important;
-  opacity: 0 !important;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.table.rowlink td:not(.rowlink-skip),
-.table .rowlink td:not(.rowlink-skip) {
-  cursor: pointer;
-}
-.table.rowlink td:not(.rowlink-skip) a,
-.table .rowlink td:not(.rowlink-skip) a {
-  color: inherit;
-  font: inherit;
-  text-decoration: inherit;
-}
-.table-hover.rowlink tr:hover td,
-.table-hover .rowlink tr:hover td {
-  background-color: #cfcfcf;
-}
 /* Views */
 /*******************************
         Theme Selection
@@ -17297,10 +17118,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -17331,8 +17148,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -17411,10 +17226,6 @@ label.radio-custom.radio-inline {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -17445,8 +17256,6 @@ label.radio-custom.radio-inline {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -17471,53 +17280,273 @@ label.radio-custom.radio-inline {
      Overrides
 -------------------*/
 /* End Config */
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.btn {
-  margin-bottom: 0;
+.clearfix:before,
+.clearfix:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.heading:before,
+.heading:after,
+.section:before,
+.section:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
 }
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 0rem;
+.clearfix:after,
+.dl-horizontal dd:after,
+.container:after,
+.container-fluid:after,
+.row:after,
+.heading:after,
+.section:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-header:after,
+.modal-footer:after {
+  clear: both;
 }
-pre,
-blockquote,
-dl,
-figure,
-table,
-p,
-ul,
-ol,
-form {
-  margin-bottom: 20px;
+.clearfix:before,
+.clearfix:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.heading:before,
+.heading:after,
+.section:before,
+.section:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
 }
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.full-width {
-  width: 100%;
-  box-sizing: border-box;
+.clearfix:after,
+.dl-horizontal dd:after,
+.container:after,
+.container-fluid:after,
+.row:after,
+.heading:after,
+.section:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-header:after,
+.modal-footer:after {
+  clear: both;
 }
-.max-full-width {
-  max-width: 100%;
-  box-sizing: border-box;
+.clearfix:before,
+.clearfix:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.heading:before,
+.heading:after,
+.section:before,
+.section:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.dl-horizontal dd:after,
+.container:after,
+.container-fluid:after,
+.row:after,
+.heading:after,
+.section:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-header:after,
+.modal-footer:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .pull-right {
-  float: right;
+  float: right !important;
 }
 .pull-left {
-  float: left;
+  float: left !important;
 }
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Self Clearing Goodness */
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
+}
+.clearfix:before,
+.clearfix:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
+.container:before,
 .container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
 .row:after,
-.u-cf {
-  content: "";
+.heading:before,
+.heading:after,
+.section:before,
+.section:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
   display: table;
+}
+.clearfix:after,
+.dl-horizontal dd:after,
+.container:after,
+.container-fluid:after,
+.row:after,
+.heading:after,
+.section:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-header:after,
+.modal-footer:after {
   clear: both;
 }
 .clearfix:before,
@@ -17619,10 +17648,6 @@ form {
    specify theme name below
 */
 /* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
 /*******************************
             Folders
 *******************************/
@@ -17653,8 +17678,6 @@ form {
 /*-------------------
   Other Brand Colors
 --------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -17889,796 +17912,213 @@ form {
     display: none !important;
   }
 }
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.fa-border {
-  padding: .2em .25em .15em;
-  border: solid 0.08em #eee;
-  border-radius: .1em;
+@-ms-viewport {
+  width: device-width;
 }
-.fa-pull-left {
-  float: left;
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none !important;
 }
-.fa-pull-right {
-  float: right;
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+  display: none !important;
 }
-.fa.fa-pull-left {
-  margin-right: .3em;
-}
-.fa.fa-pull-right {
-  margin-left: .3em;
-}
-/* Deprecated as of 4.4.0 */
-.pull-right {
-  float: right;
-}
-.pull-left {
-  float: left;
-}
-.fa.pull-left {
-  margin-right: .3em;
-}
-.fa.pull-right {
-  margin-left: .3em;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-/* makes the font 33% larger relative to the icon container */
-.fa-lg {
-  font-size: 1.33333333em;
-  line-height: 0.75em;
-  vertical-align: -15%;
-}
-.fa-2x {
-  font-size: 2em;
-}
-.fa-3x {
-  font-size: 3em;
-}
-.fa-4x {
-  font-size: 4em;
-}
-.fa-5x {
-  font-size: 5em;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.fa-fw {
-  width: 1.28571429em;
-  text-align: center;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
-  animation: fa-spin 2s infinite linear;
-}
-.fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-  animation: fa-spin 1s infinite steps(8);
-}
-@-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+@media (max-width: 767px) {
+  .visible-xs {
+    display: block !important;
   }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+  table.visible-xs {
+    display: table !important;
+  }
+  tr.visible-xs {
+    display: table-row !important;
+  }
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important;
   }
 }
-@keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+@media (max-width: 767px) {
+  .visible-xs-block {
+    display: block !important;
   }
 }
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.fa-rotate-90 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-.fa-rotate-180 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-.fa-rotate-270 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-}
-.fa-flip-horizontal {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
-  -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1);
-}
-.fa-flip-vertical {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
-  -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
-  transform: scale(1, -1);
-}
-:root .fa-rotate-90,
-:root .fa-rotate-180,
-:root .fa-rotate-270,
-:root .fa-flip-horizontal,
-:root .fa-flip-vertical {
-  filter: none;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-.fa-stack {
-  position: relative;
-  display: inline-block;
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
-  vertical-align: middle;
-}
-.fa-stack-1x,
-.fa-stack-2x {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-.fa-stack-1x {
-  line-height: inherit;
-}
-.fa-stack-2x {
-  font-size: 2em;
-}
-.fa-inverse {
-  color: #fff;
-}
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Default Theme */
-/* Bootstrap Theme */
-/* Font Awesome */
-/* Jasny */
-/* Fuel UX controls */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
-/*---   Neutrals  ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-  Other Brand Colors
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/* Component's site.variables */
-/* Site theme site.variables */
-/*-------------------
- Import Google Fonts
---------------------*/
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/* Packaged Theme */
-/* Site Theme */
-/*******************************
-    Mix-ins: Loading overrides
-*******************************/
-/*--------------------
-   Site Mixins
----------------------*/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-/*******************************
-	  Utilities Overrides
-*******************************/
-.serif {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.monospace {
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-}
-.text-sm {
-  font-size: 12px;
-}
-.text-lg {
-  font-size: 18px;
-}
-.padding-xs {
-  padding: 5px;
-}
-.padding-xs-horizontal {
-  padding: 0 5px;
-}
-.padding-xs-vertical {
-  padding: 5px 0;
-}
-.padding-xs-top {
-  padding-top: 5px;
-}
-.padding-xs-bottom {
-  padding-bottom: 5px;
-}
-.padding-xs-left {
-  padding-left: 5px;
-}
-.padding-xs-right {
-  padding-right: 5px;
-}
-.padding-sm {
-  padding: 10px;
-}
-.padding-sm-horizontal {
-  padding: 0 10px;
-}
-.padding-sm-vertical {
-  padding: 10px 0;
-}
-.padding-sm-top {
-  padding-top: 10px;
-}
-.padding-sm-bottom {
-  padding-bottom: 10px;
-}
-.padding-sm-left {
-  padding-left: 10px;
-}
-.padding-sm-right {
-  padding-right: 10px;
-}
-.padding-md {
-  padding: 15px;
-}
-.padding-md-horizontal {
-  padding: 0 15px;
-}
-.padding-md-vertical {
-  padding: 15px 0;
-}
-.padding-md-top {
-  padding-top: 15px;
-}
-.padding-md-bottom {
-  padding-bottom: 15px;
-}
-.padding-md-left {
-  padding-left: 15px;
-}
-.padding-md-right {
-  padding-right: 15px;
-}
-.padding-lg {
-  padding: 20px;
-}
-.padding-lg-horizontal {
-  padding: 0 20px;
-}
-.padding-lg-vertical {
-  padding: 20px 0;
-}
-.padding-lg-top {
-  padding-top: 20px;
-}
-.padding-lg-bottom {
-  padding-bottom: 20px;
-}
-.padding-lg-left {
-  padding-left: 20px;
-}
-.padding-lg-right {
-  padding-right: 20px;
-}
-.margin-xs {
-  margin: 5px;
-}
-.margin-xs-horizontal {
-  margin: 0 5px;
-}
-.margin-xs-vertical {
-  margin: 5px 0;
-}
-.margin-xs-top {
-  margin-top: 5px;
-}
-.margin-xs-bottom {
-  margin-bottom: 5px;
-}
-.margin-xs-left {
-  margin-left: 5px;
-}
-.margin-xs-right {
-  margin-right: 5px;
-}
-.margin-sm {
-  margin: 10px;
-}
-.margin-sm-horizontal {
-  margin: 0 10px;
-}
-.margin-sm-vertical {
-  margin: 10px 0;
-}
-.margin-sm-top {
-  margin-top: 10px;
-}
-.margin-sm-bottom {
-  margin-bottom: 10px;
-}
-.margin-sm-left {
-  margin-left: 10px;
-}
-.margin-sm-right {
-  margin-right: 10px;
-}
-.margin-md {
-  margin: 15px;
-}
-.margin-md-horizontal {
-  margin: 0 15px;
-}
-.margin-md-vertical {
-  margin: 15px 0;
-}
-.margin-md-top {
-  margin-top: 15px;
-}
-.margin-md-bottom {
-  margin-bottom: 15px;
-}
-.margin-md-left {
-  margin-left: 15px;
-}
-.margin-md-right {
-  margin-right: 15px;
-}
-.margin-lg {
-  margin: 20px;
-}
-.margin-lg-horizontal {
-  margin: 0 20px;
-}
-.margin-lg-vertical {
-  margin: 20px 0;
-}
-.margin-lg-top {
-  margin-top: 20px;
-}
-.margin-lg-bottom {
-  margin-bottom: 20px;
-}
-.margin-lg-left {
-  margin-left: 20px;
-}
-.margin-lg-right {
-  margin-right: 20px;
+@media (max-width: 767px) {
+  .visible-xs-inline {
+    display: inline !important;
+  }
+}
+@media (max-width: 767px) {
+  .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm {
+    display: block !important;
+  }
+  table.visible-sm {
+    display: table !important;
+  }
+  tr.visible-sm {
+    display: table-row !important;
+  }
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-block {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md {
+    display: block !important;
+  }
+  table.visible-md {
+    display: table !important;
+  }
+  tr.visible-md {
+    display: table-row !important;
+  }
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-block {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-lg {
+    display: block !important;
+  }
+  table.visible-lg {
+    display: table !important;
+  }
+  tr.visible-lg {
+    display: table-row !important;
+  }
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-lg-block {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-lg-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+.visible-print {
+  display: none !important;
+}
+@media print {
+  .visible-print {
+    display: block !important;
+  }
+  table.visible-print {
+    display: table !important;
+  }
+  tr.visible-print {
+    display: table-row !important;
+  }
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important;
+  }
+}
+.visible-print-block {
+  display: none !important;
+}
+@media print {
+  .visible-print-block {
+    display: block !important;
+  }
+}
+.visible-print-inline {
+  display: none !important;
+}
+@media print {
+  .visible-print-inline {
+    display: inline !important;
+  }
+}
+.visible-print-inline-block {
+  display: none !important;
+}
+@media print {
+  .visible-print-inline-block {
+    display: inline-block !important;
+  }
+}
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
 }

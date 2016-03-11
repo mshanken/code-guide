@@ -1,0 +1,11 @@
+.close {
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 24px;
+  opacity: 0.6;
+  .transition(all 0.2s);
+
+  &:hover {
+    opacity: 1;
+  }
+}
