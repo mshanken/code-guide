@@ -18,4 +18,4 @@ Clone/Fork this project, cd into it, then run `grunt server _site`, use your bro
 2. Patterns, you now can see and show your theme working by using this HTML patterns documentation
 
 #What's next?
-Documentation on how to work with this.
+Documentation on how to work with thme-builder.
