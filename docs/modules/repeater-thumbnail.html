@@ -342,18 +342,18 @@
 
 <h4>.repeater('thumbnail_clearSelectedItems');</h4>
 <p>Clears any currently selected thumbnail items. You can use selectable thumbnail items only by enabling the <code>thumbnail_selectable</code> option.</p>
-<figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('thumbnail_clearSelectedItems');</code></pre></figure>
+<figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('thumbnail_clearSelectedItems');</code></pre></figure>
 
 <h4>.repeater('thumbnail_getSelectedItems');</h4>
 <p>Returns the currently selected thumbnail items in an array. You can use selectable thumbnail items only by enabling the <code>thumbnail_selectable</code> option.
 </p>
-<figure class="highlight"><pre><code class="../../js">$('#element').repeater('thumbnail_getSelectedItems');</code></pre></figure>
+<figure class="highlight"><pre><code class="js">$('#element').repeater('thumbnail_getSelectedItems');</code></pre></figure>
 
 <h4>.repeater('thumbnail_setSelectedItems');</h4>
 <p>Set the selected thumbnail items for the current displayed data. This function accepts an array of <code>items</code> objects and
 	<code>force</code> boolean as arguments.
 </p>
-<figure class="highlight"><pre><code class="../../js">$('#myRepeater').repeater('thumbnail_setSelectedItems', [ {...}, ...]);</code></pre></figure>
+<figure class="highlight"><pre><code class="js">$('#myRepeater').repeater('thumbnail_setSelectedItems', [ {...}, ...]);</code></pre></figure>
 <div class="table-responsive">
 	<table class="table table-bordered table-striped">
 		<thead>
@@ -411,7 +411,7 @@
 	</table>
 </div><!-- ./fu-table-responsive -->
 <p>All repeater-thumbnail events are fired on the <code>.repeater</code> classed element.</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('#myRepeater').on('selected.fu.repeaterThumbnail', function () {
     // do something…
 });

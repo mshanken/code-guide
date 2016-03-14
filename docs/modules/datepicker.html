@@ -232,10 +232,10 @@
 
   <h3 id="datepicker-usage-javascript">Via JavaScript</h3>
   <p>Initialize the <code>datepicker()</code> via JavaScript (accepting <a href="#datepicker-usage-options ">default options</a>):</p>
-  <figure class="highlight"><pre><code class="../../js">$('#myDatepicker').datepicker();</code></pre></figure>
+  <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker();</code></pre></figure>
 
   <p>Initialize the <code>datepicker()</code> via JavaScript specifying your own <a href="#datepicker-usage-options ">options</a>:</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('#myDatepicker').datepicker({
   allowPastDates: true
 });
@@ -435,7 +435,7 @@ $('#myDatepicker').datepicker({
     <dt id="datepicker-usage-methods-set-date">.datepicker('setDate')</dt>
     <dd>
       Sets <code>datepicker()</code> to date provided. Date provided must be a valid Date object or date string.
-      <figure class="highlight"><pre><code class="../../js">$('#myDatepicker').datepicker('setDate', new Date());</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setDate', new Date());</code></pre></figure>
     </dd>
 
 
@@ -445,7 +445,7 @@ $('#myDatepicker').datepicker({
     <dt id="datepicker-usage-methods-set-culture">.datepicker('setCulture')</dt>
     <dd>
       Updates the culture the <code>datepicker()</code> uses. <em>Only available using <code>moment.js</code> with langs</em>
-      <figure class="highlight"><pre><code class="../../js">$('#myDatepicker').datepicker('setCulture', 'fr');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setCulture', 'fr');</code></pre></figure>
     </dd>
 
 
@@ -455,7 +455,7 @@ $('#myDatepicker').datepicker({
     <dt id="datepicker-usage-methods-set-format">.datepicker('setFormat')</dt>
     <dd>
       Updates the format the <code>datepicker()</code> uses. <em>Only available using <code>moment.js</code> with langs</em>
-      <figure class="highlight"><pre><code class="../../js">$('#myDatepicker').datepicker('setFormat', 'L');</code></pre></figure>
+      <figure class="highlight"><pre><code class="js">$('#myDatepicker').datepicker('setFormat', 'L');</code></pre></figure>
     </dd>
   </dl>
 
@@ -492,21 +492,21 @@ $('#myDatepicker').datepicker({
 
   </div><!-- ./fu-table-responsive -->
   <p>All <code>datepicker()</code> events are fired on the <code>.datepicker</code> classed element.</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('#myDatepicker').on('changed.fu.datepicker', function (evt, date) {
   // do something…
 });
 </code></pre></figure>
 
   <p>To listen for changes on the <code>Date()</code> object, you will need to combine two listeners (as shown below). The reason for this is to keep double events firing when a date is clicked (previously when a date was clicked <code>dateClicked</code> and <code>changed</code> would both fire, which was confusing to many people.</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('#myDatepicker').on('changed.fu.datepicker dateClicked.fu.datepicker', function (evt, date) {
   // do something…
 });
 </code></pre></figure>
 
   <p>To listen for all changes to the <code>datepicker</code>'s input value, including setting the date to <code>invalid</code> values, you will need to combine two listeners:</p>
-<figure class="highlight"><pre><code class="../../js">
+<figure class="highlight"><pre><code class="js">
 $('#myDatepicker').on('change dateClicked.fu.datepicker', function (evt, date) {
   // do something…
 });
