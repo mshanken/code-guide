@@ -2,7 +2,7 @@
 Code Guide is a project for documenting standards for developing flexible, durable, and sustainable HTML and CSS (and JS). This should be a start point of company style guide, contribution are always welcome.
 Now, you can create your own theme with theme-builder (create your own CSS file with these tool).
 
-This site was built using [Harp-Boilerplate](https://github.com/mshanken/harp-boilerplate)
+Site documentation (gh-pages site) was built using [Harp-Boilerplate](https://github.com/mshanken/harp-boilerplate)
 
 # Front-End development
 As this is an starting point and only front-end is mentioned here, it can grow as company standard. pending on future contributions and request.
