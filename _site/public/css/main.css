@@ -27,8 +27,6 @@
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -37,8 +35,20 @@
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -267,8 +277,6 @@ th {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -277,8 +285,20 @@ th {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -399,8 +419,6 @@ th {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -409,8 +427,20 @@ th {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -1825,7 +1855,7 @@ th {
   background-color: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
 }
 .color-swatch.brand-primary {
-  background-color: #337ab7;
+  background-color: #01579b;
   color: #ffffff;
 }
 .color-swatch.brand-secondary {
@@ -1833,19 +1863,19 @@ th {
   color: #ffffff;
 }
 .color-swatch.brand-success {
-  background-color: #5cb85c;
+  background-color: #4caf50;
   color: #ffffff;
 }
 .color-swatch.brand-info {
-  background-color: #5bc0de;
+  background-color: #2196f3;
   color: #ffffff;
 }
 .color-swatch.brand-warning {
-  background-color: #f0ad4e;
+  background-color: #ff9800;
   color: #ffffff;
 }
 .color-swatch.brand-danger {
-  background-color: #d9534f;
+  background-color: #f44336;
   color: #ffffff;
 }
 /*******************************
@@ -1873,8 +1903,6 @@ th {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -1883,8 +1911,20 @@ th {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -4700,8 +4740,6 @@ th {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -4710,8 +4748,20 @@ th {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -4767,12 +4817,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #42a5f5;
+  color: #01579b;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #0c80df;
+  color: #012c4f;
   text-decoration: underline;
 }
 a:focus {
@@ -4867,8 +4917,6 @@ hr {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -4877,8 +4925,20 @@ hr {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -5069,11 +5129,11 @@ mark,
   color: #777777;
 }
 .text-primary {
-  color: #42a5f5;
+  color: #01579b;
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #128ef2;
+  color: #013b68;
 }
 .text-success {
   color: #3c763d;
@@ -5105,11 +5165,11 @@ a.text-danger:focus {
 }
 .bg-primary {
   color: #fff;
-  background-color: #42a5f5;
+  background-color: #01579b;
 }
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #128ef2;
+  background-color: #013b68;
 }
 .bg-success {
   background-color: #dff0d8;
@@ -5352,8 +5412,6 @@ h4,
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -5362,8 +5420,20 @@ h4,
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -5465,8 +5535,6 @@ pre code {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -5475,8 +5543,20 @@ pre code {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -6247,8 +6327,6 @@ pre code {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -6257,8 +6335,20 @@ pre code {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -6548,8 +6638,6 @@ table th[class*="col-"] {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -6558,8 +6646,20 @@ table th[class*="col-"] {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -7122,8 +7222,6 @@ select[multiple].input-lg {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -7132,8 +7230,20 @@ select[multiple].input-lg {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -7273,26 +7383,26 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #fff;
-  background-color: #42a5f5;
-  border-color: #2a99f4;
+  background-color: #01579b;
+  border-color: #014982;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: #128ef2;
-  border-color: #085796;
+  background-color: #013b68;
+  border-color: #000203;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #128ef2;
-  border-color: #0b7bd5;
+  background-color: #013b68;
+  border-color: #002745;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #128ef2;
-  border-color: #0b7bd5;
+  background-color: #013b68;
+  border-color: #002745;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -7304,8 +7414,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #fff;
-  background-color: #0b7bd5;
-  border-color: #085796;
+  background-color: #002745;
+  border-color: #000203;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -7321,11 +7431,11 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #42a5f5;
-  border-color: #2a99f4;
+  background-color: #01579b;
+  border-color: #014982;
 }
 .btn-primary .badge {
-  color: #42a5f5;
+  color: #01579b;
   background-color: #fff;
 }
 .btn-success {
@@ -7557,7 +7667,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #fff;
 }
 .btn-link {
-  color: #42a5f5;
+  color: #01579b;
   font-weight: normal;
   border-radius: 0;
 }
@@ -7578,7 +7688,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #0c80df;
+  color: #012c4f;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -7648,8 +7758,6 @@ input[type="button"].btn-block {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -7658,8 +7766,20 @@ input[type="button"].btn-block {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -7830,8 +7950,6 @@ tbody.collapse.in {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -7840,8 +7958,20 @@ tbody.collapse.in {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -7891,8 +8021,6 @@ tbody.collapse.in {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -7901,8 +8029,20 @@ tbody.collapse.in {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -7997,7 +8137,7 @@ tbody.collapse.in {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #42a5f5;
+  background-color: #01579b;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -8094,8 +8234,6 @@ tbody.collapse.in {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -8104,8 +8242,20 @@ tbody.collapse.in {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -8326,8 +8476,6 @@ tbody.collapse.in {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -8336,8 +8484,20 @@ tbody.collapse.in {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -8578,8 +8738,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -8588,8 +8746,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -8647,7 +8817,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #42a5f5;
+  border-color: #01579b;
 }
 .nav .nav-divider {
   height: 1px;
@@ -8740,7 +8910,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #42a5f5;
+  background-color: #01579b;
 }
 .nav-stacked > li {
   float: none;
@@ -8831,8 +9001,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -8841,8 +9009,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -9475,8 +9655,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -9485,8 +9663,20 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -9554,8 +9744,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -9564,8 +9752,20 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -9606,7 +9806,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #42a5f5;
+  color: #01579b;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -9627,7 +9827,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #0c80df;
+  color: #012c4f;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -9639,8 +9839,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > span:focus {
   z-index: 3;
   color: #fff;
-  background-color: #42a5f5;
-  border-color: #42a5f5;
+  background-color: #01579b;
+  border-color: #01579b;
   cursor: default;
 }
 .pagination > .disabled > span,
@@ -9711,8 +9911,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -9721,8 +9919,20 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -9810,8 +10020,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -9820,8 +10028,20 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -9879,11 +10099,11 @@ a.label:focus {
   background-color: #5e5e5e;
 }
 .label-primary {
-  background-color: #42a5f5;
+  background-color: #01579b;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #128ef2;
+  background-color: #013b68;
 }
 .label-success {
   background-color: #4caf50;
@@ -9938,8 +10158,6 @@ a.label:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -9948,8 +10166,20 @@ a.label:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -10008,7 +10238,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #42a5f5;
+  color: #01579b;
   background-color: #fff;
 }
 .list-group-item > .badge {
@@ -10045,8 +10275,6 @@ a.badge:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10055,8 +10283,20 @@ a.badge:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -10101,7 +10341,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #42a5f5;
+  border-color: #01579b;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -10132,8 +10372,6 @@ a.thumbnail.active {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10142,8 +10380,20 @@ a.thumbnail.active {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -10268,8 +10518,6 @@ a.thumbnail.active {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10278,8 +10526,20 @@ a.thumbnail.active {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -10337,7 +10597,7 @@ a.thumbnail.active {
   line-height: 20px;
   color: #fff;
   text-align: center;
-  background-color: #42a5f5;
+  background-color: #01579b;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
@@ -10414,8 +10674,6 @@ a.thumbnail.active {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10424,8 +10682,20 @@ a.thumbnail.active {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -10523,8 +10793,6 @@ a.thumbnail.active {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10533,8 +10801,20 @@ a.thumbnail.active {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -10622,8 +10902,8 @@ button.list-group-item {
 .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #42a5f5;
-  border-color: #42a5f5;
+  background-color: #01579b;
+  border-color: #01579b;
 }
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,
@@ -10639,7 +10919,7 @@ button.list-group-item {
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text {
-  color: #ffffff;
+  color: #6abdfe;
 }
 .list-group-item-success {
   color: #3c763d;
@@ -10790,8 +11070,6 @@ button.list-group-item-danger.active:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10800,8 +11078,20 @@ button.list-group-item-danger.active:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -11080,22 +11370,22 @@ button.list-group-item-danger.active:focus {
   border-bottom-color: #ddd;
 }
 .panel-primary {
-  border-color: #42a5f5;
+  border-color: #01579b;
 }
 .panel-primary > .panel-heading {
   color: #fff;
-  background-color: #42a5f5;
-  border-color: #42a5f5;
+  background-color: #01579b;
+  border-color: #01579b;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #42a5f5;
+  border-top-color: #01579b;
 }
 .panel-primary > .panel-heading .badge {
-  color: #42a5f5;
+  color: #01579b;
   background-color: #fff;
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #42a5f5;
+  border-bottom-color: #01579b;
 }
 .panel-success {
   border-color: #d6e9c6;
@@ -11194,8 +11484,6 @@ button.list-group-item-danger.active:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -11204,8 +11492,20 @@ button.list-group-item-danger.active:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -11281,8 +11581,6 @@ button.list-group-item-danger.active:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -11291,8 +11589,20 @@ button.list-group-item-danger.active:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -11364,8 +11674,6 @@ button.list-group-item-danger.active:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -11374,8 +11682,20 @@ button.list-group-item-danger.active:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -11450,8 +11770,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -11460,8 +11778,20 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -11550,8 +11880,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -11560,8 +11888,20 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -11664,8 +12004,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -11674,8 +12012,20 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -11996,8 +12346,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -12006,8 +12354,20 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -12180,8 +12540,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -12190,8 +12548,20 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -12355,8 +12725,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -12365,8 +12733,20 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -12547,8 +12927,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -12557,8 +12935,20 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -12832,8 +13222,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -12842,8 +13230,20 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -12996,8 +13396,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -13006,8 +13404,20 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -13111,8 +13521,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -13121,8 +13529,20 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -13186,8 +13606,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -13196,8 +13614,20 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -13359,8 +13789,6 @@ label.checkbox-custom.checkbox-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -13369,8 +13797,20 @@ label.checkbox-custom.checkbox-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -13544,8 +13984,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -13554,8 +13992,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -13611,8 +14061,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -13621,8 +14069,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -14005,8 +14465,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -14015,8 +14473,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -14089,8 +14559,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -14099,8 +14567,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -14156,8 +14636,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -14166,8 +14644,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -14699,8 +15189,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -14709,8 +15197,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -14880,8 +15380,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -14890,8 +15388,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -15091,8 +15601,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -15101,8 +15609,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -15281,8 +15801,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -15291,8 +15809,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -15718,8 +16248,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -15728,8 +16256,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -15875,8 +16415,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -15885,8 +16423,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -15998,8 +16548,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -16008,8 +16556,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -16282,8 +16842,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -16292,8 +16850,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -16349,8 +16919,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -16359,8 +16927,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -16453,8 +17033,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -16463,8 +17041,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -16653,8 +17243,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -16663,8 +17251,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -16838,8 +17438,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -16848,8 +17446,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -17136,8 +17746,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -17146,8 +17754,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -17244,8 +17864,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -17254,8 +17872,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------
@@ -17666,8 +18296,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -17676,8 +18304,20 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
+/* @gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f; */
 /* Component's site.variables */
 /* Site theme site.variables */
 /*-------------------

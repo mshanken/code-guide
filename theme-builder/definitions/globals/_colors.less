@@ -106,7 +106,7 @@
 @blue-A400: #2979ff;
 @blue-A700: #2962ff;
 @blue: @blue-500;
-@blue-dark: @blue-400;
+@blue-dark: @blue-A400;
 
 @light-blue-50: #e1f5fe;
 @light-blue-100: #b3e5fc;
@@ -385,13 +385,8 @@
 // -------------------------
 @olive: 			olive; 	// #B5CC18;
 @violet: 			violet; // #6435C9;
-
-
-/*---  Light Colors  ---*/
 @olive-light: 			lighten(@olive, 20%);
 @violet-light: 			lighten(@violet, 20%);
-
-/*---  Dark Colors  ---*/
 @olive-dark: 			darken(@olive, 20%);
 @violet-dark: 			darken(@violet, 20%);
 
@@ -417,7 +412,7 @@
 /*-------------------
      Brand Colors
 --------------------*/
-@brand-primary:     @blue-dark; //darken(#428bca, 6.5%);  // #337ab7
+@brand-primary:     @light-blue-900; //darken(#428bca, 6.5%);  // #337ab7
 @brand-secondary: 	lighten(@gray-dark, 13.5%); // From Skeleton CSS
 @brand-success:     @green;
 @brand-info:        @blue;
@@ -425,7 +420,7 @@
 @brand-danger:      @red;
 
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 
 @facebookColor   : #3B5998;
