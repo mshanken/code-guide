@@ -27,8 +27,6 @@
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -37,7 +35,7 @@
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -279,8 +277,6 @@ th {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -289,7 +285,7 @@ th {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -423,8 +419,6 @@ th {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -433,7 +427,7 @@ th {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -1909,8 +1903,6 @@ th {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -1919,7 +1911,7 @@ th {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -4748,8 +4740,6 @@ th {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -4758,7 +4748,7 @@ th {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -4927,8 +4917,6 @@ hr {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -4937,7 +4925,7 @@ hr {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -5424,8 +5412,6 @@ h4,
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -5434,7 +5420,7 @@ h4,
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -5549,8 +5535,6 @@ pre code {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -5559,7 +5543,7 @@ pre code {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -6343,8 +6327,6 @@ pre code {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -6353,7 +6335,7 @@ pre code {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -6656,8 +6638,6 @@ table th[class*="col-"] {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -6666,7 +6646,7 @@ table th[class*="col-"] {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -7242,8 +7222,6 @@ select[multiple].input-lg {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -7252,7 +7230,7 @@ select[multiple].input-lg {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -7780,8 +7758,6 @@ input[type="button"].btn-block {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -7790,7 +7766,7 @@ input[type="button"].btn-block {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -7974,8 +7950,6 @@ tbody.collapse.in {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -7984,7 +7958,7 @@ tbody.collapse.in {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -8047,8 +8021,6 @@ tbody.collapse.in {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -8057,7 +8029,7 @@ tbody.collapse.in {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -8262,8 +8234,6 @@ tbody.collapse.in {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -8272,7 +8242,7 @@ tbody.collapse.in {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -8506,8 +8476,6 @@ tbody.collapse.in {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -8516,7 +8484,7 @@ tbody.collapse.in {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -8770,8 +8738,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -8780,7 +8746,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -9035,8 +9001,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -9045,7 +9009,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -9691,8 +9655,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -9701,7 +9663,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -9782,8 +9744,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -9792,7 +9752,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -9951,8 +9911,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -9961,7 +9919,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -10062,8 +10020,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10072,7 +10028,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -10202,8 +10158,6 @@ a.label:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10212,7 +10166,7 @@ a.label:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -10321,8 +10275,6 @@ a.badge:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10331,7 +10283,7 @@ a.badge:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -10420,8 +10372,6 @@ a.thumbnail.active {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10430,7 +10380,7 @@ a.thumbnail.active {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -10568,8 +10518,6 @@ a.thumbnail.active {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10578,7 +10526,7 @@ a.thumbnail.active {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -10726,8 +10674,6 @@ a.thumbnail.active {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10736,7 +10682,7 @@ a.thumbnail.active {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -10847,8 +10793,6 @@ a.thumbnail.active {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -10857,7 +10801,7 @@ a.thumbnail.active {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -11126,8 +11070,6 @@ button.list-group-item-danger.active:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -11136,7 +11078,7 @@ button.list-group-item-danger.active:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -11542,8 +11484,6 @@ button.list-group-item-danger.active:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -11552,7 +11492,7 @@ button.list-group-item-danger.active:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -11641,8 +11581,6 @@ button.list-group-item-danger.active:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -11651,7 +11589,7 @@ button.list-group-item-danger.active:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -11736,8 +11674,6 @@ button.list-group-item-danger.active:focus {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -11746,7 +11682,7 @@ button.list-group-item-danger.active:focus {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -11834,8 +11770,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -11844,7 +11778,7 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -11946,8 +11880,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -11956,7 +11888,7 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -12072,8 +12004,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -12082,7 +12012,7 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -12416,8 +12346,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -12426,7 +12354,7 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -12612,8 +12540,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -12622,7 +12548,7 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -12799,8 +12725,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -12809,7 +12733,7 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -13003,8 +12927,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -13013,7 +12935,7 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -13300,8 +13222,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -13310,7 +13230,7 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -13476,8 +13396,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -13486,7 +13404,7 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -13603,8 +13521,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -13613,7 +13529,7 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -13690,8 +13606,6 @@ button.close {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -13700,7 +13614,7 @@ button.close {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -13875,8 +13789,6 @@ label.checkbox-custom.checkbox-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -13885,7 +13797,7 @@ label.checkbox-custom.checkbox-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -14072,8 +13984,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -14082,7 +13992,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -14151,8 +14061,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -14161,7 +14069,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -14557,8 +14465,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -14567,7 +14473,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -14653,8 +14559,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -14663,7 +14567,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -14732,8 +14636,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -14742,7 +14644,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -15287,8 +15189,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -15297,7 +15197,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -15480,8 +15380,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -15490,7 +15388,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -15703,8 +15601,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -15713,7 +15609,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -15905,8 +15801,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -15915,7 +15809,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -16354,8 +16248,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -16364,7 +16256,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -16523,8 +16415,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -16533,7 +16423,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -16658,8 +16548,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -16668,7 +16556,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -16954,8 +16842,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -16964,7 +16850,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -17033,8 +16919,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -17043,7 +16927,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -17149,8 +17033,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -17159,7 +17041,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -17361,8 +17243,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -17371,7 +17251,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -17558,8 +17438,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -17568,7 +17446,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -17868,8 +17746,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -17878,7 +17754,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -17988,8 +17864,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -17998,7 +17872,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -18422,8 +18296,6 @@ label.radio-custom.radio-inline {
    Site Variables
 ---------------------*/
 /* Default site.variables */
-/*---  Light Colors  ---*/
-/*---  Dark Colors  ---*/
 /*---   Neutrals  ---*/
 /*-------------------
      Alpha Colors
@@ -18432,7 +18304,7 @@ label.radio-custom.radio-inline {
      Brand Colors
 --------------------*/
 /*-------------------
-  Other Brand Colors
+  Media Colors
 --------------------*/
 /* @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
