@@ -88,16 +88,17 @@ Site theme overrides are home to the **arbitrary** or **temporaneous** aspects o
 
 Some definitions files may even include override files as part of its default theme. This is to move the arbitrary bits outside of a definition. For example `icon` has the UTF content in its override file, so that themes do not inherit these arbitrary properties.
 
->/*******************************
-            Icons
-*******************************/
- /* Web Content */
-.icon.search:before { content: "\f002"; }
-.icon.mail.outline:before { content: "\f003"; }
-.icon.external.link:before { content: "\f08e"; }
-.icon.wifi:before { content: "\f012"; }
-.icon.setting:before { content: "\f013"; }
-.icon.home:before { content: "\f015"; }
-.icon.inbox:before { content: "\f01c"; }
+>/*******************************<br />
+            Icons<br />
+*******************************/<br />
+ /* Web Content */<br />
+.icon.search:before { content: "\f002"; }<br />
+.icon.mail.outline:before { content: "\f003"; }<br />
+.icon.external.link:before { content: "\f08e"; }<br />
+.icon.wifi:before { content: "\f012"; }<br />
+.icon.setting:before { content: "\f013"; }<br />
+.icon.home:before { content: "\f015"; }<br />
+.icon.inbox:before { content: "\f01c"; }<br />
 .icon.browser:before { content: "\f022"; }
-#What's next?
+
+##What's next?
