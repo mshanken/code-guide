@@ -17,6 +17,8 @@ Clone/Fork this project, cd into it, then run `grunt server _site`, use your bro
 1. A theme builder, create your own css file with this tool using less.
 2. Patterns, you now can see and show your theme working by using this HTML patterns documentation
 
+#Theme-Builder How to
+
 ##Theming Concepts
 
 Theme-Builder uses an inheritance system similar to <a href="https://www.sublimetext.com/docs/2/settings.html" target="_blank">Sublime Text</a> designed to facilitate an ecosystem of theming.
