@@ -51,14 +51,14 @@ For example, `ui button` loads variables from six separate files in order:
 
 
 1. Site variables
-  1.1. Defaults pulled from `theme-builder/themes/default/site.variables`
-  1.2. Packaged theme overrides pulled for site from `theme-builder/themes/{themename}/site.variables`
-  1.3. Site overrides pulled from `theme-builder/site/site.variables`
+  1. Defaults pulled from `theme-builder/themes/default/site.variables`
+  2. Packaged theme overrides pulled for site from `theme-builder/themes/{themename}/site.variables`
+  3. Site overrides pulled from `theme-builder/site/site.variables`
 
 2. Button variables
-  2.1. Button default variables from `theme-builder/themes/default/elements/button.variables`
-  2.2. Button packaged-theme variables from `theme-builder/themes/{themename}/elements/button.variables`
-  2.3. Button's site theme from `theme-builder/site/elements/button.variables`
+  1. Button default variables from `theme-builder/themes/default/elements/button.variables`
+  2. Button packaged-theme variables from `theme-builder/themes/{themename}/elements/button.variables`
+  3. Button's site theme from `theme-builder/site/elements/button.variables`
 
 
 ###CSS Overrides
