@@ -19,7 +19,7 @@ Clone/Fork this project, cd into it, then run `grunt server _site`, use your bro
 
 #Theme-Builder How to
 
-##Theming Concepts (Based on Semantic UI tool)
+##Theming Concepts (Based on Semantic-UI tool)
 
 Theme-Builder uses an inheritance system similar to <a href="https://www.sublimetext.com/docs/2/settings.html" target="_blank">Sublime Text</a> designed to facilitate an ecosystem of theming.
 
